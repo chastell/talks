@@ -887,68 +887,6 @@ PrimeSelector.new(2..10).primes
 </div><div class="slide" data-transition="scrollRight"><div class="content center" ref="aop/aop/14">
 <p><img src="./file/aop/snake.jpg" alt="snake"/>
 <a href="http://sassystreak.com/2011/09/28/amazing-nature-photos/">AMAZING NATURE PHOTOS!</a></p></div>
-</div><div class="slide" data-transition="scrollLeft"><div class="content" ref="bench/bench/1">
-<pre class="sh_ruby"><code>
-
-
-class Integer
-  def sqrt_prime?
-    (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
-  end
-end
-
-
-
-
-
-
-&#xA0;</code></pre></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="bench/bench/2">
-<pre class="sh_ruby"><code>
-require 'prime'
-
-class Integer
-  def sqrt_prime?
-    (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
-  end
-end
-
-
-
-
-
-
-&#xA0;</code></pre></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="bench/bench/3">
-<pre class="sh_ruby"><code>require 'benchmark'
-require 'prime'
-
-class Integer
-  def sqrt_prime?
-    (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
-  end
-end
-
-range = 2..1_000_000
-
-Benchmark.bmbm do |bench|
-  bench.report('sqrt:')   { range.each &amp;:sqrt_prime? }
-  bench.report('stdlib:') { range.each &amp;:prime?      }
-end</code></pre></div>
-</div><div class="slide" data-transition="scrollLeft"><div class="content commandline incremental" ref="bench/bench/4">
-<pre><code><code class="command">$ ruby prime_bench.rb</code>
-<code class="result">Rehearsal -------------------------------------------
-sqrt:    24.740000   0.000000  24.740000 ( 24.833979)
-stdlib:  35.340000   0.000000  35.340000 ( 35.377147)
---------------------------------- total: 60.080000sec
-
-              user     system      total        real
-sqrt:    24.590000   0.000000  24.590000 ( 24.606882)
-stdlib:  36.790000   0.000000  36.790000 ( 36.827468)
-</code></code></pre></div>
-</div><div class="slide" data-transition="scrollRight"><div class="content center" ref="bench/bench/5">
-<p><img src="./file/bench/measuring.png" alt="measuring"/>
-<a href="http://www.gocomics.com/ballardstreet/2011/11/23">Ballard Street</a></p></div>
 </div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental" ref="dci/dci/1">
 <h1>DCI</h1>
 
@@ -1157,6 +1095,68 @@ src.events.parties.saturday    #=&gt; 'Zo&#xEB; Keating concert'
 <li><a href="http://devblog.avdi.org/2012/05/25/making-little-classes-out-of-big-ones-video/">Making Little Classes out of Big Ones</a></li>
 </ul>
 </div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content" ref="bench/bench/1">
+<pre class="sh_ruby"><code>
+
+
+class Integer
+  def sqrt_prime?
+    (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
+  end
+end
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="bench/bench/2">
+<pre class="sh_ruby"><code>
+require 'prime'
+
+class Integer
+  def sqrt_prime?
+    (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
+  end
+end
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="bench/bench/3">
+<pre class="sh_ruby"><code>require 'benchmark'
+require 'prime'
+
+class Integer
+  def sqrt_prime?
+    (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
+  end
+end
+
+range = 2..1_000_000
+
+Benchmark.bmbm do |bench|
+  bench.report('sqrt:')   { range.each &amp;:sqrt_prime? }
+  bench.report('stdlib:') { range.each &amp;:prime?      }
+end</code></pre></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content commandline incremental" ref="bench/bench/4">
+<pre><code><code class="command">$ ruby prime_bench.rb</code>
+<code class="result">Rehearsal -------------------------------------------
+sqrt:    24.740000   0.000000  24.740000 ( 24.833979)
+stdlib:  35.340000   0.000000  35.340000 ( 35.377147)
+--------------------------------- total: 60.080000sec
+
+              user     system      total        real
+sqrt:    24.590000   0.000000  24.590000 ( 24.606882)
+stdlib:  36.790000   0.000000  36.790000 ( 36.827468)
+</code></code></pre></div>
+</div><div class="slide" data-transition="scrollRight"><div class="content center" ref="bench/bench/5">
+<p><img src="./file/bench/measuring.png" alt="measuring"/>
+<a href="http://www.gocomics.com/ballardstreet/2011/11/23">Ballard Street</a></p></div>
 </div></div>
 
 </body>
