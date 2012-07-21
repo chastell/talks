@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English+SC);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-shadow: #aaa 3px 3px 3px;
+}
+
+body {
+  font-family: 'IM Fell English SC', serif;
+  text-shadow: #ccc 1px 1px 5px;
+}
+
+code {
+  font-size: 27px;
+}
+
+pre {
+  font-family: Inconsolata, monospace;
+  margin: 0.5em;
+  line-height: 35px;
+}
+
+.content > ul > li {
+  margin-left: 0;
+}
+
+#footer {
+  display: none;
+}
