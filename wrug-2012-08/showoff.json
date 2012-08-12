@@ -1,0 +1,11 @@
+{
+  "name": "PStore: stdlib’s Persistence",
+  "sections": [
+    { "section": "cover"    },
+    { "section": "me-me-me" },
+    { "section": "history"  },
+    { "section": "signore"  },
+    { "section": "pstore"   },
+    { "section": "links"    }
+  ]
+}
