@@ -1,0 +1,12 @@
+{
+  "name": "NetWtorek: haktywizm internetowy",
+  "sections": [
+    { "section": "cover"        },
+    { "section": "acta"         },
+    { "section": "konsultacje"  },
+    { "section": "reakcja"      },
+    { "section": "haktywizm"    },
+    { "section": "problematyka" },
+    { "section": "final"        }
+  ]
+}
