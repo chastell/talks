@@ -1,0 +1,13 @@
+{
+  "name": "Persisting Relations Across Time and Space",
+  "sections": [
+    { "section": "cover"       },
+    { "section": "me-me-me"    },
+    { "section": "overview"    },
+    { "section": "persistence" },
+    { "section": "relations"   },
+    { "section": "object"      },
+    { "section": "libraries"   },
+    { "section": "summary"     }
+  ]
+}
