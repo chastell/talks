@@ -1,0 +1,12 @@
+{
+  "name": "Decoupling Persistence (Like There’s Some Tomorrow)",
+  "sections": [
+    { "section": "cover"          },
+    { "section": "me-me-me"       },
+    { "section": "current-status" },
+    { "section": "databases"      },
+    { "section": "separation"     },
+    { "section": "decoupling"     },
+    { "section": "summary"        }
+  ]
+}
