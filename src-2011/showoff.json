@@ -1,0 +1,15 @@
+[
+  { "section": "cover"        },
+  { "section": "me-me-me"     },
+  { "section": "performance"  },
+  { "section": "profiling"    },
+  { "section": "benchmarking" },
+  { "section": "webapps"      },
+  { "section": "speeding-up"  },
+  { "section": "strangelove"  },
+  { "section": "frankenstein" },
+  { "section": "summary"      },
+  { "section": "whither-else" },
+  { "section": "premature"    },
+  { "section": "credits"      }
+]
