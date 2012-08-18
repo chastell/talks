@@ -1,0 +1,1427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Presentation</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/src-2011.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="cover/cover/1">
+<h1>From<br/>Profiling Ruby<br/>to<br/>Frankenstein Programming</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="cover/cover/2">
+<h1>From<br/>Profiling Ruby<br/>to<br/>Frankenstein Programming</h1>
+
+<h2>or how I learned<br/>to stop worrying<br/>and love using Ruby<br/>for scientific computations</h2></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="me-me-me/me-me-me/1">
+<h1>me, me, me.</h1>
+
+<ul>
+<li>(that&#x2019;s Piotr Szotkowski)</li>
+<li>(or @chastell)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="me-me-me/me-me-me/2">
+<p><img src="./file/me-me-me/hyde.jpg" alt="Mr Hyde"/></p>
+
+<p><a href="http://www.archive.org/details/DrJekyllandMrHyde">archive.org / details / DrJekyllandMrHyde</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="me-me-me/me-me-me/3">
+<p><img src="./file/me-me-me/jekyll.jpg" alt="Dr Jekyll"/></p>
+
+<p><a href="http://www.archive.org/details/DrJekyllandMrHyde">archive.org / details / DrJekyllandMrHyde</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="me-me-me/me-me-me/4">
+<h1><img src="./file/me-me-me/civicrm.png" alt="CiviCRM"/></h1>
+
+<ul>
+<li><img src="./file/me-me-me/php.png" alt="PHP"/> &#xA0;&#xA0;&#xA0; <img src="./file/me-me-me/mysql.png" alt="MySQL"/></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="me-me-me/me-me-me/5">
+<p><img src="./file/me-me-me/hyde.jpg" alt="Mr Hyde"/></p>
+
+<p><a href="http://www.archive.org/details/DrJekyllandMrHyde">archive.org / details / DrJekyllandMrHyde</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="me-me-me/me-me-me/6">
+<p><img src="./file/me-me-me/wut.png" alt="WUT"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="me-me-me/me-me-me/7">
+<p><img src="./file/me-me-me/jekyll.jpg" alt="Dr Jekyll"/></p>
+
+<p><a href="http://www.archive.org/details/DrJekyllandMrHyde">archive.org / details / DrJekyllandMrHyde</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="me-me-me/me-me-me/8">
+<p><img src="./file/me-me-me/fortran.jpg" alt="FORTRAN"/></p>
+
+<p><a href="http://www.theage.com.au/news/technology/programming-language-pioneer-passes-away/2007/03/21/1174153117713.html">www.theage.com.au / news / technology / programming-language-pioneer-passes-away / 2007 / 03 / 21 / 1174153117713.html</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="me-me-me/me-me-me/9">
+<p><img src="./file/me-me-me/arc.jpg" alt="Arc"/></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Paul_Graham_%28computer_programmer%29">en.wikipedia.org / wiki / Paul_Graham_(computer_programmer)</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="me-me-me/me-me-me/10">
+<p><img src="./file/me-me-me/lisp.jpg" alt="LISP"/></p>
+
+<p><a href="http://www-formal.stanford.edu/jmc/frames.html">www-formal.stanford.edu / jmc / frames.html</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="me-me-me/me-me-me/11">
+<p><img src="./file/me-me-me/c.jpg" alt="C"/></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Dennis_Ritchie">en.wikipedia.org / wiki / Dennis_Ritchie</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="me-me-me/me-me-me/12">
+<p><img src="./file/me-me-me/cpp.jpg" alt="C++"/></p>
+
+<p><a href="http://www.linuxjournal.com/article/7099">www.linuxjournal.com / article / 7099</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="me-me-me/me-me-me/13">
+<p><img src="./file/me-me-me/java.jpg" alt="Java"/></p>
+
+<p><a href="http://en.wikipedia.org/wiki/James_Gosling">en.wikipedia.org / wiki / James_Gosling</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="me-me-me/me-me-me/14">
+<p><img src="./file/me-me-me/python.jpg" alt="Python"/></p>
+
+<p><a href="http://commons.wikimedia.org/wiki/Category:Guido_van_Rossum">commons.wikimedia.org / wiki / Category:Guido_van_Rossum</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="me-me-me/me-me-me/15">
+<p><img src="./file/me-me-me/python-cookbook.jpg" alt="Python Cookbook"/></p>
+
+<p><a href="http://oreilly.com/catalog/9780596001674">oreilly.com / catalog / 9780596001674</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="me-me-me/me-me-me/16">
+<p><img src="./file/me-me-me/t-shirt.jpg" alt="T-shirt"/></p>
+
+<p><a href="http://www.flickr.com/photos/john_lam/1910968816">flickr.com / john_lam / 1910968816</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="me-me-me/me-me-me/17">
+<p><img src="./file/me-me-me/matz.jpg" alt="Matz"/></p>
+
+<p><a href="http://www.flickr.com/photos/john_lam/1910968816">flickr.com / john_lam / 1910968816</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="performance/performance/1">
+<h1>Ruby&#x2019;s<br/>performance</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="performance/performance/2">
+<h1>Ruby&#x2019;s<br/>&#x2018;performance&#x2019;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="performance/performance/3">
+<p><img src="./file/performance/extreme-slow-food.jpg" alt="Extreme Slow Food"/></p>
+
+<p><a href="http://www.futures.hawaii.edu/2008/09/dator-on-slow-food.php">www.futures.hawaii.edu / 2008 / 09 / dator-on-slow-food.php</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="performance/performance/4">
+<p><img src="./file/performance/a-taste-of-slow.jpg" alt="A Taste of Slow"/></p>
+
+<p><a href="http://slowfoodaustralia.com.au/events/national/a-taste-of-slow/">slowfoodaustralia.com.au / events / national / a-taste-of-slow</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="performance/performance/5">
+<ul>
+<li>shootout</li>
+<li>.<br/><br/>alioth</li>
+<li>.<br/><br/>debian</li>
+<li>.<br/><br/>org</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="performance/performance/6">
+<p><img src="./file/performance/ruby-c-0.png" alt="Ruby vs C"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="performance/performance/7">
+<p><img src="./file/performance/ruby-c-1.png" alt="Ruby vs C&#xB9;"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="performance/performance/8">
+<p><img src="./file/performance/ruby-c-2.png" alt="Ruby vs C&#xB2;"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="performance/performance/9">
+<p><img src="./file/performance/ruby-c-3.png" alt="Ruby vs C&#xB3;"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="performance/performance/10">
+<p><img src="./file/performance/slow-user.jpg" alt="slow user"/></p>
+
+<p><a href="http://www.computerrepairmaintenance.com/computer-help/what-can-i-do-to-fix-my-slow-computer">www.computerrepairmaintenance.com / computer-help / what-can-i-do-to-fix-my-slow-computer</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="performance/performance/11">
+<ul>
+<li><h3>but&#x2026; but&#x2026;<br/>benchmarks?</h3></li>
+<li><h3>srsly?</h3></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="performance/performance/12">
+<ul>
+<li><p>Synthetic benchmarks tell us sweet FA<br/>about real world performance of code,</p></li>
+<li><p>architecture</p></li>
+<li><p>being a much more significant consideration than the proportion of raw MIPS a given language will deliver on a given platform.</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="performance/performance/13">
+<ul>
+<li><p>The average netbook could happily run<br/>all of Teller&#x2019;s fusion bomb models</p></li>
+<li><p>along with the full telemetry analysis<br/>of all the Apollo missions</p></li>
+<li><p>in the pauses between loading XKCD comics</p></li>
+<li><p>and binning junk mail</p></li>
+<li><p>without the user being any the wiser.</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="performance/performance/14">
+<p><img src="./file/performance/eleanor.jpg" alt="Eleanor McHugh"/></p>
+
+<p><a href="http://www.flickr.com/photos/gavinbell/244169511">www.flickr.com / photos / gavinbell / 244169511</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/1">
+<h1>profiling<br/>Ruby</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/2">
+<p><img src="./file/profiling/euler.jpg" alt="Euler"/></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Leonhard_Euler">en.wikipedia.org / wiki / Leonhard_Euler</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="profiling/profiling/3">
+<h1>Project Euler</h1>
+
+<ul>
+<li><p>starting in the top left corner of a 2&#xD7;2 grid, there are 6 routes (without backtracking)<br/>to the bottom right corner:</p></li>
+<li><p><img src="./file/profiling/euler-paths.png" alt="Euler 15"/></p></li>
+<li><p>how many routes are there<br/>through a 20&#xD7;20 grid?</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="profiling/profiling/4">
+<p><img src="./file/profiling/euler-paths.2x.png" alt="Euler 15"/></p>
+
+<ul>
+<li><p>only right and down</p></li>
+<li><p>so, let&#x2019;s say&#x2026; zeroes and ones?</p></li>
+<li><p>0011, 0101, 0110, 1001, 1010, 1100</p></li>
+<li><p>all (2+2)-digit binary numbers<br/>with the same number of ones and zeroes</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/5">
+<pre class="sh_ruby"><code>
+
+grid = 2</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/6">
+<pre class="sh_ruby"><code>
+
+grid = 2
+
+(0...2**(2 * grid))                          # (0-15)</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/7">
+<pre class="sh_ruby"><code>
+
+grid = 2
+
+(0...2**(2 * grid))                          # (0-15)
+.map { |n| n.to_s 2 }                        # ['0', '1', '10', '11'&#x2026;]</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/8">
+<pre class="sh_ruby"><code>
+
+grid = 2
+
+(0...2**(2 * grid))                          # (0-15)
+.map { |n| n.to_s 2 }                        # ['0', '1', '10', '11'&#x2026;]
+.map { |s| s.rjust 2 * grid, '0' }           # ['0000','0001','0010'&#x2026;]</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/9">
+<pre class="sh_ruby"><code>
+
+grid = 2
+
+(0...2**(2 * grid))                          # (0-15)
+.map { |n| n.to_s 2 }                        # ['0', '1', '10', '11'&#x2026;]
+.map { |s| s.rjust 2 * grid, '0' }           # ['0000','0001','0010'&#x2026;]
+.select { |s| s.count('1') == s.count('0') } # ['0011','0101','0110'&#x2026;]</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/10">
+<pre class="sh_ruby"><code>
+
+grid = 2
+
+(0...2**(2 * grid))                          # (0-15)
+.map { |n| n.to_s 2 }                        # ['0', '1', '10', '11'&#x2026;]
+.map { |s| s.rjust 2 * grid, '0' }           # ['0000','0001','0010'&#x2026;]
+.select { |s| s.count('1') == s.count('0') } # ['0011','0101','0110'&#x2026;]
+.size                                        # 6</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/11">
+<pre class="sh_ruby"><code># ruby grid.rb &lt;number&gt;
+
+grid = ARGV.first.to_i
+
+puts (0...2**(2 * grid))
+.map { |n| n.to_s 2 }
+.map { |s| s.rjust 2 * grid, '0' }
+.select { |s| s.count('1') == s.count('0') }
+.size</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="profiling/profiling/12">
+<pre><code><code class="command">$ ruby grid.rb 2</code>
+<code class="result">6
+
+</code><code class="command">$ ruby grid.rb 20</code>
+<code class="result">^Cgrid.rb:2:in `block in &lt;main&gt;': Interrupt
+  from grid.rb:2:in `each'
+  from grid.rb:2:in `map'
+  from grid.rb:2:in `&lt;main&gt;'
+
+</code><code class="command">$ time ruby grid.rb 2</code>
+<code class="result">6
+real 0m0.017s
+user 0m0.020s
+sys  0m0.000s
+
+</code><code class="command">$ time ruby grid.rb 8</code>
+<code class="result">12870
+real 0m0.204s
+user 0m0.180s
+sys  0m0.020s
+
+</code><code class="command">$ time ruby grid.rb 10</code>
+<code class="result">184756
+real 0m3.040s
+user 0m2.890s
+sys  0m0.130s
+
+</code><code class="command">$ time ruby grid.rb 11</code>
+<code class="result">705432
+real 0m13.291s
+user 0m12.750s
+sys  0m0.490s
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/13">
+<p><img src="./file/profiling/before.jpg" alt="Before microscopes"/></p>
+
+<p><a href="http://icanhascheezburger.com/2011/03/18/funny-pictures-before-microscopes/">icanhascheezburger.com / 2011 / 03 / 18 / funny-pictures-before-microscopes</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/14">
+<h1><code>require 'profile'</code></h1></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="profiling/profiling/15">
+<pre><code><code class="command">$ time ruby grid.rb 9</code>
+<code class="result">48620
+real 0m0.827s
+user 0m0.780s
+sys  0m0.040s
+
+</code><code class="command">$ time ruby -r profile grid.rb 9</code>
+<code class="result">48620
+  %   cumulative   self              self     total
+ time   seconds   seconds    calls  ms/call  ms/call  name
+ 32.38    12.64     12.64        1 12640.00 18570.00  Array#select
+ 23.64    21.87      9.23        1  9230.00 13610.00  Array#map
+ 12.09    26.59      4.72        1  4720.00  6840.00  Range#each
+ 10.04    30.51      3.92   524288     0.01     0.01  String#count
+  6.25    32.95      2.44   262144     0.01     0.01  String#rjust
+  5.43    35.07      2.12   262145     0.01     0.01  Fixnum#to_s
+  5.15    37.08      2.01   262144     0.01     0.01  Fixnum#==
+  4.97    39.02      1.94   262145     0.01     0.01  Fixnum#*
+  0.05    39.04      0.02        2    10.00    10.00  IO#write
+  0.00    39.04      0.00        2     0.00     0.00  IO#set_encoding
+  0.00    39.04      0.00        1     0.00  6840.00  Enumerable.map
+  0.00    39.04      0.00        1     0.00     0.00  Fixnum#**
+  0.00    39.04      0.00        1     0.00     0.00  String#to_i
+  0.00    39.04      0.00        1     0.00     0.00  Array#first
+  0.00    39.04      0.00        1     0.00     0.00  Array#size
+  0.00    39.04      0.00       28     0.00     0.00  Hash#default
+  0.00    39.04      0.00        1     0.00    20.00  IO#puts
+  0.00    39.04      0.00        1     0.00    20.00  Kernel.puts
+  0.00    39.04      0.00        1     0.00 39040.00  #toplevel
+real 0m40.984s
+user 0m39.080s
+sys  0m1.260s
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/16">
+<p><img src="./file/profiling/sun-racks.jpg" alt="Sun racks"/></p>
+
+<p><a href="http://www.anchor.com.au/blog/2009/10/ooh-bugger/">www.anchor.com.au / blog / 2009 / 10 / ooh-bugger</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/17">
+<h1>gem install ruby-prof</h1></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="profiling/profiling/18">
+<pre><code><code class="command">$ time ruby-prof grid.rb 9</code>
+<code class="result">48620
+Thread ID: 14590720
+Total: 3.150000
+
+ %self     total     self     wait    child    calls  name
+ 22.86      1.30     0.72     0.00     0.58        1  Array#select
+ 18.41      0.58     0.58     0.00     0.00   524288  String#count
+ 17.14      0.89     0.54     0.00     0.35        1  Range#each
+ 15.87      0.96     0.50     0.00     0.46        1  Array#map
+ 14.60      0.46     0.46     0.00     0.00   262144  String#rjust
+ 11.11      0.35     0.35     0.00     0.00   262145  Fixnum#to_s
+  0.00      0.00     0.00     0.00     0.00        2  IO#write
+  0.00      0.00     0.00     0.00     0.00        1  IO#puts
+  0.00      0.00     0.00     0.00     0.00        1  Kernel#puts
+  0.00      0.89     0.00     0.00     0.89        1  Enumerable#map
+  0.00      0.00     0.00     0.00     0.00        1  &lt;Class::Range&gt;#allocate
+  0.00      0.00     0.00     0.00     0.00        1  Fixnum#**
+  0.00      0.00     0.00     0.00     0.00        1  String#to_i
+  0.00      0.00     0.00     0.00     0.00        1  Array#first
+  0.00      0.00     0.00     0.00     0.00       28  Hash#default
+  0.00      0.00     0.00     0.00     0.00        2  IO#set_encoding
+  0.00      3.15     0.00     0.00     3.15        1  Kernel#load
+  0.00      3.15     0.00     0.00     3.15        2  Global#[No method]
+
+real 0m3.425s
+user 0m2.560s
+sys  0m0.830s
+
+</code><code class="command">$ ruby-prof -p graph_html -f grid.html grid.rb 9</code>
+<code class="result">48620
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/19">
+<p><img src="./file/profiling/grid.html.png" alt="grid.html.png"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/20">
+<p><img src="./file/profiling/slow-goats.jpg" alt="slow goats"/></p>
+
+<p><a href="http://www.anchor.com.au/blog/2009/10/ooh-bugger/">www.anchor.com.au / blog / 2009 / 10 / ooh-bugger</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/21">
+<h1>gem install perftools.rb</h1></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="profiling/profiling/22">
+<pre><code><code class="command">$ export CPUPROFILE=grid</code>
+<code class="result">
+</code><code class="command">$ time ruby -r perftools grid.rb 9</code>
+<code class="result">48620
+PROFILE: interrupts/evictions/bytes = 76/0/272
+
+real 0m0.928s
+user 0m0.830s
+sys  0m0.090s
+
+</code><code class="command">$ pprof.rb --text grid</code>
+<code class="result">Using local file /home/chastell/.rvm/rubies/ruby-1.9.2-p180/bin/ruby.
+Using local file grid.
+Total: 76 samples
+      16  21.1%  21.1%       16  21.1% garbage_collector
+      12  15.8%  36.8%       12  15.8% String#count
+      11  14.5%  51.3%       11  14.5% Fixnum#to_s
+      10  13.2%  64.5%       22  28.9% Array#select
+      10  13.2%  77.6%       21  27.6% Range#each
+      10  13.2%  90.8%       10  13.2% String#rjust
+       7   9.2% 100.0%       17  22.4% Array#map
+       0   0.0% 100.0%       21  27.6% Enumerable#map
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="profiling/profiling/23">
+<pre><code><code class="command">$ time ruby grid.rb 10</code>
+<code class="result">184756
+
+real 0m3.082s
+user 0m2.910s
+sys  0m0.150s
+
+</code><code class="command">$ time ruby -r perftools grid.rb 10</code>
+<code class="result">184756
+PROFILE: interrupts/evictions/bytes = 293/0/272
+
+real 0m3.189s
+user 0m2.940s
+sys  0m0.230s
+
+</code><code class="command">$ pprof.rb --text grid</code>
+<code class="result">Using local file /home/chastell/.rvm/rubies/ruby-1.9.2-p180/bin/ruby.
+Using local file grid.
+Total: 293 samples
+      67  22.9%  22.9%       67  22.9% Fixnum#to_s
+      56  19.1%  42.0%       78  26.6% Array#select
+      45  15.4%  57.3%       45  15.4% garbage_collector
+      44  15.0%  72.4%       72  24.6% Array#map
+      31  10.6%  82.9%       98  33.4% Range#each
+      28   9.6%  92.5%       28   9.6% String#rjust
+      22   7.5% 100.0%       22   7.5% String#count
+       0   0.0% 100.0%       98  33.4% Enumerable#map
+
+</code><code class="command">$ pprof.rb --pdf grid &gt; grid.pdf</code>
+<code class="result">Using local file /home/chastell/.rvm/rubies/ruby-1.9.2-p180/bin/ruby.
+Using local file grid.
+Dropping nodes with &lt;= 1 samples; edges with &lt;= 0 abs(samples)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/24">
+<h1><code>$ ruby -r perftools grid.rb 10</code></h1>
+
+<p><img src="./file/profiling/grid.10.png" alt="grid 10"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/25">
+<h1><code>$ ruby -r perftools grid.rb 11</code></h1>
+
+<p><img src="./file/profiling/grid.11.png" alt="grid 11"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/26">
+<h1><code>$ ruby -r perftools grid.rb 12</code></h1>
+
+<p><img src="./file/profiling/grid.12.png" alt="grid 12"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/27">
+<pre class="sh_ruby"><code>grid = ARGV.first.to_i
+
+puts (0...2**(2 * grid))
+.map { |n| n.to_s 2 }
+.map { |s| s.rjust 2 * grid, '0' }
+.select { |s| s.count('1') == s.count('0') }
+.size</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/28">
+<pre class="sh_ruby"><code>grid = ARGV.first.to_i
+
+puts (0...2**(2 * grid))
+.map { |n| n.to_s 2 }
+.select { |s| s.count('1') == grid }
+.size</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/29">
+<pre class="sh_ruby"><code>grid = ARGV.first.to_i
+
+puts (0...2**(2 * grid))
+.select { |n| n.to_s(2).count('1') == grid }
+.size</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/30">
+<pre class="sh_ruby"><code>grid = ARGV.first.to_i
+
+puts (0...2**(2 * grid))
+.count { |n| n.to_s(2).count('1') == grid }</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline" ref="profiling/profiling/31">
+<p><img src="./file/profiling/grid.12.old.png" alt="grid 12 old"/></p>
+
+<br/>
+
+
+<br/>
+
+
+<br/>
+
+
+<pre><code><code class="command">$ time ruby -r perftools grid.rb 12</code>
+<code class="result">2704156
+PROFILE: interrupts/evictions/bytes = 5640/0/272
+
+real 0m57.870s
+user 0m55.000s
+sys  0m2.690s
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline" ref="profiling/profiling/32">
+<p><img src="./file/profiling/grid.12.new.png" alt="grid 12 new"/></p>
+
+<br/>
+
+
+<br/>
+
+
+<br/>
+
+
+<pre><code><code class="command">$ time ruby -r perftools grid-short.rb 12</code>
+<code class="result">2704156
+PROFILE: interrupts/evictions/bytes = 2744/0/200
+
+real 0m27.676s
+user 0m27.420s
+sys  0m0.130s
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/33">
+<h1>Westheimer&#x2019;s Discovery</h1>
+
+<h2>a couple of months in the laboratory<br/>can frequently save<br/>a couple of hours in the library</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/34">
+<p><img src="./file/profiling/passports.jpg" alt="passports"/></p>
+
+<p><a href="http://sfwchan.com/?id=4823">sfwchan.com / ?id=4823</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/35">
+<p><img src="./file/profiling/i-like-big-books.jpg" alt="I like big books"/></p>
+
+<p><a href="http://www.etsy.com/listing/62235991/i-like-big-books-canvas-tote-bag">www.etsy.com / listing / 62235991 / i-like-big-books-canvas-tote-bag</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/36">
+<pre class="sh_ruby"><code>class Integer
+  def popcount_to_s
+    to_s(2).count '1'
+  end
+end
+
+grid = ARGV.first.to_i
+puts (0...2**(2 * grid)).count { |n| n.popcount_to_s == grid }
+
+
+
+
+
+
+
+
+
+$ time ruby grid-classy.rb 12
+2704156
+real 0m26.562s
+user 0m26.370s
+sys  0m0.100s</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/37">
+<pre class="sh_ruby"><code>class Integer
+  def popcount_bitshift
+    count = 0
+    number = self
+    while number &gt; 0
+      number &amp;= number - 1
+      count += 1
+    end
+    count
+  end
+end
+
+grid = ARGV.first.to_i
+puts (0...2**(2 * grid)).count { |n| n.popcount_bitshift == grid }</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/38">
+<pre class="sh_ruby"><code>class Integer
+  def popcount_bitshift
+    count = 0
+    number = self
+    while number &gt; 0
+      number &amp;= number - 1
+      count += 1
+    end
+    count
+  end
+end
+
+grid = ARGV.first.to_i
+puts (0...2**(2 * grid)).count { |n| n.popcount_bitshift == grid }
+
+
+
+$ time ruby grid-bitshift.rb 12
+2704156
+real 0m33.155s
+user 0m33.010s
+sys  0m0.010s</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline" ref="profiling/profiling/39">
+<p><img src="./file/profiling/grid-bitshift.png" alt="grid bitshift"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/40">
+<pre class="sh_ruby"><code>require 'inline'
+class Integer
+  inline do |builder|
+    builder.c '
+      int popcount_bitshift_c() {
+        long number = NUM2LONG(self);
+        int count;
+        for (count = 0; number; count++) number &amp;= number - 1;
+        return count;
+      }
+    '
+  end
+end
+
+grid = ARGV.first.to_i
+puts (0...2**(2 * grid)).count { |n| n.popcount_bitshift_c == grid }</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/41">
+<pre class="sh_ruby"><code>require 'inline'
+class Integer
+  inline do |builder|
+    builder.c '
+      int popcount_bitshift_c() {
+        long number = NUM2LONG(self);
+        int count;
+        for (count = 0; number; count++) number &amp;= number - 1;
+        return count;
+      }
+    '
+  end
+end
+
+grid = ARGV.first.to_i
+puts (0...2**(2 * grid)).count { |n| n.popcount_bitshift_c == grid }
+
+$ time ruby grid-bitshift-c.rb 12
+2704156
+real 0m4.649s
+user 0m4.590s
+sys  0m0.040s</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/42">
+<pre class="sh_ruby"><code>require 'inline'
+class Integer
+  inline do |builder|
+    builder.c '
+      int popcount_builtin() {
+        return __builtin_popcountl(NUM2LONG(self));
+      }
+    '
+  end
+end
+
+grid = ARGV.first.to_i
+puts (0...2**(2 * grid)).count { |n| n.popcount_builtin == grid }
+
+
+
+
+$ time ruby grid-builtin.rb 12
+2704156
+real 0m4.559s
+user 0m4.390s
+sys  0m0.110s</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline" ref="profiling/profiling/43">
+<p><img src="./file/profiling/grid-builtin.png" alt="grid builtin"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/44">
+<h1>Westheimer&#x2019;s Discovery</h1>
+
+<h2>a couple of months in the laboratory<br/>can frequently save<br/>a couple of hours in the library</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="profiling/profiling/45">
+<p><img src="./file/profiling/lsd.jpg" alt="LSD and You"/></p>
+
+<p><a href="http://www.weakstream.us/?attachment_id=8226">www.weakstream.us / ?attachment_id=8226</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="profiling/profiling/46">
+<ul>
+<li><p>we want to make <code>2 &#xD7; grid</code> steps<br/>by combining <code>grid</code> right and <code>grid</code> down ones</p></li>
+<li><p>pick <code>grid</code> elements from a set of <code>2 &#xD7; grid</code> elements</p></li>
+<li><p>number of such combinations is known:<br/>it&#x2019;s the binomial coefficient of <code>2 &#xD7; grid</code> over <code>grid</code></p></li>
+<li><p>it&#x2019;s equal to <code>(2 &#xD7; grid)! / (grid! &#xD7; (2 &#xD7; grid - grid)!)</code></p></li>
+<li><p>for <code>grid = 2</code> it&#x2019;s <code>4! / (2! &#xD7; (4 - 2)!)</code></p></li>
+<li><p>for <code>grid = 20</code> it&#x2019;s <code>40! / (20! &#xD7; (40 - 20)!)</code></p></li>
+<li><p><code>(40 &#xD7; 39 &#xD7; &#x2026; &#xD7; 21) / (20 &#xD7; 19 &#xD7; &#x2026; &#xD7; 1) = 137,846,528,820</code></p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="benchmarking/benchmarking/1">
+<h1>benchmarking</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="benchmarking/benchmarking/2">
+<h1>Project Euler</h1>
+
+<ul>
+<li><p>the sum of the primes below 10<br/>is 2 + 3 + 5 + 7 = 17</p></li>
+<li><p>find the sum of all the primes<br/>below two million</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="benchmarking/benchmarking/3">
+<p><img src="./file/benchmarking/on-math.jpg" alt="on math"/></p>
+
+<p><a href="http://drugs.soup.io/post/54096687/This-is-not-normal-but-in-math">drugs.soup.io / post / 54096687 / This-is-not-normal-but-in-math</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="benchmarking/benchmarking/4">
+<pre class="sh_ruby"><code>class Integer
+
+  def prime?
+    # &#x2026;
+  end
+
+end
+
+puts (2...2_000_000).select(&amp;:prime?).inject :+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="benchmarking/benchmarking/5">
+<pre class="sh_ruby"><code>class Integer
+
+  def stupid_prime?
+    prime = true
+    (2...self).each { |i| prime = false if (self % i).zero? }
+    prime
+  end
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="benchmarking/benchmarking/6">
+<pre class="sh_ruby"><code>class Integer
+
+  def tedious_prime?
+    (2...self).all? { |i| (self % i).nonzero? }
+  end
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="benchmarking/benchmarking/7">
+<pre class="sh_ruby"><code>class Integer
+
+  def simple_prime?
+    (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
+  end
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="benchmarking/benchmarking/8">
+<ul>
+<li>cool story, bro, but&#x2026;</li>
+<li><code>require 'prime'</code></li>
+<li>gives us</li>
+<li>Integer#prime?</li>
+<li>like, already.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="benchmarking/benchmarking/9">
+<pre class="sh_ruby"><code>class Integer
+
+  def simple_prime?
+    (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
+  end
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="benchmarking/benchmarking/10">
+<pre class="sh_ruby"><code>require 'benchmark'
+require 'prime'
+require './euler-primes'
+
+Benchmark.bmbm do |bench|
+  bench.report 'stupid:' do
+    (2..10_000).each { |i| i.stupid_prime? }
+  end
+  bench.report 'tedious:' do
+    (2..10_000).each { |i| i.tedious_prime? }
+  end
+  bench.report 'simple:' do
+    (2..10_000).each { |i| i.simple_prime? }
+  end
+  bench.report 'clever:' do
+    (2..10_000).each { |i| i.clever_prime? }
+  end
+  bench.report 'stdlib:' do
+    (2..10_000).each { |i| i.prime? }
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="benchmarking/benchmarking/11">
+<pre><code><code class="command">$ ruby benchmark.rb</code>
+<code class="result">Rehearsal --------------------------------------------
+stupid:   13.080000   0.000000  13.080000 ( 13.107838)
+tedious:   2.090000   0.000000   2.090000 (  2.092263)
+simple:    0.070000   0.000000   0.070000 (  0.069488)
+clever:    0.040000   0.000000   0.040000 (  0.043665)
+stdlib:    0.150000   0.000000   0.150000 (  0.145920)
+---------------------------------- total: 15.430000sec
+
+               user     system      total        real
+stupid:   13.030000   0.000000  13.030000 ( 13.061577)
+tedious:   2.080000   0.000000   2.080000 (  2.089508)
+simple:    0.070000   0.000000   0.070000 (  0.067561)
+clever:    0.040000   0.000000   0.040000 (  0.038180)
+stdlib:    0.140000   0.000000   0.140000 (  0.145690)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="benchmarking/benchmarking/12">
+<pre class="sh_ruby"><code>require 'benchmark'
+require 'prime'
+require './euler-primes'
+
+Benchmark.bmbm do |bench|
+  bench.report 'simple:' do
+    (2..100_000).each { |i| i.simple_prime? }
+  end
+  bench.report 'clever:' do
+    (2..100_000).each { |i| i.clever_prime? }
+  end
+  bench.report 'stdlib:' do
+    (2..100_000).each { |i| i.prime? }
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="benchmarking/benchmarking/13">
+<pre><code><code class="command">$ ruby benchmark-stdlib.rb</code>
+<code class="result">Rehearsal -------------------------------------------
+simple:   1.190000   0.000000   1.190000 (  1.195284)
+clever:   0.660000   0.010000   0.670000 (  0.664936)
+stdlib:   2.210000   0.000000   2.210000 (  2.220644)
+---------------------------------- total: 4.070000sec
+
+              user     system      total        real
+simple:   1.180000   0.000000   1.180000 (  1.184010)
+clever:   0.660000   0.000000   0.660000 (  0.661777)
+stdlib:   2.210000   0.000000   2.210000 (  2.221904)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="benchmarking/benchmarking/14">
+<pre class="sh_ruby"><code>class Integer
+
+  def simple_prime?
+    (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
+  end
+
+
+
+
+
+
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="benchmarking/benchmarking/15">
+<pre class="sh_ruby"><code>class Integer
+
+  def simple_prime?
+    (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
+  end
+
+  # 173.simple_prime? goes from 2 to 13
+
+
+
+
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="benchmarking/benchmarking/16">
+<pre class="sh_ruby"><code>class Integer
+
+  def simple_prime?
+    (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
+  end
+
+  # 173.simple_prime? goes from 2 to 13
+  # &#x2026;checking (among others) divisibility by 2, 4, 6, 8, 10, 12&#x2026;
+
+
+
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="benchmarking/benchmarking/17">
+<pre class="sh_ruby"><code>class Integer
+
+  def simple_prime?
+    (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
+  end
+
+  def clever_prime?
+    return true  if self == 2
+    return false if self.even?
+    3.step(Math.sqrt(self).floor, 2).all? { |i| (self % i).nonzero? }
+  end
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="webapps/webapps/1">
+<h1>algorithms are hard<br/>&#x2013; let&#x2019;s go caching</h1>
+
+<ul>
+<li>(&#x2026;and now you have two problems)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="webapps/webapps/2">
+<h1>profiling web applications</h1>
+
+<ul>
+<li>Rack-based for starters</li>
+<li>(Rails is Rack-based)</li>
+<li>Sinatra app + Rack server</li>
+<li>tributary: a tiny blogging engine (yay!)</li>
+<li>let&#x2019;s ApacheBench an install with many items</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="webapps/webapps/3">
+<pre><code><code class="command">$ export CPUPROFILE=profile</code>
+<code class="result">
+</code><code class="command">$ rackup -r perftools</code>
+<code class="result">[2010-10-21 14:59:39] INFO  WEBrick 1.3.1
+[2010-10-21 14:59:39] INFO  ruby 1.9.2 (2010-08-18) [x86_64-linux]
+[2010-10-21 14:59:39] INFO  WEBrick::HTTPServer#start: pid=346 port=9292
+[&#x2026;]
+
+</code><code class="command">$ ab -n 10 http://localhost:9292/</code>
+<code class="result">This is ApacheBench, Version 2.3 &lt;$Revision: 655654 $&gt;
+[&#x2026;]
+Time taken for tests:   66.078 seconds
+[&#x2026;]
+Requests per second:    0.15 [#/sec] (mean)
+Time per request:       6607.803 [ms] (mean)
+Time per request:       6607.803 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.41 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:  6536 6608 105.3   6581    6879
+Waiting:     6535 6607 105.3   6581    6878
+Total:       6536 6608 105.4   6581    6879
+[&#x2026;]
+
+</code><code class="command">$ pprof.rb --pdf profile &gt; profile.pdf</code>
+<code class="result">Dropping nodes with &lt;= 33 samples; edges with &lt;= 6 abs(samples)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="webapps/webapps/4">
+<p><img src="./file/webapps/no-cache.png" alt="no cache"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="webapps/webapps/5">
+<p><img src="./file/webapps/no-cache.detail.png" alt="no cache detail"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="webapps/webapps/6">
+<pre class="sh_ruby"><code>module Tributary class Item &lt; OpenStruct
+
+  def date
+    case @table[:date]
+    when Date   then @table[:date].to_time
+    when String then Time.parse @table[:date]
+    when Time   then @table[:date]
+    end
+  end
+
+end end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="webapps/webapps/7">
+<pre class="sh_ruby"><code>module Tributary class Item &lt; OpenStruct
+
+  def date
+    @date ||= case @table[:date]
+              when Date   then @table[:date].to_time
+              when String then Time.parse @table[:date]
+              when Time   then @table[:date]
+              end
+  end
+
+end end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="webapps/webapps/8">
+<pre><code><code class="command">$ ab -n 10 http://localhost:9292/</code>
+<code class="result">[&#x2026;]
+Time taken for tests:   18.525 seconds
+[&#x2026;]
+Requests per second:    0.54 [#/sec] (mean)
+Time per request:       1852.549 [ms] (mean)
+Time per request:       1852.549 [ms] (mean, across all concurrent requests)
+Transfer rate:          1.46 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:  1797 1852 102.2   1819    2140
+Waiting:     1797 1852 102.2   1819    2140
+Total:       1797 1852 102.2   1819    2140
+
+Percentage of the requests served within a certain time (ms)
+  50%   1819
+  66%   1837
+  75%   1840
+  80%   1846
+  90%   2140
+  95%   2140
+  98%   2140
+  99%   2140
+ 100%   2140 (longest request)
+
+</code><code class="command">$ pprof.rb --pdf profile &gt; profile.pdf</code>
+<code class="result">Dropping nodes with &lt;= 9 samples; edges with &lt;= 1 abs(samples)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="webapps/webapps/9">
+<p><img src="./file/webapps/date.png" alt="date"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="webapps/webapps/10">
+<p><img src="./file/webapps/date.detail.png" alt="date detail"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="webapps/webapps/11">
+<pre class="sh_ruby"><code>module Tributary class Item &lt; OpenStruct
+
+  def path
+    File.basename(@file, '.md').split('.').first
+  end
+
+end end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="webapps/webapps/12">
+<pre class="sh_ruby"><code>module Tributary class Item &lt; OpenStruct
+
+  def path
+    @path ||= File.basename(@file, '.md').split('.').first
+  end
+
+end end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="webapps/webapps/13">
+<pre><code><code class="command">$ ab -n 10 http://localhost:9292/</code>
+<code class="result">[&#x2026;]
+Time taken for tests:   4.298 seconds
+[&#x2026;]
+Requests per second:    2.33 [#/sec] (mean)
+Time per request:       429.797 [ms] (mean)
+Time per request:       429.797 [ms] (mean, across all concurrent requests)
+Transfer rate:          6.28 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:   390  430 103.3    401     723
+Waiting:      390  429 103.3    400     723
+Total:        390  430 103.4    401     724
+
+Percentage of the requests served within a certain time (ms)
+  50%    401
+  66%    401
+  75%    403
+  80%    403
+  90%    724
+  95%    724
+  98%    724
+  99%    724
+ 100%    724 (longest request)
+
+</code><code class="command">$ pprof.rb --pdf profile &gt; profile.pdf</code>
+<code class="result">Dropping nodes with &lt;= 9 samples; edges with &lt;= 1 abs(samples)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="webapps/webapps/14">
+<p><img src="./file/webapps/path.png" alt="path"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="webapps/webapps/15">
+<p><img src="./file/webapps/path.detail.png" alt="path detail"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="webapps/webapps/16">
+<h1>but what if we actually<br/>cached<br/>the whole item stream&#x2026;?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="webapps/webapps/17">
+<pre><code><code class="command">$ ab -n 10 http://localhost:9292/</code>
+<code class="result">[&#x2026;]
+Time taken for tests:   0.919 seconds
+[&#x2026;]
+Requests per second:    10.88 [#/sec] (mean)
+Time per request:       91.883 [ms] (mean)
+Time per request:       91.883 [ms] (mean, across all concurrent requests)
+Transfer rate:          29.37 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       1
+Processing:    22   92 191.9     37     637
+Waiting:       22   91 191.9     36     637
+Total:         22   92 192.1     37     638
+
+Percentage of the requests served within a certain time (ms)
+  50%     37
+  66%     39
+  75%     39
+  80%     45
+  90%    638
+  95%    638
+  98%    638
+  99%    638
+ 100%    638 (longest request)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="webapps/webapps/18">
+<h1>&#x2026;and un-cached<br/>Item#date and Item#path?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="webapps/webapps/19">
+<pre><code><code class="command">$ ab -n 10 http://localhost:9292/</code>
+<code class="result">[&#x2026;]
+Time taken for tests:   7.116 seconds
+[&#x2026;]
+Requests per second:    1.41 [#/sec] (mean)
+Time per request:       711.577 [ms] (mean)
+Time per request:       711.577 [ms] (mean, across all concurrent requests)
+Transfer rate:          3.79 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:    31  711 2119.9     44    6745
+Waiting:       30  711 2119.9     43    6745
+Total:         31  712 2120.0     44    6745
+
+Percentage of the requests served within a certain time (ms)
+  50%     44
+  66%     44
+  75%     44
+  80%     44
+  90%   6745
+  95%   6745
+  98%   6745
+  99%   6745
+ 100%   6745 (longest request)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="speeding-up/speeding-up/1">
+<h1>||<br/>||<br/>||<br/>speeding<br/>Ruby<br/>up<br/>&#x2D9;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="speeding-up/speeding-up/2">
+<h1>alternative<br/>implementations</h1>
+
+<ul>
+<li>JRuby</li>
+<li>MacRuby</li>
+<li>Rubinius</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="speeding-up/speeding-up/3">
+<p><img src="./file/speeding-up/alternative.png" alt="alternative"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="speeding-up/speeding-up/4">
+<h1>fast<br/>libraries</h1>
+
+<ul>
+<li>NArray</li>
+<li>Ruby/GSL</li>
+<li>ruby-boost-regex</li>
+<li>google_hash</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="speeding-up/speeding-up/5">
+<p><img src="./file/speeding-up/google-hash.png" alt="Google hash"/></p>
+
+<p><a href="http://gpsobsessed.com/cops-stumble-upon-a-2-acre-marijuana-field-in-google-earth/">gpsobsessed.com / cops-stumble-upon-a-2-acre-marijuana-field-in-google-earth</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="strangelove/strangelove/1">
+<h1>Strangelove<br/>programming</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="strangelove/strangelove/2">
+<p><img src="./file/strangelove/teller.jpg" alt="Teller"/></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Edward_Teller">en.wikipedia.org / wiki / Edward_Teller</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="strangelove/strangelove/3">
+<p><img src="./file/strangelove/strangelove.jpg" alt="Strangelove"/></p>
+
+<p><a href="http://worldpoliticsblog.wordpress.com/2010/07/14/paging-dr-strangelove/">worldpoliticsblog.wordpress.com / 2010 / 07 / 14 / paging-dr-strangelove</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="strangelove/strangelove/4">
+<h1>Ruby/DL</h1>
+
+<h1>&amp;</h1>
+
+<h1>Ruby FFI</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="strangelove/strangelove/5">
+<h1>gem install levenshtein</h1>
+
+<ul>
+<li>Levenshtein distance between<br/>two Strings, Arrays, etc.</li>
+<li>Strings, Arrays and Arrays<br/>of Strings: optimized C</li>
+<li>everything else: C</li>
+<li>if C not available: Ruby</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="strangelove/strangelove/6">
+<h1>bridges</h1>
+
+<ul>
+<li>C via MRI</li>
+<li>D via RuDy</li>
+<li>Haskell via Hubris</li>
+<li>Java via JRuby</li>
+<li>R via Rserve</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="frankenstein/frankenstein/1">
+<h1>Frankenstein<br/>programming</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="frankenstein/frankenstein/2">
+<h1>what about <em>embedding</em><br/>foreign language?</h1>
+
+<ul>
+<li><p>(after all, you can do Assembler in C&#x2026;)</p></li>
+<li><p>Yes We Can:</p></li>
+<li><p>RubyInline</p></li>
+<li>JavaInline</li>
+<li>Hubris</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="frankenstein/frankenstein/3">
+<pre class="sh_ruby"><code>require 'inline'
+
+class Integer
+
+  def simple_prime?
+    (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
+  end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="frankenstein/frankenstein/4">
+<pre class="sh_ruby"><code>require 'inline'
+
+class Integer
+
+  def simple_prime?
+    (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
+  end
+
+  inline do |builder|
+    builder.c '
+      VALUE inline_simple() {
+        long number = NUM2LONG(self);
+        long i;
+        for (i = 2; i &lt;= floor(sqrt(number)); i++) {
+          if (number % i == 0) return Qfalse;
+        }
+        return Qtrue;
+      }
+    '
+  end
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="frankenstein/frankenstein/5">
+<pre class="sh_ruby"><code>require 'inline'
+
+class Integer
+
+  inline do |builder|
+    builder.c '
+      VALUE inline_clever() {
+        long number = NUM2LONG(self);
+        if (number == 2)     return Qtrue;
+        if (number % 2 == 0) return Qfalse;
+        long i;
+        for (i = 3; i &lt;= floor(sqrt(number)); i = i + 2) {
+          if (number % i == 0) return Qfalse;
+        }
+        return Qtrue;
+      }
+    '
+  end
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="frankenstein/frankenstein/6">
+<pre class="sh_ruby"><code>require 'benchmark'
+require 'prime'
+require './euler-primes'
+
+Benchmark.bmbm do |bench|
+  bench.report 'simple:' do
+    (2..100_000).each { |i| i.simple_prime? }
+  end
+  bench.report 'clever:' do
+    (2..100_000).each { |i| i.clever_prime? }
+  end
+  bench.report 'stdlib:' do
+    (2..100_000).each { |i| i.prime? }
+  end
+  bench.report 'inline:' do
+    (2..100_000).each { |i| i.inline_clever }
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="frankenstein/frankenstein/7">
+<pre><code><code class="command">$ ruby benchmark-inline.rb</code>
+<code class="result">Rehearsal -------------------------------------------
+simple:   1.180000   0.000000   1.180000 (  1.187370)
+clever:   0.670000   0.000000   0.670000 (  0.668914)
+stdlib:   2.300000   0.000000   2.300000 (  2.306439)
+inline:   0.070000   0.000000   0.070000 (  0.075871)
+---------------------------------- total: 4.220000sec
+
+              user     system      total        real
+simple:   1.170000   0.000000   1.170000 (  1.177349)
+clever:   0.680000   0.000000   0.680000 (  0.673092)
+stdlib:   2.290000   0.010000   2.300000 (  2.303018)
+inline:   0.070000   0.000000   0.070000 (  0.077858)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="frankenstein/frankenstein/8">
+<h1>the right solution?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="frankenstein/frankenstein/9">
+<h1>the right solution?</h1>
+
+<pre class="sh_ruby"><code>require 'prime'
+
+puts Prime.take_while { |p| p &lt; 2_000_000 }.inject :+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="summary/summary">
+<h1>world domination plans</h1>
+
+<ul>
+<li><em>first</em> profile</li>
+<li><em>then</em> optimise algorithms<br/>(cache? parallelise? benchmark!)</li>
+<li>rewrite <em>last</em><br/>(using the right tool)</li>
+<li>search: suprisingly many common problems<br/>are actually already solved&#x2026;</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="whither-else/whither-else">
+<h1>whither else?</h1>
+
+<ul>
+<li>automagic Ruby-to-C translators</li>
+<li>ruby-optimization mailing list</li>
+<li>threads and processes</li>
+<li>DRb and BrB (DRb on EM)</li>
+<li>memprof, CUDA, Thrust, Coal&#x2026;</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="premature/premature/1">
+<h1>but why not write optimized code right from the start?</h1>
+
+<ul>
+<li>well, because it&#x2019;s premature&#xA0;optimisation!</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="premature/premature/2">
+<ul>
+<li><p>We should forget<br/>about small efficiencies,</p></li>
+<li><p>say about 97%<br/>of the time:</p></li>
+<li><p>premature optimization<br/>is the root of all evil.</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="premature/premature/3">
+<p><img src="./file/premature/knuth.jpg" alt="Donald Knuth"/></p>
+
+<p><a href="http://laughingsquid.com/jacob-appelbaum-donald-knuth-demonstrate-the-recursive-homeboys-principle">laughingsquid.com / jacob-appelbaum-donald-knuth-demonstrate-the-recursive-homeboys-principle</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="premature/premature/4">
+<p><img src="./file/premature/homeboy.jpg" alt="homeboy"/></p>
+
+<p><a href="http://laughingsquid.com/jacob-appelbaum-donald-knuth-demonstrate-the-recursive-homeboys-principle">laughingsquid.com / jacob-appelbaum-donald-knuth-demonstrate-the-recursive-homeboys-principle</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="premature/premature/5">
+<p><img src="./file/premature/homeboy-1.jpg" alt="homeboy&#xB9;"/></p>
+
+<p><a href="http://laughingsquid.com/jacob-appelbaum-donald-knuth-demonstrate-the-recursive-homeboys-principle">laughingsquid.com / jacob-appelbaum-donald-knuth-demonstrate-the-recursive-homeboys-principle</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="premature/premature/6">
+<p><img src="./file/premature/homeboy-2.jpg" alt="homeboy&#xB2;"/></p>
+
+<p><a href="http://laughingsquid.com/jacob-appelbaum-donald-knuth-demonstrate-the-recursive-homeboys-principle">laughingsquid.com / jacob-appelbaum-donald-knuth-demonstrate-the-recursive-homeboys-principle</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="credits/credits/1">
+<h1>questions?</h1>
+
+<h3><a href="mailto:chastell@chastell.net">chastell @ chastell.net</a></h3>
+
+<h3>&#xA0;</h3>
+
+<h3><a href="http://github.com/chastell">github.com / chastell</a></h3>
+
+<table class="contact">
+  <tr><th><img src="/image/credits/identica.png"/></th><td><a href="http://identi.ca/chastell">@chastell</a></td></tr>
+  <tr><th><img src="/image/credits/twitter.png"/></th><td><a href="http://twitter.com/chastell">@chastell</a></td></tr>
+</table>
+
+
+<h3><a href="http://talks.chastell.net">talks.chastell.net</a></h3></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="credits/credits/2">
+<h1>links</h1>
+
+<table>
+  <tr><th>IM Fell English &amp; Inconsolata fonts:</th><td><a href="http://code.google.com/webfonts">code.google.com / webfonts</a></td></tr>
+  <tr><th>CiviCRM:</th><td><a href="http://civicrm.org/">civicrm.org</a></td></tr>
+  <tr><th>Computer Language Benchmarks Game:</th><td><a href="http://shootout.alioth.debian.org/">shootout.alioth.debian.org</a></td></tr>
+  <tr><th>Ellen McHugh quote:</th><td><a href="http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/355820">ruby-talk:355820</a></td></tr>
+  <tr><th>ruby-prof:</th><td><a href="http://github.com/rdp/ruby-prof">github.com / rdp / ruby-prof</a></td></tr>
+  <tr><th>perftools.rb:</th><td><a href="http://github.com/tmm1/perftools.rb">github.com / tmm1 / perftools.rb</a></td></tr>
+  <tr><th>Project Euler:</th><td><a href="http://projecteuler.net/">projecteuler.net</a></td></tr>
+  <tr><th>JRuby:</th><td><a href="http://jruby.org/">jruby.org</a></td></tr>
+  <tr><th>MacRuby:</th><td><a href="http://www.macruby.org/">macruby.org</a></td></tr>
+  <tr><th>Rubinius:</th><td><a href="http://rubini.us/">rubini.us</a></td></tr>
+  <tr><th>Ruby VM Shootout:</th><td><a href="http://mitkokostov.info/post/1108719323/ruby-vm-shootout">mitkokostov.info / post / 1108719323 / ruby-vm-shootout</a></td></tr>
+  <tr><th>NArray:</th><td><a href="http://narray.rubyforge.org/">narray.rubyforge.org</a></td></tr>
+  <tr><th>Ruby/GSL:</th><td><a href="http://rb-gsl.rubyforge.org/">rb-gsl.rubyforge.org</a></td></tr>
+  <tr><th>ruby-boost-regex:</th><td><a href="http://github.com/michaeledgar/ruby-boost-regex">github.com / michaeledgar / ruby-boost-regex</a></td></tr>
+  <tr><th>google_hash:</th><td><a href="http://github.com/rdp/google_hash">github.com / rdp / google_hash</a></td></tr>
+  <tr><th>levenshtein:</th><td><a href="http://rubyforge.org/projects/levenshtein/">rubyforge.org / projects / levenshtein</a></td></tr>
+</table>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="credits/credits/3">
+<h1>links (cont.)</h1>
+
+<table>
+  <tr><th>RuDy:</th><td><a href="http://github.com/tomash/rudy">github.com / tomash / rudy</a></td></tr>
+  <tr><th>Hubris:</th><td><a href="http://github.com/mwotton/Hubris">github.com / mwotton / Hubris</a></td></tr>
+  <tr><th>Rserve Ruby client:</th><td><a href="http://github.com/clbustos/Rserve-Ruby-client">github.com / clbustos / Rserve-Ruby-client</a></td></tr>
+  <tr><th>RubyInline:</th><td><a href="http://zenspider.com/ZSS/Products/RubyInline/">zenspider.com / ZSS / Products / RubyInline</a></td></tr>
+  <tr><th>JavaInline:</th><td><a href="http://kenai.com/projects/java-inline">kenai.com / projects / java-inline</a></td></tr>
+  <tr><th>Rob Pike&#x2019;s <i>Public Static Void</i>:</th><td><a href="http://www.youtube.com/watch?v=5kj5ApnhPAE">www.youtube.com / watch?v=5kj5ApnhPAE</a></td></tr>
+  <tr><th>ruby2c:</th><td><a href="http://rubyforge.org/projects/ruby2c/">rubyforge.org / projects / ruby2c</a></td></tr>
+  <tr><th>crystalizer:</th><td><a href="http://github.com/rdp/crystalizer">github.com / rdp / crystalizer</a></td></tr>
+  <tr><th>ruby-optimization ML:</th><td><a href="http://groups.google.com/group/ruby-optimization">groups.google.com / group / ruby-optimization</a></td></tr>
+  <tr><th>DRb:</th><td><a href="http://segment7.net/projects/ruby/drb/">segment7.net/projects / ruby / drb</a></td></tr>
+  <tr><th>BrB:</th><td><a href="http://www.tricksonrails.com/2010/04/introducing-brb-extremely-fast-interface-for-doing-distributed-ruby/">www.tricksonrails.com / 2010 / 04 / introducing-brb-extremely-fast-interface-for-doing-distributed-ruby</a></td></tr>
+  <tr><th>memprof:</th><td><a href="http://github.com/ice799/memprof">github.com / ice799 / memprof</a></td></tr>
+  <tr><th>Ruby and CUDA and Thrust, Oh My!:</th><td><a href="http://coreyhoffstein.com/2009/06/15/ruby-and-cuda-and-thrust-oh-my/">coreyhoffstein.com / 2009 / 06 / 15 / ruby-and-cuda-and-thrust-oh-my</a></td></tr>
+  <tr><th>Coal:</th><td><a href="http://dismaldenizen.github.com/coal/">dismaldenizen.github.com / coal</a></td></tr>
+  <tr><th>Donald Knuth quote:</th><td><a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.103.6084">Structured Programming with go to Statements</a></td></tr>
+  <tr><th>Geekz Shop:</th><td><a href="http://geekz.co.uk/shop">geekz.co.uk / shop</a></td></tr>
+</table>
+</div>
+</div></div>
+
+</body>
+</html>
