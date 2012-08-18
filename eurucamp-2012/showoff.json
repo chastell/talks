@@ -1,0 +1,14 @@
+{
+  "name": "Ruby on the Command-Line",
+  "sections": [
+    { "section": "cover"      },
+    { "section": "me-me-me"   },
+    { "section": "executable" },
+    { "section": "testing"    },
+    { "section": "cli"        },
+    { "section": "ruby"       },
+    { "section": "posix"      },
+    { "section": "console"    },
+    { "section": "links"      }
+  ]
+}
