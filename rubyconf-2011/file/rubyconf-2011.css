@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English+SC);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+  font-family: 'IM Fell English SC', serif;
+  text-shadow: #ccc 1px 1px 5px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-shadow: #aaa 3px 3px 3px;
+}
+
+p > img + a {
+  font-size: 18px;
+}
+
+pre {
+  font-family: Inconsolata, monospace;
+  line-height: 30px;
+}
+
+code {
+  font-size: 25px;
+}
+
+.incremental ul { list-style-type: none;
+  padding-left: 0;
+}
+
+.quote {
+  font-family: Ubuntu, sans-serif;
+  font-size: 34px;
+  line-height: 50px;
+}
+
+#footer {
+  display: none;
+}
+
+#preso {
+  box-shadow: none;
+}

@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Persisting Relations Across Time and Space</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/rubyconf-2011.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="cover/cover">
+<h1>Persisting Relations</h1>
+
+<h1>Across Time and Space</h1></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets center incremental" ref="me-me-me/me-me-me/1">
+<p><img src="./file/me-me-me/chastell.png" alt="chastell"/></p>
+
+<h1>me, me, me.</h1>
+
+<ul>
+<li>(that&#x2019;s Piotr Szotkowski)</li>
+<li>(or <a href="http://chastell.net">chastell</a>)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="me-me-me/me-me-me/2">
+<p><img src="./file/me-me-me/mu.png" alt="MU"/>
+&#xA0;</p>
+
+<h2>alumnus</h2>
+
+<h2>of <a href="http://university.rubymendicant.com">Mendicant University</a></h2></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="me-me-me/me-me-me/3">
+<p><img src="./file/me-me-me/git-rebase.png" alt="git rebase"/>
+<a href="http://book.git-scm.com/4_rebasing.html">Git Community Book</a></p>
+
+<h2>Ruby developer</h2>
+
+<h2>at <a href="http://rebased.pl">Rebased</a></h2></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="me-me-me/me-me-me/4">
+<p><img src="./file/me-me-me/wut.png" alt="Warsaw University of Technology"/>
+&#xA0;</p>
+
+<h2>assistant professor</h2>
+
+<h2>at <a href="http://eng.pw.edu.pl">Warsaw University of Technology</a></h2></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental" ref="overview/overview/1">
+<h1>this talk</h1>
+
+<ul>
+<li>persisiting? relations&#x2026;?</li>
+<li>time?? space???</li>
+<li>W the actual F?</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="overview/overview/2">
+<h1>this talk</h1>
+
+<ul>
+<li><strong>persistence</strong> is what we need for our objects</li>
+<li><strong>relations</strong> are tricky things to model</li>
+<li>different <strong>spaces</strong> have different features</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="scrollRight"><div class="content bullets incremental" ref="overview/overview/3">
+<ul>
+<li>what do we want?</li>
+<li>TIME TRAVEL!</li>
+<li>when do we want it?</li>
+<li>THAT&#x2019;S IRRELEVANT!</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental" ref="persistence/persistence/1">
+<h1>where do we persist?</h1>
+
+<ul>
+<li>in databases, silly!</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental" ref="persistence/persistence/2">
+<h1>\o/ &#xA0; yay for databases! &#xA0; \o/</h1>
+
+<ul>
+<li><div class="quote">A database is a black hole into which you put your data. If you&#x2019;re lucky, you&#x2019;ll get it back again. If you&#x2019;re very lucky, you&#x2019;ll get it back in a form you can use.<br/>&#x2014; Charlie Gibbs</div></li>
+<li><div class="quote">I should like to find the person who decided that since &#x2018;bookmarks&#x2019; and &#x2018;history&#x2019; were both lists of URLs they ought to be integrated in a single database. I should like to shake him warmly by the throat until his head comes off.<br/>&#x2014; Roger Burton West on Firefox, <a href="http://hates-software.com">hates-software</a></div></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="persistence/persistence/3">
+<h1>where do we persist?</h1>
+
+<ul>
+<li>MySQL!</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental" ref="persistence/persistence/4">
+<h1>\o/ &#xA0; yay for MySQL! &#xA0; \o/</h1>
+
+<ul>
+<li><div class="quote">MySQL is truly the PHP of the database world.<br/>&#x2014; Will Jessop</div></li>
+<li><div class="quote">&#x2018;It looks like you&#x2019;re creating a database. Most likely<br/>you&#x2019;d like it in Latin1 encoding with Swedish collation.&#x2019;<br/>No, MySQL, no, I wouldn&#x2019;t.<br/>&#x2014; James Higgs</div></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="scrollRight"><div class="content center incremental" ref="persistence/persistence/5">
+<p><img src="./file/persistence/zebras.jpg" alt="zebras"/>
+<a href="http://eddirt.frozenreality.co.uk/?id=550">Edible Dirt</a></p></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental" ref="persistence/persistence/6">
+<h1>persisting objects<br/>in relational databases</h1>
+
+<ul>
+<li>MySQL, PostgreSQL, SQLite | <a href="https://github.com/copiousfreetime/amalgalite">embedded</a>?</li>
+<li>serialise properties to database types</li>
+<li>PostgreSQL: geometric, arrays, your own</li>
+<li>table, row, column</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental" ref="persistence/persistence/7">
+<h1>um, yay for NoSQL, then?</h1>
+
+<ul>
+<li><div class="quote">Database research has produced a number of good results, but the relational database is not one of them.<br/>&#x2014; Henry G. Baker</div></li>
+<li><div class="quote">Dear everyone reinventing SQL-the-query-language on top of NoSQL databases: just what in the fuck is wrong with you?<br/>&#x2014; Ian Eure</div></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="persistence/persistence/8">
+<h1>persisting objects<br/>in document databases</h1>
+
+<ul>
+<li>CouchDB, MongoDB | <a href="https://github.com/gdb/embedded-mongo">embedded</a>?</li>
+<li>serialise properties to database types</li>
+<li>arrays, hashes, nested documents</li>
+<li>collection, document, field</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="persistence/persistence/9">
+<h1>persisting objects<br/>elsewhere</h1>
+
+<ul>
+<li>in memory: Redis | <a href="https://github.com/benlund/roc">ROC</a>!</li>
+<li>graph databases: Neo4j</li>
+<li>directory services: LDAP</li>
+<li>how about <a href="https://github.com/Nico-Taing/yaml_record">YAML Record</a> or PStore?</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content" ref="persistence/persistence/10">
+<h2>PStore: stdlib&#x2019;s persistence</h2>
+
+<pre class="sh_ruby"><code># it&#x2019;s in the standard library
+# and has Marshal and YAML backends
+
+require 'yaml/store'
+store = YAML::Store.new 'quotes.yml'
+&#xA0;
+&#xA0;
+&#xA0;
+&#xA0;
+&#xA0;
+&#xA0;
+&#xA0;
+&#xA0;
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="persistence/persistence/11">
+<h2>PStore: it&#x2019;s transactional!</h2>
+
+<pre class="sh_ruby"><code># quotes are author + text structures
+Quote = Struct.new(:author, :text)
+
+store.transaction do   # a read/write transaction&#x2026;
+
+  store['db'] ||= []
+
+  store['db'] &lt;&lt; Quote.new('Charlie Gibbs',
+    'A database is a black hole into which you put your data.')
+
+  store['db'] &lt;&lt; Quote.new('Will Jessop',
+    'MySQL is truly the PHP of the database world.')
+
+end                    # &#x2026;is atomically committed here</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="persistence/persistence/12">
+<h2>PStore: it&#x2019;s transactional!</h2>
+
+<pre class="sh_ruby"><code># read-only transactions can be concurrent
+# and raise when you try to write anything
+
+store.transaction(true) do
+
+  store['db'].each do |quote|
+
+    puts quote.text
+    puts '-- ' + quote.author
+    puts
+
+  end
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="persistence/persistence/13">
+<h2>YAML::PStore: it&#x2019;s readable!</h2>
+
+<pre><code><code class="command">$ ruby quotes.rb</code>
+<code class="result">A database is a black hole into which you put your data.
+-- Charlie Gibbs
+
+MySQL is truly the PHP of the database world.
+-- Will Jessop
+
+
+</code><code class="command">$ cat quotes.yml</code>
+<code class="result">---
+db:
+- !ruby/struct:Quote
+  author: Charlie Gibbs
+  text: A database is a black hole into which you put your data.
+- !ruby/struct:Quote
+  author: Will Jessop
+  text: MySQL is truly the PHP of the database world.
+</code></code></pre></div>
+</div><div class="slide" data-transition="scrollRight"><div class="content center" ref="persistence/persistence/14">
+<p><img src="./file/persistence/hipsters.jpg" alt="DEATH TO HIPSTERS"/>
+<a href="http://bloginhell.tumblr.com/post/10099892090/made-in-hell-photo-of-the-day-death-to-hipsters">Made in Hell: Photo of the Day: Death to hipsters</a></p></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content" ref="relations/relations/1">
+<h1>sweet relations,<br/>how do they work?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="relations/relations/2">
+<h1>a relations example</h1>
+
+<p><img src="./file/relations/relations.actors.png" alt="relations: actors"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="relations/relations/3">
+<h1>a relations example</h1>
+
+<p><img src="./file/relations/relations.actions.png" alt="relations: actions"/></p></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental" ref="relations/relations/4">
+<h1>relations<br/>in relational (ha!) databases</h1>
+
+<ul>
+<li>database &#x2018;relations&#x2019;<br/>are between table <strong>rows</strong></li>
+<li>one-to-many: foreign keys</li>
+<li>many-to-many: join tables</li>
+<li>dereferencing: join queries</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="relations/relations/5">
+<h1>relations<br/>in document databases</h1>
+
+<ul>
+<li>embedded documents</li>
+<li>document identifier references</li>
+<li>MongoDB &#x2013; implicit DBRef:<br/><code>{ $ref: &lt;collection&gt;, $id: &lt;object_id&gt; }</code></li>
+<li>dereferencing costs | <a href="https://github.com/gregspurrier/mongo_hydrator">MongoHydrator</a>?</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="relations/relations/6">
+<h1>relations<br/>elsewhere</h1>
+
+<ul>
+<li>key-value stores: explicit</li>
+<li>graph databases: the whole point of</li>
+<li>freely-labeled edges and vertices</li>
+<li>graph traversal!<br/>proximity metrics!</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="relations/relations/7">
+<p><img src="./file/relations/graph-database.png" alt="graph database"/>
+<a href="http://en.wikipedia.org/wiki/Graph_database">Wikipedia: Graph database</a></p></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental" ref="relations/relations/8">
+<h1>if relations<br/>were objects</h1>
+
+<ul>
+<li>a &#x2018;relations&#x2019; table or collection</li>
+<li>very flexible in schema-less databases</li>
+<li>two-step dereferencing:<br/>object &#x2014; its relations &#x2014; their objects</li>
+<li>tonnes of easily-aggregable data</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="relations/relations/9">
+<h1>relations as objects</h1>
+
+<p><img src="./file/relations/relations.objects.png" alt="relations: object"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content incremental" ref="relations/relations/10">
+<h1>\o/ &#xA0; yay for names! &#xA0; \o/</h1>
+
+<ul>
+<li><div class="quote">There are only two industries that<br/>refer to their customers as &#x2018;users&#x2019;.<br/>&#x2014; Edward Tufte</div></li>
+<li><div class="quote">Calling the table &#x2018;people&#x2019;, not &#x2018;users&#x2019;.<br/>A small blow in support of humanity.<br/>&#x2014; Paul Battley</div></li>
+<li>read <em><a href="http://www.w3.org/International/questions/qa-personal-names">Personal names around the world</a></em></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="relations/relations/11">
+<h1>relations as objects</h1>
+
+<p><img src="./file/relations/relations.objects.png" alt="relations: object"/></p></div>
+</div><div class="slide" data-transition="scrollRight"><div class="content center" ref="relations/relations/12">
+<p><img src="./file/relations/colours.jpg" alt="roses are gray, violets are gray"/>
+<a href="http://www.kontraband.com/pics/27528/If-Corgis-Could-Write-Love-Poems">Kontraband: If Corgis Could Write Love Poems&#x2026;</a></p></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content" ref="object/object/1">
+<h1>it&#x2019;s RubyConf 2011</h1>
+
+<h2>so let&#x2019;s talk about Smalltalk</h2></div>
+</div><div class="slide" data-transition="none"><div class="content incremental" ref="object/object/2">
+<h2>Smalltalk: lovely <em>and</em> quotable</h2>
+
+<ul>
+<li><div class="quote">OOP to me means only messaging, local retention and protection and hiding of state-process, and extreme late-binding of all things. It can be done in Smalltalk and in Lisp. There are possibly other systems in which this is possible, but I&#x2019;m not aware of them. &#xA0; &#x2014; Alan Kay</div></li>
+<li><div class="quote">I always thought Smalltalk would beat Java, I just didn&#x2019;t know it would be called &#x2018;Ruby&#x2019; when it did. &#xA0; &#x2014; Kent Beck</div></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content incremental" ref="object/object/3">
+<h2>Smalltalk: lovely <em>and</em> quotable</h2>
+
+<ul>
+<li><div class="quote">&#x2018;Ruby is like Smalltalk and Perl had a child.&#x2019;<br/>&#x2018;I like to say that Ruby is the love child of Smalltalk and Lisp, raised by Perl the eccentric nanny.&#x2019;<br/>&#x2014; Steve Klabnik and Josh Susser</div></li>
+<li><div class="quote">Smalltalk programmers do not type, they lean their heads towards their monitors, and meditate. The more advanced programmers do not even need monitors. &#xA0; &#x2014; Phlip</div></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="scrollRight"><div class="content center" ref="object/object/4">
+<p><img src="./file/object/cloud.jpg" alt="I code straight into the cloud."/>
+<a href="http://highgroove.com/articles/2011/07/26/value-of-reading-code.html">Highgroove Studios: The Value of Reading Code</a></p></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental" ref="object/object/5">
+<h1>GemStone</h1>
+
+<ul>
+<li>an object database for Smalltalk</li>
+<li>the company behind MagLev</li>
+<li>a Ruby implementation<br/>with integrated object persistence</li>
+<li><div class="quote">Now that people are considering NoSQL<br/>will more people consider no-database?<br/>&#x2014; Martin Fowler</div></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="object/object/6">
+<h1>Ruby object databases</h1>
+
+<ul>
+<li><a href="http://maglev.gemstone.com">MagLev</a><br/>alpha since 2009</li>
+<li><a href="http://madeleine.rubyforge.org">Madeleine</a>, <a href="http://zeropluszero.com/software/odb">ODB</a>, <a href="https://github.com/pauliephonic/hybriddb">HybridDB</a><br/>&#x2620; 2006, &#x2620; 2006, &#x2620; 2009</li>
+<li><a href="https://github.com/adelcambre/cubbyhole">Cubbyhole</a><br/>marshalling on SDBM</li>
+<li><a href="https://github.com/apohllo/rod">ROD</a><br/>not there <em>yet</em>, but interesting</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="scrollRight"><div class="content center" ref="object/object/7">
+<p><img src="./file/object/ringo.jpg" alt="great song, Ringo"/>
+<a href="http://memegenerator.net/instance/8402725">Meme Generator</a></p></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental" ref="libraries/libraries/1">
+<h1>but how do we<br/><em>actually</em> persist?</h1>
+
+<ul>
+<li>Active Record, DataMapper</li>
+<li>Mongoid, MongoMapper</li>
+<li>ARel</li>
+<li>how about some <a href="https://github.com/SFEley/candy">Candy</a> and <a href="http://defunkt.io/ambition">Ambition</a>?</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="libraries/libraries/2">
+<h2>Candy: transparent persistence in MongoDB</h2>
+
+<pre class="sh_ruby"><code>require 'candy'
+
+class Conference
+  include Candy::Piece
+end
+
+rubyconf = Conference.new
+# connects to localhost:27017 and &#x2018;chastell&#x2019; db if needed
+# and saves a new document to the &#x2018;Conference&#x2019; collection
+
+rubyconf.location = 'New Orleans'   # method_missing resaves
+
+rubyconf.events = { parties: { thursday: '&amp;block Party' } }
+rubyconf.events.parties.thursday    #=&gt; '&amp;block Party'
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="libraries/libraries/3">
+<h2>Ambition: persistence queries in Ruby</h2>
+
+<pre class="sh_ruby"><code>require 'ambition/adapters/active_record'
+
+class Person &lt; ActiveRecord::Base
+end
+
+Person.select do |p|
+  (p.country == 'USA' &amp;&amp; p.age &gt;= 21) ||
+  (p.country != 'USA' &amp;&amp; p.age &gt;= 18)
+end
+
+# SELECT * FROM people
+# WHERE (
+#   (people.country =  'USA' AND people.age &gt;= 21) OR
+#   (people.country &lt;&gt; 'USA' AND people.age &gt;= 18)
+# )</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="libraries/libraries/4">
+<h2>Ambition: persistence queries in Ruby</h2>
+
+<pre class="sh_ruby"><code>require 'ambition/adapters/active_ldap'
+
+class Person &lt; ActiveLdap::Base
+end
+
+Person.select do |p|
+  (p.country == 'USA' &amp;&amp; p.age &gt;= 21) ||
+  (p.country != 'USA' &amp;&amp; p.age &gt;= 18)
+end
+
+# (|
+#   (&amp; (country=USA)    (age&gt;=21) )
+#   (&amp; (!(country=USA)) (age&gt;=18) )
+# )
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="scrollRight"><div class="content center" ref="libraries/libraries/5">
+<p><img src="./file/libraries/abracadabra.gif" alt="abracadabra"/>
+<a href="http://www.channelate.com/2010/07/15/balloon-magic">channelATE: Balloon magic</a></p></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content incremental" ref="libraries/libraries/6">
+<h1>consider disassociating<br/>your models from your db</h1>
+
+<ul>
+<li><div class="quote">We need something better. Persistance and logic are two separate responsibilities that every Rails app combines.<br/>&#x2014; Steve Klabnik</div></li>
+<li><div class="quote">When I open up a Rails project and the models dir is full of 100% ActiveRecord classes I shudder. Model &#x2260; Persistence.<br/>&#x2014; Ben Mabey</div></li>
+<li><a href="http://rubyrogues.com/object-oriented-programming-in-rails-with-jim-weirich">Object Oriented Programming in Rails</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental" ref="summary/summary/1">
+<h1>world domination plans</h1>
+
+<ul>
+<li>there are various ways to persist objects<br/>(give PStore a try in your next pet project)</li>
+<li>thoughtful modeling of relations<br/>(if practiced carelessly)<br/>can lead to persistence (in)dependence</li>
+<li>learn about your persistence features<br/>and think outside the ORM box</li>
+<li>read <em><a href="http://www.w3.org/International/questions/qa-personal-names">Personal names around the world</a></em></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content center" ref="summary/summary/2">
+<p><img src="./file/summary/passports.jpg" alt="I fucking LOVE passports"/>
+<a href="http://sfwchan.com/?id=4823">swfChan</a></p></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets" ref="summary/summary/3">
+<h1>questions?</h1>
+
+<ul>
+<li><a href="mailto:chastell@chastell.net">chastell@chastell.net</a></li>
+<li><a href="http://chastell.net">@chastell | chastell.net</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="summary/summary/4">
+<h1>further reading</h1>
+
+<ul>
+<li><span style="font-family: Ubuntu, sans-serif"><a href="http://talks.chastell.net">talks.chastell.net</a></span></li>
+<li><a href="http://solnic.eu/2011/08/01/making-activerecord-models-thin.html">Making ActiveRecord Models Thin</a></li>
+<li><a href="http://rubyrogues.com/object-oriented-programming-in-rails-with-jim-weirich">Object Oriented Programming in Rails</a></li>
+<li>&#x2026;and other <a href="http://rubyrogues.com">Ruby Rogues podcasts</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content center" ref="summary/summary/5">
+<p><img src="./file/summary/mu.png" alt="Mendicant University"/></p>
+
+<h2>Magnificent Mendicant Mentoring Month</h2></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content center" ref="summary/summary/6">
+<p><img src="./file/summary/party-hard.jpg" alt="PARTY HARD"/>
+<a href="http://9gag.com/gag/139996">9GAG: Party Hard</a></p></div>
+</div></div>
+
+</body>
+</html>
