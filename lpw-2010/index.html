@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Presentation</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/lpw-2010.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="cover/cover/1">
+<h1>NGOCRM</h1>
+
+<h2><br/><br/><br/><br/><br/><br/><br/></h2>
+
+<p><a href="http://www.techsoup-romania.org/lpw"><img src="./file/cover/lpw.png" alt="LPW"/></a></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="cover/cover/2">
+<h1>NGO CRM</h1>
+
+<ul>
+<li><p>where<br/><br/>CRM = C&#x2026; Relationship Management</p></li>
+<li><p>and<br/><br/>NGO = &#x2026;</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/1">
+<p><a href="http://civicrm.org/"><img src="./file/intro/civicrm.png" alt="CiviCRM"/></a></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="intro/intro/2">
+<h1>two links<br/>to begin with</h1>
+
+<ul>
+<li><p><a href="http://wiki.civicrm.org/confluence/display/CRM/Competitive+Analysis+Matrix">Competitive Analysis Matrix</a></p></li>
+<li><p><a href="http://civicrm.org/blogs/lobo/civicrm-gets-solid-2009-data-ecosystem-survey-report">NTEN Data Ecosystem Survey Report</a></p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="crm/crm/1">
+<p><img src="./file/crm/123.jpg" alt="123"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="crm/crm/2">
+<p><img src="./file/crm/passport.jpg" alt="passport"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="crm/crm/3">
+<h1>CRM</h1>
+
+<ul>
+<li><p>Contact Relationship Management</p></li>
+<li><p>Constituent Relationship Management</p></li>
+<li><p>&#x2026; Relationship Management</p></li>
+<li><p>contact database?</p></li>
+<li><p><small>(spreadsheet?)</small></p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="crm/crm/4">
+<h2>Entity Relationship Management</h2>
+
+<ul>
+<li><p>contacts</p></li>
+<li><p>relationships</p></li>
+<li><p>organisations</p></li>
+<li><p>contributions</p></li>
+<li><p>events</p></li>
+<li><p>memberships</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="crm/crm/5">
+<h1>(demo)</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="crm/crm/6">
+<h1>tracking&#x2026;</h1>
+
+<ul>
+<li><p>donors</p></li>
+<li><p>volunteers</p></li>
+<li><p>event participants</p></li>
+<li><p>personal relations</p></li>
+<li><p>cross-org relations</p></li>
+<li><p>&#x2026;?</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="crm/crm/7">
+<h1>customisations</h1>
+
+<ul>
+<li><p>custom data</p></li>
+<li><p>custom templates</p></li>
+<li><p>custom hooks</p></li>
+<li><p>custom components</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="crm/crm/8">
+<p><img src="./file/crm/books.jpg" alt="books"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="crm/crm/9">
+<p><img src="./file/crm/lsd-and-you.jpg" alt="lsd-and-you"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="crm/crm/10">
+<h1>ownership!</h1>
+
+<ul>
+<li><p>how tied are you to your vendor?</p></li>
+<li><p>do you have an emergency strategy?</p></li>
+<li><p>do you have an exit vector?</p></li>
+<li><p>do you own the data?</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="recap/recap/1">
+<h1>recap</h1>
+
+<ul>
+<li><p>entity relationship management</p></li>
+<li><p>tracking crucial information</p></li>
+<li><p>customisations</p></li>
+<li><p>ownership!</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="recap/recap/2">
+<p><img src="./file/recap/penguins.jpg" alt="penguins"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="recap/recap/3">
+<p><img src="./file/recap/abracadabra.jpg" alt="abracadabra"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="recap/recap/4">
+<p><a href="http://civicrm.org/"><img src="./file/recap/civicrm.png" alt="CiviCRM"/></a></p>
+
+<h1><a href="http://civicrm.org/">civicrm.org</a></h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="recap/recap/5">
+<h1>closing things</h1>
+
+<ul>
+<li><p><a href="http://drupal.demo.civicrm.org/">demo site</a></p></li>
+<li><p><a href="http://www.transifex.net/projects/p/civicrm/c/civicrm-32/">translation</a></p></li>
+<li><p>user groups and trainings<br/>(see <a href="http://civicrm.org/blog">civicrm.org/blog</a>)</p></li>
+<li><p><a href="http://talks.chastell.net/lpw-2010">talks.chastell.net / lpw-2010</a></p></li>
+</ul>
+</div>
+</div></div>
+
+</body>
+</html>
