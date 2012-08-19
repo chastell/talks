@@ -1,0 +1,44 @@
+graph qu_edge_labeling_before {
+
+  "B1" -- "B2"  [label = " 1"]
+  "B1" -- "B3"  [label = " 1"]
+  "B1" -- "B4"  [label = " 2"]
+  "B1" -- "B5"  [label = " 7"]
+  "B1" -- "B6"  [label = " 2"]
+  "B1" -- "B7"  [label = " 2"]
+  "B1" -- "B8"  [label = " 1"]
+  "B1" -- "B9"  [label = " 1"]
+  "B1" -- "B10" [label = " 1"]
+
+  "B2" -- "B3"  [label = " 1"]
+  "B2" -- "B4"  [label = " 4"]
+  "B2" -- "B5"  [label = " 9"]
+  "B2" -- "B6"  [label = " 3"]
+  "B2" -- "B7"  [label = " 2"]
+  "B2" -- "B8"  [label = " 1"]
+  "B2" -- "B9"  [label = " 1"]
+  "B2" -- "B10" [label = " 2"]
+
+  "B3" -- "B4" [label = " 1"]
+  "B3" -- "B5" [label = " 4"]
+  "B3" -- "B7" [label = " 2"]
+
+  "B4" -- "B5"  [label = " 10"]
+  "B4" -- "B6"  [label =  " 3"]
+  "B4" -- "B7"  [label =  " 3"]
+  "B4" -- "B8"  [label =  " 1"]
+  "B4" -- "B10" [label =  " 1"]
+
+  "B5" -- "B6"  [label = " 3"]
+  "B5" -- "B7"  [label = " 3"]
+  "B5" -- "B8"  [label = " 2"]
+  "B5" -- "B9"  [label = " 1"]
+  "B5" -- "B10" [label = " 2"]
+
+  "B6" -- "B8"  [label = " 1"]
+  "B6" -- "B9"  [label = " 1"]
+  "B6" -- "B10" [label = " 1"]
+
+  "B8" -- "B9" [label = " 1"]
+
+}

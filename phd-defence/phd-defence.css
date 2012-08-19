@@ -1,0 +1,180 @@
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English);
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English+SC);
+
+body {
+  background-color: black;
+  font-family: 'IM Fell English', 'Georgia', serif;
+  line-height: 1.3;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'IM Fell English SC', 'Georgia', serif;
+  font-size: 2.5em;
+  margin-bottom: 1.6em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+sub, sup {
+  font-size: 0.6em;
+}
+
+sup {
+  vertical-align: super;
+}
+
+.content {
+  margin-top: 0 !important;
+}
+
+.fsm {
+  font-size: 1.0em;
+}
+
+.lay .fsm td, .lay .fsm th {
+  border-right: solid;
+  padding: 0.5em 1em;
+}
+
+.fsm sub {
+  font-size: 0.8em;
+}
+
+.fsm td:empty, .fsm th:empty {
+  padding: 0;
+}
+
+.fsm td:last-child, .fsm th:last-child {
+  border-right: none;
+}
+
+.fsm thead {
+  border-bottom: solid;
+}
+
+.fsm.state {
+  font-size: 1.2em;
+}
+
+.fsm.state td {
+  padding: 0 0.7em;
+}
+
+.fsm.state td:empty {
+  padding: 0;
+}
+
+.fsm.state.encoded td:nth-child(2), .fsm.state.encoded td:nth-child(5), .fsm.state.encoded th:nth-child(2), .fsm.state.encoded th:nth-child(5) {
+  border-right: dashed;
+}
+
+.fsm.state.encoded2 td:nth-child(3), .fsm.state.encoded2 td:nth-child(6), .fsm.state.encoded2 th:nth-child(3), .fsm.state.encoded2 th:nth-child(6) {
+  border-right: dashed;
+}
+
+.lay {
+  margin: auto;
+  width: 85%;
+}
+
+.lay li {
+  margin: 1em 0;
+}
+
+.lay td {
+  padding: 0 0.5em;
+  vertical-align: middle;
+}
+
+.lay ul {
+  font-size: 1.8em;
+}
+
+.lay .left, .lay .right {
+  width: 50%;
+}
+
+.lay .left {
+  float: left;
+}
+
+.lay .right {
+  float: right;
+}
+
+.res {
+  font-size: 1.1em;
+  margin: auto;
+  width: 85%;
+}
+
+.res td, .res th {
+  width: 16%;
+}
+
+.res td:first-child, .res th:first-child {
+  border-right: solid;
+}
+
+.res td:nth-child(2), .res th:nth-child(2) {
+  border-right: dashed black;
+}
+
+.res tfoot {
+  border-top: solid;
+  font-size: 1.5em;
+}
+
+.res tfoot th:nth-child(2) {
+  background: url(/image/results/round.png) no-repeat center;
+}
+
+.res thead {
+  border-bottom: solid;
+  font-size: 1.3em;
+}
+
+.res.wide {
+  margin-top: 4em;
+}
+
+.res.wide thead {
+  font-size: 1.2em;
+}
+
+.res.wide td, .res.wide th {
+  width: auto;
+}
+
+.slide {
+  background: url(/image/plans.jpg);
+}
+
+.uv {
+  font-size: 1.5em;
+  margin: 6em auto 3em;
+  width: 85%;
+}
+
+.uv td, .uv th {
+  border-right: solid;
+}
+
+.uv td:last-child, .uv th:last-child {
+  border-right: none;
+}
+
+.uv thead {
+  border-bottom: solid;
+}
+
+#footer {
+  display: none;
+}

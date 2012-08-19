@@ -1,0 +1,12 @@
+graph qu_edge_labeling_after {
+
+  "B1, B2" -- "B3, B4, B8, B9, B10" [label = "15"]
+
+  "B5" -- "B6, B7"              [label =  "6"]
+  "B5" -- "B1, B2"              [label = "16"]
+  "B5" -- "B3, B4, B8, B9, B10" [label = "19"]
+
+  "B6, B7" -- "B1, B2"              [label =  "9"]
+  "B6, B7" -- "B3, B4, B8, B9, B10" [label = "11"]
+
+}

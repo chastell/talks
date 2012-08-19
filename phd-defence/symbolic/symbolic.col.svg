@@ -1,0 +1,2257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="39cm"
+   height="23cm"
+   viewBox="-1 178 773 444"
+   id="svg5293"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="symbolic.svg">
+  <metadata
+     id="metadata5573">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5571">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 407.48032 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1381.8898 : 407.48032 : 1"
+       inkscape:persp3d-origin="690.94489 : 271.65354 : 1"
+       id="perspective5575" />
+    <filter
+       id="filter5577"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5579"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5581"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5583"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5585"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5587"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5589"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5591"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5593"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5595"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5597"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5599"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5601"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5603"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5605"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5607"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5609"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5611"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5613"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5615"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5617"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5619"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5621"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5623"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5625"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5627"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5629"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5631"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5633"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5635"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5637"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5639"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5641"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5643"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5645"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5647"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5649"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5651"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5653"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5655"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5657"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5659"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5661"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5663"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5665"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5667"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5669"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5671"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5673"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5675"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5677"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5679"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5681"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5683"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5685"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5687"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5689"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5691"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5693"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5695"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5697"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5699"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5701"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5703"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5705"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5707"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5709"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5711"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5713"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5715"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5717"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5719"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5721"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5723"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5725"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5727"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5729"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5731"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5733"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5735"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5737"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5739"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5741"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5743"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5745"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5747"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5749"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5751"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5753"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5755"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5757"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5759"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5761"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5763"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5765"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5767"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5769"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5771"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5773"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5775"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5777"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5779"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5781"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5783"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5785"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5787"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5789"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5791"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5793"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5795"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5797"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5799"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5801"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5803"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5805"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5807"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5809"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5811"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5813"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5815"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5817"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5819"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5821"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5823"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5825"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5827"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5829"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5831"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5833"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5835"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5837"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5839"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5841"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5843"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5845"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5847"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5849"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5851"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5853"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5855"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5857"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5859"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5861"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5863"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5865"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5867"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5869"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5871"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5873"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5875"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5877"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5879"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5881"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5883"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5885"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5887"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5889"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5891"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5893"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5895"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5897"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5899"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5901"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5903"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5905"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5907"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5909"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5911"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5913"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5915"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5917"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5919"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5921"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5923"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5925"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5927"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5929"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5931"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5933"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5935"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5937"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5939"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5941"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5943"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5945"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5947"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5949"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5951"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5953"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5955"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5957"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5959"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5961"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5963"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5965"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5967"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5969"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5971"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5973"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5975"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5977"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5979"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix5981"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite5983"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology5985"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence5987"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur5989"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap5991"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite5993"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend5995"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter5997"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence5999"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix6001"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite6003"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology6005"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence6007"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur6009"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap6011"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite6013"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend6015"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter6017"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence6019"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix6021"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite6023"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology6025"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence6027"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur6029"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap6031"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite6033"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend6035"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+    <filter
+       id="filter6037"
+       height="1.3"
+       width="1.3"
+       y="-0.15"
+       x="-0.15"
+       inkscape:menu-tooltip="Silk carpet texture, horizontal stripes"
+       inkscape:menu="Textures"
+       inkscape:label="Silk carpet"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence6039"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.01 0.11"
+         seed="10" />
+      <feColorMatrix
+         id="feColorMatrix6041"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.3 0 " />
+      <feComposite
+         id="feComposite6043"
+         in2="result5"
+         in="SourceGraphic"
+         operator="out" />
+      <feMorphology
+         id="feMorphology6045"
+         operator="dilate"
+         radius="1.3"
+         result="result3" />
+      <feTurbulence
+         id="feTurbulence6047"
+         numOctaves="3"
+         baseFrequency="0.08 0.05"
+         type="fractalNoise"
+         seed="7"
+         result="result6" />
+      <feGaussianBlur
+         id="feGaussianBlur6049"
+         stdDeviation="0.5"
+         result="result7" />
+      <feDisplacementMap
+         id="feDisplacementMap6051"
+         in2="result7"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="3"
+         result="result4" />
+      <feComposite
+         id="feComposite6053"
+         in2="result4"
+         in="result4"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         k2="1" />
+      <feBlend
+         id="feBlend6055"
+         in2="result4"
+         mode="normal"
+         in="result2" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="850"
+     id="namedview5569"
+     showgrid="false"
+     inkscape:zoom="0.74850241"
+     inkscape:cx="690.94489"
+     inkscape:cy="407.48032"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5293" />
+  <g
+     id="g5295"
+     style="fill:none;filter:url(#filter5577)">
+    <rect
+       style="fill:none"
+       x="640"
+       y="280"
+       width="120"
+       height="80"
+       id="rect5297" />
+    <rect
+       style="fill:none;fill-opacity:0;stroke-width:2;stroke:#000000"
+       x="640"
+       y="280"
+       width="120"
+       height="80"
+       id="rect5299" />
+  </g>
+  <g
+     id="g5301"
+     style="fill:none;filter:url(#filter5597)">
+    <rect
+       style="fill:none"
+       x="460"
+       y="440"
+       width="300"
+       height="80"
+       id="rect5303" />
+    <rect
+       style="fill:none;fill-opacity:0;stroke-width:2;stroke:#000000"
+       x="460"
+       y="440"
+       width="300"
+       height="80"
+       id="rect5305" />
+  </g>
+  <g
+     id="g5307"
+     style="filter:url(#filter5617);fill:#008000;stroke:#008000">
+    <line
+       style="fill:#008000;fill-opacity:0;stroke-width:2;stroke:#008000"
+       x1="660"
+       y1="240"
+       x2="660"
+       y2="270.264"
+       id="line5309" />
+    <polygon
+       style="fill:#008000;stroke:#008000"
+       points="660,277.764 655,267.764 660,270.264 665,267.764 "
+       id="polygon5311" />
+    <polygon
+       style="fill:#008000;fill-opacity:0;stroke-width:2;stroke:#008000"
+       points="660,277.764 655,267.764 660,270.264 665,267.764 "
+       id="polygon5313" />
+  </g>
+  <g
+     id="g5315"
+     style="filter:url(#filter5637);fill:#008000;stroke:#008000">
+    <line
+       style="fill:#008000;fill-opacity:0;stroke-width:2;stroke:#008000"
+       x1="700"
+       y1="240"
+       x2="700"
+       y2="270.264"
+       id="line5317" />
+    <polygon
+       style="fill:#008000;stroke:#008000"
+       points="700,277.764 695,267.764 700,270.264 705,267.764 "
+       id="polygon5319" />
+    <polygon
+       style="fill:#008000;fill-opacity:0;stroke-width:2;stroke:#008000"
+       points="700,277.764 695,267.764 700,270.264 705,267.764 "
+       id="polygon5321" />
+  </g>
+  <g
+     id="g5323"
+     style="filter:url(#filter5657);fill:#0000ff;stroke:#0000ff">
+    <line
+       style="fill:#0000ff;fill-opacity:0;stroke-width:4;stroke:#0000ff"
+       x1="740"
+       y1="240"
+       x2="740"
+       y2="268.028"
+       id="line5325" />
+    <polygon
+       style="fill:#0000ff;stroke:#0000ff"
+       points="740,275.528 735,265.528 740,268.028 745,265.528 "
+       id="polygon5327" />
+    <polygon
+       style="fill:#0000ff;fill-opacity:0;stroke-width:4;stroke:#0000ff"
+       points="740,275.528 735,265.528 740,268.028 745,265.528 "
+       id="polygon5329" />
+  </g>
+  <g
+     id="g5331"
+     style="filter:url(#filter5677);fill:#008080;stroke:#008080">
+    <line
+       style="fill:#008080;fill-opacity:0;stroke-width:4;stroke:#008080"
+       x1="600"
+       y1="240"
+       x2="600"
+       y2="428.028"
+       id="line5333" />
+    <polygon
+       style="fill:#008080;stroke:#008080"
+       points="600,435.528 595,425.528 600,428.028 605,425.528 "
+       id="polygon5335" />
+    <polygon
+       style="fill:#008080;fill-opacity:0;stroke-width:4;stroke:#008080"
+       points="600,435.528 595,425.528 600,428.028 605,425.528 "
+       id="polygon5337" />
+  </g>
+  <g
+     id="g5339"
+     style="filter:url(#filter5697);fill:#008000;stroke:#008000">
+    <line
+       style="fill:#008000;fill-opacity:0;stroke-width:2;stroke:#008000"
+       x1="540"
+       y1="240"
+       x2="540"
+       y2="430.264"
+       id="line5341" />
+    <polygon
+       style="fill:#008000;stroke:#008000"
+       points="540,437.764 535,427.764 540,430.264 545,427.764 "
+       id="polygon5343" />
+    <polygon
+       style="fill:#008000;fill-opacity:0;stroke-width:2;stroke:#008000"
+       points="540,437.764 535,427.764 540,430.264 545,427.764 "
+       id="polygon5345" />
+  </g>
+  <g
+     id="g5347"
+     style="filter:url(#filter5717);fill:#008000;stroke:#008000">
+    <line
+       style="fill:#008000;fill-opacity:0;stroke-width:2;stroke:#008000"
+       x1="500"
+       y1="240"
+       x2="500"
+       y2="430.264"
+       id="line5349" />
+    <polygon
+       style="fill:#008000;stroke:#008000"
+       points="500,437.764 495,427.764 500,430.264 505,427.764 "
+       id="polygon5351" />
+    <polygon
+       style="fill:#008000;fill-opacity:0;stroke-width:2;stroke:#008000"
+       points="500,437.764 495,427.764 500,430.264 505,427.764 "
+       id="polygon5353" />
+  </g>
+  <g
+     id="g5355"
+     style="filter:url(#filter5737)">
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x1="540"
+       y1="520"
+       x2="540"
+       y2="550.264"
+       id="line5357" />
+    <polygon
+       style="fill: #000000"
+       points="540,557.764 535,547.764 540,550.264 545,547.764 "
+       id="polygon5359" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="540,557.764 535,547.764 540,550.264 545,547.764 "
+       id="polygon5361" />
+  </g>
+  <g
+     id="g5363"
+     style="filter:url(#filter5757)">
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000"
+       x1="700"
+       y1="520"
+       x2="700"
+       y2="548.028"
+       id="line5365" />
+    <polygon
+       style="fill: #000000"
+       points="700,555.528 695,545.528 700,548.028 705,545.528 "
+       id="polygon5367" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000"
+       points="700,555.528 695,545.528 700,548.028 705,545.528 "
+       id="polygon5369" />
+  </g>
+  <g
+     id="g5371"
+     style="filter:url(#filter5777)">
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x1="500"
+       y1="520"
+       x2="500"
+       y2="550.264"
+       id="line5373" />
+    <polygon
+       style="fill: #000000"
+       points="500,557.764 495,547.764 500,550.264 505,547.764 "
+       id="polygon5375" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="500,557.764 495,547.764 500,550.264 505,547.764 "
+       id="polygon5377" />
+  </g>
+  <text
+     style="fill: #000000;text-anchor:middle;font-size:33.8667;font-family:IM FELL English;font-style:normal;font-weight:normal"
+     x="700"
+     y="329.175"
+     id="text5379">
+    <tspan
+       x="700"
+       y="329.175"
+       id="tspan5381">G</tspan>
+  </text>
+  <text
+     style="fill: #000000;text-anchor:middle;font-size:33.8667;font-family:IM FELL English;font-style:normal;font-weight:normal"
+     x="610"
+     y="489.175"
+     id="text5383">
+    <tspan
+       x="610"
+       y="489.175"
+       id="tspan5385">H</tspan>
+  </text>
+  <text
+     style="fill:#008000;text-anchor:middle;font-size:33.86670000000000158;font-family:IM FELL English;font-style:normal;font-weight:normal;stroke:#008000"
+     x="520"
+     y="209.175"
+     id="text5387">
+    <tspan
+       x="520"
+       y="209.175"
+       id="tspan5389"
+       style="fill:#008000;stroke:#008000">U</tspan>
+  </text>
+  <text
+     style="fill:#008000;text-anchor:middle;font-size:33.86670000000000158;font-family:IM FELL English;font-style:normal;font-weight:normal;stroke:#008000"
+     x="680"
+     y="209.175"
+     id="text5391">
+    <tspan
+       x="680"
+       y="209.175"
+       id="tspan5393"
+       style="fill:#008000;stroke:#008000">V</tspan>
+  </text>
+  <text
+     style="fill:#008000;text-anchor:middle;font-size:33.86670000000000158;font-family:IM FELL English;font-style:normal;font-weight:normal;stroke:#008000"
+     x="520"
+     y="429.175"
+     id="text5395">
+    <tspan
+       x="520"
+       y="429.175"
+       id="tspan5397"
+       style="fill:#008000;stroke:#008000">…</tspan>
+  </text>
+  <text
+     style="fill:#008080;text-anchor:middle;font-size:33.86670000000000158;font-family:IM FELL English;font-style:normal;font-weight:normal;stroke:#008080"
+     x="600"
+     y="209.175"
+     id="text5399">
+    <tspan
+       x="600"
+       y="209.175"
+       id="tspan5401"
+       style="fill:#008080;stroke:#008080">Q</tspan>
+  </text>
+  <text
+     style="fill:#008000;text-anchor:middle;font-size:33.86670000000000158;font-family:IM FELL English;font-style:normal;font-weight:normal;stroke:#008000"
+     x="680"
+     y="269.175"
+     id="text5403">
+    <tspan
+       x="680"
+       y="269.175"
+       id="tspan5405"
+       style="fill:#008000;stroke:#008000">…</tspan>
+  </text>
+  <text
+     style="fill:#0000ff;text-anchor:middle;font-size:33.86670000000000158;font-family:IM FELL English;font-style:normal;font-weight:normal;stroke:#0000ff"
+     x="740"
+     y="209.175"
+     id="text5407">
+    <tspan
+       x="740"
+       y="209.175"
+       id="tspan5409"
+       style="fill:#0000ff;stroke:#0000ff">Q</tspan>
+  </text>
+  <text
+     style="fill: #000000;text-anchor:middle;font-size:33.8667;font-family:IM FELL English;font-style:normal;font-weight:normal"
+     x="520"
+     y="549.175"
+     id="text5411">
+    <tspan
+       x="520"
+       y="549.175"
+       id="tspan5413">…</tspan>
+  </text>
+  <text
+     style="fill: #000000;text-anchor:middle;font-size:33.8667;font-family:IM FELL English;font-style:normal;font-weight:normal"
+     x="520"
+     y="609.175"
+     id="text5415">
+    <tspan
+       x="520"
+       y="609.175"
+       id="tspan5417">Y</tspan>
+  </text>
+  <g
+     id="g5419"
+     style="fill:none;filter:url(#filter5797)">
+    <rect
+       style="fill:none"
+       x="0"
+       y="280"
+       width="300"
+       height="240"
+       id="rect5421" />
+    <rect
+       style="fill:none;fill-opacity:0;stroke-width:2;stroke:#000000"
+       x="0"
+       y="280"
+       width="300"
+       height="240"
+       id="rect5423" />
+  </g>
+  <g
+     id="g5425"
+     style="filter:url(#filter5817)">
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x1="80"
+       y1="240"
+       x2="80"
+       y2="270.264"
+       id="line5427" />
+    <polygon
+       style="fill: #000000"
+       points="80,277.764 75,267.764 80,270.264 85,267.764 "
+       id="polygon5429" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="80,277.764 75,267.764 80,270.264 85,267.764 "
+       id="polygon5431" />
+  </g>
+  <g
+     id="g5433"
+     style="filter:url(#filter5837)">
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x1="120"
+       y1="240"
+       x2="120"
+       y2="270.264"
+       id="line5435" />
+    <polygon
+       style="fill: #000000"
+       points="120,277.764 115,267.764 120,270.264 125,267.764 "
+       id="polygon5437" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="120,277.764 115,267.764 120,270.264 125,267.764 "
+       id="polygon5439" />
+  </g>
+  <text
+     style="fill: #000000;text-anchor:middle;font-size:33.8667;font-family:IM FELL English;font-style:normal;font-weight:normal"
+     x="100"
+     y="269.175"
+     id="text5441">
+    <tspan
+       x="100"
+       y="269.175"
+       id="tspan5443">…</tspan>
+  </text>
+  <g
+     id="g5445"
+     style="filter:url(#filter5857)">
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000"
+       x1="220"
+       y1="240"
+       x2="220"
+       y2="268.028"
+       id="line5447" />
+    <polygon
+       style="fill: #000000"
+       points="220,275.528 215,265.528 220,268.028 225,265.528 "
+       id="polygon5449" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000"
+       points="220,275.528 215,265.528 220,268.028 225,265.528 "
+       id="polygon5451" />
+  </g>
+  <text
+     style="fill: #000000;text-anchor:middle;font-size:33.8667;font-family:IM FELL English;font-style:normal;font-weight:normal"
+     x="220"
+     y="209.175"
+     id="text5453">
+    <tspan
+       x="220"
+       y="209.175"
+       id="tspan5455">Q</tspan>
+  </text>
+  <text
+     style="fill: #000000;text-anchor:middle;font-size:33.8667;font-family:IM FELL English;font-style:normal;font-weight:normal"
+     x="100"
+     y="209.175"
+     id="text5457">
+    <tspan
+       x="100"
+       y="209.175"
+       id="tspan5459">X</tspan>
+  </text>
+  <g
+     id="g5461"
+     style="filter:url(#filter5877)">
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x1="80"
+       y1="520"
+       x2="80"
+       y2="550.264"
+       id="line5463" />
+    <polygon
+       style="fill: #000000"
+       points="80,557.764 75,547.764 80,550.264 85,547.764 "
+       id="polygon5465" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="80,557.764 75,547.764 80,550.264 85,547.764 "
+       id="polygon5467" />
+  </g>
+  <g
+     id="g5469"
+     style="filter:url(#filter5897)">
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x1="120"
+       y1="520"
+       x2="120"
+       y2="550.264"
+       id="line5471" />
+    <polygon
+       style="fill: #000000"
+       points="120,557.764 115,547.764 120,550.264 125,547.764 "
+       id="polygon5473" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="120,557.764 115,547.764 120,550.264 125,547.764 "
+       id="polygon5475" />
+  </g>
+  <text
+     style="fill: #000000;text-anchor:middle;font-size:33.8667;font-family:IM FELL English;font-style:normal;font-weight:normal"
+     x="100"
+     y="549.175"
+     id="text5477">
+    <tspan
+       x="100"
+       y="549.175"
+       id="tspan5479">…</tspan>
+  </text>
+  <text
+     style="fill: #000000;text-anchor:middle;font-size:33.8667;font-family:IM FELL English;font-style:normal;font-weight:normal"
+     x="100"
+     y="609.175"
+     id="text5481">
+    <tspan
+       x="100"
+       y="609.175"
+       id="tspan5483">Y</tspan>
+  </text>
+  <g
+     id="g5485"
+     style="filter:url(#filter5917)">
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000"
+       x1="220"
+       y1="520"
+       x2="220"
+       y2="548.028"
+       id="line5487" />
+    <polygon
+       style="fill: #000000"
+       points="220,555.528 215,545.528 220,548.028 225,545.528 "
+       id="polygon5489" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000"
+       points="220,555.528 215,545.528 220,548.028 225,545.528 "
+       id="polygon5491" />
+  </g>
+  <text
+     style="fill: #000000;text-anchor:middle;font-size:33.8667;font-family:IM FELL English;font-style:normal;font-weight:normal"
+     x="150"
+     y="409.175"
+     id="text5493">
+    <tspan
+       x="150"
+       y="409.175"
+       id="tspan5495">F</tspan>
+  </text>
+  <g
+     id="g5497"
+     style="filter:url(#filter5937)">
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000"
+       x1="340"
+       y1="400"
+       x2="410.264"
+       y2="400"
+       id="line5499" />
+    <polygon
+       style="fill: #000000"
+       points="417.764,400 407.764,405 410.264,400 407.764,395 "
+       id="polygon5501" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="417.764,400 407.764,405 410.264,400 407.764,395 "
+       id="polygon5503" />
+  </g>
+  <text
+     style="fill: #000000;text-anchor:middle;font-size:33.8667;font-family:IM FELL English;font-style:normal;font-weight:normal"
+     x="220"
+     y="609.175"
+     id="text5505">
+    <tspan
+       x="220"
+       y="609.175"
+       id="tspan5507">Q'</tspan>
+  </text>
+  <text
+     style="fill:#000000;text-anchor:start;font-size:12.80000000000000071;font-family:sanserif;font-style:normal;font-weight:normal;filter:url(#filter5957)"
+     x="240"
+     y="200"
+     id="text5509">
+    <tspan
+       x="240"
+       y="200"
+       id="tspan5511" />
+  </text>
+  <text
+     style="fill:#000000;text-anchor:start;font-size:12.80000000000000071;font-family:sanserif;font-style:normal;font-weight:normal;filter:url(#filter5977)"
+     x="240"
+     y="580"
+     id="text5513">
+    <tspan
+       x="240"
+       y="580"
+       id="tspan5515" />
+  </text>
+  <text
+     style="fill: #000000;text-anchor:middle;font-size:33.8667;font-family:IM FELL English;font-style:normal;font-weight:normal"
+     x="620"
+     y="609.175"
+     id="text5517">
+    <tspan
+       x="620"
+       y="609.175"
+       id="tspan5519">Q'</tspan>
+  </text>
+  <text
+     style="fill: #000000;text-anchor:middle;font-size:33.8667;font-family:IM FELL English;font-style:normal;font-weight:normal"
+     x="700"
+     y="609.175"
+     id="text5521">
+    <tspan
+       x="700"
+       y="609.175"
+       id="tspan5523">Q'</tspan>
+  </text>
+  <text
+     style="fill:#008080;text-anchor:start;font-size:16.93329999999999913;font-family:IM FELL English;font-style:normal;font-weight:normal;stroke:#008080"
+     x="620"
+     y="204.575"
+     id="text5525">
+    <tspan
+       x="620"
+       y="204.575"
+       id="tspan5527"
+       style="fill:#008080;stroke:#008080">U</tspan>
+  </text>
+  <text
+     style="fill:#0000ff;text-anchor:start;font-size:16.93329999999999913;font-family:IM FELL English;font-style:normal;font-weight:normal;stroke:#0000ff"
+     x="760"
+     y="204.575"
+     id="text5529">
+    <tspan
+       x="760"
+       y="204.575"
+       id="tspan5531"
+       style="fill:#0000ff;stroke:#0000ff">V</tspan>
+  </text>
+  <text
+     style="fill: #000000;text-anchor:start;font-size:16.9333;font-family:IM FELL English;font-style:normal;font-weight:normal"
+     x="640"
+     y="604.575"
+     id="text5533">
+    <tspan
+       x="640"
+       y="604.575"
+       id="tspan5535">U</tspan>
+  </text>
+  <text
+     style="fill: #000000;text-anchor:start;font-size:16.9333;font-family:IM FELL English;font-style:normal;font-weight:normal"
+     x="720"
+     y="604.575"
+     id="text5537">
+    <tspan
+       x="720"
+       y="604.575"
+       id="tspan5539">V</tspan>
+  </text>
+  <g
+     id="g5541"
+     style="filter:url(#filter5997)">
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000"
+       x1="620"
+       y1="520"
+       x2="620"
+       y2="548.028"
+       id="line5543" />
+    <polygon
+       style="fill: #000000"
+       points="620,555.528 615,545.528 620,548.028 625,545.528 "
+       id="polygon5545" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000"
+       points="620,555.528 615,545.528 620,548.028 625,545.528 "
+       id="polygon5547" />
+  </g>
+  <g
+     id="g5549"
+     style="filter:url(#filter6017);fill:#0000ff;stroke:#0000ff">
+    <line
+       style="fill:#0000ff;fill-opacity:0;stroke-width:4;stroke:#0000ff"
+       x1="700"
+       y1="360"
+       x2="700"
+       y2="428.028"
+       id="line5551" />
+    <polygon
+       style="fill:#0000ff;stroke:#0000ff"
+       points="700,435.528 695,425.528 700,428.028 705,425.528 "
+       id="polygon5553" />
+    <polygon
+       style="fill:#0000ff;fill-opacity:0;stroke-width:4;stroke:#0000ff"
+       points="700,435.528 695,425.528 700,428.028 705,425.528 "
+       id="polygon5555" />
+  </g>
+  <text
+     style="fill:#0000ff;text-anchor:end;font-size:33.86670000000000158;font-family:IM FELL English;font-style:normal;font-weight:normal;stroke:#0000ff"
+     x="740"
+     y="411.725"
+     id="text5557">
+    <tspan
+       x="740"
+       y="411.725"
+       id="tspan5559"
+       style="fill:#0000ff;stroke:#0000ff">β</tspan>
+  </text>
+  <text
+     style="fill:#000000;text-anchor:start;font-size:12.80000000000000071;font-family:sanserif;font-style:normal;font-weight:normal;filter:url(#filter6037)"
+     x="720"
+     y="400"
+     id="text5561">
+    <tspan
+       x="720"
+       y="400"
+       id="tspan5563" />
+  </text>
+  <text
+     style="fill:#0000ff;text-anchor:start;font-size:16.93329999999999913;font-family:IM FELL English;font-style:normal;font-weight:normal;stroke:#0000ff"
+     x="740"
+     y="415.35"
+     id="text5565">
+    <tspan
+       x="740"
+       y="415.35"
+       id="tspan5567"
+       style="fill:#0000ff;stroke:#0000ff">G</tspan>
+  </text>
+</svg>
