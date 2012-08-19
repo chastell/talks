@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English+SC);
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English);
+
+body {
+  font-family: 'IM Fell English SC', 'Georgia', serif;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  font-family: 'IM Fell English', 'Georgia', serif;
+  text-decoration: none;
+}
+
+code {
+  font-size: 0.7em;
+}
+
+code.command, code.result {
+  font-size: 1.3em;
+}
+
+pre {
+  margin: 0 0.5em;
+  text-align: left;
+}
+
+table {
+  margin: auto;
+}
+
+table.contact {
+  font-size: 2em;
+}
+
+td {
+  text-align: left;
+}
+
+th {
+  font-weight: normal;
+  padding: 0.5em;
+  text-align: right;
+}
