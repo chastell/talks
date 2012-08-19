@@ -1,0 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English+SC);
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  font-family: 'IM Fell English SC', 'Georgia', serif;
+  text-align: center;
+}
+
+.content img {
+  margin-top: -250px;
+}
