@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Presentation</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/swps-2011.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="cover/cover/1">
+<h1>Building Online Presence</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="cover/cover/2">
+<h1>Building Online Presence</h1>
+
+<br/>
+
+
+<h2>From a Twitter Blog<br/>and a Facebook Page<br/>to a Full-Featured Website</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="cover/cover/3">
+<h1>Building Online Presence</h1>
+
+<br/>
+
+
+<h2>From a Twitter Blog<br/>and a Facebook Page<br/>to a Full-Featured Website</h2>
+
+<br/>
+
+
+<h3>by Piotr Szotkowski</h3></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="cover/cover/4">
+<h1>Building Online Presence</h1>
+
+<p><img src="./file/cover/wut.png" alt="WUT"/></p>
+
+<h2><a href="http://http://www.pw.edu.pl">www.pw.edu.pl</a></h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="cover/cover/5">
+<h1>Building Online Presence</h1>
+
+<p><img src="./file/cover/civicrm.png" alt="CiviCRM"/></p>
+
+<h2><a href="http://civicrm.org">civicrm.org</a></h2></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="cover/cover/6">
+<h1>talk agenda</h1>
+
+<ul>
+<li>why online presence?</li>
+<li>Internet: how does it work?</li>
+<li>classic approach: a website</li>
+<li>quick approach: a microblog</li>
+<li>hey, social networks!</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="why/why">
+<h1>why online presence?</h1>
+
+<ul>
+<li>company website</li>
+<li>offer of services</li>
+<li>personal website / blog</li>
+<li>promotion</li>
+<li>contact</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="internet/internet/1">
+<h1>Internet: how does it work?</h1>
+
+<ul>
+<li>well, I sit at my computer&#x2026;</li>
+<li>&#x2026;or a laptop&#x2026;</li>
+<li>&#x2026;or a tablet&#x2026;</li>
+<li>&#x2026;or a phone&#x2026;</li>
+<li>&#x2026;and, um, browse websites!</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="internet/internet/2">
+<h1>Internet: how does it work?</h1>
+
+<p><img src="./file/internet/browser.1.png" alt="browser 1"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="internet/internet/3">
+<h1>Internet: how does it work?</h1>
+
+<p><img src="./file/internet/browser.2.png" alt="browser 2"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="internet/internet/4">
+<h1>Internet: how does it work?</h1>
+
+<p><img src="./file/internet/browser.3.png" alt="browser 3"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="internet/internet/5">
+<h1>Internet: not only WWW</h1>
+
+<ul>
+<li>there are other Internet services:</li>
+<li>email</li>
+<li>chat</li>
+<li>voice &amp; video</li>
+<li>(and other still)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="internet/internet/6">
+<h1>client-server model</h1>
+
+<p><img src="./file/internet/internet.png" alt="internet"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="internet/internet/7">
+<h1>client-server model</h1>
+
+<ul>
+<li>browser, email, chat: client</li>
+<li>&#x2018;somewhere over there&#x2019;: server</li>
+<li>various protocols: HTTP, IMAP, XMPP</li>
+<li>request / response cycle</li>
+<li>&#x2018;live&#x2019; interaction somewhat simulated</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="internet/internet/8">
+<h1>WWW: HTML over HTTP</h1>
+
+<ul>
+<li>World Wide Web</li>
+<li>=</li>
+<li>HyperText Transfer Protocol</li>
+<li>+</li>
+<li>HyperText Markup Language</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="internet/internet/9">
+<h1>WWW: how does it work?</h1>
+
+<ul>
+<li>user comes up with a URL</li>
+<li>puts <code>www.pw.edu.pl/mapa</code> in a browser</li>
+<li>browser to DNS: &#x2018;where is <code>www.pw.edu.pl</code>?&#x2019;</li>
+<li>DNS to browser: &#x2018;there: 194.29.151.5&#x2019;</li>
+<li>browser to 194.29.151.5: &#x2018;HTML for <code>/mapa</code>?&#x2019;</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="internet/internet/10">
+<h1>WWW: how does it work?</h1>
+
+<p><img src="./file/internet/internet.png" alt="internet"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="internet/internet/11">
+<h1>WWW: how does it work?</h1>
+
+<ul>
+<li>user goes to a search engine</li>
+<li>types it the query</li>
+<li>clicks on the results</li>
+<li>clicks further</li>
+<li>WWW: hyperlinked HTML pages</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="website/website/1">
+<h1>your own website</h1>
+
+<ul>
+<li>your own domain name</li>
+<li>your own server + broadband connection</li>
+<li>(or hired hosting)</li>
+<li>actual content to display</li>
+<li>a way to manage this content</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="website/website/2">
+<h1>your own website</h1>
+
+<ul>
+<li>static / dynamic content</li>
+<li>(embedded?) multimedia</li>
+<li>contact?</li>
+<li>comments?</li>
+<li>user-generated content?</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="website/website/3">
+<h1>traffic sources</h1>
+
+<ul>
+<li>via URLs</li>
+<li>via ad campaigns</li>
+<li>via links on affiliate pages</li>
+<li>via social networks</li>
+<li>via search engines</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="website/website/4">
+<h1>staff needed</h1>
+
+<ul>
+<li>webdeveloper</li>
+<li>graphic designer</li>
+<li>UI / accessibility experts?</li>
+<li>SEO expert?</li>
+<li>crowdsourcing / folksonomy?</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="website/website/5">
+<h1>tools &amp; technical details</h1>
+
+<ul>
+<li>which Content Management System?</li>
+<li>Flash or HTML5?</li>
+<li>which server stack?</li>
+<li>different media types / devices?</li>
+<li>particular user groups?</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="website/website/6">
+<h1>Internet, again</h1>
+
+<p><img src="./file/website/internet.png" alt="internet"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="website/website/7">
+<h1>hired hosting</h1>
+
+<ul>
+<li>usually takes care of the domain</li>
+<li>offers a CMS</li>
+<li>&#x2026;or an easy way to setup one</li>
+<li>upload WordPress or Drupal</li>
+<li>choose a theme and you&#x2019;re set</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="website/website/8">
+<h1>Software as a Service</h1>
+
+<ul>
+<li>CMS is a web application</li>
+<li>example: WordPress.com</li>
+<li><code>*.wordpress.com</code> domain: free</li>
+<li>own domain &amp; additional features: paid</li>
+<li>Groupon started as a WordPress blog</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="microblog/microblog/1">
+<h1>microblogging</h1>
+
+<ul>
+<li>short messages: 140 characters</li>
+<li>trivial to setup</li>
+<li>notification, reminders</li>
+<li>social network potential</li>
+<li>worth having anyway</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="microblog/microblog/2">
+<h1>microblogging</h1>
+
+<ul>
+<li>Twitter, Blip</li>
+<li>website widgets</li>
+<li>accessible via API</li>
+<li>communication over SMS</li>
+<li>dedicated mobile clients</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="social/social">
+<h1>social networks</h1>
+
+<ul>
+<li>trivial to setup</li>
+<li>presence where people are</li>
+<li>MySpace, NK, Facebook, Twitter, Blip</li>
+<li>direct social interaction</li>
+<li>control in the hands of the social network</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="wrap-up/wrap-up/1">
+<h1>summary: advantages</h1>
+
+<ul>
+<li>full-fledged: own website</li>
+<li>(hosted or with own hosting if appropriate)</li>
+<li>worth considering: SaaS solution</li>
+<li>quickest to setup: microblogging</li>
+<li>added value: social networks</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="wrap-up/wrap-up/2">
+<h1>summary: disadvantages</h1>
+
+<ul>
+<li>own website: high costs, staff, downtime</li>
+<li>hosted: moderate costs, less flexible</li>
+<li>SaaS solution: limited features, dependency?</li>
+<li>microblogging: minimal features, dependency</li>
+<li>social networks: strong dependency!</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="wrap-up/wrap-up/3">
+<h1>questions?</h1>
+
+<br/>
+
+
+<br/>
+
+
+<br/>
+
+
+<h2>Piotr Szotkowski</h2>
+
+<br/>
+
+
+<br/>
+
+
+<br/>
+
+
+<h2><a href="mailto:p.szotkowski@tele.pw.edu.pl">p.szotkowski @ tele.pw.edu.pl</a></h2>
+
+<br/>
+
+
+<br/>
+
+
+<br/>
+
+
+<h2><a href="http://talks.chastell.net/swps-2011">talks.chastell.net / swps-2011</a></h2></div>
+</div></div>
+
+</body>
+</html>
