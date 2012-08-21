@@ -72,16 +72,53 @@
     <div>
       <h1>look at all the talks I give</h1>
       <dl>
-        <dt>Ruby on the Command-Line</dt>
-        <dd>…at <a href='eurucamp-2012'>eurucamp 2012</a></dd>
+        <dt>Persist, Little Objects!</dt>
+        <dd>Object persistence in Ruby is a&nbsp;tricky subject – everyone knows how to do it (‘simply use an ORM, plug it into a&nbsp;relational database and you’re done!’), most know the drawbacks (‘well, sure, you need to use a&nbsp;document database for the more schema-less cases… or serialise the variable parts… and, of course, object references need to be handled separately…’), but few experiment with alternatives.</dd>
+        <dd>This talk, after recalling the popular database-driven persistence solutions, concentrates on the less known, but more interesting and often quite useful approaches – from file-based PStore (ideal for small apps), through Candy’s out-of-the-way magic, to MagLev’s true cross-process transparent object persistence.</dd>
+        <dd>Accepted to <a href='http://arrrrcamp.be'>Arrrrcamp</a> 2012.</dd>
+
+        <dt>Ruby on the Command-Line | <a href='eurucamp-2012'>slides</a></dt>
+        <dd>Ruby, thanks to its various frameworks, is known to be the language for web applications – and recent developments in graphic libraries make it a&nbsp;worthy contestant in the world of GUI-driven desktop programs. But Ruby is also great for writing command-line applications; the ability to mix no-boilerplate toplevel functions with full-fledged OOP means its usage can vary from one-off trivial scripts to complicated, option-heavy commandline powerhouses.</dd>
+        <dd>This talk presetens the nits and bolts of writing a&nbsp;command-line application with Ruby – from option parsing and accessing standard input/output to playing nice with POSIX standards like exit codes and signal/interrupt handling.</dd>
+        <dd>Given at <a href='http://eurucamp.org'>eurucamp</a> 2012.</dd>
+
         <dt>PStore: stdlib’s Persistence</dt>
-        <dd>…at <a href='wrug-2012-08'>Warsaw Ruby Users Group, August 2012</a> (lightning talk)</dd>
-        <dt>From Here to Eternity</dt>
-        <dd>…at <a href='lightningio-2012'>Lightning IO 2012</a> (lightning talk)</dd>
-        <dt>Decoupling Persistence (Like There’s Some Tomorrow)</dt>
-        <dd>…at <a href='src-2012'>Scottish Ruby Conference 2012</a></dd>
+        <dd>PStore is a&nbsp;greatly underappreciated (and vastly uknown) simple persistence library shipped with Ruby. This talk covers it’s vices and virtues, along with real-life usage example in a&nbsp;pet project.</dd>
+        <dd><a href='wrug-2012-08'>Preview</a> (a lightning talk) from <a href='http://wrug.eu'>Warsaw Ruby Users Group</a>, August 2012.</dd>
+
+        <dt>From Here to Eternity | <a href='lightningio-2012'>slides</a></dt>
+        <dd>A 42-slide, five minute lightining talk on the interactions between Ruby’s <code>Date</code> class and <code>Enumerable</code> module.</dd>
+        <dd>Given at <a href='http://lightning.io'>Lightning IO</a> 2012.</dd>
+
+        <dt>Decoupling Persistence (Like There’s Some Tomorrow) | <a href='src-2012'>slides</a> | <a href='http://programme.scottishrubyconference.com/proposals/70/video'>video</a></dt>
+        <dd><cite>When I&nbsp;open up a&nbsp;Rails project and the models dir is full of 100% ActiveRecord classes I&nbsp;shudder. Model ≠ Persistence.</cite> — Ben Mabey</dd>
+        <dd>From DCI to presenters, from Uncle Bob’s <a href='http://confreaks.com/videos/759'>architecture talk</a> and Avdi Grimm’s <cite><a href='http://objectsonrails.com'>Objects on Rails</a></cite> book to the proliferation of (competing? complementing?) database systems, it seems the time has come to seriously consider decoupling our objects’ persistence from the rest of the application.</dd>
+        <dd>This talk – after describing the general vices of strong object/database coupling and the all-too-usual <code>rails&nbsp;g&nbsp;model</code>-driven development – covers the various approaches to separating the objects’ persistence layer, along with their virtues (cleaner, simpler tests! backend independence! no RDBMS-related shortcuts impacting the design!) and potential vices (performance? perceived compexity? YAGNI?).</dd>
+        <dd>Given at <a href='http://wrocloverb.com'>wroc_love.rb</a> 2012 and <a href='http://scottishrubyconference.com'>Scottish Ruby Conference</a> 2012.</dd>
+
         <dt>C-C-C-Combo Maker</dt>
-        <dd>…at <a href='wrug-2012-06'>Warsaw Ruby Users Group, June 2012</a> (lightning talk)</dd>
+        <dd>Ruby is a&nbsp;wonderful high-level lanuguage for expressing ideas and algorithms, but even after rewriting it umpteen times the most sophisticated algorithm can be a&nbsp;CPU-bound bottleneck. Similarly, accessing (especially custom) system devices straight from Ruby is usually doable, but easier via the provided C&nbsp;drivers.</dd>
+        <dd>This talk, based on experience with algorithm optimisation and custom device drivers gained when working at the Warsaw University of Technology, shows how easy it is to marry Ruby and C&nbsp;– from writing MRI-targeting C&nbsp;extensions, through building a&nbsp;proper FFI-oriented wrapper, to rewriting crucial – and yet, slow – parts of your codebase in C&nbsp;using RubyInline, without leaving the Ruby method.</dd>
+        <dd><a href='wrug-2012-06'>Preview</a> (a lightning talk) from <a href='http://wrug.eu'>Warsaw Ruby Users Group</a>, June 2012.</dd>
+
+        <dt>Persisting Relations Across Time and Space | <a href='rubyconf-2011'>slides</a> | <a href='http://confreaks.net/videos/657'>video</a></dt>
+        <dd>Entities and their relations are the backbone of most Ruby applications – from trivial, one-off commandline utilities to full-blown social network websites. The good old relational databases, while showing extreme abilities in both adaptation and survival, are no longer the obvious choice for persistence – and sometimes obviously not an ideal one.</dd>
+        <dd>This talk discusses various entity/relation modeling approaches and different persistence techniques – from rigid schemas in suits to collections of hippie free-form documents; from good old (transactional!) PStore through join-table-happy RDBMS-es and muscle-flexing NoSQL hools to (social!) graph databases, waiting patiently for broader recognition and prime time.</dd>
+        <dd>Quite a&nbsp;few interesting Ruby libraries for gluing all this together are also pondered upon – from world-class champions like Active Record and ARel to less known gems like Candy and Ambition.</dd>
+        <dd>Given at <a href='http://rubyconf.org'>RubyConf</a> 2011.</dd>
+
+        <dt>From Profiling Ruby to Frankenstein Programming  | <a href='src-2011'>slides</a> | <a href='http://confreaks.net/videos/547'>video</a></dt>
+        <dd>Ruby is ‘known to be slow’ – but what does that exactly mean, does it really matter, and – more importantly – what can we do about this?</dd>
+        <dd>This presentation, based on hands-on experience of using Ruby for scientific computations, shows how to profile Ruby applications (including webapps), how to interpret the results and what to do with the bottlenecks – from algorithmic optimisation through using dedicated libraries to rewriting them (in place!) in ‘faster’ languages.</dd>
+        <dd>Given at <a href='http://euruko.org'>EuRuKo</a> 2010, <a href='http://rubyandrails.eu'>Ruby and Rails</a> 2010 and <a href='http://scottishrubyconference.com'>Scottish Ruby Conference</a> 2011.</dd>
+
+        <dt>Going Clean and Simple with minitest/spec</dt>
+        <dd>The Ruby community is known for praising well-tested code, with a&nbsp;lot of projects being developed in a&nbsp;test- (or spec-) driven fashion. minitest/spec is a&nbsp;simple and minimalistic DSL for behaviour specification and behaviour-driven development, gaining popularity ever since being a&nbsp;part of Ruby 1.9 standard library.</dd>
+        <dd>This talk presents minitest/spec’s virtues and vices, the benefits and drawbacks of mocking with minitest/mock, as well as the interesting world of asserting algorithmic performance with minitest/benchmark.</dd>
+
+        <dt>REST, Assured</dt>
+        <dd>Since its first appearance – eleven years ago – REST has grown from being a&nbsp;PhD dissertation into a&nbsp;widely accepted best practice when it comes to designing and implementing remote APIs. In the Ruby world REST started achieving wide recognition four years ago, and its adoption grew significantly with every subsequent Rails release – and yet all over the web you can hear grumpy voices remarking that most services aren’t really RESTful, just kinda RESTful, that doing CRUD on resources via HTTP verbs is a&nbsp;nice starting point, but definitely isn’t enough, and that JSON is a&nbsp;nice format, but lacks hypermedia vocabulary.</dd>
+        <dd>This talk, while briefly refreshing REST basics, concentrates on the more advanced (as in: not provided by Rails out-of-the-box) REST ‘features’ and current best practices – explaining why it’s beneficial to have a&nbsp;discoverable REST design, how to sanely do API versioning and authentication, and what’s with all this recent talk about HATEOAS and 100% REST compliance via hypermedia controls.</dd>
       </dl>
     </div>
     <footer>
