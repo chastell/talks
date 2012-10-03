@@ -1,0 +1,16 @@
+---
+db:
+- !ruby/struct:Sig
+  author: Mike Perham
+  tags:
+  - Ruby
+  - Rails
+  text: ‘Never wrestle with a pig – you get dirty and the pig likes it.’ NOW REPLACE
+    PIG WITH ASSET PIPELINE.
+- !ruby/struct:Sig
+  author: Solomon White
+  tags:
+  - Ruby
+  - RubyGems
+  text: If you’re ever tempted to add a post-install messageto a gem, stop and back
+    slowly away from the keyboard.

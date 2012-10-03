@@ -1,0 +1,14 @@
+{
+  "name": "Persist, Little Objects!",
+  "sections": [
+    { "section": "cover"       },
+    { "section": "me-me-me"    },
+    { "section": "love"        },
+    { "section": "intro"       },
+    { "section": "postgresql"  },
+    { "section": "redis"       },
+    { "section": "pstore"      },
+    { "section": "transparent" },
+    { "section": "links"       }
+  ]
+}
