@@ -25,7 +25,7 @@
 * so, fast
 * but very simple
 * still, so fast!
-# encoding: UTF-8
+* [Ohm](http://ohm.keyvalue.org) & [Redis Object Collection](https://github.com/benlund/roc)
 
 !SLIDE
     @@@Ruby

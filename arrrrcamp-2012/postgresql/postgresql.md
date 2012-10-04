@@ -2,8 +2,8 @@
 # PostgreSQL
 * relational
 * HStore, JSON, PostGIS, XML
-* wonderful built-in types
-* like MAC, IPv4, IPv6, UUID…
+* [Five Things You Didn’t Know<br />About PostgresSQL](http://vimeo.com/43536445)
+* [wonderful built-in types](http://www.postgresql.org/docs/devel/static/datatype.html)<br />like geometry, MAC+IPv4+IPv6, UUID…
 * like **arrays**
 
 !SLIDE

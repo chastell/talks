@@ -14,6 +14,7 @@
 # transparent persistence
 * object databases
 * [MagLev](http://maglev.gemstone.com)
+* [Would you like to forget about the database?](http://confreaks.com/videos/1070-cascadiaruby2012-would-you-like-to-forget-about-the-database)
 * fake transparent persistence
 * [Candy](https://github.com/SFEley/candy)
 
