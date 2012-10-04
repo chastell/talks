@@ -1,0 +1,1580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Persist, Little Objects!</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/arrrrcamp-2012.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content center" ref="cover/cover/1">
+<p><img style="position: absolute; left: 0; top: 0;" alt="Arrrrcamp" src="./file/cover/arrrrcamp.png"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="cover/cover/2">
+<h1>Persist,</h1>
+
+<h1>Little Objects!</h1></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets center incremental" ref="me-me-me/me-me-me/1">
+<p><img src="./file/me-me-me/chastell.png" alt="chastell"/></p>
+
+<h1>me, me, me.</h1>
+
+<ul>
+<li>(that&#x2019;s Piotr Szotkowski)</li>
+<li>(or <a href="http://chastell.net">chastell</a>)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="me-me-me/me-me-me/2">
+<p><img src="./file/me-me-me/wut.png" alt="Warsaw University of Technology"/>
+&#xA0;</p>
+
+<h2>assistant professor</h2>
+
+<h2>at <a href="http://eng.pw.edu.pl">Warsaw University of Technology</a></h2></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="me-me-me/me-me-me/3">
+<p><img src="./file/me-me-me/rebased.png" alt="Rebased"/>
+&#xA0;</p>
+
+<h2>cheap science officer</h2>
+
+<h2>at <a href="http://rebased.pl">Rebased</a></h2></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content center" ref="love/love/1">
+<p><img src="./file/love/rg.jpg" alt="Rails Girls"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="love/love/2">
+<h1>&#x2665;</h1>
+
+<ul>
+<li>&#x26AC;&#x26AC;</li>
+<li>&#x26AF;</li>
+<li>&#x26AD;</li>
+<li>honeymoon</li>
+<li><a href="https://github.com/chastell/signore">signore</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="love/love/3">
+<pre><code><code class="command">$ signore prego</code>
+<code class="result">// sometimes I believe compiler ignores all my comments
+
+</code><code class="command">$ signore prego Lisp</code>
+<code class="result">Lisp: from the people who didn&#x2019;t bring you AI.
+
+</code><code class="command">$ signore prego Perl</code>
+<code class="result">/* obligatory Perl joke (omitted for brevity) */
+                              [Tomasz Dubrownik]
+
+</code><code class="command">$ signore prego Ruby</code>
+<code class="result">Cloud is to datacenter what Ruby is to assembler.
+                                   [DevOps Borat]
+
+</code><code class="command">$ signore prego Python Ruby</code>
+<code class="result">&#x2018;I swear, Ruby has more syntax for creating strings than Python has total.&#x2019;
+&#x2018;"what" + %[are] + &lt;&lt;STR you STR + %q(talking) + 'about?'&#x2019;
+                                             [Gary Bernhardt, Jeff Forcier]
+
+</code><code class="command">$ signore prego Lisp ~Python Ruby</code>
+<code class="result">I love Ruby&#x2019;s optional parentheses. Lisp doesn&#x2019;t have optional parentheses.
+                                                               [Jamis Buck]
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="love/love/4">
+<pre><code><code class="command">$ signore pronto Lisp</code>
+<code class="result">text?
+(What the world needs (I think) is not (a Lisp (with fewer parentheses))
+but (an English (with more.)))
+
+author?
+Brian Hayes
+
+source?
+The Semicolon Wars
+
+subject?
+
+
+(What the world needs (I think) is not (a Lisp (with
+fewer parentheses)) but (an English (with more.)))
+                   [Brian Hayes, The Semicolon Wars]
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="love/love/5">
+<p>&#xA0;</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="love/love/6">
+<pre class="sh_ruby"><code># encoding: UTF-8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="love/love/7">
+<pre class="sh_ruby"><code># encoding: UTF-8
+Sig = Struct.new :author, :tags, :text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="love/love/8">
+<pre class="sh_ruby"><code># encoding: UTF-8
+Sig = Struct.new :author, :tags, :text
+
+db = []
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="love/love/9">
+<pre class="sh_ruby"><code># encoding: UTF-8
+Sig = Struct.new :author, :tags, :text
+
+db = []
+
+db.push Sig.new 'Patrick Huesler',
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="love/love/10">
+<pre class="sh_ruby"><code># encoding: UTF-8
+Sig = Struct.new :author, :tags, :text
+
+db = []
+
+db.push Sig.new 'Patrick Huesler', ['Ruby', 'Unicorn'],
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="love/love/11">
+<pre class="sh_ruby"><code># encoding: UTF-8
+Sig = Struct.new :author, :tags, :text
+
+db = []
+
+db.push Sig.new 'Patrick Huesler', ['Ruby', 'Unicorn'],
+  'My deploy log message of the day: &#x2018;sleeping ' +
+  'for 3 seconds until all old unicorns are dead&#x2019;.'
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="love/love/12">
+<pre class="sh_ruby"><code># encoding: UTF-8
+Sig = Struct.new :author, :tags, :text
+
+db = []
+
+db.push Sig.new 'Patrick Huesler', ['Ruby', 'Unicorn'],
+  'My deploy log message of the day: &#x2018;sleeping ' +
+  'for 3 seconds until all old unicorns are dead&#x2019;.'
+
+db.push Sig.new 'Chris Wanstrath', ['Ruby', 'Enumerable'],
+  'Every time I use Ruby&#x2019;s Enumerable#partition ' +
+  'I want to give matz a high five.'
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="love/love/13">
+<pre class="sh_ruby"><code># encoding: UTF-8
+Sig = Struct.new :author, :tags, :text
+
+db = []
+
+db.push Sig.new 'Patrick Huesler', ['Ruby', 'Unicorn'],
+  'My deploy log message of the day: &#x2018;sleeping ' +
+  'for 3 seconds until all old unicorns are dead&#x2019;.'
+
+db.push Sig.new 'Chris Wanstrath', ['Ruby', 'Enumerable'],
+  'Every time I use Ruby&#x2019;s Enumerable#partition ' +
+  'I want to give matz a high five.'
+
+sig = db.select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="love/love/14">
+<pre class="sh_ruby"><code># encoding: UTF-8
+Sig = Struct.new :author, :tags, :text
+
+db = []
+
+db.push Sig.new 'Patrick Huesler', ['Ruby', 'Unicorn'],
+  'My deploy log message of the day: &#x2018;sleeping ' +
+  'for 3 seconds until all old unicorns are dead&#x2019;.'
+
+db.push Sig.new 'Chris Wanstrath', ['Ruby', 'Enumerable'],
+  'Every time I use Ruby&#x2019;s Enumerable#partition ' +
+  'I want to give matz a high five.'
+
+sig = db.select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+puts sig.text
+puts '&#x2014; ' + sig.author
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="love/love/15">
+<pre class="sh_ruby"><code># encoding: UTF-8
+Sig = Struct.new :author, :tags, :text
+
+db = []
+
+db.push Sig.new 'Patrick Huesler', ['Ruby', 'Unicorn'],
+  'My deploy log message of the day: &#x2018;sleeping ' +
+  'for 3 seconds until all old unicorns are dead&#x2019;.'
+
+db.push Sig.new 'Chris Wanstrath', ['Ruby', 'Enumerable'],
+  'Every time I use Ruby&#x2019;s Enumerable#partition ' +
+  'I want to give matz a high five.'
+
+sig = db.select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+puts sig.text
+puts '&#x2014; ' + sig.author
+
+# My deploy log message of the day: &#x2018;sleeping
+# for 3 seconds until all old unicorns are dead&#x2019;.
+# &#x2014; Patrick Huesler</code></pre></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental" ref="intro/intro/1">
+<h1>how do we make our objects<br/>travel through time?</h1>
+
+<ul>
+<li>persist them in relational databases</li>
+<li>via ORMs</li>
+<li>Active Record</li>
+<li><a href="http://sequel.rubyforge.org">Sequel</a></li>
+<li><a href="http://datamapper.org">Data Mapper</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="intro/intro/2">
+<h2>polyglot persistence</h2>
+
+<p><img src="./file/intro/polyglot-persistence.png" alt="polyglot persistence"/>
+<a href="http://architects.dzone.com/articles/polyglot-persistence-future">Martin Fowler: The Future is not just NoSQL, it&#x2019;s Polyglot Persistence</a></p></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental" ref="postgresql/postgresql/1">
+<h1>PostgreSQL</h1>
+
+<ul>
+<li>relational</li>
+<li>HStore, JSON, PostGIS, XML</li>
+<li><a href="http://vimeo.com/43536445">Five Things You Didn&#x2019;t Know<br/>About PostgresSQL</a></li>
+<li><a href="http://www.postgresql.org/docs/devel/static/datatype.html">wonderful built-in types</a><br/>like geometry, MAC+IPv4+IPv6, UUID&#x2026;</li>
+<li>like <strong>arrays</strong></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/2">
+<pre class="sh_ruby"><code>require 'active_record'
+require 'logger'
+require 'postgres_ext'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/3">
+<pre class="sh_ruby"><code>require 'active_record'
+require 'logger'
+require 'postgres_ext'
+
+ActiveRecord::Base.logger = Logger.new $stdout
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/4">
+<pre class="sh_ruby"><code>require 'active_record'
+require 'logger'
+require 'postgres_ext'
+
+ActiveRecord::Base.logger = Logger.new $stdout
+ActiveRecord::Base.establish_connection adapter: 'postgresql',
+                                        database: 'arrrrcamp'
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/5">
+<pre class="sh_ruby"><code>require 'active_record'
+require 'logger'
+require 'postgres_ext'
+
+ActiveRecord::Base.logger = Logger.new $stdout
+ActiveRecord::Base.establish_connection adapter: 'postgresql',
+                                        database: 'arrrrcamp'
+Class.new ActiveRecord::Migration do
+
+
+
+
+
+
+
+end
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/6">
+<pre class="sh_ruby"><code>require 'active_record'
+require 'logger'
+require 'postgres_ext'
+
+ActiveRecord::Base.logger = Logger.new $stdout
+ActiveRecord::Base.establish_connection adapter: 'postgresql',
+                                        database: 'arrrrcamp'
+Class.new ActiveRecord::Migration do
+  def change
+    create_table :sigs do |table|
+      table.text :author
+      table.text :text
+      table.text :tags, array: true
+    end
+  end
+end
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/7">
+<pre class="sh_ruby"><code>require 'active_record'
+require 'logger'
+require 'postgres_ext'
+
+ActiveRecord::Base.logger = Logger.new $stdout
+ActiveRecord::Base.establish_connection adapter: 'postgresql',
+                                        database: 'arrrrcamp'
+Class.new ActiveRecord::Migration do
+  def change
+    create_table :sigs do |table|
+      table.text :author
+      table.text :text
+      table.text :tags, array: true
+    end
+  end
+end.new.migrate :up
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/8">
+<pre class="sh_ruby"><code>require 'active_record'
+require 'logger'
+require 'postgres_ext'
+
+ActiveRecord::Base.logger = Logger.new $stdout
+ActiveRecord::Base.establish_connection adapter: 'postgresql',
+                                        database: 'arrrrcamp'
+Class.new ActiveRecord::Migration do
+  def change
+    create_table :sigs do |table|
+      table.text :author
+      table.text :text
+      table.text :tags, array: true
+    end
+  end
+end.new.migrate :up
+
+# CREATE TABLE "sigs" ("id" serial primary key,
+# "author" text, "text" text, "tags" text[])</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/9">
+<pre class="sh_ruby"><code>Sig = Class.new ActiveRecord::Base
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/10">
+<pre class="sh_ruby"><code>Sig = Class.new ActiveRecord::Base
+
+Sig.create author: 'Tim Pope',
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/11">
+<pre class="sh_ruby"><code>Sig = Class.new ActiveRecord::Base
+
+Sig.create author: 'Tim Pope', tags: ['Ruby', 'BigDecimal'],
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/12">
+<pre class="sh_ruby"><code>Sig = Class.new ActiveRecord::Base
+
+Sig.create author: 'Tim Pope', tags: ['Ruby', 'BigDecimal'],
+  text: 'I wonder if the guy that wrote BigDecimal#inspect has ' +
+  'a tragic backstory that explains why he hates humanity.'
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/13">
+<pre class="sh_ruby"><code>Sig = Class.new ActiveRecord::Base
+
+Sig.create author: 'Tim Pope', tags: ['Ruby', 'BigDecimal'],
+  text: 'I wonder if the guy that wrote BigDecimal#inspect has ' +
+  'a tragic backstory that explains why he hates humanity.'
+# INSERT INTO "sigs" ("author", "tags", "text") VALUES ($1, $2, $3)
+# RETURNING "id" [["author", "Tim Pope"], ["tags", ["Ruby", "BigDecimal"]],
+# ["text", "I wonder if the guy that wrote BigDecimal#inspect has&#x2026;"]]
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/14">
+<pre class="sh_ruby"><code>Sig = Class.new ActiveRecord::Base
+
+Sig.create author: 'Tim Pope', tags: ['Ruby', 'BigDecimal'],
+  text: 'I wonder if the guy that wrote BigDecimal#inspect has ' +
+  'a tragic backstory that explains why he hates humanity.'
+# INSERT INTO "sigs" ("author", "tags", "text") VALUES ($1, $2, $3)
+# RETURNING "id" [["author", "Tim Pope"], ["tags", ["Ruby", "BigDecimal"]],
+# ["text", "I wonder if the guy that wrote BigDecimal#inspect has&#x2026;"]]
+
+Sig.create author: 'P&#x430;ul B&#x430;ttley', tags: ['Ruby', 'Bundler'],
+  text: 'I&#x2019;d love to see an honest Ruby job ad. &#x2018;You will spend half ' +
+  'your time running bundle install &amp; the other half facepalming.&#x2019;'
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/15">
+<pre class="sh_ruby"><code>Sig = Class.new ActiveRecord::Base
+
+Sig.create author: 'Tim Pope', tags: ['Ruby', 'BigDecimal'],
+  text: 'I wonder if the guy that wrote BigDecimal#inspect has ' +
+  'a tragic backstory that explains why he hates humanity.'
+# INSERT INTO "sigs" ("author", "tags", "text") VALUES ($1, $2, $3)
+# RETURNING "id" [["author", "Tim Pope"], ["tags", ["Ruby", "BigDecimal"]],
+# ["text", "I wonder if the guy that wrote BigDecimal#inspect has&#x2026;"]]
+
+Sig.create author: 'P&#x430;ul B&#x430;ttley', tags: ['Ruby', 'Bundler'],
+  text: 'I&#x2019;d love to see an honest Ruby job ad. &#x2018;You will spend half ' +
+  'your time running bundle install &amp; the other half facepalming.&#x2019;'
+
+Sig.create author: 'Tom Stuart', tags: ['Git'],
+  text: 'Just discovered git rebase --interactive --autosquash. ' +
+  'Holy shit. Will never again need to do any work.'</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="postgresql/postgresql/16">
+<pre><code><code class="command">$ psql arrrrcamp</code>
+<code class="result">
+</code><code class="command"># SELECT * FROM sigs;</code>
+<code class="result"> id |    author    |              text               |       tags
+----+--------------+---------------------------------+-------------------
+  1 | Tim Pope     | I wonder if the guy that wrote&#x2026; | {Ruby,BigDecimal}
+  2 | P&#x430;ul B&#x430;ttley | I&#x2019;d love to see an honest Ruby&#x2026; | {Ruby,Bundler}
+  3 | Tom Stuart   | Just discovered git rebase --i&#x2026; | {Git}
+(3 rows)
+
+</code><code class="command"># SELECT * FROM sigs WHERE 'Ruby' = ANY(tags);</code>
+<code class="result"> id |    author    |              text               |       tags
+----+--------------+---------------------------------+-------------------
+  1 | Tim Pope     | I wonder if the guy that wrote&#x2026; | {Ruby,BigDecimal}
+  2 | P&#x430;ul B&#x430;ttley | I&#x2019;d love to see an honest Ruby&#x2026; | {Ruby,Bundler}
+(2 rows)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/17">
+<pre class="sh_ruby"><code>sig = Sig.where(':tag = ANY(tags)', tag: 'Ruby')
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/18">
+<pre class="sh_ruby"><code>sig = Sig.where(':tag = ANY(tags)', tag: 'Ruby').order('random()').first
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/19">
+<pre class="sh_ruby"><code>sig = Sig.where(':tag = ANY(tags)', tag: 'Ruby').order('random()').first
+# SELECT "sigs".* FROM "sigs"
+# WHERE ('Ruby' = ANY(tags)) ORDER BY random() LIMIT 1
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/20">
+<pre class="sh_ruby"><code>sig = Sig.where(':tag = ANY(tags)', tag: 'Ruby').order('random()').first
+# SELECT "sigs".* FROM "sigs"
+# WHERE ('Ruby' = ANY(tags)) ORDER BY random() LIMIT 1
+
+puts sig.text
+puts '&#x2014; ' + sig.author
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="postgresql/postgresql/21">
+<pre class="sh_ruby"><code>sig = Sig.where(':tag = ANY(tags)', tag: 'Ruby').order('random()').first
+# SELECT "sigs".* FROM "sigs"
+# WHERE ('Ruby' = ANY(tags)) ORDER BY random() LIMIT 1
+
+puts sig.text
+puts '&#x2014; ' + sig.author
+
+# I wonder if the guy that wrote BigDecimal#inspect has
+# a tragic backstory that explains why he hates humanity.
+# &#x2014; Tim Pope</code></pre></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content" ref="redis/redis/1">
+<h1>Redis<br/>persistence</h1>
+
+<h2>&#xA0;</h2>
+
+<h2>&#xA0;</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/2">
+<h1>Redis<br/>&#x2018;persistence&#x2019;</h1>
+
+<h2>&#xA0;</h2>
+
+<h2>&#xA0;</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/3">
+<h1>Redis<br/>&#x2018;persistence&#x2019;</h1>
+
+<h2>(unless you save the data)</h2>
+
+<h2>&#xA0;</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/4">
+<h1>Redis<br/>&#x2018;persistence&#x2019;</h1>
+
+<h2>(unless you save the data)</h2>
+
+<h2>(consider doing it on a slave)</h2></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="redis/redis/5">
+<h1>Redis</h1>
+
+<ul>
+<li>fast</li>
+<li>in-memory</li>
+<li>so, fast</li>
+<li>but very simple</li>
+<li>still, so fast!</li>
+<li><a href="http://ohm.keyvalue.org">Ohm</a> &amp; <a href="https://github.com/benlund/roc">Redis Object Collection</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/6">
+<pre class="sh_ruby"><code>require 'redis-roc'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/7">
+<pre class="sh_ruby"><code>require 'redis-roc'
+Sig   = Struct.new :author, :text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/8">
+<pre class="sh_ruby"><code>require 'redis-roc'
+Sig   = Struct.new :author, :text
+store = ROC::Store::RedisStore.new Redis.new
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/9">
+<pre class="sh_ruby"><code>require 'redis-roc'
+Sig   = Struct.new :author, :text
+store = ROC::Store::RedisStore.new Redis.new
+
+                     Sig.new 'Brian P. Hogan',
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/10">
+<pre class="sh_ruby"><code>require 'redis-roc'
+Sig   = Struct.new :author, :text
+store = ROC::Store::RedisStore.new Redis.new
+
+                     Sig.new 'Brian P. Hogan',
+  'There are so many things in Rails that make people go &#x2018;AWESOME&#x2019; ' +
+  'and then two years later, make them go &#x2018;I should not have used that&#x2019;.'
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/11">
+<pre class="sh_ruby"><code>require 'redis-roc'
+Sig   = Struct.new :author, :text
+store = ROC::Store::RedisStore.new Redis.new
+
+brian = Marshal.dump Sig.new 'Brian P. Hogan',
+  'There are so many things in Rails that make people go &#x2018;AWESOME&#x2019; ' +
+  'and then two years later, make them go &#x2018;I should not have used that&#x2019;.'
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/12">
+<pre class="sh_ruby"><code>require 'redis-roc'
+Sig   = Struct.new :author, :text
+store = ROC::Store::RedisStore.new Redis.new
+
+brian = Marshal.dump Sig.new 'Brian P. Hogan',
+  'There are so many things in Rails that make people go &#x2018;AWESOME&#x2019; ' +
+  'and then two years later, make them go &#x2018;I should not have used that&#x2019;.'
+store.init_set('tag:Ruby').add brian
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/13">
+<pre class="sh_ruby"><code>require 'redis-roc'
+Sig   = Struct.new :author, :text
+store = ROC::Store::RedisStore.new Redis.new
+
+brian = Marshal.dump Sig.new 'Brian P. Hogan',
+  'There are so many things in Rails that make people go &#x2018;AWESOME&#x2019; ' +
+  'and then two years later, make them go &#x2018;I should not have used that&#x2019;.'
+store.init_set('tag:Ruby').add brian
+
+reg = Marshal.dump Sig.new 'Reg Braithwaite',
+  'The &#x2018;Ruby Community&#x2019; is the Woody Allen of programming languages, ' +
+  'all neuroses and internal monologues, but loveable and means well.'
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/14">
+<pre class="sh_ruby"><code>require 'redis-roc'
+Sig   = Struct.new :author, :text
+store = ROC::Store::RedisStore.new Redis.new
+
+brian = Marshal.dump Sig.new 'Brian P. Hogan',
+  'There are so many things in Rails that make people go &#x2018;AWESOME&#x2019; ' +
+  'and then two years later, make them go &#x2018;I should not have used that&#x2019;.'
+store.init_set('tag:Ruby').add brian
+
+reg = Marshal.dump Sig.new 'Reg Braithwaite',
+  'The &#x2018;Ruby Community&#x2019; is the Woody Allen of programming languages, ' +
+  'all neuroses and internal monologues, but loveable and means well.'
+store.init_set('tag:Ruby').add   reg
+store.init_set('tag:movies').add reg
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/15">
+<pre class="sh_ruby"><code>require 'redis-roc'
+Sig   = Struct.new :author, :text
+store = ROC::Store::RedisStore.new Redis.new
+
+brian = Marshal.dump Sig.new 'Brian P. Hogan',
+  'There are so many things in Rails that make people go &#x2018;AWESOME&#x2019; ' +
+  'and then two years later, make them go &#x2018;I should not have used that&#x2019;.'
+store.init_set('tag:Ruby').add brian
+
+reg = Marshal.dump Sig.new 'Reg Braithwaite',
+  'The &#x2018;Ruby Community&#x2019; is the Woody Allen of programming languages, ' +
+  'all neuroses and internal monologues, but loveable and means well.'
+store.init_set('tag:Ruby').add   reg
+store.init_set('tag:movies').add reg
+
+adam = Marshal.dump Sig.new 'Adam Keys',
+  'I want to see a hacker movie where the protagonist just stares in ' +
+  'confusion at a stack trace for a few minutes. No typing, no chatter.'
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/16">
+<pre class="sh_ruby"><code>require 'redis-roc'
+Sig   = Struct.new :author, :text
+store = ROC::Store::RedisStore.new Redis.new
+
+brian = Marshal.dump Sig.new 'Brian P. Hogan',
+  'There are so many things in Rails that make people go &#x2018;AWESOME&#x2019; ' +
+  'and then two years later, make them go &#x2018;I should not have used that&#x2019;.'
+store.init_set('tag:Ruby').add brian
+
+reg = Marshal.dump Sig.new 'Reg Braithwaite',
+  'The &#x2018;Ruby Community&#x2019; is the Woody Allen of programming languages, ' +
+  'all neuroses and internal monologues, but loveable and means well.'
+store.init_set('tag:Ruby').add   reg
+store.init_set('tag:movies').add reg
+
+adam = Marshal.dump Sig.new 'Adam Keys',
+  'I want to see a hacker movie where the protagonist just stares in ' +
+  'confusion at a stack trace for a few minutes. No typing, no chatter.'
+store.init_set('tag:movies').add adam</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/17">
+<pre class="sh_ruby"><code>ruby   = store.init_set 'tag:Ruby'
+movies = store.init_set 'tag:movies'
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/18">
+<pre class="sh_ruby"><code>ruby   = store.init_set 'tag:Ruby'
+movies = store.init_set 'tag:movies'
+
+sig = Marshal.load (ruby &amp; movies).shuffle.first
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/19">
+<pre class="sh_ruby"><code>ruby   = store.init_set 'tag:Ruby'
+movies = store.init_set 'tag:movies'
+
+sig = Marshal.load (ruby &amp; movies).shuffle.first
+puts sig.text
+puts '&#x2014; ' + sig.author
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="redis/redis/20">
+<pre class="sh_ruby"><code>ruby   = store.init_set 'tag:Ruby'
+movies = store.init_set 'tag:movies'
+
+sig = Marshal.load (ruby &amp; movies).shuffle.first
+puts sig.text
+puts '&#x2014; ' + sig.author
+
+# The &#x2018;Ruby Community&#x2019; is the Woody Allen of programming languages,
+# all neuroses and internal monologues, but loveable and means well.
+# &#x2014; Reg Braithwaite</code></pre></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental" ref="pstore/pstore/1">
+<h1>PStore</h1>
+
+<ul>
+<li>it&#x2019;s in the standard library</li>
+<li>it saves everything to flat files</li>
+<li>defaults to a Marshal backend</li>
+<li>but can use a YAML backend</li>
+<li>(there&#x2019;s <a href="https://github.com/Nico-Taing/yaml_record">YAML::Record</a> if AR is your thing)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/2">
+<pre class="sh_ruby"><code>require 'yaml/store'
+store = YAML::Store.new 'sigs.yml'
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/3">
+<pre class="sh_ruby"><code>require 'yaml/store'
+store = YAML::Store.new 'sigs.yml'
+
+Sig = Struct.new :author, :tags, :text
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/4">
+<pre class="sh_ruby"><code>require 'yaml/store'
+store = YAML::Store.new 'sigs.yml'
+
+Sig = Struct.new :author, :tags, :text
+
+store.transaction do
+
+
+
+
+
+
+
+
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/5">
+<pre class="sh_ruby"><code>require 'yaml/store'
+store = YAML::Store.new 'sigs.yml'
+
+Sig = Struct.new :author, :tags, :text
+
+store.transaction do
+  store['db'] ||= []
+
+
+
+
+
+
+
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/6">
+<pre class="sh_ruby"><code>require 'yaml/store'
+store = YAML::Store.new 'sigs.yml'
+
+Sig = Struct.new :author, :tags, :text
+
+store.transaction do
+  store['db'] ||= []
+
+                   Sig.new 'Mike Perham', ['Ruby', 'Rails'],
+    '&#x2018;Never wrestle with a pig &#x2013; you get dirty and the ' +
+    'pig likes it.&#x2019; NOW REPLACE PIG WITH ASSET PIPELINE.'
+
+
+
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/7">
+<pre class="sh_ruby"><code>require 'yaml/store'
+store = YAML::Store.new 'sigs.yml'
+
+Sig = Struct.new :author, :tags, :text
+
+store.transaction do
+  store['db'] ||= []
+
+  store['db'].push Sig.new 'Mike Perham', ['Ruby', 'Rails'],
+    '&#x2018;Never wrestle with a pig &#x2013; you get dirty and the ' +
+    'pig likes it.&#x2019; NOW REPLACE PIG WITH ASSET PIPELINE.'
+
+
+
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/8">
+<pre class="sh_ruby"><code>require 'yaml/store'
+store = YAML::Store.new 'sigs.yml'
+
+Sig = Struct.new :author, :tags, :text
+
+store.transaction do
+  store['db'] ||= []
+
+  store['db'].push Sig.new 'Mike Perham', ['Ruby', 'Rails'],
+    '&#x2018;Never wrestle with a pig &#x2013; you get dirty and the ' +
+    'pig likes it.&#x2019; NOW REPLACE PIG WITH ASSET PIPELINE.'
+
+  store['db'].push Sig.new 'Solomon White', ['Ruby', 'RubyGems'],
+    'If you&#x2019;re ever tempted to add a post-install message ' +
+    'to a gem, stop and back slowly away from the keyboard.'
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/9">
+<pre class="sh_ruby"><code>require 'yaml/store'
+store = YAML::Store.new 'sigs.yml'
+
+Sig = Struct.new :author, :tags, :text
+
+store.transaction do   # read-write transaction&#x2026;
+  store['db'] ||= []
+
+  store['db'].push Sig.new 'Mike Perham', ['Ruby', 'Rails'],
+    '&#x2018;Never wrestle with a pig &#x2013; you get dirty and the ' +
+    'pig likes it.&#x2019; NOW REPLACE PIG WITH ASSET PIPELINE.'
+
+  store['db'].push Sig.new 'Solomon White', ['Ruby', 'RubyGems'],
+    'If you&#x2019;re ever tempted to add a post-install message ' +
+    'to a gem, stop and back slowly away from the keyboard.'
+end   # &#x2026;atomically written here</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/10">
+<pre class="sh_ruby"><code>      store.transaction true do   # read-only transaction
+
+end
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/11">
+<pre class="sh_ruby"><code>      store.transaction true do   # read-only transaction
+  store['db'].select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+end
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/12">
+<pre class="sh_ruby"><code>sig = store.transaction true do   # read-only transaction
+  store['db'].select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+end
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/13">
+<pre class="sh_ruby"><code>sig = store.transaction true do   # read-only transaction
+  store['db'].select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+end
+
+puts sig.text
+puts '&#x2014; ' + sig.author
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/14">
+<pre class="sh_ruby"><code>sig = store.transaction true do   # read-only transaction
+  store['db'].select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+end
+
+puts sig.text
+puts '&#x2014; ' + sig.author
+
+# &#x2018;Never wrestle with a pig &#x2013; you get dirty and the
+# pig likes it.&#x2019; NOW REPLACE PIG WITH ASSET PIPELINE.
+# &#x2014; Mike Perham</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="pstore/pstore/15">
+<h2>it&#x2019;s YAML</h2>
+
+<pre><code><code class="command">$ cat sigs.yml</code>
+<code class="result">---
+db:
+- !ruby/struct:Sig
+  author: Mike Perham
+  tags:
+  - Ruby
+  - Rails
+  text: &#x2018;Never wrestle with a pig &#x2013; you get dirty and the
+    pig likes it.&#x2019; NOW REPLACE PIG WITH ASSET PIPELINE.
+- !ruby/struct:Sig
+  author: Solomon White
+  tags:
+  - Ruby
+  - RubyGems
+  text: If you&#x2019;re ever tempted to add a post-install message
+    to a gem, stop and back slowly away from the keyboard.
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="transparent/transparent/1">
+<p><img src="./file/transparent/jim.jpg" alt="Jim"/>
+<a href="http://mysterycoder.blogspot.be/2008/05/best-motivational-poster-in-world.html"><em>The best motivational poster ever</em></a></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="transparent/transparent/2">
+<p><img src="./file/transparent/steve.jpg" alt="Steve"/>
+<a href="https://secure.flickr.com/photos/rrrodrigo/6848064576/"><em>wroc_love.rb day 2 031</em> by Rrrodrigo</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="transparent/transparent/3">
+<p><img src="./file/transparent/steve-and-me.jpg" alt="Steve and me"/>
+<a href="https://secure.flickr.com/photos/rrrodrigo/6848064576/"><em>wroc_love.rb day 2 031</em> by Rrrodrigo</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="transparent/transparent/4">
+<p><img src="./file/transparent/steve-and-me-and-frown.jpg" alt="Steve and me and frown"/>
+<a href="https://secure.flickr.com/photos/rrrodrigo/6848064576/"><em>wroc_love.rb day 2 031</em> by Rrrodrigo</a></p></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content commandline incremental" ref="transparent/transparent/5">
+<pre><code><code class="command">$ signore prego</code>
+<code class="result">Every time I read old computer science articles, I find
+that everyone figured everything out before I was even born.
+                                             [Steve Klabnik]
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="transparent/transparent/6">
+<p><img src="./file/transparent/rkh.jpg" alt="rkh"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="transparent/transparent/7">
+<p><img src="./file/transparent/rkh-macro.jpg" alt="rkh"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="transparent/transparent/8">
+<h1>transparent persistence</h1>
+
+<ul>
+<li>object databases</li>
+<li><a href="http://maglev.gemstone.com">MagLev</a></li>
+<li><a href="http://confreaks.com/videos/1070-cascadiaruby2012-would-you-like-to-forget-about-the-database">Would you like to forget about the database?</a></li>
+<li>fake transparent persistence</li>
+<li><a href="https://github.com/SFEley/candy">Candy</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="transparent/transparent/9">
+<pre class="sh_ruby"><code>require 'bson'
+BSON::ObjectID = BSON::ObjectId
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  &#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="transparent/transparent/10">
+<pre class="sh_ruby"><code>require 'bson'
+BSON::ObjectID = BSON::ObjectId
+require 'candy'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  &#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="transparent/transparent/11">
+<pre class="sh_ruby"><code>require 'bson'
+BSON::ObjectID = BSON::ObjectId
+require 'candy'
+class Sig
+  include Candy::Piece
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+  &#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="transparent/transparent/12">
+<pre class="sh_ruby"><code>require 'bson'
+BSON::ObjectID = BSON::ObjectId
+require 'candy'
+class Sig
+  include Candy::Piece
+end
+
+fogus = Sig.new        # localhost:27017, &#x2018;chastell&#x2019; db, &#x2018;Sig&#x2019; collection
+
+
+
+
+
+
+
+
+
+
+
+  &#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="transparent/transparent/13">
+<pre class="sh_ruby"><code>require 'bson'
+BSON::ObjectID = BSON::ObjectId
+require 'candy'
+class Sig
+  include Candy::Piece
+end
+
+fogus = Sig.new        # localhost:27017, &#x2018;chastell&#x2019; db, &#x2018;Sig&#x2019; collection
+fogus.author = 'fogus' # method_missing resaves
+
+
+
+
+
+
+
+
+
+
+  &#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="transparent/transparent/14">
+<pre class="sh_ruby"><code>require 'bson'
+BSON::ObjectID = BSON::ObjectId
+require 'candy'
+class Sig
+  include Candy::Piece
+end
+
+fogus = Sig.new        # localhost:27017, &#x2018;chastell&#x2019; db, &#x2018;Sig&#x2019; collection
+fogus.author = 'fogus' # method_missing resaves
+fogus.tags   = ['Ruby', 'Java']
+
+
+
+
+
+
+
+
+
+  &#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="transparent/transparent/15">
+<pre class="sh_ruby"><code>require 'bson'
+BSON::ObjectID = BSON::ObjectId
+require 'candy'
+class Sig
+  include Candy::Piece
+end
+
+fogus = Sig.new        # localhost:27017, &#x2018;chastell&#x2019; db, &#x2018;Sig&#x2019; collection
+fogus.author = 'fogus' # method_missing resaves
+fogus.tags   = ['Ruby', 'Java']
+fogus.text   = 'How many lines of Java would it take to do this? ' +
+  'obj.class.superclass.public_instance_methods(false).sort'
+
+
+
+
+
+
+
+  &#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="transparent/transparent/16">
+<pre class="sh_ruby"><code>require 'bson'
+BSON::ObjectID = BSON::ObjectId
+require 'candy'
+class Sig
+  include Candy::Piece
+end
+
+fogus = Sig.new        # localhost:27017, &#x2018;chastell&#x2019; db, &#x2018;Sig&#x2019; collection
+fogus.author = 'fogus' # method_missing resaves
+fogus.tags   = ['Ruby', 'Java']
+fogus.text   = 'How many lines of Java would it take to do this? ' +
+  'obj.class.superclass.public_instance_methods(false).sort'
+
+michael = Sig.new author: 'Michael Feathers', tags: ['Ruby', 'coding'],
+  text: 'At the dentist&#x2019;s thinking about whether hints of method size can ' +
+  'be seen in intra-class dependency diagrams. Oh no, here comes the drill.'
+
+
+
+  &#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="transparent/transparent/17">
+<pre class="sh_ruby"><code>require 'bson'
+BSON::ObjectID = BSON::ObjectId
+require 'candy'
+class Sig
+  include Candy::Piece
+end
+
+fogus = Sig.new        # localhost:27017, &#x2018;chastell&#x2019; db, &#x2018;Sig&#x2019; collection
+fogus.author = 'fogus' # method_missing resaves
+fogus.tags   = ['Ruby', 'Java']
+fogus.text   = 'How many lines of Java would it take to do this? ' +
+  'obj.class.superclass.public_instance_methods(false).sort'
+
+michael = Sig.new author: 'Michael Feathers', tags: ['Ruby', 'coding'],
+  text: 'At the dentist&#x2019;s thinking about whether hints of method size can ' +
+  'be seen in intra-class dependency diagrams. Oh no, here comes the drill.'
+
+zach = Sig.new author: 'Zach Holman', tags: ['coding', 'work'],
+  text: 'I think programming riddles, games, and brain teasers are a great ' +
+  'way to hire. First one to say &#x2018;fuck this!&#x2019; and walk out gets the job.'</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="transparent/transparent/18">
+<pre class="sh_ruby"><code>class Sigs
+  include Candy::Collection
+
+end
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="transparent/transparent/19">
+<pre class="sh_ruby"><code>class Sigs
+  include Candy::Collection
+  collects Sig
+end
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="transparent/transparent/20">
+<pre class="sh_ruby"><code>class Sigs
+  include Candy::Collection
+  collects Sig
+end
+
+sig = Sigs.tags('coding').to_a.shuffle.first.refresh
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="transparent/transparent/21">
+<pre class="sh_ruby"><code>class Sigs
+  include Candy::Collection
+  collects Sig
+end
+
+sig = Sigs.tags('coding').to_a.shuffle.first.refresh
+puts sig.text
+puts '&#x2014; ' + sig.author
+
+
+
+&#xA0;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="transparent/transparent/22">
+<pre class="sh_ruby"><code>class Sigs
+  include Candy::Collection
+  collects Sig
+end
+
+sig = Sigs.tags('coding').to_a.shuffle.first.refresh
+puts sig.text
+puts '&#x2014; ' + sig.author
+
+# I think programming riddles, games, and brain teasers are a great
+# way to hire. First one to say &#x2018;fuck this!&#x2019; and walk out gets the job.
+# &#x2014; Zach Holman</code></pre></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content commandline incremental" ref="links/links/1">
+<h1>world domination plans</h1>
+
+<pre><code><code class="command">$ signore prego</code>
+<code class="result">If you have a parrot and you don&#x2019;t teach it to say, &#x2018;help, they&#x2019;ve
+turned me into a parrot&#x2019;, you are wasting everybody&#x2019;s time.
+                                                     [Julia Segal]
+
+</code><code class="command">$ alias computer,='sudo'</code>
+<code class="result">
+</code><code class="command">$ computer, apt-get install postgresql</code>
+<code class="result">
+</code><code class="command">$ computer, apt-get install redis-server</code>
+<code class="result">
+</code><code class="command">$ computer, apt-get install mong^C</code>
+<code class="result">(just kidding &#x2013; but do remember about tradeoffs)
+
+</code><code class="command">$ computer, apt-get install mongodb couchdb slapd</code>
+<code class="result">
+THERE ARE MANY WAYS TO PERSIST OBJECTS
+PLAY AROUND WITH THEM &#x2014; IT&#x2019;S GREAT FUN
+</code></code></pre></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets" ref="links/links/2">
+<h1>thanks!</h1>
+
+<ul>
+<li><a href="http://chastell.net">@chastell</a></li>
+<li><a href="http://talks.chastell.net">talks.chastell.net</a></li>
+</ul>
+</div>
+</div></div>
+
+</body>
+</html>

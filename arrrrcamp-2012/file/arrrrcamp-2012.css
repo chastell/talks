@@ -1,0 +1,65 @@
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English+SC);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-shadow: #aaa 3px 3px 3px;
+}
+
+body {
+  font-family: 'IM Fell English SC', serif;
+  text-shadow: #ccc 1px 1px 5px;
+}
+
+code {
+  font-size: 22px;
+}
+
+/* h1 { */
+/*   margin: 0 0 0.2em; */
+/* } */
+
+/* h1 > code { */
+/*   font-size: 0.7em; */
+/* } */
+
+/* li > code { */
+/*   font-size: 0.9em; */
+/* } */
+
+p > img + a {
+  font-size: 24px;
+}
+
+pre {
+  font-family: 'Ubuntu Mono', monospace;
+  line-height: 24px;
+  margin: 0 0.2em;
+}
+
+/* table { */
+/*   font-size: 2.5em; */
+/*   margin: 1em auto; */
+/* } */
+
+/* th { */
+/*   text-align: right; */
+/* } */
+
+/* th, td { */
+/*   padding: 0.4em; */
+/* } */
+
+/* .command { */
+/*   display: block; */
+/*   margin-top: 0.5em; */
+/* } */
+
+.content > ul > li {
+  margin-left: 0;
+}
+
+#footer {
+  display: none;
+}
