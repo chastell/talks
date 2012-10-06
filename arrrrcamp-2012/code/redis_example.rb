@@ -24,6 +24,6 @@ store.init_set('tag:movies').add adam
 ruby   = store.init_set 'tag:Ruby'
 movies = store.init_set 'tag:movies'
 
-sig = Marshal.load (ruby & movies).shuffle.first
+sig = Marshal.load (ruby & movies).sample
 puts sig.text
 puts '— ' + sig.author

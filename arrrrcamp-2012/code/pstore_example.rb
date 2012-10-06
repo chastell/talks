@@ -18,7 +18,7 @@ store.transaction do
 end
 
 sig = store.transaction true do
-  store['db'].select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+  store['db'].select { |sig| sig.tags.include? 'Ruby' }.sample
 end
 
 puts sig.text
