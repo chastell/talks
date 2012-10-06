@@ -326,7 +326,7 @@ db.push Sig.new 'Chris Wanstrath', ['Ruby', 'Enumerable'],
   'Every time I use Ruby&#x2019;s Enumerable#partition ' +
   'I want to give matz a high five.'
 
-sig = db.select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+sig = db.select { |sig| sig.tags.include? 'Ruby' }.sample
 
 
 
@@ -347,7 +347,7 @@ db.push Sig.new 'Chris Wanstrath', ['Ruby', 'Enumerable'],
   'Every time I use Ruby&#x2019;s Enumerable#partition ' +
   'I want to give matz a high five.'
 
-sig = db.select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+sig = db.select { |sig| sig.tags.include? 'Ruby' }.sample
 puts sig.text
 puts '&#x2014; ' + sig.author
 
@@ -368,7 +368,7 @@ db.push Sig.new 'Chris Wanstrath', ['Ruby', 'Enumerable'],
   'Every time I use Ruby&#x2019;s Enumerable#partition ' +
   'I want to give matz a high five.'
 
-sig = db.select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+sig = db.select { |sig| sig.tags.include? 'Ruby' }.sample
 puts sig.text
 puts '&#x2014; ' + sig.author
 
@@ -1005,7 +1005,7 @@ movies = store.init_set 'tag:movies'
 <pre class="sh_ruby"><code>ruby   = store.init_set 'tag:Ruby'
 movies = store.init_set 'tag:movies'
 
-sig = Marshal.load (ruby &amp; movies).shuffle.first
+sig = Marshal.load (ruby &amp; movies).sample
 
 
 
@@ -1016,7 +1016,7 @@ sig = Marshal.load (ruby &amp; movies).shuffle.first
 <pre class="sh_ruby"><code>ruby   = store.init_set 'tag:Ruby'
 movies = store.init_set 'tag:movies'
 
-sig = Marshal.load (ruby &amp; movies).shuffle.first
+sig = Marshal.load (ruby &amp; movies).sample
 puts sig.text
 puts '&#x2014; ' + sig.author
 
@@ -1027,7 +1027,7 @@ puts '&#x2014; ' + sig.author
 <pre class="sh_ruby"><code>ruby   = store.init_set 'tag:Ruby'
 movies = store.init_set 'tag:movies'
 
-sig = Marshal.load (ruby &amp; movies).shuffle.first
+sig = Marshal.load (ruby &amp; movies).sample
 puts sig.text
 puts '&#x2014; ' + sig.author
 
@@ -1194,7 +1194,7 @@ end
 &#xA0;</code></pre></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/11">
 <pre class="sh_ruby"><code>      store.transaction true do   # read-only transaction
-  store['db'].select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+  store['db'].select { |sig| sig.tags.include? 'Ruby' }.sample
 end
 
 
@@ -1205,7 +1205,7 @@ end
 &#xA0;</code></pre></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/12">
 <pre class="sh_ruby"><code>sig = store.transaction true do   # read-only transaction
-  store['db'].select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+  store['db'].select { |sig| sig.tags.include? 'Ruby' }.sample
 end
 
 
@@ -1216,7 +1216,7 @@ end
 &#xA0;</code></pre></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/13">
 <pre class="sh_ruby"><code>sig = store.transaction true do   # read-only transaction
-  store['db'].select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+  store['db'].select { |sig| sig.tags.include? 'Ruby' }.sample
 end
 
 puts sig.text
@@ -1227,7 +1227,7 @@ puts '&#x2014; ' + sig.author
 &#xA0;</code></pre></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="pstore/pstore/14">
 <pre class="sh_ruby"><code>sig = store.transaction true do   # read-only transaction
-  store['db'].select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+  store['db'].select { |sig| sig.tags.include? 'Ruby' }.sample
 end
 
 puts sig.text
@@ -1511,7 +1511,7 @@ end
   collects Sig
 end
 
-sig = Sigs.tags('coding').to_a.shuffle.first.refresh
+sig = Sigs.tags('coding').to_a.sample.refresh
 
 
 
@@ -1524,7 +1524,7 @@ sig = Sigs.tags('coding').to_a.shuffle.first.refresh
   collects Sig
 end
 
-sig = Sigs.tags('coding').to_a.shuffle.first.refresh
+sig = Sigs.tags('coding').to_a.sample.refresh
 puts sig.text
 puts '&#x2014; ' + sig.author
 
@@ -1537,7 +1537,7 @@ puts '&#x2014; ' + sig.author
   collects Sig
 end
 
-sig = Sigs.tags('coding').to_a.shuffle.first.refresh
+sig = Sigs.tags('coding').to_a.sample.refresh
 puts sig.text
 puts '&#x2014; ' + sig.author
 
