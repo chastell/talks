@@ -174,7 +174,7 @@
 !SLIDE
     @@@Ruby
           store.transaction true do   # read-only transaction
-      store['db'].select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+      store['db'].select { |sig| sig.tags.include? 'Ruby' }.sample
     end
 
 
@@ -187,7 +187,7 @@
 !SLIDE
     @@@Ruby
     sig = store.transaction true do   # read-only transaction
-      store['db'].select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+      store['db'].select { |sig| sig.tags.include? 'Ruby' }.sample
     end
 
 
@@ -200,7 +200,7 @@
 !SLIDE
     @@@Ruby
     sig = store.transaction true do   # read-only transaction
-      store['db'].select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+      store['db'].select { |sig| sig.tags.include? 'Ruby' }.sample
     end
 
     puts sig.text
@@ -213,7 +213,7 @@
 !SLIDE
     @@@Ruby
     sig = store.transaction true do   # read-only transaction
-      store['db'].select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+      store['db'].select { |sig| sig.tags.include? 'Ruby' }.sample
     end
 
     puts sig.text

@@ -278,7 +278,7 @@
       collects Sig
     end
 
-    sig = Sigs.tags('coding').to_a.shuffle.first.refresh
+    sig = Sigs.tags('coding').to_a.sample.refresh
 
 
 
@@ -293,7 +293,7 @@
       collects Sig
     end
 
-    sig = Sigs.tags('coding').to_a.shuffle.first.refresh
+    sig = Sigs.tags('coding').to_a.sample.refresh
     puts sig.text
     puts '— ' + sig.author
 
@@ -308,7 +308,7 @@
       collects Sig
     end
 
-    sig = Sigs.tags('coding').to_a.shuffle.first.refresh
+    sig = Sigs.tags('coding').to_a.sample.refresh
     puts sig.text
     puts '— ' + sig.author
 

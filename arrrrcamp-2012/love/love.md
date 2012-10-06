@@ -231,7 +231,7 @@
       'Every time I use Ruby’s Enumerable#partition ' +
       'I want to give matz a high five.'
 
-    sig = db.select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+    sig = db.select { |sig| sig.tags.include? 'Ruby' }.sample
 
 
 
@@ -254,7 +254,7 @@
       'Every time I use Ruby’s Enumerable#partition ' +
       'I want to give matz a high five.'
 
-    sig = db.select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+    sig = db.select { |sig| sig.tags.include? 'Ruby' }.sample
     puts sig.text
     puts '— ' + sig.author
 
@@ -277,7 +277,7 @@
       'Every time I use Ruby’s Enumerable#partition ' +
       'I want to give matz a high five.'
 
-    sig = db.select { |sig| sig.tags.include? 'Ruby' }.shuffle.first
+    sig = db.select { |sig| sig.tags.include? 'Ruby' }.sample
     puts sig.text
     puts '— ' + sig.author
 
