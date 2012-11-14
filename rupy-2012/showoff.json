@@ -1,0 +1,12 @@
+{
+  "name": "Fly, You Tools!",
+  "sections": [
+    { "section": "cover"      },
+    { "section": "me-me-me"   },
+    { "section": "talk"       },
+    { "section": "git"        },
+    { "section": "postgresql" },
+    { "section": "cli"        },
+    { "section": "links"      }
+  ]
+}
