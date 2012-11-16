@@ -1,6 +1,6 @@
-/* @import url(http://fonts.googleapis.com/css?family=IM+Fell+English+SC); */
-/* @import url(http://fonts.googleapis.com/css?family=Ubuntu); */
-/* @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono); */
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English+SC);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
 
 a {
   color: inherit;
@@ -16,10 +16,6 @@ body {
 code {
   font-size: 0.9em;
 }
-
-/* p > img + a { */
-/*   font-size: 24px; */
-/* } */
 
 pre {
   font-family: 'Ubuntu Mono', monospace;
