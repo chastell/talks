@@ -1,0 +1,588 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Fly, You Tools!</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/rupy-2012.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="cover/cover">
+<h1>Fly, You Tools!</h1>
+
+<h2>Piotr Szotkowski</h2></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets center incremental" ref="me-me-me/me-me-me/1">
+<p><img src="./file/me-me-me/chastell.png" alt="chastell"/></p>
+
+<h1>me, me, me.</h1>
+
+<ul>
+<li>(that&#x2019;s Piotr Szotkowski)</li>
+<li>(or <a href="http://chastell.net">chastell</a>)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="me-me-me/me-me-me/2">
+<p><img src="./file/me-me-me/wut.png" alt="Warsaw University of Technology"/>
+&#xA0;</p>
+
+<h2>assistant professor</h2>
+
+<h2>at <a href="http://eng.pw.edu.pl">Warsaw University of Technology</a></h2></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="me-me-me/me-me-me/3">
+<p><img src="./file/me-me-me/rebased.png" alt="Rebased"/>
+&#xA0;</p>
+
+<h2>cheap science officer</h2>
+
+<h2>at <a href="http://rebased.pl">Rebased</a></h2></div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental small" ref="talk/talk/1">
+<h1>talk assumptions</h1>
+
+<ul>
+<li>you know there are nifty things<br/>you can do with tools</li>
+<li>you&#x2019;ve seen some blog posts describing<br/>various tools in excruciating detail</li>
+<li>you can&#x2019;t remember 90% of any given post<br/>the day after, including that one useful trick</li>
+<li>it would be cool if someone shared small and crucial<br/>bits that are actually useful every day</li>
+<li>especially if they are not well-known</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="talk/talk/2">
+<h1>tools</h1>
+
+<ul>
+<li>Git</li>
+<li>PostgreSQL</li>
+<li>Vim</li>
+<li><div style="position: relative; top: -1em;">(just kidding)</div></li>
+<li>command-line tools</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental" ref="git/git/1">
+<h1>Git</h1>
+
+<ul>
+<li><div class="quote">Git gets easier once you get the basic idea<br/>that branches are homeomorphic endofunctors<br/>mapping submanifolds of a&#xA0;Hilbert space.<br/>&#x2014; Isaac Wolkerstorfer</div></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="git/git/2">
+<ul>
+<li><div class="quote">Want to make a Git repository behave strangely every now and then? Have a coworker that creates a remote branch called HEAD.<br/>&#x2014; Patrick H&#xFC;sler</div></li>
+<li><div class="quote"><code>git checkout -b no&#x28E;_&#x29E;&#x254;n&#x25F;</code><br/>&#x2014; William Morgan</div></li>
+<li><div class="quote"><code>git svn rebase</code> and <code>git svn dcommit</code><br/>&#x2013; that&#x2019;s all I&#xA0;want to know about Subversion.<br/>&#x2014; Michael Dvorkin</div></li>
+<li><div class="quote">Just discovered <code>git rebase --interactive --autosquash</code>.<br/>Holy shit. Will never again need to do any work.<br/>&#x2014; Tom Stuart</div></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="git/git/3">
+<pre><code><code class="command">$ git init</code>
+<code class="result">Initialized empty Git repository in /tmp/world_domination/.git/
+
+</code><code class="command">$ git commit --message 'git init' --allow-empty</code>
+<code class="result">[master (root-commit) a9e1e55] git init
+
+</code><code class="command">$ cat &gt; README</code>
+<code class="result">README-driven development ftw!
+^D
+
+</code><code class="command">$ git add README</code>
+<code class="command">$ git commit --message 'I think this is the beginning of a beautiful README'</code>
+<code class="result">[master cabba9e] I think this is the beginning of a beautiful README
+1 file changed, 1 insertion(+)
+create mode 100644 README
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="git/git/4">
+<pre><code><code class="command">$ cat &gt; plans.rb</code>
+<code class="result">puts 'Hello, world domination!'
+^D
+
+</code><code class="command">$ git add plans.rb</code>
+<code class="command">$ git commit --message 'first working code!'</code>
+<code class="result">[master c0def00] first working code!
+1 file changed, 1 insertion(+)
+create mode 100644 plans.rb
+
+</code><code class="command">$ git log --oneline --decorate</code>
+<code class="result">c0def00 (HEAD, master) first working code!
+cabba9e I think this is the beginning of a beautiful README
+a9e1e55 git init
+
+</code><code class="command">$ tr a-z A-Z &lt; README | sponge README</code>
+<code class="command">$ cat README</code>
+<code class="result">README-DRIVEN DEVELOPMENT FTW!
+
+</code><code class="command">$ git add README</code>
+<code class="command">$ git commit --message 'fixup! cabba9e'</code>
+<code class="result">[master 5eaf00d] fixup! cabba9e
+1 file changed, 1 insertion(+), 1 deletion(-)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="git/git/5">
+<pre><code><code class="command">$ git log --decorate --oneline</code>
+<code class="result">5eaf00d (HEAD, master) fixup! cabba9e
+c0def00 first working code!
+cabba9e I think this is the beginning of a beautiful README
+a9e1e55 git init
+
+</code><code class="command">$ git rebase --interactive --autosquash cabba9e^</code>
+<code class="result">pick cabba9e I think this is the beginning of a beautiful README
+fixup 5eaf00d fixup! cabba9ea1fa1fabaff1edba99a9eba11ad5faded
+pick c0def00 first working code!
+
+[detached HEAD badf00d] I think this is the beginning of a beautiful README
+1 file changed, 1 insertion(+)
+create mode 100644 README
+Successfully rebased and updated refs/heads/master.
+
+</code><code class="command">$ git log --oneline --decorate</code>
+<code class="result">bea91e5 (HEAD, master) first working code!
+badf00d I think this is the beginning of a beautiful README
+a9e1e55 git init
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="git/git/6">
+<pre><code><code class="command">$ cat &gt; .rvmrc</code>
+<code class="result">rvm use 1.9.3@world_domination
+^D
+
+</code><code class="command">$ git add .rvmrc</code>
+<code class="command">$ git commit --message 'we&#x2019;re getting serious now'</code>
+<code class="result">[master c0ffee5] we&#x2019;re getting serious now
+1 file changed, 1 insertion(+)
+create mode 100644 .rvmrc
+
+</code><code class="command">$ cat &gt;&gt; .rvmrc</code>
+<code class="result">bundle
+^D
+
+</code><code class="command">$ git status --short --branch</code>
+<code class="result">&#x200B;## master
+M .rvmrc
+
+</code><code class="command">$ git update-index --assume-unchanged .rvmrc</code>
+<code class="command">$ git status --short --branch</code>
+<code class="result">&#x200B;## master
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="git/git/7">
+<pre><code><code class="command">$ git checkout -b pinky</code>
+<code class="result">Switched to a new branch 'pinky'
+
+</code><code class="command">$ cat &gt; plans.rb</code>
+<code class="result">if ENV['USER'] == 'brain'
+  puts 'Hello, world domination!'
+else
+  puts 'Nice try. You must be Pinky.'
+end
+^D
+
+</code><code class="command">$ git diff</code>
+<code class="result">diff --git a/plans.rb b/plans.rb
+index beefbad..feedba9 100644
+--- a/plans.rb
++++ b/plans.rb
+@@ -1 +1,5 @@
+-puts 'Hello, world domination!'
++if ENV['USER'] == 'brain'
++  puts 'Hello, world domination!'
++else
++  puts 'Nice try. You must be Pinky.'
++end
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="git/git/8">
+<pre><code><code class="command">$ git diff --ignore-all-space</code>
+<code class="result">diff --git a/plans.rb b/plans.rb
+index beefbad..feedba9 100644
+--- a/plans.rb
++++ b/plans.rb
+@@ -1 +1,5 @@
++if ENV['USER'] == 'brain'
+  puts 'Hello, world domination!'
++else
++  puts 'Nice try. You must be Pinky.'
++end
+
+</code><code class="command">$ git add plans.rb</code>
+<code class="command">$ git commit --message 'Pinky-proofing'</code>
+<code class="result">[pinky defaced] Pinky-proofing
+1 file changed, 5 insertions(+), 1 deletion(-)
+
+</code><code class="command">$ git checkout -</code>
+<code class="result">Switched to branch 'master'
+
+</code><code class="command">$ git checkout -</code>
+<code class="result">Switched to branch 'pinky'
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental small" ref="git/git/9">
+<h1>Git</h1>
+
+<ul>
+<li><code>git commit --allow-empty</code></li>
+<li><code>git rebase -i --autosquash</code></li>
+<li><code>git update-index --assume-unchanged</code></li>
+<li><code>git diff -w</code></li>
+<li><code>git checkout -</code></li>
+<li><code>git add|checkout|stash -p</code></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental" ref="postgresql/postgresql/1">
+<h1>PostgreSQL</h1>
+
+<ul>
+<li><div class="quote">I believe that if Postgres had a catchy name (say, SuperSQL)<br/>it would have left MySQL in the dust long ago.<br/>&#x2014; Diego Basch</div></li>
+<li><div class="quote">Though incorrect, PostgreSQL is more fun to<br/>use when you pronounce it as &#x2018;post-Grayskull&#x2019;.<br/>&#x2014; karlinfox</div></li>
+<li><div class="quote">Want to fall in love with PostgreSQL by reading<br/>just one page of the documentation? Easy: <a href="http://www.postgresql.org/docs/current/interactive/datatype.html">http://www.postgresql.org/docs/current/interactive/datatype.html</a><br/>&#x2014; James Edward Gray II</div></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="postgresql/postgresql/2">
+<pre><code><code class="command">$ psql rupy</code>
+<code class="result">psql (9.2.1)
+Type "help" for help.
+
+</code><code class="command"># CREATE TYPE track AS ENUM ('1', '2', 'both');</code>
+<code class="result">CREATE TYPE
+
+</code><code class="command"># CREATE TABLE agenda (                      \
+    track track DEFAULT 'both',              \
+    speaker text, title text, abstract text, \
+    time tstzrange NOT NULL,                 \
+    tags text[]                              \
+  );</code>
+<code class="result">CREATE TABLE
+
+</code><code class="command"># INSERT INTO agenda (title, time) VALUES                 \
+  ('Registration', '[2012-11-17 8:45, 2012-11-17 9:30)');</code>
+<code class="result">INSERT 0 1
+
+</code><code class="command"># SELECT track, title, time FROM agenda;</code>
+<code class="result"> track |    title     |                        time
+-------+--------------+-----------------------------------------------------
+ both  | Registration | ["2012-11-17 08:45:00+01","2012-11-17 09:30:00+01")
+(1 row)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="postgresql/postgresql/3">
+<pre><code><code class="command"># INSERT INTO agenda (speaker, title, time) VALUES                   \
+  ('Zed A. Shaw', 'Keynote', '[2012-11-17 9:30, 2012-11-17 10:15)');</code>
+<code class="result">INSERT 0 1
+
+</code><code class="command"># INSERT INTO agenda (track, speaker, title, abstract, time, tags) VALUES \
+  ('1', 'Jos&#xE9; Valim', 'Elixir', 'In this talk, Jos&#xE9; Valim will cover&#x2026;',   \
+  '[2012-11-17 10:15, 2012-11-17 10:45)', '{"Elixir", "Erlang"}');</code>
+<code class="result">INSERT 0 1
+
+</code><code class="command"># INSERT INTO agenda (track, speaker, title, abstract, time, tags) VALUES \
+  ('2', 'Honza Kr&#xE1;l', 'Extendable Django Apps', 'I will describe how&#x2026;',   \
+  '[2012-11-17 10:15, 2012-11-17 10:45)', '{"Django", "Python"}');</code>
+<code class="result">INSERT 0 1
+
+</code><code class="command"># SELECT track, speaker, title, tags FROM agenda;</code>
+<code class="result"> track |     speaker     |           title           |          tags
+-------+-----------------+---------------------------+------------------------
+ both  |                 | Registration              |
+ both  | Zed A. Shaw     | Keynote                   |
+ 1     | Jos&#xE9; Valim      | Elixir                    | {Elixir,Erlang}
+ 2     | Honza Kr&#xE1;l      | Extendable Django Apps    | {Django,Python}
+(4 rows)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline" ref="postgresql/postgresql/4">
+<pre><code><code class="command"># INSERT INTO agenda (title, time) VALUES            \
+  ('Break', '[2012-11-17 10:45, 2012-11-17 11:00)');</code>
+<code class="result">INSERT 0 1
+
+</code><code class="command"># INSERT INTO agenda (track, speaker, title, abstract, time, tags) VALUES \
+  ('1', 'Igor Min&#xE1;r', 'AngularJS', 'What if you could write modern web&#x2026;', \
+  '[2012-11-17 11:00, 2012-11-17 11:30)', '{"AngularJS", "JavaScript"}');</code>
+<code class="result">INSERT 0 1
+
+</code><code class="command"># INSERT INTO agenda (track, speaker, title, abstract, time, tags) VALUES \
+  ('2', 'Olov Lassus', 'JS &#x2013; from good to great', 'Is it possible to&#x2026;',   \
+  '[2012-11-17 11:00, 2012-11-17 11:30)', '{"JavaScript"}');</code>
+<code class="result">INSERT 0 1
+
+</code><code class="command"># INSERT INTO agenda (track, speaker, title, time) VALUES \
+  ('1', 'Dr Nic Williams', 'The Future of Deployment',    \
+  '[2012-11-17 11:30, 2012-11-17 12:00)');</code>
+<code class="result">INSERT 0 1
+
+</code><code class="command"># INSERT INTO agenda (track, speaker, title, abstract, time, tags) VALUES \
+  ('2', 'Armin Ronacher', 'Rust from Python and Ruby', 'Rust is a&#x2026;',      \
+  '[2012-11-17 11:30, 2012-11-17 12:00)', '{"Python", "Ruby", "Erlang"}');</code>
+<code class="result">INSERT 0 1
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="postgresql/postgresql/5">
+<pre><code><code class="command"># SELECT track, title, to_char(lower(time), 'HH:MI') AS start, tags FROM agenda;</code>
+<code class="result"> track |           title           | start |          tags
+-------+---------------------------+-------+------------------------
+ both  | Registration              | 08:45 |
+ both  | Keynote                   | 09:30 |
+ 1     | Elixir                    | 10:15 | {Elixir,Erlang}
+ 2     | Extendable Django Apps    | 10:15 | {Django,Python}
+ both  | Break                     | 10:45 |
+ 1     | AngularJS                 | 11:00 | {AngularJS,JavaScript}
+ 2     | JS &#x2013; from good to great   | 11:00 | {JavaScript}
+ 1     | The Future of Deployment  | 11:30 |
+ 2     | Rust from Python and Ruby | 11:30 | {Python,Ruby,Erlang}
+(9 rows)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="postgresql/postgresql/6">
+<pre><code><code class="command"># SELECT track, speaker, title, to_char(lower(time), 'HH:MI') AS start, tags \
+  FROM agenda WHERE time @&gt; '2012-11-17 10:20'::timestamptz;</code>
+<code class="result"> track |  speaker   |         title          | start |      tags
+-------+------------+------------------------+-------+-----------------
+ 1     | Jos&#xE9; Valim | Elixir                 | 10:15 | {Elixir,Erlang}
+ 2     | Honza Kr&#xE1;l | Extendable Django Apps | 10:15 | {Django,Python}
+(2 rows)
+
+</code><code class="command"># SELECT track, speaker, title, to_char(lower(time), 'HH:MI') AS start, tags \
+  FROM agenda WHERE 'Erlang' = ANY(tags) OR 'JavaScript' = ANY(tags);</code>
+<code class="result"> track |    speaker     |           title           | start |          tags
+-------+----------------+---------------------------+-------+------------------------
+ 1     | Jos&#xE9; Valim     | Elixir                    | 10:15 | {Elixir,Erlang}
+ 1     | Igor Min&#xE1;r     | AngularJS                 | 11:00 | {AngularJS,JavaScript}
+ 2     | Olov Lassus    | JS &#x2013; from good to great   | 11:00 | {JavaScript}
+ 2     | Armin Ronacher | Rust from Python and Ruby | 11:30 | {Python,Ruby,Erlang}
+(4 rows)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="postgresql/postgresql/7">
+<pre><code><code class="command"># SELECT abstract, abstract::tsvector, to_tsvector('english', abstract) \
+  FROM agenda WHERE abstract IS NOT NULL;</code>
+<code class="result">         abstract         |         abstract          |         to_tsvector
+--------------------------+---------------------------+-----------------------------
+ In this talk, Jos&#xE9; Valim&#x2026;| 'Elixir' 'In' 'Jos&#xE9;'&#x2026;     | 'also':16 'behind':24&#x2026;
+ I&#x2026; the challenges and&#x2026;   | 'I' 'all'&#x2026; 'challenges'&#x2026;  | 'base':18 'challeng':22&#x2026;
+ What if you could write&#x2026; | 'As' 'HTML' 'JavaScript.'&#x2026;| 'app':8 'code':14 'could':4&#x2026;
+ Is it possible to make&#x2026;  | 'Is' 'JavaScript' 'Let&#x2019;s'&#x2026;| 'care':20 'easier':10&#x2026;
+ Rust&#x2026; wants to rival C++&#x2026;| 'C++' 'Erlang,' 'Haskell'&#x2026;| 'bit':23 'c':10 'design':31&#x2026;
+(5 rows)
+
+</code><code class="command"># SELECT track, speaker, title, lower(time) AS start FROM agenda \
+  WHERE abstract::tsvector @@ 'Haskell &amp; Ruby'::tsquery;</code>
+<code class="result"> track |    speaker     |           title           |         start
+-------+----------------+---------------------------+------------------------
+ 2     | Armin Ronacher | Rust from Python and Ruby | 2012-11-17 11:30:00+01
+(1 row)
+
+</code><code class="command"># SELECT track, speaker, title, lower(time) AS start FROM agenda         \
+  WHERE to_tsvector('english', abstract) @@ to_tsquery('challenging:*');</code>
+<code class="result"> track |  speaker   |         title          |         start
+-------+------------+------------------------+------------------------
+ 2     | Honza Kr&#xE1;l | Extendable Django Apps | 2012-11-17 10:15:00+01
+(1 row)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="postgresql/postgresql/8">
+<h1>PostgreSQL</h1>
+
+<ul>
+<li>custom types</li>
+<li>ranges and arrays and search and HStore and JSON and geometry types and PostGIS and XML and MAC+IPv4+IPv6 and UUID and&#x2026;</li>
+<li><div class="quote">I truly believe that PostgreSQL is the hacker&#x2019;s RDBMS.<br/>&#x2014; Ryan Smith</div></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental" ref="cli/cli/1">
+<h1>CLI</h1>
+
+<ul>
+<li>there are tonnes of commands<br/>useful on an everyday basis</li>
+<li>this is just a crash course<br/>through some of them</li>
+<li>&#x2026;and through some example pipe chaining</li>
+<li><div class="quote">Mistyped find-awk-xargs-rm pipeline backfires killing Ted Dziuba.<br/>&#x2014; Fake Hacker News</div></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="cli/cli/2">
+<pre><code><code class="command">$ find app/models -name '*.rb'</code>
+<code class="result">app/models/foo.rb
+app/models/bar.rb
+app/models/baz.rb
+&#x2026;
+
+</code><code class="command">$ find app/models -name '*.rb' | xargs wc -l</code>
+<code class="result">    43 app/models/foo.rb
+     2 app/models/bar.rb
+    83 app/models/baz.rb
+&#x2026;
+
+</code><code class="command">$ find app/models -name '*.rb' | xargs wc -l | sort -nr</code>
+<code class="result"> 17124 total
+  3663 app/models/qux.rb
+  1426 app/models/quux.rb
+  1240 app/models/corge.rb
+   953 app/models/grault.rb
+&#x2026;                             # via Sam Livingston-Gray
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="cli/cli/3">
+<pre><code><code class="command">$ git log --oneline --name-only</code>
+<code class="result">badf00d some commit message
+app/models/foo.rb
+cafeb01 another commit message
+app/controllers/bars_controller.rb
+app/views/users/_baz.html.erb
+&#x2026;
+</code><code class="command">$ git log --oneline --name-only | grep '^[^ ]*\.rb$'</code>
+<code class="result">app/models/foo.rb
+app/controllers/bars_controller.rb
+app/views/users/_baz.html.erb
+&#x2026;
+</code><code class="command">$ git log --oneline --name-only | grep '^[^ ]*\.rb$' | sort | uniq -c</code>
+<code class="result">      4 app/controllers/quxs_controller.rb
+    183 app/controllers/quuxs_controller.rb
+     63 app/controllers/corges_controller.rb
+&#x2026;
+</code><code class="command">$ git log --oneline --name-only | grep '^[^ ]*\.rb$' | sort | uniq -c | sort -nr</code>
+<code class="result">   1096 app/models/foo.rb
+    325 app/controllers/foos_controller.rb
+    257 app/models/bar.rb
+    251 config/routes.rb
+    248 app/controllers/baz_controller.rb
+    224 db/schema.rb
+&#x2026;                                         # via Samson Ootoovak/Michael Feathers
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="cli/cli/4">
+<pre><code><code class="command">$ head mig.log</code>
+<code class="result">==  AddFooToBar: migrating ===========================
+-- add_column(:bars, :foo, :integer)
+  -&gt; 0.1044s
+-- add_column(:bars, :baz, :integer)
+  -&gt; 0.1144s
+&#x2026;
+</code><code class="command">$ grep ' -&gt; [0-9.]*s' mig.log</code>
+<code class="result">   -&gt; 0.1044s
+   -&gt; 0.1144s
+&#x2026;
+</code><code class="command">$ grep ' -&gt; [0-9.]*s' mig.log | cut -d' ' -f5</code>
+<code class="result">0.1044s
+0.1144s
+&#x2026;
+</code><code class="command">$ grep ' -&gt; [0-9.]*s' mig.log | cut -d' ' -f5 | tr -d s</code>
+<code class="result">0.1044
+0.1144
+&#x2026;
+</code><code class="command">$ grep ' -&gt; [0-9.]*s' mig.log | cut -d' ' -f5 | tr -d s | xargs</code>
+<code class="result">0.1044 0.1144 &#x2026;
+</code><code class="command">$ grep ' -&gt; [0-9.]*s' mig.log | cut -d' ' -f5 | tr -d s | xargs | tr ' ' +</code>
+<code class="result">0.1044+0.1144+&#x2026;
+</code><code class="command">$ grep ' -&gt; [0-9.]*s' mig.log | cut -d' ' -f5 | tr -d s | xargs | tr ' ' + | bc</code>
+<code class="result">4.0230
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="cli/cli/5">
+<pre><code><code class="command">$ cat db_name.sql | pv | psql db_name</code>
+<code class="result">97MB 0:00:12 [28.3MB/s] [        &lt;=&gt;                                               ]
+^C
+
+</code><code class="command">$ pv db_name.sql | psql db_name</code>
+<code class="result">97MB 0:00:12 [28.3MB/s] [============&gt;                             ] 32% ETA 0:00:24
+^C
+
+</code><code class="command">$ pg_dump db_name | pv -s 600m | gzip &gt; db_name.sql.gz</code>
+<code class="result">592MB 0:05:09 [1.92MB/s] [=======================================&gt; ] 98%
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="cli/cli/6">
+<pre><code><code class="command">$ pbpaste | pygmentize -l ruby -f rtf -O style=presentation | pbcopy</code>
+<code class="result">* pastes the system clipboard to the command line
+* colours it: Ruby syntax, RTF format and presentation-style output
+* copies it back to the system clipboard
+                                   # via Katrina Owen/Gary Bernhardt
+
+</code><code class="command">$ diff &lt;(grep -r foo some_dir) &lt;(grep -r foo other_dir)</code>
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental small" ref="cli/cli/7">
+<h1>notable CLI tools</h1>
+
+<ul>
+<li><code>pgrep</code> + <code>pkill</code> &#x2013; find and kill processes</li>
+<li><code>watch</code> &#x2013; refresh output refreshing every X seconds</li>
+<li><code>timeout</code> &#x2013; kill a program after X time</li>
+<li><a href="https://www.gnu.org/software/parallel/man.html">GNU <code>parallel</code></a> &#x2013; just&#x2026; read it (via Lucas di Cioccio)</li>
+<li><code>ncdu</code> &#x2013; check what takes so much space</li>
+<li><code>proxylocal</code> &#x2013; expose a local port to the public</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets incremental small" ref="links/links/1">
+<h1>world domination plans</h1>
+
+<ul>
+<li><code>alias computer,='sudo'</code></li>
+<li><code>computer, apt-get install postgresql</code></li>
+<li>learn Git, play with PostgreSQL, learn a little CLI</li>
+<li><a href="http://rubyrogues.com">Ruby Rogues Parley</a></li>
+<li><a href="http://vimeo.com/43536445">Five Things You Didn&#x2019;t Know About PostgreSQL</a></li>
+<li><a href="http://justincampbell.me/til">Today I Learned</a></li>
+<li><a href="https://twitter.com/climagic">@CLImagic</a>: <code>man $(ls /bin /usr/bin | shuf -n 1)</code></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="scrollLeft"><div class="content bullets" ref="links/links/2">
+<h1>thanks!</h1>
+
+<ul>
+<li><a href="http://chastell.net">@chastell</a></li>
+<li><a href="http://talks.chastell.net">talks.chastell.net</a></li>
+</ul>
+</div>
+</div></div>
+
+</body>
+</html>
