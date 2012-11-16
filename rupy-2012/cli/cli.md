@@ -115,12 +115,38 @@
 
     $ diff <(grep -r foo some_dir) <(grep -r foo other_dir)
 
+!SLIDE commandline incremental
+    $ rmadison --url debian,ubuntu postgresql
+    debian:
+    postgresql | 8.4.13-0squeeze1       | squeeze-security  | all
+    postgresql | 8.4.13-0squeeze1       | squeeze           | all
+    postgresql | 9.1+134wheezy1~bpo60+1 | squeeze-backports | all
+    postgresql | 9.1+134wheezy2         | wheezy            | all
+    postgresql | 9.1+134wheezy2         | sid               | all
+    postgresql | 9.1+136                | experimental      | all
+    ubuntu:
+    postgresql | 8.3.1-1             | hardy           | all
+    postgresql | 8.3.19-0ubuntu8.04  | hardy-security  | all
+    postgresql | 8.3.20-0ubuntu8.04  | hardy-security  | all
+    postgresql | 8.3.21-0ubuntu8.04  | hardy-updates   | all
+    postgresql | 8.4.3-1             | lucid           | all
+    postgresql | 8.4.6-1~hardy1      | hardy-backports | all
+    postgresql | 8.4.12-0ubuntu10.04 | lucid-security  | all
+    postgresql | 8.4.13-0ubuntu10.04 | lucid-security  | all
+    postgresql | 8.4.14-0ubuntu10.04 | lucid-updates   | all
+    postgresql | 9.1+122             | oneiric         | all
+    postgresql | 9.1+122ubuntu1      | oneiric-updates | all
+    postgresql | 9.1+129             | precise         | all
+    postgresql | 9.1+129ubuntu1      | precise-updates | all
+    postgresql | 9.1+136             | quantal         | all
+    postgresql | 9.1+136             | raring          | all
+
+
 !SLIDE bullets incremental small
-# (mostly) standalone CLI apps
+# notable CLI tools
 * `pgrep` + `pkill` – find and kill processes
 * `watch` – refresh output refreshing every X seconds
 * `timeout` – kill a program after X time
 * `parallel` – parallel program execution
-* `rmadison` – Debian and Ubuntu versions of a given package
 * `ncdu` – check what takes so much space
 * `proxylocal` – expose a local port to the public
