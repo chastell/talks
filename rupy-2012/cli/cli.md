@@ -5,25 +5,12 @@
 * …and through some example pipe chaining
 * <div class='quote'>Mistyped find-awk-xargs-rm pipeline backfires killing Ted Dziuba.<br />— Fake Hacker News</div>
 
-!SLIDE bullets incremental small
-# building blocks
-* `diff`, `find`, `grep`, `head`, `tail`, `sort -nr`
-* `uniq -c` – count repeats (input must be sorted)
-* `cut` – leave only some parts of every line
-* `xargs` – turn lines into a command’s arguments
-* `tr` – translate: replace or delete (`-d`) characters
-* `bc` – command-line calculator
-* `wc` – count words, chars (`-c`) or lines (`-l`)
-
 !SLIDE commandline incremental
     $ find app/models -name '*.rb'
     app/models/foo.rb
     app/models/bar.rb
     app/models/baz.rb
     …
-
-    $ find app/models -name '*.rb' | xargs echo wc -l
-    wc -l app/models/foo.rb app/models/bar.rb app/models/baz.rb …
 
     $ find app/models -name '*.rb' | xargs wc -l
         43 app/models/foo.rb
@@ -44,14 +31,13 @@
     badf00d some commit message
     app/models/foo.rb
     cafeb01 another commit message
-    app/controllers/bar_controller.rb
+    app/controllers/bars_controller.rb
     app/views/users/_baz.html.erb
     …
     $ git log --oneline --name-only | grep '^[^ ]*\.rb$'
     app/models/foo.rb
-    app/models/bar.rb
-    app/controllers/bazs_controller.rb
-    app/models/bar.rb
+    app/controllers/bars_controller.rb
+    app/views/users/_baz.html.erb
     …
     $ git log --oneline --name-only | grep '^[^ ]*\.rb$' | sort | uniq -c
           4 app/controllers/quxs_controller.rb
@@ -115,38 +101,11 @@
 
     $ diff <(grep -r foo some_dir) <(grep -r foo other_dir)
 
-!SLIDE commandline incremental
-    $ rmadison --url debian,ubuntu postgresql
-    debian:
-    postgresql | 8.4.13-0squeeze1       | squeeze-security  | all
-    postgresql | 8.4.13-0squeeze1       | squeeze           | all
-    postgresql | 9.1+134wheezy1~bpo60+1 | squeeze-backports | all
-    postgresql | 9.1+134wheezy2         | wheezy            | all
-    postgresql | 9.1+134wheezy2         | sid               | all
-    postgresql | 9.1+136                | experimental      | all
-    ubuntu:
-    postgresql | 8.3.1-1             | hardy           | all
-    postgresql | 8.3.19-0ubuntu8.04  | hardy-security  | all
-    postgresql | 8.3.20-0ubuntu8.04  | hardy-security  | all
-    postgresql | 8.3.21-0ubuntu8.04  | hardy-updates   | all
-    postgresql | 8.4.3-1             | lucid           | all
-    postgresql | 8.4.6-1~hardy1      | hardy-backports | all
-    postgresql | 8.4.12-0ubuntu10.04 | lucid-security  | all
-    postgresql | 8.4.13-0ubuntu10.04 | lucid-security  | all
-    postgresql | 8.4.14-0ubuntu10.04 | lucid-updates   | all
-    postgresql | 9.1+122             | oneiric         | all
-    postgresql | 9.1+122ubuntu1      | oneiric-updates | all
-    postgresql | 9.1+129             | precise         | all
-    postgresql | 9.1+129ubuntu1      | precise-updates | all
-    postgresql | 9.1+136             | quantal         | all
-    postgresql | 9.1+136             | raring          | all
-
-
 !SLIDE bullets incremental small
 # notable CLI tools
 * `pgrep` + `pkill` – find and kill processes
 * `watch` – refresh output refreshing every X seconds
 * `timeout` – kill a program after X time
-* `parallel` – parallel program execution
+* [GNU `parallel`](https://www.gnu.org/software/parallel/man.html) – just… read it (via Lucas di Cioccio)
 * `ncdu` – check what takes so much space
 * `proxylocal` – expose a local port to the public

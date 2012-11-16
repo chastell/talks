@@ -2,10 +2,10 @@
 # world domination plans
 * `alias computer,='sudo'`
 * `computer, apt-get install postgresql`
-* learn Git and play with PostgreSQL (esp. if you use them)
-* [Five Things You Didn’t Know About PostgresSQL](http://vimeo.com/43536445)
+* learn Git, play with PostgreSQL, learn a little CLI
+* [Ruby Rogues Parley](http://rubyrogues.com)
+* [Five Things You Didn’t Know About PostgreSQL](http://vimeo.com/43536445)
 * [Today I Learned](http://justincampbell.me/til)
-* learn enough CLI to get started, then more as you go
 * [@CLImagic](https://twitter.com/climagic): `man $(ls /bin /usr/bin | shuf -n 1)`
 
 !SLIDE bullets transition=scrollLeft
