@@ -109,3 +109,4 @@
 * [GNU `parallel`](https://www.gnu.org/software/parallel/man.html) – just… read it (via Lucas di Cioccio)
 * `ncdu` – check what takes so much space
 * `proxylocal` – expose a local port to the public
+* `rmadison` – Debian and Ubuntu versions of a given package
