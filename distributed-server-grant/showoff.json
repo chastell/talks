@@ -1,0 +1,10 @@
+{
+  "name": "Serwer obliczeń rozproszonych wykonywanych przez sieć heterogenicznych klientów z akceleracją sprzętową",
+  "sections": [
+    { "section": "cover"    },
+    { "section": "network"  },
+    { "section": "protocol" },
+    { "section": "server"   },
+    { "section": "summary"  }
+  ]
+}
