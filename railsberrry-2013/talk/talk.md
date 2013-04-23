@@ -28,7 +28,7 @@
 !SLIDE bullets incremental
 # Rails Girls Warsaw
 * custom live USB
-* irb
+* irb: objects + methods
 * (a bit of) Try Ruby
 * (in the future) [Hackety Hack](http://hackety.com)
 * a small Sinatra app
