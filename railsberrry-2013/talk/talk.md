@@ -2,9 +2,6 @@
 # Teaching Ruby Basics
 ## Piotr Szotkowski
 
-!SLIDE center transition=scrollLeft
-![Rails Girls](rg.jpg)
-
 !SLIDE bullets incremental transition=scrollLeft
 # typical teaching
 * basic types
@@ -18,6 +15,9 @@
 * objects
 * methods
 * variables
+
+!SLIDE center transition=scrollLeft
+![Rails Girls](rg.jpg)
 
 !SLIDE bullets incremental transition=scrollLeft
 # Rails Girls programme
