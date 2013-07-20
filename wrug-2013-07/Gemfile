@@ -1,3 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'parade'
+gem 'pdfkit'
+gem 'rmagick'
+gem 'wkhtmltopdf-binary'
