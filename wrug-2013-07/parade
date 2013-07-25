@@ -1,0 +1,54 @@
+title 'Bogus: A Brief Introduction'
+
+section 'cover'
+
+section 'testing' do
+  slides 'testing/testing.md'
+  slides 'testing/types.md'
+  slides 'testing/speed.md'
+  slides 'testing/tdd.md'
+  slides 'testing/personal.md'
+end
+
+section 'doubles' do
+  slides 'doubles/doubles.md'
+  slides 'doubles/stubs.md'
+  slides 'doubles/mocks.md'
+  slides 'doubles/problems.md'
+  slides 'doubles/solutions.md'
+end
+
+section 'code' do
+  slides 'code/code.md'
+  slides 'code/actors.md'
+  slides 'code/integrated.md'
+  slides 'code/stubbed.md'
+  slides 'code/faked.md'
+end
+
+section 'bogus' do
+  slides 'bogus/bogus.md'
+  slides 'bogus/stubs.md'
+  slides 'bogus/mocks.md'
+  slides 'bogus/spies.md'
+  slides 'bogus/faking.md'
+  slides 'bogus/matchers.md'
+  slides 'bogus/config.md'
+  slides 'bogus/contracts.md'
+end
+
+section 'finale' do
+  slides 'finale/wdp.md'
+end
+
+
+# step-by-step minitest runs?
+
+# contract verification
+# drawbacks
+# review Psyho’s presentation
+
+# links
+# Bogus
+# integration tests are a scam
+# talks.chastell.net
