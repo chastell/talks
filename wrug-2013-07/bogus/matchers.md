@@ -7,7 +7,7 @@ barliman = fake :bartender
 
 stub(barliman).shout(any_args) { :ignore }
 
-stub(barliman).request('Barliman’s Finest', 1) { :always }
+stub(barliman).request('Barliman’s Best', 1) { :always }
 
 stub(barliman).request(anything, 3) { :maybe }
 
