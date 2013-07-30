@@ -40,15 +40,3 @@ end
 section 'finale' do
   slides 'finale/wdp.md'
 end
-
-
-# step-by-step minitest runs?
-
-# contract verification
-# drawbacks
-# review Psyho’s presentation
-
-# links
-# Bogus
-# integration tests are a scam
-# talks.chastell.net
