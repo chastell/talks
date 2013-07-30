@@ -10,7 +10,7 @@ GEM
     mini_portile (0.5.1)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
-    parade (0.10.1)
+    parade (0.10.2)
       blankslate (= 2.1.2.4)
       css_parser
       gli (~> 1.6.0)
