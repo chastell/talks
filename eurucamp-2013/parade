@@ -1,0 +1,32 @@
+title 'They Hear Me Typin’, They Hatin’'
+
+section 'intro' do
+  slides 'intro/cover.md'
+  slides 'intro/disclaimerification.md'
+  slides 'intro/me-me-me.md'
+  slides 'intro/intro.md'
+end
+
+section 'hardware' do
+  slides 'hardware/cover.md'
+  slides 'hardware/apple.md'
+  slides 'hardware/switches.md'
+  slides 'hardware/cherry_mx.md'
+  slides 'hardware/keycaps.md'
+  slides 'hardware/widths.md'
+  slides 'hardware/mine.md'
+end
+
+section 'software' do
+  slides 'software/cover.md'
+  slides 'software/layouts.md'
+  slides 'software/space_cadet.md'
+  slides 'software/layers.md'
+  slides 'software/programmable.md'
+  slides 'software/caps_lock.md'
+  slides 'software/compose.md'
+end
+
+section 'outro' do
+  slides 'outro/links.md'
+end
