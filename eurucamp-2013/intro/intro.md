@@ -12,7 +12,7 @@
 
 ![phone](phone.jpg)
 
-### (please let me know how to attribute it)
+### [Photo by acidburn2k](http://instagram.com/p/ZyIga6tw0f)
 
 !SLIDE center transition=scrollLeft
 
