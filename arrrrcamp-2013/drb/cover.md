@@ -16,6 +16,6 @@
 ## let’s distribute!
 
 * <span class='quote'>So Google has the 4.3.2.0/24 IP allocation and they’re not using a single address. I’d give 4.3.2.1 to NASA for rocket launch livestreams.<br />— Jonty Wareing</span>
-* let’s assume that we have the 1.2.3.0/26 subnet
-* that’s 62 addresses
+* let’s assume that we have the 4.3.2.0/26 subnet
+* that’s 62 server addresses
 * how can we run services on them?

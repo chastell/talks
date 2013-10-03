@@ -23,7 +23,7 @@ Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '')
 !SLIDE
 
 ```ruby
-Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').strip
+Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').chomp
     Ruby: at 2.0, and still has error messages
     like ‘unexpected kEND, expecting $end’.
     If you know what that means, then a Japanese man
@@ -34,14 +34,14 @@ Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').strip
 !SLIDE
 
 ```ruby
-Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').strip
+Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').chomp
     Ruby: at 2.0, and still has error messages
     like ‘unexpected kEND, expecting $end’.
     If you know what that means, then a Japanese man
     has stolen a significant amount of your brain time.
   end
 
-Store.push Sig.new 'EHH', %w[Ruby docs], <<-end.gsub(/^ {4}/, '').strip
+Store.push Sig.new 'EHH', %w[Ruby docs], <<-end.gsub(/^ {4}/, '').chomp
     ‘I’ll just check the Ruby documentation for this…’
     *clicks*
     *BATS FLY OUT OF MONITOR IN A CLOUD OF DUST*
@@ -51,14 +51,14 @@ Store.push Sig.new 'EHH', %w[Ruby docs], <<-end.gsub(/^ {4}/, '').strip
 !SLIDE
 
 ```ruby
-Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').strip
+Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').chomp
     Ruby: at 2.0, and still has error messages
     like ‘unexpected kEND, expecting $end’.
     If you know what that means, then a Japanese man
     has stolen a significant amount of your brain time.
   end
 
-Store.push Sig.new 'EHH', %w[Ruby docs], <<-end.gsub(/^ {4}/, '').strip
+Store.push Sig.new 'EHH', %w[Ruby docs], <<-end.gsub(/^ {4}/, '').chomp
     ‘I’ll just check the Ruby documentation for this…’
     *clicks*
     *BATS FLY OUT OF MONITOR IN A CLOUD OF DUST*
@@ -72,14 +72,14 @@ server = WEBrick::HTTPServer.new Port: 1991
 !SLIDE
 
 ```ruby
-Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').strip
+Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').chomp
     Ruby: at 2.0, and still has error messages
     like ‘unexpected kEND, expecting $end’.
     If you know what that means, then a Japanese man
     has stolen a significant amount of your brain time.
   end
 
-Store.push Sig.new 'EHH', %w[Ruby docs], <<-end.gsub(/^ {4}/, '').strip
+Store.push Sig.new 'EHH', %w[Ruby docs], <<-end.gsub(/^ {4}/, '').chomp
     ‘I’ll just check the Ruby documentation for this…’
     *clicks*
     *BATS FLY OUT OF MONITOR IN A CLOUD OF DUST*
@@ -102,14 +102,14 @@ server.start
 !SLIDE
 
 ```ruby
-Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').strip
+Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').chomp
     Ruby: at 2.0, and still has error messages
     like ‘unexpected kEND, expecting $end’.
     If you know what that means, then a Japanese man
     has stolen a significant amount of your brain time.
   end
 
-Store.push Sig.new 'EHH', %w[Ruby docs], <<-end.gsub(/^ {4}/, '').strip
+Store.push Sig.new 'EHH', %w[Ruby docs], <<-end.gsub(/^ {4}/, '').chomp
     ‘I’ll just check the Ruby documentation for this…’
     *clicks*
     *BATS FLY OUT OF MONITOR IN A CLOUD OF DUST*
@@ -132,14 +132,14 @@ server.start
 !SLIDE
 
 ```ruby
-Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').strip
+Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').chomp
     Ruby: at 2.0, and still has error messages
     like ‘unexpected kEND, expecting $end’.
     If you know what that means, then a Japanese man
     has stolen a significant amount of your brain time.
   end
 
-Store.push Sig.new 'EHH', %w[Ruby docs], <<-end.gsub(/^ {4}/, '').strip
+Store.push Sig.new 'EHH', %w[Ruby docs], <<-end.gsub(/^ {4}/, '').chomp
     ‘I’ll just check the Ruby documentation for this…’
     *clicks*
     *BATS FLY OUT OF MONITOR IN A CLOUD OF DUST*
@@ -162,14 +162,14 @@ server.start
 !SLIDE
 
 ```ruby
-Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').strip
+Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').chomp
     Ruby: at 2.0, and still has error messages
     like ‘unexpected kEND, expecting $end’.
     If you know what that means, then a Japanese man
     has stolen a significant amount of your brain time.
   end
 
-Store.push Sig.new 'EHH', %w[Ruby docs], <<-end.gsub(/^ {4}/, '').strip
+Store.push Sig.new 'EHH', %w[Ruby docs], <<-end.gsub(/^ {4}/, '').chomp
     ‘I’ll just check the Ruby documentation for this…’
     *clicks*
     *BATS FLY OUT OF MONITOR IN A CLOUD OF DUST*
@@ -192,14 +192,14 @@ server.start
 !SLIDE
 
 ```ruby
-Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').strip
+Store.push Sig.new 'Tom Stuart', %w[Ruby], <<-end.gsub(/^ {4}/, '').chomp
     Ruby: at 2.0, and still has error messages
     like ‘unexpected kEND, expecting $end’.
     If you know what that means, then a Japanese man
     has stolen a significant amount of your brain time.
   end
 
-Store.push Sig.new 'EHH', %w[Ruby docs], <<-end.gsub(/^ {4}/, '').strip
+Store.push Sig.new 'EHH', %w[Ruby docs], <<-end.gsub(/^ {4}/, '').chomp
     ‘I’ll just check the Ruby documentation for this…’
     *clicks*
     *BATS FLY OUT OF MONITOR IN A CLOUD OF DUST*
