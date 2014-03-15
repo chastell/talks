@@ -20,7 +20,7 @@ describe Navigator do
     it 'routes through E67 for slow cars' do
       clio = fake :vehicle
       stub(clio).full_tank_range_at(50) { 840 }     # a slow car consumes
-      stub(clio).full_tank_range_at(90) { 466 }     # less petron at 50
+      stub(clio).full_tank_range_at(90) { 466 }     # less petrol at 50
       navigator = Navigator.new clio
       route     = navigator.cheapest_route from: 'Warsaw', to: 'Wrocław'
       expect(route).to eq %w(E67)
