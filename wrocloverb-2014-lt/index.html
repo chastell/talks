@@ -1,0 +1,562 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>From Here to Eternity</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+
+  <link rel="stylesheet" href=".//css/reset.css" type="text/css"/>
+
+  <link type="text/css" href=".//css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href=".//css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href=".//css/sh_style.css" rel="stylesheet" />
+  <link type="text/css" href=".//css/tipsy.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href=".//css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src=".//js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src=".//js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src=".//js/jquery-print.js"></script>
+  <script type="text/javascript" src=".//js/jquery.batchImageLoad.js"></script>
+  <script type="text/javascript" src=".//js/jquery.parsequery.min.js"></script>
+  <script type="text/javascript" src=".//js/jquery.doubletap-0.1.js"></script>
+  <script type="text/javascript" src=".//js/jquery.tipsy.js"></script>
+
+  <script type="text/javascript" src=".//js/fg.menu.js"></script>
+  <script type="text/javascript" src=".//js/showoff.js"></script>
+  <script type="text/javascript" src=".//js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src=".//js/sh_main.min.js"></script>
+  <script type="text/javascript" src=".//js/core.js"></script>
+  <script type="text/javascript" src=".//js/showoffcore.js"></script>
+  <script type="text/javascript" src=".//js/coffee-script.js"></script>
+
+  
+    
+      <script type="text/javascript" src=".//js/sh_lang/sh_java.min.js"></script>
+    
+      <script type="text/javascript" src=".//js/sh_lang/sh_ruby.min.js"></script>
+    
+  
+
+  
+    
+    <link rel="stylesheet" href=".//file/wrocloverb-2014-lt.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+<a tabindex="1" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="stylemenu"><span class="ui-icon ui-icon-triangle-1-s"></span>styles</a>
+<div id="stylepicker" class="hidden"></div>
+
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">g</td><td>toggle follow</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+    <tr><td class="key">P</td><td>toggle pause</td></tr>
+    <tr><td class="key">s</td><td>choose style</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso"><center>loading presentation...</center></div>
+<div id="footer">
+  <span id="followMode"></span>
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+  <span id="slideFilename"></span>
+  <img id="disconnected" src="/css/disconnected.png" />
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div id="cover/cover" class="slide " data-transition="none">
+  <div class="content " ref="cover/cover">
+<h1>From Here<br>to <del>Eternity</del><br>eurucamp</br>
+
+<h2>&#xA0;</h2>
+
+<h2>Piotr Szotkowski</h2></br>
+</h1>
+</div>
+</div><div id="dates/dates" class="slide " data-transition="scrollLeft"><div class="content " ref="dates/dates/1">
+<h1>Java</h1>
+
+<pre class="sh_java"><code>Date date = new java.util.Date(2014, 3, 16);
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="dates/dates" class="slide " data-transition="none"><div class="content " ref="dates/dates/2">
+<h1>Java</h1>
+
+<pre class="sh_java"><code>Date date = new java.util.Date(2014, 3, 16);
+// April 16th
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="dates/dates" class="slide " data-transition="none"><div class="content " ref="dates/dates/3">
+<h1>Java</h1>
+
+<pre class="sh_java"><code>Date date = new java.util.Date(2014, 3, 16);
+// April 16th, 3914
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="dates/dates" class="slide " data-transition="none"><div class="content " ref="dates/dates/4">
+<h1>Java</h1>
+
+<pre class="sh_java"><code>Date date = new java.util.Date(2014, 3, 16);
+// April 16th, 3914
+
+//   days start from 1
+// months start from 0
+//  years start from 1,900</code></pre></div>
+</div><div id="dates/dates" class="slide " data-transition="scrollLeft"><div class="content " ref="dates/dates/5">
+<h1>Ruby</h1>
+
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="dates/dates" class="slide " data-transition="none"><div class="content " ref="dates/dates/6">
+<h1>Ruby</h1>
+
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+#=&gt; March 16th, 2014
+
+#   days start from 1
+# months start from 1
+#  years start from 1</code></pre></div>
+</div><div id="ranges/ranges" class="slide " data-transition="scrollLeft"><div class="content " ref="ranges/ranges/1">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="ranges/ranges" class="slide " data-transition="none"><div class="content " ref="ranges/ranges/2">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+eurucamp - wroclove
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="ranges/ranges" class="slide " data-transition="none"><div class="content " ref="ranges/ranges/3">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+eurucamp - wroclove
+#=&gt; 138 days
+
+
+&#xA0;</code></pre></div>
+</div><div id="ranges/ranges" class="slide " data-transition="none"><div class="content " ref="ranges/ranges/4">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+eurucamp - wroclove
+#=&gt; 138 days
+
+wroclove..eurucamp
+#=&gt; Range of Dates</code></pre></div>
+</div><div id="ranges/ranges" class="slide " data-transition="scrollLeft"><div class="content " ref="ranges/ranges/5">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+case Date.today
+
+
+
+end
+&#xA0;</code></pre></div>
+</div><div id="ranges/ranges" class="slide " data-transition="none"><div class="content " ref="ranges/ranges/6">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+case Date.today
+when Date.new...wroclove      then :before
+
+
+end
+&#xA0;</code></pre></div>
+</div><div id="ranges/ranges" class="slide " data-transition="none"><div class="content " ref="ranges/ranges/7">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+case Date.today
+when Date.new...wroclove      then :before
+when wroclove...eurucamp      then :between
+
+end
+&#xA0;</code></pre></div>
+</div><div id="ranges/ranges" class="slide " data-transition="none"><div class="content " ref="ranges/ranges/8">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+case Date.today
+when Date.new...wroclove      then :before
+when wroclove...eurucamp      then :between
+when eurucamp..Date::Infinity then :after
+end
+&#xA0;</code></pre></div>
+</div><div id="ranges/ranges" class="slide " data-transition="none"><div class="content " ref="ranges/ranges/9">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+case Date.today
+when Date.new...wroclove      then :before
+when wroclove...eurucamp      then :between
+when eurucamp..Date::Infinity then :after
+end
+#=&gt; :between</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="scrollLeft"><div class="content " ref="enums/enums/1">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+(wroclove..eurucamp).all?(&amp;:friday?)
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/2">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+(wroclove..eurucamp).all?(&amp;:friday?)
+#=&gt; false :(</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/3">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+(wroclove..eurucamp).count(&amp;:friday?)
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/4">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+(wroclove..eurucamp).count(&amp;:friday?)
+#=&gt; 20 \o/</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/5">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+(wroclove..eurucamp).select(&amp;:friday?)
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/6">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+(wroclove..eurucamp).select(&amp;:friday?)
+#=&gt; March 21st, March 28th, April 4th&#x2026;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="scrollLeft"><div class="content " ref="enums/enums/7">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+(wroclove..eurucamp).each_cons(2) do |lower, upper|
+
+end
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/8">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+(wroclove..eurucamp).each_cons(2) do |lower, upper|
+  puts "#{lower} - #{upper}"
+end
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/9">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+(wroclove..eurucamp).each_cons(2) do |lower, upper|
+  puts "#{lower} - #{upper}"
+end
+# 2014-03-16 - 2014-03-17
+# 2014-03-17 - 2014-03-18
+# 2014-03-18 - 2014-03-19
+# &#x2026;
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="scrollLeft"><div class="content " ref="enums/enums/10">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+                   (wroclove..eurucamp).partition do |date|
+
+end
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/11">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+                   (wroclove..eurucamp).partition do |date|
+  date.saturday? or date.sunday?
+end
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/12">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+weekend, weekday = (wroclove..eurucamp).partition do |date|
+  date.saturday? or date.sunday?
+end
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/13">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+weekend, weekday = (wroclove..eurucamp).partition do |date|
+  date.saturday? or date.sunday?
+end
+
+weekend
+#=&gt; March 16th, March 22nd, March 23rd&#x2026;
+
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/14">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+weekend, weekday = (wroclove..eurucamp).partition do |date|
+  date.saturday? or date.sunday?
+end
+
+weekend
+#=&gt; March 16th, March 22nd, March 23rd&#x2026;
+
+weekday
+#=&gt; the rest :(</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="scrollLeft"><div class="content " ref="enums/enums/15">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+(wroclove..eurucamp).slice_before(&amp;:monday?)
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/16">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+(wroclove..eurucamp).slice_before(&amp;:monday?).each do |week|
+
+end
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/17">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+(wroclove..eurucamp).slice_before(&amp;:monday?).each do |week|
+  puts "#{week.first} &#x2013; #{week.last}"
+end
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/18">
+<pre class="sh_ruby"><code>wroclove = Date.new 2014, 3, 16
+eurucamp = Date.new 2014, 8,  1
+
+(wroclove..eurucamp).slice_before(&amp;:monday?).each do |week|
+  puts "#{week.first} &#x2013; #{week.last}"
+end
+# 2014-03-16 &#x2013; 2014-03-16 &#x2190; last day of this week
+# 2014-03-17 &#x2013; 2014-03-23
+# 2014-03-24 &#x2013; 2014-03-30
+# &#x2026;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="scrollLeft"><div class="content " ref="enums/enums/19">
+<pre class="sh_ruby"><code>class Date
+  def free?
+    saturday? or sunday?
+  end
+end</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="scrollLeft"><div class="content " ref="enums/enums/20">
+<pre class="sh_ruby"><code>fun   = %w(&#x2693; &#x269B; &#x2665; &#x266B; &#x2698; &#x270D; &#x2702; &#x2694;)
+
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/21">
+<pre class="sh_ruby"><code>fun   = %w(&#x2693; &#x269B; &#x2665; &#x266B; &#x2698; &#x270D; &#x2702; &#x2694;)
+plans = -&gt; free { free ? fun.sample : '&#x2692;' }
+
+
+
+
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/22">
+<pre class="sh_ruby"><code>fun   = %w(&#x2693; &#x269B; &#x2665; &#x266B; &#x2698; &#x270D; &#x2702; &#x2694;)
+plans = -&gt; free { free ? fun.sample : '&#x2692;' }
+
+(wroclove..eurucamp).chunk(&amp;:free?).each do |free, dates|
+
+end
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/23">
+<pre class="sh_ruby"><code>fun   = %w(&#x2693; &#x269B; &#x2665; &#x266B; &#x2698; &#x270D; &#x2702; &#x2694;)
+plans = -&gt; free { free ? fun.sample : '&#x2692;' }
+
+(wroclove..eurucamp).chunk(&amp;:free?).each do |free, dates|
+  puts dates.map { plans.(free) }.join ' '
+end
+
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/24">
+<pre class="sh_ruby"><code>fun   = %w(&#x2693; &#x269B; &#x2665; &#x266B; &#x2698; &#x270D; &#x2702; &#x2694;)
+plans = -&gt; free { free ? fun.sample : '&#x2692;' }
+
+(wroclove..eurucamp).chunk(&amp;:free?).each do |free, dates|
+  puts dates.map { plans.(free) }.join ' '
+end
+# &#x269B;
+
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/25">
+<pre class="sh_ruby"><code>fun   = %w(&#x2693; &#x269B; &#x2665; &#x266B; &#x2698; &#x270D; &#x2702; &#x2694;)
+plans = -&gt; free { free ? fun.sample : '&#x2692;' }
+
+(wroclove..eurucamp).chunk(&amp;:free?).each do |free, dates|
+  puts dates.map { plans.(free) }.join ' '
+end
+# &#x269B;
+# &#x2692; &#x2692; &#x2692; &#x2692; &#x2692;
+
+
+
+
+
+&#xA0;</code></pre></div>
+</div><div id="enums/enums" class="slide " data-transition="none"><div class="content " ref="enums/enums/26">
+<pre class="sh_ruby"><code>fun   = %w(&#x2693; &#x269B; &#x2665; &#x266B; &#x2698; &#x270D; &#x2702; &#x2694;)
+plans = -&gt; free { free ? fun.sample : '&#x2692;' }
+
+(wroclove..eurucamp).chunk(&amp;:free?).each do |free, dates|
+  puts dates.map { plans.(free) }.join ' '
+end
+# &#x269B;
+# &#x2692; &#x2692; &#x2692; &#x2692; &#x2692;
+# &#x2698; &#x2694;
+# &#x2692; &#x2692; &#x2692; &#x2692; &#x2692;
+# &#x266B; &#x2693;
+# &#x2692; &#x2692; &#x2692; &#x2692; &#x2692;
+# &#x2702; &#x2665;
+# &#x2026;</code></pre></div>
+</div><div id="links/links" class="slide bullets" data-transition="scrollLeft">
+  <div class="content bullets" ref="links/links">
+<p class="quote">Two easy steps to quickly get<br>better
+at programming Ruby:<br>1) read about enumerable.rb<br>2) read it again.<br>&#x2014; Florian Gilcher</br>
+
+<ul>
+<li><a href="http://rubydoc.info/stdlib/core/Enumerable">Enumerable</a></li>
+<li><a href="http://talks.chastell.net">talks.chastell.net</a></li>
+</ul></br>
+</br>
+</br></p></div>
+</div></div>
+<div id="pauseScreen">
+  PAUSED
+</div>
+
+</body>
+</html>
