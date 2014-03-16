@@ -1,0 +1,10 @@
+{
+  "name": "From Here to Eternity",
+  "sections": [
+    { "section": "cover"  },
+    { "section": "dates"  },
+    { "section": "ranges" },
+    { "section": "enums"  },
+    { "section": "links"  }
+  ]
+}
