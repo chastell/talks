@@ -135,7 +135,7 @@ Finished in 0.00592 seconds
 
 # contract tests
 
-## we should test our classes<br />for the actuall calls we stub and mock
+## we should test our classes<br />for the actual calls we stub and mock
 <!-- .element: class="fragment" -->
 
 ## _what if the outgoing call is right<br /> but the collaborator can’t handle it?_
