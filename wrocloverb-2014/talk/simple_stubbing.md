@@ -124,7 +124,7 @@ class Vehicle
   attr_writer :whereabouts   # whereabouts!
 
   def whereabouts            # look, here as well!
-    sleep 1
+    sleep 10
     @whereabouts             # and here! CON-SIST-EN-CY!
   end
 end
