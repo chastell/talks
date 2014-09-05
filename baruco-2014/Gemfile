@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+
+gem 'levenshtein'
+gem 'parade'
+gem 'pdfkit'
+gem 'rmagick'
+gem 'wkhtmltopdf-binary'

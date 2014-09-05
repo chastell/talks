@@ -1,0 +1,56 @@
+title 'Standard Library, Uncommon Uses'
+
+section 'intro' do
+  slides 'intro/cover.md'
+  slides 'intro/me-me-me.md'
+end
+
+section 'sigs' do
+  slides 'sigs/basics.md'
+end
+
+section 'pstore' do
+  slides 'pstore/cover.md'
+  slides 'pstore/pstore.md'
+end
+
+section 'webrick' do
+  slides 'webrick/cover.md'
+  slides 'webrick/webrick.md'
+end
+
+section 'gserver' do
+  slides 'gserver/cover.md'
+  slides 'gserver/gserver.md'
+end
+
+section 'abbrev' do
+  slides 'abbrev/cover.md'
+  slides 'abbrev/abbrev.md'
+end
+
+section 'levenshtein' do
+  slides 'levenshtein/cover.md'
+  slides 'levenshtein/levenshtein.md'
+end
+
+section 'drb' do
+  slides 'drb/cover.md'
+  slides 'drb/drb.md'
+end
+
+section 'prime' do
+  slides 'prime/cover.md'
+  slides 'prime/prime.md'
+end
+
+section 'benchmark' do
+  slides 'benchmark/cover.md'
+  slides 'benchmark/benchmark.md'
+end
+
+section 'outro' do
+  slides 'outro/covered.md'
+  slides 'outro/homework.md'
+  slides 'outro/links.md'
+end
