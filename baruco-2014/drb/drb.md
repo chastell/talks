@@ -188,7 +188,7 @@ ips.first                #=> 4.3.2.0
 ips.last                 #=> 4.3.2.255
 ips = ips.to_a[1...-1]   #=> 4.3.2.1 to 4.3.2.254
 
-batch_size = authors.size * (authors.size - 1) / 2.0 / ips.size
+batch_size = authors.size * (authors.size - 1) / 2.0 / ips.size # 11126.98
 
 
 
@@ -211,7 +211,7 @@ ips.first                #=> 4.3.2.0
 ips.last                 #=> 4.3.2.255
 ips = ips.to_a[1...-1]   #=> 4.3.2.1 to 4.3.2.254
 
-batch_size = authors.size * (authors.size - 1) / 2.0 / ips.size
+batch_size = authors.size * (authors.size - 1) / 2.0 / ips.size # 11126.98
 
 # we need no more than ips.size slices:
 slices = authors.combination(2).each_slice(batch_size.ceil)
@@ -234,7 +234,7 @@ ips.first                #=> 4.3.2.0
 ips.last                 #=> 4.3.2.255
 ips = ips.to_a[1...-1]   #=> 4.3.2.1 to 4.3.2.254
 
-batch_size = authors.size * (authors.size - 1) / 2.0 / ips.size
+batch_size = authors.size * (authors.size - 1) / 2.0 / ips.size # 11126.98
 
 # we need no more than ips.size slices:
 slices = authors.combination(2).each_slice(batch_size.ceil)
@@ -259,7 +259,7 @@ ips.first                #=> 4.3.2.0
 ips.last                 #=> 4.3.2.255
 ips = ips.to_a[1...-1]   #=> 4.3.2.1 to 4.3.2.254
 
-batch_size = authors.size * (authors.size - 1) / 2.0 / ips.size
+batch_size = authors.size * (authors.size - 1) / 2.0 / ips.size # 11126.98
 
 # we need no more than ips.size slices:
 slices = authors.combination(2).each_slice(batch_size.ceil)
@@ -284,7 +284,7 @@ ips.first                #=> 4.3.2.0
 ips.last                 #=> 4.3.2.255
 ips = ips.to_a[1...-1]   #=> 4.3.2.1 to 4.3.2.254
 
-batch_size = authors.size * (authors.size - 1) / 2.0 / ips.size
+batch_size = authors.size * (authors.size - 1) / 2.0 / ips.size # 11126.98
 
 # we need no more than ips.size slices:
 slices = authors.combination(2).each_slice(batch_size.ceil)
@@ -311,7 +311,7 @@ ips.first                #=> 4.3.2.0
 ips.last                 #=> 4.3.2.255
 ips = ips.to_a[1...-1]   #=> 4.3.2.1 to 4.3.2.254
 
-batch_size = authors.size * (authors.size - 1) / 2.0 / ips.size
+batch_size = authors.size * (authors.size - 1) / 2.0 / ips.size # 11126.98
 
 # we need no more than ips.size slices:
 slices = authors.combination(2).each_slice(batch_size.ceil)
@@ -339,7 +339,7 @@ ips.first                #=> 4.3.2.0
 ips.last                 #=> 4.3.2.255
 ips = ips.to_a[1...-1]   #=> 4.3.2.1 to 4.3.2.254
 
-batch_size = authors.size * (authors.size - 1) / 2.0 / ips.size
+batch_size = authors.size * (authors.size - 1) / 2.0 / ips.size # 11126.98
 
 # we need no more than ips.size slices:
 slices = authors.combination(2).each_slice(batch_size.ceil)

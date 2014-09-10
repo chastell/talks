@@ -1,7 +1,7 @@
 !SLIDE
 
 ```ruby
-store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '')
     Yes, I am a princess and Kernel#test is a pea. I don’t care. These
     are the thousand cuts that make Ruby so difficult to reason about.
     The real question here is: who is the mattress?
@@ -11,12 +11,12 @@ store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '').chomp
 !SLIDE
 
 ```ruby
-store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '')
     Yes, I am a princess and Kernel#test is a pea. I don’t care. These
     are the thousand cuts that make Ruby so difficult to reason about.
     The real question here is: who is the mattress?
   end
-store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '')
     I wonder if the guy that wrote BigDecimal#inspect has
     a tragic backstory that explains why he hates humanity.
   end
@@ -25,12 +25,12 @@ store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '').cho
 !SLIDE
 
 ```ruby
-store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '')
     Yes, I am a princess and Kernel#test is a pea. I don’t care. These
     are the thousand cuts that make Ruby so difficult to reason about.
     The real question here is: who is the mattress?
   end
-store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '')
     I wonder if the guy that wrote BigDecimal#inspect has
     a tragic backstory that explains why he hates humanity.
   end
@@ -50,12 +50,12 @@ end
 !SLIDE
 
 ```ruby
-store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '')
     Yes, I am a princess and Kernel#test is a pea. I don’t care. These
     are the thousand cuts that make Ruby so difficult to reason about.
     The real question here is: who is the mattress?
   end
-store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '')
     I wonder if the guy that wrote BigDecimal#inspect has
     a tragic backstory that explains why he hates humanity.
   end
@@ -75,12 +75,12 @@ end
 !SLIDE
 
 ```ruby
-store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '')
     Yes, I am a princess and Kernel#test is a pea. I don’t care. These
     are the thousand cuts that make Ruby so difficult to reason about.
     The real question here is: who is the mattress?
   end
-store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '')
     I wonder if the guy that wrote BigDecimal#inspect has
     a tragic backstory that explains why he hates humanity.
   end
@@ -100,12 +100,12 @@ end
 !SLIDE
 
 ```ruby
-store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '')
     Yes, I am a princess and Kernel#test is a pea. I don’t care. These
     are the thousand cuts that make Ruby so difficult to reason about.
     The real question here is: who is the mattress?
   end
-store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '')
     I wonder if the guy that wrote BigDecimal#inspect has
     a tragic backstory that explains why he hates humanity.
   end
@@ -125,12 +125,12 @@ end
 !SLIDE
 
 ```ruby
-store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '')
     Yes, I am a princess and Kernel#test is a pea. I don’t care. These
     are the thousand cuts that make Ruby so difficult to reason about.
     The real question here is: who is the mattress?
   end
-store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '')
     I wonder if the guy that wrote BigDecimal#inspect has
     a tragic backstory that explains why he hates humanity.
   end
@@ -150,12 +150,12 @@ end
 !SLIDE
 
 ```ruby
-store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '')
     Yes, I am a princess and Kernel#test is a pea. I don’t care. These
     are the thousand cuts that make Ruby so difficult to reason about.
     The real question here is: who is the mattress?
   end
-store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '')
     I wonder if the guy that wrote BigDecimal#inspect has
     a tragic backstory that explains why he hates humanity.
   end
@@ -175,12 +175,12 @@ end
 !SLIDE
 
 ```ruby
-store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '')
     Yes, I am a princess and Kernel#test is a pea. I don’t care. These
     are the thousand cuts that make Ruby so difficult to reason about.
     The real question here is: who is the mattress?
   end
-store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '')
     I wonder if the guy that wrote BigDecimal#inspect has
     a tragic backstory that explains why he hates humanity.
   end
@@ -202,12 +202,12 @@ sig_server = SigServer.new(1969)
 !SLIDE
 
 ```ruby
-store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '')
     Yes, I am a princess and Kernel#test is a pea. I don’t care. These
     are the thousand cuts that make Ruby so difficult to reason about.
     The real question here is: who is the mattress?
   end
-store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '')
     I wonder if the guy that wrote BigDecimal#inspect has
     a tragic backstory that explains why he hates humanity.
   end
@@ -230,12 +230,12 @@ sig_server.start
 !SLIDE
 
 ```ruby
-store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Gary Bernhardt', %w(Ruby), <<-end.gsub(/^ {4}/, '')
     Yes, I am a princess and Kernel#test is a pea. I don’t care. These
     are the thousand cuts that make Ruby so difficult to reason about.
     The real question here is: who is the mattress?
   end
-store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '').chomp
+store.push Sig.new 'Tim Pope', %w(Ruby BigDecimal), <<-end.gsub(/^ {4}/, '')
     I wonder if the guy that wrote BigDecimal#inspect has
     a tragic backstory that explains why he hates humanity.
   end

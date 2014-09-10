@@ -1,6 +1,6 @@
 !SLIDE smbullets incremental
 
-## homework
+## homework (come to [ArrrrCamp](http://2014.arrrrcamp.be)!):
 
 * `SecureRandom.uuid` & `SecureRandom.urlsafe_base64`
 * Ripper

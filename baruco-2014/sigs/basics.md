@@ -1,11 +1,3 @@
-!SLIDE bullets incremental
-
-## disclaimers
-
-* the examples are somewhat contrived<br />but see past them to your own applications
-* there are pieces of Ruby _core_<br />sprinkled throughout
-* <span class='quote' style='width: 100%'>Tech talk template:<br />I don’t know what I’m doing,<br />and here’s how.<br />— Pinboard</span>
-
 !SLIDE
 
 ```ruby
@@ -250,3 +242,12 @@ puts store.random_sig_tagged_with('Ruby')
 # I’m a professional programmer, I type ‘be unicorn’ to start my webserver.
 # — James Coglan
 ```
+
+!SLIDE bullets incremental transition=scrollLeft
+
+## disclaimers
+
+* the examples are somewhat contrived<br />but see past them to your own applications
+* there are pieces of Ruby _core_<br />sprinkled throughout
+* <span class='quote' style='width: 100%'>Tech talk template:<br />I don’t know what I’m doing,<br />and here’s how.<br />— Pinboard</span>
+

@@ -177,12 +177,12 @@ puts store.random_sig_tagged_with?('Ruby')
       tags:
       - Ruby
       - Enumerable
-      text: 'Two easy steps to quickly get better at programming Ruby: 1) read about enumerable.rb
-        2) read it again.'
+      text: 'Two easy steps to quickly get better at programming Ruby:
+        1) read about enumerable.rb 2) read it again.'
     - !ruby/struct:Sig
       author: Theo
       tags:
       - Ruby
       - RubyGems
-      text: 'RubyGems 2.0.3: ‘When installing RubyGems on JRuby, the standard library
-        is no longer deleted’ – sounds like a feature to me.'
+      text: 'RubyGems 2.0.3: ‘When installing RubyGems on JRuby, the standard
+        library is no longer deleted’ – sounds like a feature to me.'

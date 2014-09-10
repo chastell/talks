@@ -3,6 +3,8 @@ title 'Standard Library, Uncommon Uses'
 section 'intro' do
   slides 'intro/cover.md'
   slides 'intro/me-me-me.md'
+  slides 'intro/lovestory.md'
+  slides 'intro/signore.md'
 end
 
 section 'sigs' do
@@ -51,6 +53,5 @@ end
 
 section 'outro' do
   slides 'outro/covered.md'
-  slides 'outro/homework.md'
   slides 'outro/links.md'
 end
