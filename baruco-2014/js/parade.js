@@ -151,7 +151,7 @@ $(document).ready(function() {
     },
     load: function(options,afterLoad) {
 
-      var slidesURL = options.urlPrefix + "/slides?height=" + options.height + "&width=" + options.width;
+      var slidesURL = options.urlPrefix + "slides?height=" + options.height + "&width=" + options.width;
 
       $("#slides").load(slidesURL,$.proxy(function() {
         this.slides = $("#slides > .slide");

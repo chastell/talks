@@ -10,7 +10,7 @@
 <div id="" class="slide intro smbullets" data-transition="scrollLeft" data-sections="Standard Library, Uncommon Uses,intro" data-sequence="2">
 
   <div class="content smbullets">
-    <p><img src="/image/intro/chastell.png" width="300" height="300" alt="chastell"/>
+    <p><img src="image/intro/chastell.png" width="300" height="300" alt="chastell"/>
 
 <ul>
 <li>Piotr Szotkowski<br>(<a href="http://chastell.net">chastell</a>)</br>
@@ -24,7 +24,7 @@
 <div id="" class="slide intro center" data-transition="none" data-sections="Standard Library, Uncommon Uses,intro" data-sequence="3">
 
   <div class="content center">
-    <p><img src="/image/intro/rg.jpg" width="800" height="652" alt="Rails Girls"/>
+    <p><img src="image/intro/rg.jpg" width="800" height="652" alt="Rails Girls"/>
 
   </p>
 </div></div>
@@ -2419,7 +2419,7 @@ Connection closed by foreign host.
 <div id="" class="slide outro center" data-transition="scrollLeft" data-sections="Standard Library, Uncommon Uses,outro" data-sequence="136">
 
   <div class="content center">
-    <p><img src="/image/outro/chastell.png" width="300" height="300" alt="chastell"/>
+    <p><img src="image/outro/chastell.png" width="300" height="300" alt="chastell"/>
 
 <h1>thanks!</h1>
 
