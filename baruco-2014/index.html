@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" href="/css/960.css" type="text/css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Standard Library, Uncommon Uses</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <!-- Set up the initial stylesheet -->
+
+  <link rel="stylesheet" href="/css/reset.css" type="text/css"/>
+
+  <!-- Required for the Syntax Highlighting of Code to Work -->
+
+  <link rel="stylesheet" href="/css/ghf_marked.css" type="text/css"/>
+
+  <link rel="stylesheet" href="/css/themes/default.css" type="text/css"/>
+<link rel="stylesheet" href="/css/slide_formats.css" type="text/css"/>
+
+  <link rel="stylesheet" href="/css/mobile.css" type="text/css"/>
+
+  <!-- JavaScript Powers This Ship! -->
+
+  <script type="text/javascript" src="/js/jquery-1.4.2.js"></script>
+
+  <!-- The Parade JS uses a lot of publish and subscribe event structure -->
+  <script type="text/javascript" src="/js/jquery-pubsub.js"></script>
+
+  <!-- Provide a sane interface for defining keyboard events -->
+  <script type="text/javascript" src="/js/keyboard.js"></script>
+
+  <!-- Giving Structure to the Javascript - this powers a lot of the Parade
+       code that is defined. -->
+
+  <script type="text/javascript" src="/js/spine.js"></script>
+
+  <!-- Slide Transition support provided by jquery-cycle ... -->
+
+  <script type="text/javascript" src="/js/jquery.cycle.all.js"></script>
+
+  <!-- Ensures that all images in the presentation have been loaded before
+       the presentation is ready to start. -->
+
+  <script type="text/javascript" src="/js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="/js/hammer.js"></script>
+
+  <!-- Results from the live executed code is powered by this little js -->
+  <script type="text/javascript" src="/js/jquery-print.js"></script>
+
+
+  <!-- Provides Command-Line Console Example Support -->
+  <script type="text/javascript" src="/js/jTypeWriter.js"></script>
+
+  <!-- Provides Executable CoffeeScript Support -->
+
+  <script type="text/javascript" src="/js/coffee-script.js"></script>
+
+  <!-- Provides the command visor functionality to parade -->
+
+  <script type="text/javascript" src="/js/jquery-terminal.js"></script>
+
+  <!-- Core Parade Library Code -->
+
+  <script type="text/javascript" src="/js/parade.js"></script>
+  <script type="text/javascript" src="/js/parade-code-execution.js"></script>
+
+  <script type="text/javascript" src="/js/parade-keyboard-input.js"></script>
+
+  <script type="text/javascript" src="/js/parade-command-input.js"></script>
+  <script type="text/javascript" src="/js/parade-command-visor.js"></script>
+  <script type="text/javascript" src="/js/parade-mobile.js"></script>
+
+  <!-- Powers the Table of Contents Menu - this allows you to move through
+       the slides  -->
+
+  <script type="text/javascript" src="/js/fg.menu.js"></script>
+  <link rel="stylesheet" href="/css/fg.menu.css" type="text/css"/>
+<link rel="stylesheet" href="/css/jquery-ui/ui.all.css" type="text/css"/>
+<link rel="stylesheet" href="/css/jquery-terminal.css" type="text/css"/>
+
+  
+  
+  <link rel="stylesheet" href="/css/parade.css" type="text/css"/>
+
+  
+  
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu">
+  <span class="ui-icon ui-icon-triangle-1-s"></span>
+</a>
+
+<div id="navigation" class="hidden"></div>
+
+<div class="buttonNav">
+  <input class="prev" type="submit" value="prev"/>
+  <input class="next" type="submit" value="next"/>
+</div>
+<div id="help">
+  <table>
+    <tr><td class="key">h, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;, &darr;</td><td>next slide</td></tr>
+    <tr><td class="key">&lt;shift&gt;-space, &larr;, &uarr;</td><td>previous slide</td></tr>
+    <tr><td class="key">&lt;shift&gt;-p</td><td>toggle pause menu</td></tr>
+    <tr><td class="key">`</td><td>open/close command visor</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+
+    
+
+  </table>
+</div>
+
+<div id="tilda"></div>
+<div id="codeResults" class='results' style='display: none;'></div>
+
+<div id="preso">loading presentation...</div>
+
+<div id="slides" class="offscreen"></div>
+
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+</div>
+<div id="pauseScreen">
+  
+</div>
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+    presentation = new Presentation('');
+
+    var locationWatcher = new LocationWatcher();
+    locationWatcher.start();
+
+    /* Add Support for Touch Devices */
+
+    var presoElement = document.getElementById('preso');
+
+    Hammer(presoElement).on("swipeleft", function() {
+      $.publish("presentation:slide:next");
+    });
+
+    Hammer(presoElement).on("swiperight", function() {
+      $.publish("presentation:slide:previous");
+    });
+
+    // bind event handlers
+    /* window.onresize  = resized; */
+    /* window.onscroll = scrolled; */
+    /* window.onunload = unloaded; */
+
+  });
+
+</script>
+
+</body>
+</html>

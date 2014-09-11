@@ -1,0 +1,2431 @@
+<div id="" class="slide intro center" data-transition="none" data-sections="Standard Library, Uncommon Uses,intro" data-sequence="1">
+
+  <div class="content center">
+    <h1>Standard Library</h1>
+
+<h1>Uncommon Uses</h1>
+
+  </div>
+</div>
+<div id="" class="slide intro smbullets" data-transition="scrollLeft" data-sections="Standard Library, Uncommon Uses,intro" data-sequence="2">
+
+  <div class="content smbullets">
+    <p><img src="/image/intro/chastell.png" width="300" height="300" alt="chastell"/>
+
+<ul>
+<li>Piotr Szotkowski<br>(<a href="http://chastell.net">chastell</a>)</br>
+<li>Warsaw Univeristy of Technology<br>(assistant professor)</br>
+<li>
+<a href="http://rebased.pl">Rebased</a><br>(cheap science officer)</br>
+</li>
+
+  </li>
+</li></ul></p></div></div>
+<div id="" class="slide intro center" data-transition="none" data-sections="Standard Library, Uncommon Uses,intro" data-sequence="3">
+
+  <div class="content center">
+    <p><img src="/image/intro/rg.jpg" width="800" height="652" alt="Rails Girls"/>
+
+  </p>
+</div></div>
+<div id="" class="slide intro bullets incremental" data-transition="none" data-sections="Standard Library, Uncommon Uses,intro" data-sequence="4">
+
+  <div class="content bullets incremental">
+    <h1>&#x2665;</h1>
+
+<ul>
+<li>&#x26AC;&#x26AC;</li>
+<li>&#x26AF;</li>
+<li>&#x26AD;</li>
+<li>honeymoon</li>
+<li><a href="https://github.com/chastell/signore">signore</a></li>
+</ul>
+
+  </div>
+</div>
+<div id="" class="slide intro commandline incremental" data-transition="none" data-sections="Standard Library, Uncommon Uses,intro" data-sequence="5">
+
+  <div class="content commandline incremental">
+    <pre class="highlight text"><pre class="command"><span class="prompt nv">$</span> <span class="input nb">signore prego</span></pre>
+<pre class="result">// sometimes I believe compiler ignores all my comments
+
+</pre><pre class="command"><span class="prompt nv">$</span> <span class="input nb">signore prego Lisp</span></pre>
+<pre class="result">Lisp: from the people who didn&#x2019;t bring you AI.
+
+</pre><pre class="command"><span class="prompt nv">$</span> <span class="input nb">signore prego Perl</span></pre>
+<pre class="result">/* obligatory Perl joke (omitted for brevity) */
+                              [Tomasz Dubrownik]
+
+</pre><pre class="command"><span class="prompt nv">$</span> <span class="input nb">signore prego Ruby</span></pre>
+<pre class="result">Cloud is to datacenter what Ruby is to assembler.
+                                   [DevOps Borat]
+
+</pre><pre class="command"><span class="prompt nv">$</span> <span class="input nb">signore prego Python Ruby</span></pre>
+<pre class="result">&#x2018;I swear, Ruby has more syntax for creating strings than Python has total.&#x2019;
+&#x2018;"what" + %[are] + &lt;&lt;STR you STR + %q(talking) + 'about?'&#x2019;
+                                             [Gary Bernhardt, Jeff Forcier]
+
+</pre><pre class="command"><span class="prompt nv">$</span> <span class="input nb">signore prego Lisp ~Python Ruby</span></pre>
+<pre class="result">I love Ruby&#x2019;s optional parentheses. Lisp doesn&#x2019;t have optional parentheses.
+                                                               [Jamis Buck]
+</pre></pre>
+  </div>
+</div>
+<div id="" class="slide sigs" data-transition="none" data-sections="Standard Library, Uncommon Uses,sigs" data-sequence="6">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="c1"># let&#x2019;s ignore the &#x2018;Struct is almost never a good idea&#x2019; discussion for a sec</span>
+<span class="no">Sig</span> <span class="o">=</span> <span class="no">Struct</span><span class="nf">.new</span><span class="p">(</span><span class="ss">:author</span><span class="p">,</span> <span class="ss">:tags</span><span class="p">,</span> <span class="ss">:text</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide sigs" data-transition="none" data-sections="Standard Library, Uncommon Uses,sigs" data-sequence="7">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="c1"># let&#x2019;s ignore the &#x2018;Struct is almost never a good idea&#x2019; discussion for a sec</span>
+<span class="no">Sig</span> <span class="o">=</span> <span class="no">Struct</span><span class="nf">.new</span><span class="p">(</span><span class="ss">:author</span><span class="p">,</span> <span class="ss">:tags</span><span class="p">,</span> <span class="ss">:text</span><span class="p">)</span>
+
+
+
+
+
+<span class="c1"># I live in a simple world</span>
+<span class="n">store</span> <span class="o">=</span> <span class="o">[]</span>
+
+
+
+
+
+
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide sigs" data-transition="none" data-sections="Standard Library, Uncommon Uses,sigs" data-sequence="8">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="c1"># let&#x2019;s ignore the &#x2018;Struct is almost never a good idea&#x2019; discussion for a sec</span>
+<span class="no">Sig</span> <span class="o">=</span> <span class="no">Struct</span><span class="nf">.new</span><span class="p">(</span><span class="ss">:author</span><span class="p">,</span> <span class="ss">:tags</span><span class="p">,</span> <span class="ss">:text</span><span class="p">)</span>
+
+
+
+
+
+<span class="c1"># I live in a simple world</span>
+<span class="n">store</span> <span class="o">=</span> <span class="o">[]</span>
+
+
+
+
+
+
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Chris Wanstrath'</span><span class="p">,</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide sigs" data-transition="none" data-sections="Standard Library, Uncommon Uses,sigs" data-sequence="9">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="c1"># let&#x2019;s ignore the &#x2018;Struct is almost never a good idea&#x2019; discussion for a sec</span>
+<span class="no">Sig</span> <span class="o">=</span> <span class="no">Struct</span><span class="nf">.new</span><span class="p">(</span><span class="ss">:author</span><span class="p">,</span> <span class="ss">:tags</span><span class="p">,</span> <span class="ss">:text</span><span class="p">)</span>
+
+
+
+
+
+<span class="c1"># I live in a simple world</span>
+<span class="n">store</span> <span class="o">=</span> <span class="o">[]</span>
+
+
+
+
+
+
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Chris Wanstrath'</span><span class="p">,</span> <span class="o">[</span><span class="s1">'Ruby'</span><span class="p">,</span> <span class="s1">'Enumerable'</span><span class="o">]</span><span class="p">,</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide sigs" data-transition="none" data-sections="Standard Library, Uncommon Uses,sigs" data-sequence="10">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="c1"># let&#x2019;s ignore the &#x2018;Struct is almost never a good idea&#x2019; discussion for a sec</span>
+<span class="no">Sig</span> <span class="o">=</span> <span class="no">Struct</span><span class="nf">.new</span><span class="p">(</span><span class="ss">:author</span><span class="p">,</span> <span class="ss">:tags</span><span class="p">,</span> <span class="ss">:text</span><span class="p">)</span>
+
+
+
+
+
+<span class="c1"># I live in a simple world</span>
+<span class="n">store</span> <span class="o">=</span> <span class="o">[]</span>
+
+
+
+
+
+
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Chris Wanstrath'</span><span class="p">,</span> <span class="o">[</span><span class="s1">'Ruby'</span><span class="p">,</span> <span class="s1">'Enumerable'</span><span class="o">]</span><span class="p">,</span>
+  <span class="s1">'Every time I use Ruby&#x2019;s Enumerable#partition I want to give matz a high five.'</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide sigs" data-transition="none" data-sections="Standard Library, Uncommon Uses,sigs" data-sequence="11">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="c1"># let&#x2019;s ignore the &#x2018;Struct is almost never a good idea&#x2019; discussion for a sec</span>
+<span class="no">Sig</span> <span class="o">=</span> <span class="no">Struct</span><span class="nf">.new</span><span class="p">(</span><span class="ss">:author</span><span class="p">,</span> <span class="ss">:tags</span><span class="p">,</span> <span class="ss">:text</span><span class="p">)</span>
+
+
+
+
+
+<span class="c1"># I live in a simple world</span>
+<span class="n">store</span> <span class="o">=</span> <span class="o">[]</span>
+
+
+
+
+
+
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Chris Wanstrath'</span><span class="p">,</span> <span class="o">[</span><span class="s1">'Ruby'</span><span class="p">,</span> <span class="s1">'Enumerable'</span><span class="o">]</span><span class="p">,</span>
+  <span class="s1">'Every time I use Ruby&#x2019;s Enumerable#partition I want to give matz a high five.'</span><span class="p">)</span>
+<span class="n">store</span> <span class="o">&lt;&lt;</span> <span class="no">Sig</span><span class="o">[</span><span class="sx">%q(James Coglan)</span><span class="p">,</span> <span class="sx">%w(Ruby Bundler Unicorn)</span><span class="p">,</span>
+  <span class="sx">%q(I&#x2019;m a professional programmer, I type &#x2018;be unicorn&#x2019; to start my webserver.)</span><span class="o">]</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide sigs" data-transition="none" data-sections="Standard Library, Uncommon Uses,sigs" data-sequence="12">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="c1"># let&#x2019;s ignore the &#x2018;Struct is almost never a good idea&#x2019; discussion for a sec</span>
+<span class="no">Sig</span> <span class="o">=</span> <span class="no">Struct</span><span class="nf">.new</span><span class="p">(</span><span class="ss">:author</span><span class="p">,</span> <span class="ss">:tags</span><span class="p">,</span> <span class="ss">:text</span><span class="p">)</span>
+
+
+
+
+
+<span class="c1"># I live in a simple world</span>
+<span class="n">store</span> <span class="o">=</span> <span class="o">[]</span>
+
+<span class="c1"># because we can</span>
+<span class="k">def</span> <span class="nc">store</span><span class="o">.</span><span class="nf">random_sig_tagged_with</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+  <span class="nb">select</span> <span class="p">{</span> <span class="o">|</span><span class="n">sig</span><span class="o">|</span> <span class="n">sig</span><span class="nf">.tags.include?</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span> <span class="p">}</span><span class="nf">.sample</span>
+<span class="k">end</span>
+
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Chris Wanstrath'</span><span class="p">,</span> <span class="o">[</span><span class="s1">'Ruby'</span><span class="p">,</span> <span class="s1">'Enumerable'</span><span class="o">]</span><span class="p">,</span>
+  <span class="s1">'Every time I use Ruby&#x2019;s Enumerable#partition I want to give matz a high five.'</span><span class="p">)</span>
+<span class="n">store</span> <span class="o">&lt;&lt;</span> <span class="no">Sig</span><span class="o">[</span><span class="sx">%q(James Coglan)</span><span class="p">,</span> <span class="sx">%w(Ruby Bundler Unicorn)</span><span class="p">,</span>
+  <span class="sx">%q(I&#x2019;m a professional programmer, I type &#x2018;be unicorn&#x2019; to start my webserver.)</span><span class="o">]</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide sigs" data-transition="none" data-sections="Standard Library, Uncommon Uses,sigs" data-sequence="13">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="c1"># let&#x2019;s ignore the &#x2018;Struct is almost never a good idea&#x2019; discussion for a sec</span>
+<span class="no">Sig</span> <span class="o">=</span> <span class="no">Struct</span><span class="nf">.new</span><span class="p">(</span><span class="ss">:author</span><span class="p">,</span> <span class="ss">:tags</span><span class="p">,</span> <span class="ss">:text</span><span class="p">)</span>
+
+
+
+
+
+<span class="c1"># I live in a simple world</span>
+<span class="n">store</span> <span class="o">=</span> <span class="o">[]</span>
+
+<span class="c1"># because we can</span>
+<span class="k">def</span> <span class="nc">store</span><span class="o">.</span><span class="nf">random_sig_tagged_with</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+  <span class="nb">select</span> <span class="p">{</span> <span class="o">|</span><span class="n">sig</span><span class="o">|</span> <span class="n">sig</span><span class="nf">.tags.include?</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span> <span class="p">}</span><span class="nf">.sample</span> <span class="o">||</span> <span class="no">Sig</span><span class="nf">.new</span>
+<span class="k">end</span>
+
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Chris Wanstrath'</span><span class="p">,</span> <span class="o">[</span><span class="s1">'Ruby'</span><span class="p">,</span> <span class="s1">'Enumerable'</span><span class="o">]</span><span class="p">,</span>
+  <span class="s1">'Every time I use Ruby&#x2019;s Enumerable#partition I want to give matz a high five.'</span><span class="p">)</span>
+<span class="n">store</span> <span class="o">&lt;&lt;</span> <span class="no">Sig</span><span class="o">[</span><span class="sx">%q(James Coglan)</span><span class="p">,</span> <span class="sx">%w(Ruby Bundler Unicorn)</span><span class="p">,</span>
+  <span class="sx">%q(I&#x2019;m a professional programmer, I type &#x2018;be unicorn&#x2019; to start my webserver.)</span><span class="o">]</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide sigs" data-transition="none" data-sections="Standard Library, Uncommon Uses,sigs" data-sequence="14">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="c1"># let&#x2019;s ignore the &#x2018;Struct is almost never a good idea&#x2019; discussion for a sec</span>
+<span class="no">Sig</span> <span class="o">=</span> <span class="no">Struct</span><span class="nf">.new</span><span class="p">(</span><span class="ss">:author</span><span class="p">,</span> <span class="ss">:tags</span><span class="p">,</span> <span class="ss">:text</span><span class="p">)</span>
+
+
+
+
+
+<span class="c1"># I live in a simple world</span>
+<span class="n">store</span> <span class="o">=</span> <span class="o">[]</span>
+
+<span class="c1"># because we can</span>
+<span class="k">def</span> <span class="nc">store</span><span class="o">.</span><span class="nf">random_sig_tagged_with</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+  <span class="nb">select</span> <span class="p">{</span> <span class="o">|</span><span class="n">sig</span><span class="o">|</span> <span class="n">sig</span><span class="nf">.tags.include?</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span> <span class="p">}</span><span class="nf">.sample</span> <span class="o">||</span> <span class="no">Sig</span><span class="nf">.new</span>
+<span class="k">end</span>
+
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Chris Wanstrath'</span><span class="p">,</span> <span class="o">[</span><span class="s1">'Ruby'</span><span class="p">,</span> <span class="s1">'Enumerable'</span><span class="o">]</span><span class="p">,</span>
+  <span class="s1">'Every time I use Ruby&#x2019;s Enumerable#partition I want to give matz a high five.'</span><span class="p">)</span>
+<span class="n">store</span> <span class="o">&lt;&lt;</span> <span class="no">Sig</span><span class="o">[</span><span class="sx">%q(James Coglan)</span><span class="p">,</span> <span class="sx">%w(Ruby Bundler Unicorn)</span><span class="p">,</span>
+  <span class="sx">%q(I&#x2019;m a professional programmer, I type &#x2018;be unicorn&#x2019; to start my webserver.)</span><span class="o">]</span>
+
+     <span class="n">store</span><span class="nf">.random_sig_tagged_with</span><span class="p">(</span><span class="s1">'Ruby'</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide sigs" data-transition="none" data-sections="Standard Library, Uncommon Uses,sigs" data-sequence="15">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="c1"># let&#x2019;s ignore the &#x2018;Struct is almost never a good idea&#x2019; discussion for a sec</span>
+<span class="no">Sig</span> <span class="o">=</span> <span class="no">Struct</span><span class="nf">.new</span><span class="p">(</span><span class="ss">:author</span><span class="p">,</span> <span class="ss">:tags</span><span class="p">,</span> <span class="ss">:text</span><span class="p">)</span> <span class="k">do</span>
+  <span class="k">def</span> <span class="nf">to_s</span>
+    <span class="s2">"</span><span class="si">#{</span><span class="n">text</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#x2014; </span><span class="si">#{</span><span class="n">author</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1"># I live in a simple world</span>
+<span class="n">store</span> <span class="o">=</span> <span class="o">[]</span>
+
+<span class="c1"># because we can</span>
+<span class="k">def</span> <span class="nc">store</span><span class="o">.</span><span class="nf">random_sig_tagged_with</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+  <span class="nb">select</span> <span class="p">{</span> <span class="o">|</span><span class="n">sig</span><span class="o">|</span> <span class="n">sig</span><span class="nf">.tags.include?</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span> <span class="p">}</span><span class="nf">.sample</span> <span class="o">||</span> <span class="no">Sig</span><span class="nf">.new</span>
+<span class="k">end</span>
+
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Chris Wanstrath'</span><span class="p">,</span> <span class="o">[</span><span class="s1">'Ruby'</span><span class="p">,</span> <span class="s1">'Enumerable'</span><span class="o">]</span><span class="p">,</span>
+  <span class="s1">'Every time I use Ruby&#x2019;s Enumerable#partition I want to give matz a high five.'</span><span class="p">)</span>
+<span class="n">store</span> <span class="o">&lt;&lt;</span> <span class="no">Sig</span><span class="o">[</span><span class="sx">%q(James Coglan)</span><span class="p">,</span> <span class="sx">%w(Ruby Bundler Unicorn)</span><span class="p">,</span>
+  <span class="sx">%q(I&#x2019;m a professional programmer, I type &#x2018;be unicorn&#x2019; to start my webserver.)</span><span class="o">]</span>
+
+     <span class="n">store</span><span class="nf">.random_sig_tagged_with</span><span class="p">(</span><span class="s1">'Ruby'</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide sigs" data-transition="none" data-sections="Standard Library, Uncommon Uses,sigs" data-sequence="16">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="c1"># let&#x2019;s ignore the &#x2018;Struct is almost never a good idea&#x2019; discussion for a sec</span>
+<span class="no">Sig</span> <span class="o">=</span> <span class="no">Struct</span><span class="nf">.new</span><span class="p">(</span><span class="ss">:author</span><span class="p">,</span> <span class="ss">:tags</span><span class="p">,</span> <span class="ss">:text</span><span class="p">)</span> <span class="k">do</span>
+  <span class="k">def</span> <span class="nf">to_s</span>
+    <span class="s2">"</span><span class="si">#{</span><span class="n">text</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#x2014; </span><span class="si">#{</span><span class="n">author</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1"># I live in a simple world</span>
+<span class="n">store</span> <span class="o">=</span> <span class="o">[]</span>
+
+<span class="c1"># because we can</span>
+<span class="k">def</span> <span class="nc">store</span><span class="o">.</span><span class="nf">random_sig_tagged_with</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+  <span class="nb">select</span> <span class="p">{</span> <span class="o">|</span><span class="n">sig</span><span class="o">|</span> <span class="n">sig</span><span class="nf">.tags.include?</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span> <span class="p">}</span><span class="nf">.sample</span> <span class="o">||</span> <span class="no">Sig</span><span class="nf">.new</span>
+<span class="k">end</span>
+
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Chris Wanstrath'</span><span class="p">,</span> <span class="o">[</span><span class="s1">'Ruby'</span><span class="p">,</span> <span class="s1">'Enumerable'</span><span class="o">]</span><span class="p">,</span>
+  <span class="s1">'Every time I use Ruby&#x2019;s Enumerable#partition I want to give matz a high five.'</span><span class="p">)</span>
+<span class="n">store</span> <span class="o">&lt;&lt;</span> <span class="no">Sig</span><span class="o">[</span><span class="sx">%q(James Coglan)</span><span class="p">,</span> <span class="sx">%w(Ruby Bundler Unicorn)</span><span class="p">,</span>
+  <span class="sx">%q(I&#x2019;m a professional programmer, I type &#x2018;be unicorn&#x2019; to start my webserver.)</span><span class="o">]</span>
+
+<span class="nb">puts</span> <span class="n">store</span><span class="nf">.random_sig_tagged_with</span><span class="p">(</span><span class="s1">'Ruby'</span><span class="p">)</span>
+
+<span class="c1"># I&#x2019;m a professional programmer, I type &#x2018;be unicorn&#x2019; to start my webserver.</span>
+<span class="c1"># &#x2014; James Coglan</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide sigs bullets incremental" data-transition="scrollLeft" data-sections="Standard Library, Uncommon Uses,sigs" data-sequence="17">
+
+  <div class="content bullets incremental">
+    <h2>disclaimers</h2>
+
+<ul>
+<li>the examples are somewhat contrived<br>but see past them to your own applications</br>
+<li>there are pieces of Ruby <em>core</em><br>sprinkled throughout</br>
+<li><span class="quote" style="width: 100%">Tech talk template:<br>I don&#x2019;t know what I&#x2019;m doing,<br>and here&#x2019;s how.<br>&#x2014; Pinboard</br></br>
+</br>
+
+  </span>
+</li></li></li></ul></div></div>
+<div id="" class="slide pstore center" data-transition="scrollLeft" data-sections="Standard Library, Uncommon Uses,pstore" data-sequence="18">
+
+  <div class="content center">
+    <h1>perseverance<br>through<br>persistence</br>
+
+  </br>
+</h1></div></div>
+<div id="" class="slide pstore" data-transition="none" data-sections="Standard Library, Uncommon Uses,pstore" data-sequence="19">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'yaml/store'</span>
+<span class="n">store</span> <span class="o">=</span> <span class="no">YAML</span><span class="o">::</span><span class="no">Store</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'sigs.yml'</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide pstore" data-transition="none" data-sections="Standard Library, Uncommon Uses,pstore" data-sequence="20">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'yaml/store'</span>
+<span class="n">store</span> <span class="o">=</span> <span class="no">YAML</span><span class="o">::</span><span class="no">Store</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'sigs.yml'</span><span class="p">)</span>
+
+<span class="n">store</span><span class="nf">.transaction</span> <span class="k">do</span>
+
+
+
+
+
+
+
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide pstore" data-transition="none" data-sections="Standard Library, Uncommon Uses,pstore" data-sequence="21">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'yaml/store'</span>
+<span class="n">store</span> <span class="o">=</span> <span class="no">YAML</span><span class="o">::</span><span class="no">Store</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'sigs.yml'</span><span class="p">)</span>
+
+<span class="n">store</span><span class="nf">.transaction</span> <span class="k">do</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span> <span class="o">||=</span> <span class="o">[]</span>
+
+
+
+
+
+
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide pstore" data-transition="none" data-sections="Standard Library, Uncommon Uses,pstore" data-sequence="22">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'yaml/store'</span>
+<span class="n">store</span> <span class="o">=</span> <span class="no">YAML</span><span class="o">::</span><span class="no">Store</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'sigs.yml'</span><span class="p">)</span>
+
+<span class="n">store</span><span class="nf">.transaction</span> <span class="k">do</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span> <span class="o">||=</span> <span class="o">[]</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Florian Gilcher'</span><span class="p">,</span> <span class="sx">%w(Ruby Enumerable)</span><span class="p">,</span>
+    <span class="s1">'Two easy steps to quickly get better at programming Ruby: '</span> <span class="o">+</span>
+    <span class="s1">'1) read about enumerable.rb 2) read it again.'</span><span class="p">)</span>
+
+
+
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide pstore" data-transition="none" data-sections="Standard Library, Uncommon Uses,pstore" data-sequence="23">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'yaml/store'</span>
+<span class="n">store</span> <span class="o">=</span> <span class="no">YAML</span><span class="o">::</span><span class="no">Store</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'sigs.yml'</span><span class="p">)</span>
+
+<span class="n">store</span><span class="nf">.transaction</span> <span class="k">do</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span> <span class="o">||=</span> <span class="o">[]</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Florian Gilcher'</span><span class="p">,</span> <span class="sx">%w(Ruby Enumerable)</span><span class="p">,</span>
+    <span class="s1">'Two easy steps to quickly get better at programming Ruby: '</span> <span class="o">+</span>
+    <span class="s1">'1) read about enumerable.rb 2) read it again.'</span><span class="p">)</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Theo'</span><span class="p">,</span> <span class="sx">%w(Ruby RubyGems)</span><span class="p">,</span>
+    <span class="s1">'RubyGems 2.0.3: &#x2018;When installing RubyGems on JRuby, the standard '</span> <span class="o">+</span>
+    <span class="s1">'library is no longer deleted&#x2019; &#x2013; sounds like a feature to me.'</span><span class="p">)</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide pstore" data-transition="none" data-sections="Standard Library, Uncommon Uses,pstore" data-sequence="24">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'yaml/store'</span>
+<span class="n">store</span> <span class="o">=</span> <span class="no">YAML</span><span class="o">::</span><span class="no">Store</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'sigs.yml'</span><span class="p">)</span>
+
+<span class="n">store</span><span class="nf">.transaction</span> <span class="k">do</span>   <span class="c1"># read-write transaction&#x2026;</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span> <span class="o">||=</span> <span class="o">[]</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Florian Gilcher'</span><span class="p">,</span> <span class="sx">%w(Ruby Enumerable)</span><span class="p">,</span>
+    <span class="s1">'Two easy steps to quickly get better at programming Ruby: '</span> <span class="o">+</span>
+    <span class="s1">'1) read about enumerable.rb 2) read it again.'</span><span class="p">)</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Theo'</span><span class="p">,</span> <span class="sx">%w(Ruby RubyGems)</span><span class="p">,</span>
+    <span class="s1">'RubyGems 2.0.3: &#x2018;When installing RubyGems on JRuby, the standard '</span> <span class="o">+</span>
+    <span class="s1">'library is no longer deleted&#x2019; &#x2013; sounds like a feature to me.'</span><span class="p">)</span>
+<span class="k">end</span>   <span class="c1"># &#x2026;atomically written here</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide pstore" data-transition="none" data-sections="Standard Library, Uncommon Uses,pstore" data-sequence="25">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'yaml/store'</span>
+<span class="n">store</span> <span class="o">=</span> <span class="no">YAML</span><span class="o">::</span><span class="no">Store</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'sigs.yml'</span><span class="p">)</span>
+
+<span class="n">store</span><span class="nf">.transaction</span> <span class="k">do</span>   <span class="c1"># read-write transaction&#x2026;</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span> <span class="o">||=</span> <span class="o">[]</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Florian Gilcher'</span><span class="p">,</span> <span class="sx">%w(Ruby Enumerable)</span><span class="p">,</span>
+    <span class="s1">'Two easy steps to quickly get better at programming Ruby: '</span> <span class="o">+</span>
+    <span class="s1">'1) read about enumerable.rb 2) read it again.'</span><span class="p">)</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Theo'</span><span class="p">,</span> <span class="sx">%w(Ruby RubyGems)</span><span class="p">,</span>
+    <span class="s1">'RubyGems 2.0.3: &#x2018;When installing RubyGems on JRuby, the standard '</span> <span class="o">+</span>
+    <span class="s1">'library is no longer deleted&#x2019; &#x2013; sounds like a feature to me.'</span><span class="p">)</span>
+<span class="k">end</span>   <span class="c1"># &#x2026;atomically written here</span>
+
+<span class="k">def</span> <span class="nc">store</span><span class="o">.</span><span class="nf">random_sig_tagged_with</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+  <span class="n">transaction</span><span class="p">(</span><span class="kp">true</span><span class="p">)</span> <span class="k">do</span>   <span class="c1"># read-only transaction</span>
+
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide pstore" data-transition="none" data-sections="Standard Library, Uncommon Uses,pstore" data-sequence="26">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'yaml/store'</span>
+<span class="n">store</span> <span class="o">=</span> <span class="no">YAML</span><span class="o">::</span><span class="no">Store</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'sigs.yml'</span><span class="p">)</span>
+
+<span class="n">store</span><span class="nf">.transaction</span> <span class="k">do</span>   <span class="c1"># read-write transaction&#x2026;</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span> <span class="o">||=</span> <span class="o">[]</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Florian Gilcher'</span><span class="p">,</span> <span class="sx">%w(Ruby Enumerable)</span><span class="p">,</span>
+    <span class="s1">'Two easy steps to quickly get better at programming Ruby: '</span> <span class="o">+</span>
+    <span class="s1">'1) read about enumerable.rb 2) read it again.'</span><span class="p">)</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Theo'</span><span class="p">,</span> <span class="sx">%w(Ruby RubyGems)</span><span class="p">,</span>
+    <span class="s1">'RubyGems 2.0.3: &#x2018;When installing RubyGems on JRuby, the standard '</span> <span class="o">+</span>
+    <span class="s1">'library is no longer deleted&#x2019; &#x2013; sounds like a feature to me.'</span><span class="p">)</span>
+<span class="k">end</span>   <span class="c1"># &#x2026;atomically written here</span>
+
+<span class="k">def</span> <span class="nc">store</span><span class="o">.</span><span class="nf">random_sig_tagged_with</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+  <span class="n">transaction</span><span class="p">(</span><span class="kp">true</span><span class="p">)</span> <span class="k">do</span>   <span class="c1"># read-only transaction</span>
+    <span class="nb">self</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span><span class="nf">.select</span> <span class="p">{</span> <span class="o">|</span><span class="n">sig</span><span class="o">|</span> <span class="n">sig</span><span class="nf">.tags.include?</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span> <span class="p">}</span><span class="nf">.sample</span> <span class="o">||</span> <span class="no">Sig</span><span class="nf">.new</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide pstore" data-transition="none" data-sections="Standard Library, Uncommon Uses,pstore" data-sequence="27">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'yaml/store'</span>
+<span class="n">store</span> <span class="o">=</span> <span class="no">YAML</span><span class="o">::</span><span class="no">Store</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'sigs.yml'</span><span class="p">)</span>
+
+<span class="n">store</span><span class="nf">.transaction</span> <span class="k">do</span>   <span class="c1"># read-write transaction&#x2026;</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span> <span class="o">||=</span> <span class="o">[]</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Florian Gilcher'</span><span class="p">,</span> <span class="sx">%w(Ruby Enumerable)</span><span class="p">,</span>
+    <span class="s1">'Two easy steps to quickly get better at programming Ruby: '</span> <span class="o">+</span>
+    <span class="s1">'1) read about enumerable.rb 2) read it again.'</span><span class="p">)</span>
+  <span class="n">store</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Theo'</span><span class="p">,</span> <span class="sx">%w(Ruby RubyGems)</span><span class="p">,</span>
+    <span class="s1">'RubyGems 2.0.3: &#x2018;When installing RubyGems on JRuby, the standard '</span> <span class="o">+</span>
+    <span class="s1">'library is no longer deleted&#x2019; &#x2013; sounds like a feature to me.'</span><span class="p">)</span>
+<span class="k">end</span>   <span class="c1"># &#x2026;atomically written here</span>
+
+<span class="k">def</span> <span class="nc">store</span><span class="o">.</span><span class="nf">random_sig_tagged_with</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+  <span class="n">transaction</span><span class="p">(</span><span class="kp">true</span><span class="p">)</span> <span class="k">do</span>   <span class="c1"># read-only transaction</span>
+    <span class="nb">self</span><span class="o">[</span><span class="s1">'sigs'</span><span class="o">]</span><span class="nf">.select</span> <span class="p">{</span> <span class="o">|</span><span class="n">sig</span><span class="o">|</span> <span class="n">sig</span><span class="nf">.tags.include?</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span> <span class="p">}</span><span class="nf">.sample</span> <span class="o">||</span> <span class="no">Sig</span><span class="nf">.new</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="nb">puts</span> <span class="n">store</span><span class="nf">.random_sig_tagged_with?</span><span class="p">(</span><span class="s1">'Ruby'</span><span class="p">)</span>
+
+<span class="c1"># Two easy steps to quickly get better at programming Ruby:</span>
+<span class="c1"># 1) read about enumerable.rb 2) read it again.</span>
+<span class="c1"># &#x2014; Florian Gilcher</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide pstore commandline incremental" data-transition="none" data-sections="Standard Library, Uncommon Uses,pstore" data-sequence="28">
+
+  <div class="content commandline incremental">
+    <h2>it&#x2019;s YAML</h2>
+<pre class="highlight text"><pre class="command"><span class="prompt nv">$</span> <span class="input nb">cat sigs.yml</span></pre>
+<pre class="result">---
+sigs:
+- !ruby/struct:Sig
+  author: Florian Gilcher
+  tags:
+  - Ruby
+  - Enumerable
+  text: 'Two easy steps to quickly get better at programming Ruby:
+    1) read about enumerable.rb 2) read it again.'
+- !ruby/struct:Sig
+  author: Theo
+  tags:
+  - Ruby
+  - RubyGems
+  text: 'RubyGems 2.0.3: &#x2018;When installing RubyGems on JRuby, the standard
+    library is no longer deleted&#x2019; &#x2013; sounds like a feature to me.'
+</pre></pre>
+  </div>
+</div>
+<div id="" class="slide webrick center" data-transition="scrollLeft" data-sections="Standard Library, Uncommon Uses,webrick" data-sequence="29">
+
+  <div class="content center">
+    <h1>let&#x2019;s party<br>like it&#x2019;s 1991</br>
+
+  </h1>
+</div></div>
+<div id="" class="slide webrick" data-transition="none" data-sections="Standard Library, Uncommon Uses,webrick" data-sequence="30">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tom Stuart'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="sh">
+    Ruby: at 2.0, and still has error messages
+    like &#x2018;unexpected kEND, expecting $end&#x2019;.
+    If you know what that means, then a Japanese man
+    has stolen a significant amount of your brain time.
+</span><span class="no">  end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide webrick" data-transition="none" data-sections="Standard Library, Uncommon Uses,webrick" data-sequence="31">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tom Stuart'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Ruby: at 2.0, and still has error messages
+    like &#x2018;unexpected kEND, expecting $end&#x2019;.
+    If you know what that means, then a Japanese man
+    has stolen a significant amount of your brain time.
+</span><span class="no">  end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide webrick" data-transition="none" data-sections="Standard Library, Uncommon Uses,webrick" data-sequence="32">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tom Stuart'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Ruby: at 2.0, and still has error messages
+    like &#x2018;unexpected kEND, expecting $end&#x2019;.
+    If you know what that means, then a Japanese man
+    has stolen a significant amount of your brain time.
+</span><span class="no">  end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide webrick" data-transition="none" data-sections="Standard Library, Uncommon Uses,webrick" data-sequence="33">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tom Stuart'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Ruby: at 2.0, and still has error messages
+    like &#x2018;unexpected kEND, expecting $end&#x2019;.
+    If you know what that means, then a Japanese man
+    has stolen a significant amount of your brain time.
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'EHH'</span><span class="p">,</span> <span class="sx">%w(Ruby docs)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    &#x2018;I&#x2019;ll just check the Ruby documentation for this&#x2026;&#x2019;
+    *clicks*
+    *BATS FLY OUT OF MONITOR IN A CLOUD OF DUST*
+</span><span class="no">  end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide webrick" data-transition="none" data-sections="Standard Library, Uncommon Uses,webrick" data-sequence="34">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tom Stuart'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Ruby: at 2.0, and still has error messages
+    like &#x2018;unexpected kEND, expecting $end&#x2019;.
+    If you know what that means, then a Japanese man
+    has stolen a significant amount of your brain time.
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'EHH'</span><span class="p">,</span> <span class="sx">%w(Ruby docs)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    &#x2018;I&#x2019;ll just check the Ruby documentation for this&#x2026;&#x2019;
+    *clicks*
+    *BATS FLY OUT OF MONITOR IN A CLOUD OF DUST*
+</span><span class="no">  end</span>
+
+<span class="nb">require</span> <span class="s1">'webrick'</span>
+
+<span class="n">server</span> <span class="o">=</span> <span class="no">WEBrick</span><span class="o">::</span><span class="no">HTTPServer</span><span class="nf">.new</span><span class="p">(</span><span class="no">Port</span><span class="p">:</span> <span class="mi">1991</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide webrick" data-transition="none" data-sections="Standard Library, Uncommon Uses,webrick" data-sequence="35">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tom Stuart'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Ruby: at 2.0, and still has error messages
+    like &#x2018;unexpected kEND, expecting $end&#x2019;.
+    If you know what that means, then a Japanese man
+    has stolen a significant amount of your brain time.
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'EHH'</span><span class="p">,</span> <span class="sx">%w(Ruby docs)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    &#x2018;I&#x2019;ll just check the Ruby documentation for this&#x2026;&#x2019;
+    *clicks*
+    *BATS FLY OUT OF MONITOR IN A CLOUD OF DUST*
+</span><span class="no">  end</span>
+
+<span class="nb">require</span> <span class="s1">'webrick'</span>
+
+<span class="n">server</span> <span class="o">=</span> <span class="no">WEBrick</span><span class="o">::</span><span class="no">HTTPServer</span><span class="nf">.new</span><span class="p">(</span><span class="no">Port</span><span class="p">:</span> <span class="mi">1991</span><span class="p">)</span>
+
+
+
+
+
+
+
+
+<span class="n">server</span><span class="nf">.start</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide webrick" data-transition="none" data-sections="Standard Library, Uncommon Uses,webrick" data-sequence="36">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tom Stuart'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Ruby: at 2.0, and still has error messages
+    like &#x2018;unexpected kEND, expecting $end&#x2019;.
+    If you know what that means, then a Japanese man
+    has stolen a significant amount of your brain time.
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'EHH'</span><span class="p">,</span> <span class="sx">%w(Ruby docs)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    &#x2018;I&#x2019;ll just check the Ruby documentation for this&#x2026;&#x2019;
+    *clicks*
+    *BATS FLY OUT OF MONITOR IN A CLOUD OF DUST*
+</span><span class="no">  end</span>
+
+<span class="nb">require</span> <span class="s1">'webrick'</span>
+
+<span class="n">server</span> <span class="o">=</span> <span class="no">WEBrick</span><span class="o">::</span><span class="no">HTTPServer</span><span class="nf">.new</span><span class="p">(</span><span class="no">Port</span><span class="p">:</span> <span class="mi">1991</span><span class="p">)</span>
+
+<span class="n">server</span><span class="nf">.mount_proc</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="o">|</span>
+
+
+
+
+<span class="k">end</span>
+
+<span class="n">server</span><span class="nf">.start</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide webrick" data-transition="none" data-sections="Standard Library, Uncommon Uses,webrick" data-sequence="37">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tom Stuart'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Ruby: at 2.0, and still has error messages
+    like &#x2018;unexpected kEND, expecting $end&#x2019;.
+    If you know what that means, then a Japanese man
+    has stolen a significant amount of your brain time.
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'EHH'</span><span class="p">,</span> <span class="sx">%w(Ruby docs)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    &#x2018;I&#x2019;ll just check the Ruby documentation for this&#x2026;&#x2019;
+    *clicks*
+    *BATS FLY OUT OF MONITOR IN A CLOUD OF DUST*
+</span><span class="no">  end</span>
+
+<span class="nb">require</span> <span class="s1">'webrick'</span>
+
+<span class="n">server</span> <span class="o">=</span> <span class="no">WEBrick</span><span class="o">::</span><span class="no">HTTPServer</span><span class="nf">.new</span><span class="p">(</span><span class="no">Port</span><span class="p">:</span> <span class="mi">1991</span><span class="p">)</span>
+
+<span class="n">server</span><span class="nf">.mount_proc</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="o">|</span>
+  <span class="n">tag</span> <span class="o">=</span> <span class="n">request</span><span class="nf">.query</span><span class="o">[</span><span class="s1">'tag'</span><span class="o">]</span>
+
+
+
+<span class="k">end</span>
+
+<span class="n">server</span><span class="nf">.start</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide webrick" data-transition="none" data-sections="Standard Library, Uncommon Uses,webrick" data-sequence="38">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tom Stuart'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Ruby: at 2.0, and still has error messages
+    like &#x2018;unexpected kEND, expecting $end&#x2019;.
+    If you know what that means, then a Japanese man
+    has stolen a significant amount of your brain time.
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'EHH'</span><span class="p">,</span> <span class="sx">%w(Ruby docs)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    &#x2018;I&#x2019;ll just check the Ruby documentation for this&#x2026;&#x2019;
+    *clicks*
+    *BATS FLY OUT OF MONITOR IN A CLOUD OF DUST*
+</span><span class="no">  end</span>
+
+<span class="nb">require</span> <span class="s1">'webrick'</span>
+
+<span class="n">server</span> <span class="o">=</span> <span class="no">WEBrick</span><span class="o">::</span><span class="no">HTTPServer</span><span class="nf">.new</span><span class="p">(</span><span class="no">Port</span><span class="p">:</span> <span class="mi">1991</span><span class="p">)</span>
+
+<span class="n">server</span><span class="nf">.mount_proc</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="o">|</span>
+  <span class="n">tag</span> <span class="o">=</span> <span class="n">request</span><span class="nf">.query</span><span class="o">[</span><span class="s1">'tag'</span><span class="o">]</span>
+  <span class="n">sig</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.random_sig_tagged_with</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+
+
+<span class="k">end</span>
+
+<span class="n">server</span><span class="nf">.start</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide webrick" data-transition="none" data-sections="Standard Library, Uncommon Uses,webrick" data-sequence="39">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tom Stuart'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Ruby: at 2.0, and still has error messages
+    like &#x2018;unexpected kEND, expecting $end&#x2019;.
+    If you know what that means, then a Japanese man
+    has stolen a significant amount of your brain time.
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'EHH'</span><span class="p">,</span> <span class="sx">%w(Ruby docs)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    &#x2018;I&#x2019;ll just check the Ruby documentation for this&#x2026;&#x2019;
+    *clicks*
+    *BATS FLY OUT OF MONITOR IN A CLOUD OF DUST*
+</span><span class="no">  end</span>
+
+<span class="nb">require</span> <span class="s1">'webrick'</span>
+
+<span class="n">server</span> <span class="o">=</span> <span class="no">WEBrick</span><span class="o">::</span><span class="no">HTTPServer</span><span class="nf">.new</span><span class="p">(</span><span class="no">Port</span><span class="p">:</span> <span class="mi">1991</span><span class="p">)</span>
+
+<span class="n">server</span><span class="nf">.mount_proc</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="o">|</span>
+  <span class="n">tag</span> <span class="o">=</span> <span class="n">request</span><span class="nf">.query</span><span class="o">[</span><span class="s1">'tag'</span><span class="o">]</span>
+  <span class="n">sig</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.random_sig_tagged_with</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+  <span class="n">response</span><span class="o">[</span><span class="s1">'Content-Type'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'text/plain; charset=UTF-8'</span>
+  <span class="n">response</span><span class="nf">.body</span> <span class="o">=</span> <span class="n">sig</span><span class="nf">.to_s</span>
+<span class="k">end</span>
+
+<span class="n">server</span><span class="nf">.start</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide webrick commandline incremental" data-transition="none" data-sections="Standard Library, Uncommon Uses,webrick" data-sequence="40">
+
+  <div class="content commandline incremental">
+    <h2>we have a sig webservice!</h2>
+<pre class="highlight text"><pre class="command"><span class="prompt nv">$</span> <span class="input nb">curl localhost:1991/?tag=Ruby</span></pre>
+<pre class="result">Ruby: at 2.0, and still has error messages
+like &#x2018;unexpected kEND, expecting $end&#x2019;.
+If you know what that means, then a Japanese man
+has stolen a significant amount of your brain time.
+&#x2014; Tom Stuart
+
+</pre><pre class="command"><span class="prompt nv">$</span> <span class="input nb">curl localhost:1991/?tag=Ruby</span></pre>
+<pre class="result">&#x2018;I&#x2019;ll just check the Ruby documentation for this&#x2026;&#x2019;
+*clicks*
+*BATS FLY OUT OF MONITOR IN A CLOUD OF DUST*
+&#x2014; EHH
+</pre></pre>
+  </div>
+</div>
+<div id="" class="slide gserver center" data-transition="scrollLeft" data-sections="Standard Library, Uncommon Uses,gserver" data-sequence="41">
+
+  <div class="content center">
+    <h1>let&#x2019;s party<br>like it&#x2019;s 1969</br>
+
+  </h1>
+</div></div>
+<div id="" class="slide gserver" data-transition="none" data-sections="Standard Library, Uncommon Uses,gserver" data-sequence="42">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Gary Bernhardt'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Yes, I am a princess and Kernel#test is a pea. I don&#x2019;t care. These
+    are the thousand cuts that make Ruby so difficult to reason about.
+    The real question here is: who is the mattress?
+</span><span class="no">  end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide gserver" data-transition="none" data-sections="Standard Library, Uncommon Uses,gserver" data-sequence="43">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Gary Bernhardt'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Yes, I am a princess and Kernel#test is a pea. I don&#x2019;t care. These
+    are the thousand cuts that make Ruby so difficult to reason about.
+    The real question here is: who is the mattress?
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tim Pope'</span><span class="p">,</span> <span class="sx">%w(Ruby BigDecimal)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    I wonder if the guy that wrote BigDecimal#inspect has
+    a tragic backstory that explains why he hates humanity.
+</span><span class="no">  end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide gserver" data-transition="none" data-sections="Standard Library, Uncommon Uses,gserver" data-sequence="44">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Gary Bernhardt'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Yes, I am a princess and Kernel#test is a pea. I don&#x2019;t care. These
+    are the thousand cuts that make Ruby so difficult to reason about.
+    The real question here is: who is the mattress?
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tim Pope'</span><span class="p">,</span> <span class="sx">%w(Ruby BigDecimal)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    I wonder if the guy that wrote BigDecimal#inspect has
+    a tragic backstory that explains why he hates humanity.
+</span><span class="no">  end</span>
+
+<span class="nb">require</span> <span class="s1">'gserver'</span>
+
+<span class="k">class</span> <span class="nc">SigServer</span> <span class="o">&lt;</span> <span class="no">GServer</span>
+
+
+
+
+
+
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide gserver" data-transition="none" data-sections="Standard Library, Uncommon Uses,gserver" data-sequence="45">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Gary Bernhardt'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Yes, I am a princess and Kernel#test is a pea. I don&#x2019;t care. These
+    are the thousand cuts that make Ruby so difficult to reason about.
+    The real question here is: who is the mattress?
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tim Pope'</span><span class="p">,</span> <span class="sx">%w(Ruby BigDecimal)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    I wonder if the guy that wrote BigDecimal#inspect has
+    a tragic backstory that explains why he hates humanity.
+</span><span class="no">  end</span>
+
+<span class="nb">require</span> <span class="s1">'gserver'</span>
+
+<span class="k">class</span> <span class="nc">SigServer</span> <span class="o">&lt;</span> <span class="no">GServer</span>
+  <span class="k">def</span> <span class="nf">serve</span><span class="p">(</span><span class="n">io</span><span class="p">)</span>
+
+
+
+
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide gserver" data-transition="none" data-sections="Standard Library, Uncommon Uses,gserver" data-sequence="46">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Gary Bernhardt'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Yes, I am a princess and Kernel#test is a pea. I don&#x2019;t care. These
+    are the thousand cuts that make Ruby so difficult to reason about.
+    The real question here is: who is the mattress?
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tim Pope'</span><span class="p">,</span> <span class="sx">%w(Ruby BigDecimal)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    I wonder if the guy that wrote BigDecimal#inspect has
+    a tragic backstory that explains why he hates humanity.
+</span><span class="no">  end</span>
+
+<span class="nb">require</span> <span class="s1">'gserver'</span>
+
+<span class="k">class</span> <span class="nc">SigServer</span> <span class="o">&lt;</span> <span class="no">GServer</span>
+  <span class="k">def</span> <span class="nf">serve</span><span class="p">(</span><span class="n">io</span><span class="p">)</span>
+    <span class="n">io</span><span class="nf">.write</span> <span class="s1">'tag: '</span>
+
+
+
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide gserver" data-transition="none" data-sections="Standard Library, Uncommon Uses,gserver" data-sequence="47">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Gary Bernhardt'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Yes, I am a princess and Kernel#test is a pea. I don&#x2019;t care. These
+    are the thousand cuts that make Ruby so difficult to reason about.
+    The real question here is: who is the mattress?
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tim Pope'</span><span class="p">,</span> <span class="sx">%w(Ruby BigDecimal)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    I wonder if the guy that wrote BigDecimal#inspect has
+    a tragic backstory that explains why he hates humanity.
+</span><span class="no">  end</span>
+
+<span class="nb">require</span> <span class="s1">'gserver'</span>
+
+<span class="k">class</span> <span class="nc">SigServer</span> <span class="o">&lt;</span> <span class="no">GServer</span>
+  <span class="k">def</span> <span class="nf">serve</span><span class="p">(</span><span class="n">io</span><span class="p">)</span>
+    <span class="n">io</span><span class="nf">.write</span> <span class="s1">'tag: '</span>
+    <span class="n">tag</span> <span class="o">=</span> <span class="n">io</span><span class="nf">.gets.chomp</span>
+
+
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide gserver" data-transition="none" data-sections="Standard Library, Uncommon Uses,gserver" data-sequence="48">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Gary Bernhardt'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Yes, I am a princess and Kernel#test is a pea. I don&#x2019;t care. These
+    are the thousand cuts that make Ruby so difficult to reason about.
+    The real question here is: who is the mattress?
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tim Pope'</span><span class="p">,</span> <span class="sx">%w(Ruby BigDecimal)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    I wonder if the guy that wrote BigDecimal#inspect has
+    a tragic backstory that explains why he hates humanity.
+</span><span class="no">  end</span>
+
+<span class="nb">require</span> <span class="s1">'gserver'</span>
+
+<span class="k">class</span> <span class="nc">SigServer</span> <span class="o">&lt;</span> <span class="no">GServer</span>
+  <span class="k">def</span> <span class="nf">serve</span><span class="p">(</span><span class="n">io</span><span class="p">)</span>
+    <span class="n">io</span><span class="nf">.write</span> <span class="s1">'tag: '</span>
+    <span class="n">tag</span> <span class="o">=</span> <span class="n">io</span><span class="nf">.gets.chomp</span>
+    <span class="n">sig</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.random_sig_tagged_with</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide gserver" data-transition="none" data-sections="Standard Library, Uncommon Uses,gserver" data-sequence="49">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Gary Bernhardt'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Yes, I am a princess and Kernel#test is a pea. I don&#x2019;t care. These
+    are the thousand cuts that make Ruby so difficult to reason about.
+    The real question here is: who is the mattress?
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tim Pope'</span><span class="p">,</span> <span class="sx">%w(Ruby BigDecimal)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    I wonder if the guy that wrote BigDecimal#inspect has
+    a tragic backstory that explains why he hates humanity.
+</span><span class="no">  end</span>
+
+<span class="nb">require</span> <span class="s1">'gserver'</span>
+
+<span class="k">class</span> <span class="nc">SigServer</span> <span class="o">&lt;</span> <span class="no">GServer</span>
+  <span class="k">def</span> <span class="nf">serve</span><span class="p">(</span><span class="n">io</span><span class="p">)</span>
+    <span class="n">io</span><span class="nf">.write</span> <span class="s1">'tag: '</span>
+    <span class="n">tag</span> <span class="o">=</span> <span class="n">io</span><span class="nf">.gets.chomp</span>
+    <span class="n">sig</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.random_sig_tagged_with</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+    <span class="n">io</span><span class="nf">.puts</span> <span class="n">sig</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide gserver" data-transition="none" data-sections="Standard Library, Uncommon Uses,gserver" data-sequence="50">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Gary Bernhardt'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Yes, I am a princess and Kernel#test is a pea. I don&#x2019;t care. These
+    are the thousand cuts that make Ruby so difficult to reason about.
+    The real question here is: who is the mattress?
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tim Pope'</span><span class="p">,</span> <span class="sx">%w(Ruby BigDecimal)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    I wonder if the guy that wrote BigDecimal#inspect has
+    a tragic backstory that explains why he hates humanity.
+</span><span class="no">  end</span>
+
+<span class="nb">require</span> <span class="s1">'gserver'</span>
+
+<span class="k">class</span> <span class="nc">SigServer</span> <span class="o">&lt;</span> <span class="no">GServer</span>
+  <span class="k">def</span> <span class="nf">serve</span><span class="p">(</span><span class="n">io</span><span class="p">)</span>
+    <span class="n">io</span><span class="nf">.write</span> <span class="s1">'tag: '</span>
+    <span class="n">tag</span> <span class="o">=</span> <span class="n">io</span><span class="nf">.gets.chomp</span>
+    <span class="n">sig</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.random_sig_tagged_with</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+    <span class="n">io</span><span class="nf">.puts</span> <span class="n">sig</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">sig_server</span> <span class="o">=</span> <span class="no">SigServer</span><span class="nf">.new</span><span class="p">(</span><span class="mi">1969</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide gserver" data-transition="none" data-sections="Standard Library, Uncommon Uses,gserver" data-sequence="51">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Gary Bernhardt'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Yes, I am a princess and Kernel#test is a pea. I don&#x2019;t care. These
+    are the thousand cuts that make Ruby so difficult to reason about.
+    The real question here is: who is the mattress?
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tim Pope'</span><span class="p">,</span> <span class="sx">%w(Ruby BigDecimal)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    I wonder if the guy that wrote BigDecimal#inspect has
+    a tragic backstory that explains why he hates humanity.
+</span><span class="no">  end</span>
+
+<span class="nb">require</span> <span class="s1">'gserver'</span>
+
+<span class="k">class</span> <span class="nc">SigServer</span> <span class="o">&lt;</span> <span class="no">GServer</span>
+  <span class="k">def</span> <span class="nf">serve</span><span class="p">(</span><span class="n">io</span><span class="p">)</span>
+    <span class="n">io</span><span class="nf">.write</span> <span class="s1">'tag: '</span>
+    <span class="n">tag</span> <span class="o">=</span> <span class="n">io</span><span class="nf">.gets.chomp</span>
+    <span class="n">sig</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.random_sig_tagged_with</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+    <span class="n">io</span><span class="nf">.puts</span> <span class="n">sig</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">sig_server</span> <span class="o">=</span> <span class="no">SigServer</span><span class="nf">.new</span><span class="p">(</span><span class="mi">1969</span><span class="p">)</span>
+<span class="n">sig_server</span><span class="nf">.start</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide gserver" data-transition="none" data-sections="Standard Library, Uncommon Uses,gserver" data-sequence="52">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Gary Bernhardt'</span><span class="p">,</span> <span class="sx">%w(Ruby)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    Yes, I am a princess and Kernel#test is a pea. I don&#x2019;t care. These
+    are the thousand cuts that make Ruby so difficult to reason about.
+    The real question here is: who is the mattress?
+</span><span class="no">  end</span>
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span> <span class="s1">'Tim Pope'</span><span class="p">,</span> <span class="sx">%w(Ruby BigDecimal)</span><span class="p">,</span> <span class="o">&lt;&lt;-</span><span class="no">end</span><span class="nf">.gsub</span><span class="p">(</span><span class="sr">/^ {4}/</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="sh">
+    I wonder if the guy that wrote BigDecimal#inspect has
+    a tragic backstory that explains why he hates humanity.
+</span><span class="no">  end</span>
+
+<span class="nb">require</span> <span class="s1">'gserver'</span>
+
+<span class="k">class</span> <span class="nc">SigServer</span> <span class="o">&lt;</span> <span class="no">GServer</span>
+  <span class="k">def</span> <span class="nf">serve</span><span class="p">(</span><span class="n">io</span><span class="p">)</span>
+    <span class="n">io</span><span class="nf">.write</span> <span class="s1">'tag: '</span>
+    <span class="n">tag</span> <span class="o">=</span> <span class="n">io</span><span class="nf">.gets.chomp</span>
+    <span class="n">sig</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.random_sig_tagged_with</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+    <span class="n">io</span><span class="nf">.puts</span> <span class="n">sig</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">sig_server</span> <span class="o">=</span> <span class="no">SigServer</span><span class="nf">.new</span><span class="p">(</span><span class="mi">1969</span><span class="p">)</span>
+<span class="n">sig_server</span><span class="nf">.start</span>
+<span class="n">sig_server</span><span class="nf">.join</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide gserver commandline incremental" data-transition="none" data-sections="Standard Library, Uncommon Uses,gserver" data-sequence="53">
+
+  <div class="content commandline incremental">
+    <h2><code>telnet towel.blinkenlights.nl</code></h2>
+<pre class="highlight text"><pre class="command"><span class="prompt nv">$</span> <span class="input nb">telnet localhost 1969</span></pre>
+<pre class="result">Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+tag: Ruby
+Yes, I am a princess and Kernel#test is a pea. I don&#x2019;t care. These
+are the thousand cuts that make Ruby so difficult to reason about.
+The real question here is: who is the mattress?
+&#x2014; Gary Bernhardt
+Connection closed by foreign host.
+
+</pre><pre class="command"><span class="prompt nv">$</span> <span class="input nb">telnet localhost 1969</span></pre>
+<pre class="result">Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+tag: BigDecimal
+I wonder if the guy that wrote BigDecimal#inspect has
+a tragic backstory that explains why he hates humanity.
+&#x2014; Tim Pope
+Connection closed by foreign host.
+</pre></pre>
+  </div>
+</div>
+<div id="" class="slide abbrev center" data-transition="scrollLeft" data-sections="Standard Library, Uncommon Uses,abbrev" data-sequence="54">
+
+  <div class="content center">
+    <h1>one does not simply<br>tab-complete into Mordor</br>
+
+  </h1>
+</div></div>
+<div id="" class="slide abbrev" data-transition="none" data-sections="Standard Library, Uncommon Uses,abbrev" data-sequence="55">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Jamie Gaskins'</span><span class="p">,</span> <span class="sx">%w(REST)</span><span class="p">,</span>
+  <span class="s1">'The word &#x2018;RESTful&#x2019;, when talking about web APIs, is a portmanteau '</span> <span class="o">+</span>
+  <span class="s1">'of the acronyms &#x2018;REST&#x2019; and &#x2018;STFU&#x2019;. The L stands for &#x2018;LOL&#x2019;.'</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide abbrev" data-transition="none" data-sections="Standard Library, Uncommon Uses,abbrev" data-sequence="56">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Jamie Gaskins'</span><span class="p">,</span> <span class="sx">%w(REST)</span><span class="p">,</span>
+  <span class="s1">'The word &#x2018;RESTful&#x2019;, when talking about web APIs, is a portmanteau '</span> <span class="o">+</span>
+  <span class="s1">'of the acronyms &#x2018;REST&#x2019; and &#x2018;STFU&#x2019;. The L stands for &#x2018;LOL&#x2019;.'</span><span class="p">)</span>
+
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Tom Dale'</span><span class="p">,</span> <span class="sx">%w(Rails Node Perl Lisp)</span><span class="p">,</span>
+  <span class="s1">'Rails is omakase. Node is street food. Perl is teenage angst. '</span> <span class="o">+</span>
+  <span class="s1">'Lisp is a doorknob. I am an orange scorpion. This acid is amazing.'</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide abbrev" data-transition="none" data-sections="Standard Library, Uncommon Uses,abbrev" data-sequence="57">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Jamie Gaskins'</span><span class="p">,</span> <span class="sx">%w(REST)</span><span class="p">,</span>
+  <span class="s1">'The word &#x2018;RESTful&#x2019;, when talking about web APIs, is a portmanteau '</span> <span class="o">+</span>
+  <span class="s1">'of the acronyms &#x2018;REST&#x2019; and &#x2018;STFU&#x2019;. The L stands for &#x2018;LOL&#x2019;.'</span><span class="p">)</span>
+
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Tom Dale'</span><span class="p">,</span> <span class="sx">%w(Rails Node Perl Lisp)</span><span class="p">,</span>
+  <span class="s1">'Rails is omakase. Node is street food. Perl is teenage angst. '</span> <span class="o">+</span>
+  <span class="s1">'Lisp is a doorknob. I am an orange scorpion. This acid is amazing.'</span><span class="p">)</span>
+
+<span class="n">tags</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.flat_map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:tags</span><span class="p">)</span><span class="nf">.uniq</span>   <span class="c1"># ['REST', 'Rails', 'Node', 'Perl', 'Lisp']</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide abbrev" data-transition="none" data-sections="Standard Library, Uncommon Uses,abbrev" data-sequence="58">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Jamie Gaskins'</span><span class="p">,</span> <span class="sx">%w(REST)</span><span class="p">,</span>
+  <span class="s1">'The word &#x2018;RESTful&#x2019;, when talking about web APIs, is a portmanteau '</span> <span class="o">+</span>
+  <span class="s1">'of the acronyms &#x2018;REST&#x2019; and &#x2018;STFU&#x2019;. The L stands for &#x2018;LOL&#x2019;.'</span><span class="p">)</span>
+
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Tom Dale'</span><span class="p">,</span> <span class="sx">%w(Rails Node Perl Lisp)</span><span class="p">,</span>
+  <span class="s1">'Rails is omakase. Node is street food. Perl is teenage angst. '</span> <span class="o">+</span>
+  <span class="s1">'Lisp is a doorknob. I am an orange scorpion. This acid is amazing.'</span><span class="p">)</span>
+
+<span class="n">tags</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.flat_map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:tags</span><span class="p">)</span><span class="nf">.uniq</span>   <span class="c1"># ['REST', 'Rails', 'Node', 'Perl', 'Lisp']</span>
+
+<span class="nb">require</span> <span class="s1">'abbrev'</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide abbrev" data-transition="none" data-sections="Standard Library, Uncommon Uses,abbrev" data-sequence="59">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Jamie Gaskins'</span><span class="p">,</span> <span class="sx">%w(REST)</span><span class="p">,</span>
+  <span class="s1">'The word &#x2018;RESTful&#x2019;, when talking about web APIs, is a portmanteau '</span> <span class="o">+</span>
+  <span class="s1">'of the acronyms &#x2018;REST&#x2019; and &#x2018;STFU&#x2019;. The L stands for &#x2018;LOL&#x2019;.'</span><span class="p">)</span>
+
+<span class="n">store</span><span class="nf">.push</span> <span class="no">Sig</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'Tom Dale'</span><span class="p">,</span> <span class="sx">%w(Rails Node Perl Lisp)</span><span class="p">,</span>
+  <span class="s1">'Rails is omakase. Node is street food. Perl is teenage angst. '</span> <span class="o">+</span>
+  <span class="s1">'Lisp is a doorknob. I am an orange scorpion. This acid is amazing.'</span><span class="p">)</span>
+
+<span class="n">tags</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.flat_map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:tags</span><span class="p">)</span><span class="nf">.uniq</span>   <span class="c1"># ['REST', 'Rails', 'Node', 'Perl', 'Lisp']</span>
+
+<span class="nb">require</span> <span class="s1">'abbrev'</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span>
+<span class="c1"># { 'REST' =&gt; 'REST', 'RES' =&gt; 'REST', 'RE' =&gt; 'REST', 'Rails' =&gt; 'Rails',</span>
+<span class="c1"># 'Rail' =&gt; 'Rails', 'Rai' =&gt; 'Rails', 'Ra' =&gt; 'Rails', 'Node' =&gt; 'Node',</span>
+<span class="c1"># 'Nod' =&gt; 'Node', 'No' =&gt; 'Node', 'N' =&gt; 'Node', 'Perl' =&gt; 'Perl',</span>
+<span class="c1"># 'Per' =&gt; 'Perl', 'Pe' =&gt; 'Perl', 'P' =&gt; 'Perl', 'Lisp' =&gt; 'Lisp',</span>
+<span class="c1"># 'Lis' =&gt; 'Lisp', 'Li' =&gt; 'Lisp', 'L' =&gt; 'Lisp' }</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide abbrev" data-transition="none" data-sections="Standard Library, Uncommon Uses,abbrev" data-sequence="60">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span>
+<span class="c1"># { 'REST' =&gt; 'REST', 'RES' =&gt; 'REST', 'RE' =&gt; 'REST', 'Rails' =&gt; 'Rails',</span>
+<span class="c1"># 'Rail' =&gt; 'Rails', 'Rai' =&gt; 'Rails', 'Ra' =&gt; 'Rails' }</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span><span class="o">[</span><span class="s1">'R'</span><span class="o">]</span>   <span class="c1"># nil</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide abbrev" data-transition="none" data-sections="Standard Library, Uncommon Uses,abbrev" data-sequence="61">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span>
+<span class="c1"># { 'REST' =&gt; 'REST', 'RES' =&gt; 'REST', 'RE' =&gt; 'REST', 'Rails' =&gt; 'Rails',</span>
+<span class="c1"># 'Rail' =&gt; 'Rails', 'Rai' =&gt; 'Rails', 'Ra' =&gt; 'Rails' }</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span><span class="o">[</span><span class="s1">'R'</span><span class="o">]</span>   <span class="c1"># nil</span>
+
+<span class="n">keys</span> <span class="o">=</span> <span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span><span class="nf">.keys.sort_by</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:size</span><span class="p">)</span>
+<span class="c1"># ['Ra', 'RE', 'RES', 'Rai', 'Rail', 'REST', 'Rails']</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide abbrev" data-transition="none" data-sections="Standard Library, Uncommon Uses,abbrev" data-sequence="62">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span>
+<span class="c1"># { 'REST' =&gt; 'REST', 'RES' =&gt; 'REST', 'RE' =&gt; 'REST', 'Rails' =&gt; 'Rails',</span>
+<span class="c1"># 'Rail' =&gt; 'Rails', 'Rai' =&gt; 'Rails', 'Ra' =&gt; 'Rails' }</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span><span class="o">[</span><span class="s1">'R'</span><span class="o">]</span>   <span class="c1"># nil</span>
+
+<span class="n">keys</span> <span class="o">=</span> <span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span><span class="nf">.keys.sort_by</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:size</span><span class="p">)</span>
+<span class="c1"># ['Ra', 'RE', 'RES', 'Rai', 'Rail', 'REST', 'Rails']</span>
+
+<span class="n">keys</span><span class="nf">.take_while</span> <span class="p">{</span> <span class="o">|</span><span class="n">key</span><span class="o">|</span> <span class="n">key</span><span class="nf">.size</span> <span class="o">==</span> <span class="n">keys</span><span class="nf">.first.size</span> <span class="p">}</span>
+<span class="c1"># ['Ra', 'RE']</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide abbrev" data-transition="none" data-sections="Standard Library, Uncommon Uses,abbrev" data-sequence="63">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span>
+<span class="c1"># { 'REST' =&gt; 'REST', 'RES' =&gt; 'REST', 'RE' =&gt; 'REST', 'Rails' =&gt; 'Rails',</span>
+<span class="c1"># 'Rail' =&gt; 'Rails', 'Rai' =&gt; 'Rails', 'Ra' =&gt; 'Rails' }</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span><span class="o">[</span><span class="s1">'R'</span><span class="o">]</span>   <span class="c1"># nil</span>
+
+<span class="n">keys</span> <span class="o">=</span> <span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span><span class="nf">.keys.sort_by</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:size</span><span class="p">)</span>
+<span class="c1"># ['Ra', 'RE', 'RES', 'Rai', 'Rail', 'REST', 'Rails']</span>
+
+<span class="n">keys</span><span class="nf">.take_while</span> <span class="p">{</span> <span class="o">|</span><span class="n">key</span><span class="o">|</span> <span class="n">key</span><span class="nf">.size</span> <span class="o">==</span> <span class="n">keys</span><span class="nf">.first.size</span> <span class="p">}</span>
+<span class="c1"># ['Ra', 'RE']</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'RE'</span><span class="p">)</span>
+<span class="c1"># { 'REST' =&gt; 'REST', 'RES' =&gt; 'REST', 'RE' =&gt; 'REST' }</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'RE'</span><span class="p">)</span><span class="o">[</span><span class="s1">'RE'</span><span class="o">]</span>   <span class="c1"># 'REST'</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide abbrev" data-transition="none" data-sections="Standard Library, Uncommon Uses,abbrev" data-sequence="64">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span>
+<span class="c1"># { 'REST' =&gt; 'REST', 'RES' =&gt; 'REST', 'RE' =&gt; 'REST', 'Rails' =&gt; 'Rails',</span>
+<span class="c1"># 'Rail' =&gt; 'Rails', 'Rai' =&gt; 'Rails', 'Ra' =&gt; 'Rails' }</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span><span class="o">[</span><span class="s1">'R'</span><span class="o">]</span>   <span class="c1"># nil</span>
+
+<span class="n">keys</span> <span class="o">=</span> <span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span><span class="nf">.keys.sort_by</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:size</span><span class="p">)</span>
+<span class="c1"># ['Ra', 'RE', 'RES', 'Rai', 'Rail', 'REST', 'Rails']</span>
+
+<span class="n">keys</span><span class="nf">.take_while</span> <span class="p">{</span> <span class="o">|</span><span class="n">key</span><span class="o">|</span> <span class="n">key</span><span class="nf">.size</span> <span class="o">==</span> <span class="n">keys</span><span class="nf">.first.size</span> <span class="p">}</span>
+<span class="c1"># ['Ra', 'RE']</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'RE'</span><span class="p">)</span>
+<span class="c1"># { 'REST' =&gt; 'REST', 'RES' =&gt; 'REST', 'RE' =&gt; 'REST' }</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'RE'</span><span class="p">)</span><span class="o">[</span><span class="s1">'RE'</span><span class="o">]</span>   <span class="c1"># 'REST'</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="sr">/e/</span><span class="p">)</span>
+<span class="c1"># { 'Node' =&gt; 'Node', 'Perl' =&gt; 'Perl', 'Per' =&gt; 'Perl', 'Pe' =&gt; 'Perl' }</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide abbrev" data-transition="none" data-sections="Standard Library, Uncommon Uses,abbrev" data-sequence="65">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span>
+<span class="c1"># { 'REST' =&gt; 'REST', 'RES' =&gt; 'REST', 'RE' =&gt; 'REST', 'Rails' =&gt; 'Rails',</span>
+<span class="c1"># 'Rail' =&gt; 'Rails', 'Rai' =&gt; 'Rails', 'Ra' =&gt; 'Rails' }</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span><span class="o">[</span><span class="s1">'R'</span><span class="o">]</span>   <span class="c1"># nil</span>
+
+<span class="n">keys</span> <span class="o">=</span> <span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'R'</span><span class="p">)</span><span class="nf">.keys.sort_by</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:size</span><span class="p">)</span>
+<span class="c1"># ['Ra', 'RE', 'RES', 'Rai', 'Rail', 'REST', 'Rails']</span>
+
+<span class="n">keys</span><span class="nf">.take_while</span> <span class="p">{</span> <span class="o">|</span><span class="n">key</span><span class="o">|</span> <span class="n">key</span><span class="nf">.size</span> <span class="o">==</span> <span class="n">keys</span><span class="nf">.first.size</span> <span class="p">}</span>
+<span class="c1"># ['Ra', 'RE']</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'RE'</span><span class="p">)</span>
+<span class="c1"># { 'REST' =&gt; 'REST', 'RES' =&gt; 'REST', 'RE' =&gt; 'REST' }</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="s1">'RE'</span><span class="p">)</span><span class="o">[</span><span class="s1">'RE'</span><span class="o">]</span>   <span class="c1"># 'REST'</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="sr">/e/</span><span class="p">)</span>
+<span class="c1"># { 'Node' =&gt; 'Node', 'Perl' =&gt; 'Perl', 'Per' =&gt; 'Perl', 'Pe' =&gt; 'Perl' }</span>
+
+<span class="n">tags</span><span class="nf">.abbrev</span><span class="p">(</span><span class="sr">/p/</span><span class="p">)</span>
+<span class="c1"># { 'Lisp' =&gt; 'Lisp' }</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide levenshtein center" data-transition="scrollLeft" data-sections="Standard Library, Uncommon Uses,levenshtein" data-sequence="66">
+
+  <div class="content center">
+    <h1>let&#x2019;s check for typos<br>in author names</br>
+
+  </h1>
+</div></div>
+<div id="" class="slide levenshtein bullets incremental" data-transition="none" data-sections="Standard Library, Uncommon Uses,levenshtein" data-sequence="67">
+
+  <div class="content bullets incremental">
+    <h2>same author, different spellings</h2>
+
+<ul>
+<li><span class="quote">Ceglowski&#x2019;s primality algorithm: paste the candidate prime into Google. If you get results,<br>it&#x2019;s not big enough for cryptographic use.<br>&#x2014; Maciej Ceglowski</br></br>
+<li><span class="quote">After reading the App.net materials I wish I could somehow donate a large, negative sum of money.<br>&#x2014; Maciej Ceg&#x142;owski</br></span>
+</li>
+
+  </span>
+</li></ul></div></div>
+<div id="" class="slide levenshtein bullets incremental" data-transition="none" data-sections="Standard Library, Uncommon Uses,levenshtein" data-sequence="68">
+
+  <div class="content bullets incremental">
+    <h2>Levenshtein distance</h2>
+
+<ul>
+<li>how different are two strings</li>
+<li>number of edits needed<br>to turn one into the other</br>
+<li>there&#x2019;s an awesome <a href="http://rubygems.org/gems/levenshtein"><code>levenshtein</code> gem</a>
+</li>
+<li>but there&#x2019;s nothing in stdlib</li>
+<li>so let&#x2019;s NIH it</li>
+</li>
+
+  </ul>
+</div></div>
+<div id="" class="slide levenshtein" data-transition="none" data-sections="Standard Library, Uncommon Uses,levenshtein" data-sequence="69">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">module</span> <span class="nn">Levenshtein</span>
+  <span class="kp">module_function</span>
+
+  <span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+    <span class="n">matrix</span> <span class="o">=</span> <span class="o">[</span><span class="p">(</span><span class="mi">0</span><span class="nf">..</span><span class="n">a</span><span class="nf">.size</span><span class="p">)</span><span class="nf">.to_a</span><span class="o">]</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="nf">..</span><span class="n">b</span><span class="nf">.size</span><span class="p">)</span><span class="nf">.map</span> <span class="k">do</span> <span class="o">|</span><span class="n">n</span><span class="o">|</span>
+      <span class="o">[</span><span class="n">n</span><span class="o">]</span> <span class="o">+</span> <span class="nb">Array</span><span class="nf">.new</span><span class="p">(</span><span class="n">a</span><span class="nf">.size</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">end</span>
+
+    <span class="p">(</span><span class="mi">1</span><span class="nf">..</span><span class="n">b</span><span class="nf">.size</span><span class="p">)</span><span class="nf">.each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+      <span class="p">(</span><span class="mi">1</span><span class="nf">..</span><span class="n">a</span><span class="nf">.size</span><span class="p">)</span><span class="nf">.each</span> <span class="k">do</span> <span class="o">|</span><span class="n">j</span><span class="o">|</span>
+        <span class="k">if</span> <span class="n">a</span><span class="o">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span> <span class="o">==</span> <span class="n">b</span><span class="o">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span>
+          <span class="n">matrix</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="n">matrix</span><span class="o">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="o">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span>
+        <span class="k">else</span>
+          <span class="n">matrix</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="o">[</span><span class="n">matrix</span><span class="o">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="o">][</span><span class="n">j</span><span class="o">]</span><span class="p">,</span> <span class="n">matrix</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span><span class="p">,</span> <span class="n">matrix</span><span class="o">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="o">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="o">]]</span><span class="nf">.min</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">end</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+
+    <span class="n">matrix</span><span class="nf">.last.last</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+<p>based on <a href="http://en.wikibooks.org/wiki/Algorithm_Implementation/Strings/Levenshtein_distance#Ruby">Algorithm Implementation/Strings/Levenshtein distance</a></p>
+
+  </div>
+</div>
+<div id="" class="slide levenshtein" data-transition="none" data-sections="Standard Library, Uncommon Uses,levenshtein" data-sequence="70">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">authors</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:author</span><span class="p">)</span><span class="nf">.uniq.compact</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide levenshtein" data-transition="none" data-sections="Standard Library, Uncommon Uses,levenshtein" data-sequence="71">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">authors</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:author</span><span class="p">)</span><span class="nf">.uniq.compact</span>
+
+          <span class="n">authors</span><span class="nf">.combination</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide levenshtein" data-transition="none" data-sections="Standard Library, Uncommon Uses,levenshtein" data-sequence="72">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">authors</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:author</span><span class="p">)</span><span class="nf">.uniq.compact</span>
+
+          <span class="n">authors</span><span class="nf">.combination</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="nf">.min_by</span> <span class="k">do</span> <span class="o">|</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="o">|</span>
+
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide levenshtein" data-transition="none" data-sections="Standard Library, Uncommon Uses,levenshtein" data-sequence="73">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">authors</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:author</span><span class="p">)</span><span class="nf">.uniq.compact</span>
+
+          <span class="n">authors</span><span class="nf">.combination</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="nf">.min_by</span> <span class="k">do</span> <span class="o">|</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="o">|</span>
+  <span class="no">Levenshtein</span><span class="nf">.distance</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide levenshtein" data-transition="none" data-sections="Standard Library, Uncommon Uses,levenshtein" data-sequence="74">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">authors</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:author</span><span class="p">)</span><span class="nf">.uniq.compact</span>
+
+<span class="n">closest</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.combination</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="nf">.min_by</span> <span class="k">do</span> <span class="o">|</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="o">|</span>
+  <span class="no">Levenshtein</span><span class="nf">.distance</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="nb">p</span> <span class="n">closest</span>
+
+<span class="c1"># ['Maciej Ceglowski', 'Maciej Ceg&#x142;owski']</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide levenshtein" data-transition="none" data-sections="Standard Library, Uncommon Uses,levenshtein" data-sequence="75">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">authors</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:author</span><span class="p">)</span><span class="nf">.uniq.compact</span>
+
+<span class="n">closest</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.combination</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="nf">.min_by</span> <span class="k">do</span> <span class="o">|</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="o">|</span>
+  <span class="no">Levenshtein</span><span class="nf">.distance</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="nb">p</span> <span class="n">closest</span>
+
+<span class="c1"># ['Maciej Ceglowski', 'Maciej Ceg&#x142;owski']</span>
+
+<span class="nb">puts</span> <span class="n">store</span><span class="nf">.random_sig_tagged_with</span><span class="p">(</span><span class="s1">'Levenshtein'</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide levenshtein" data-transition="none" data-sections="Standard Library, Uncommon Uses,levenshtein" data-sequence="76">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="n">authors</span> <span class="o">=</span> <span class="n">store</span><span class="nf">.map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:author</span><span class="p">)</span><span class="nf">.uniq.compact</span>
+
+<span class="n">closest</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.combination</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="nf">.min_by</span> <span class="k">do</span> <span class="o">|</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="o">|</span>
+  <span class="no">Levenshtein</span><span class="nf">.distance</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="nb">p</span> <span class="n">closest</span>
+
+<span class="c1"># ['Maciej Ceglowski', 'Maciej Ceg&#x142;owski']</span>
+
+<span class="nb">puts</span> <span class="n">store</span><span class="nf">.random_sig_tagged_with</span><span class="p">(</span><span class="s1">'Levenshtein'</span><span class="p">)</span>
+
+<span class="c1"># &gt;&gt; def method_missing(n, *a, &amp;b)</span>
+<span class="c1"># &gt;&gt;   send(methods.min_by { |m| levenshtein(n.to_s, m.to_s) }, *a, &amp;b)</span>
+<span class="c1"># &gt;&gt; end</span>
+<span class="c1"># &gt;&gt; p [1, 2, 3].elngth</span>
+<span class="c1"># 3</span>
+<span class="c1"># It&#x2019;s fine.</span>
+<span class="c1"># &#x2014; Gary Bernhardt</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb smbullets incremental" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="77">
+
+  <div class="content smbullets incremental">
+    <h2>number of pairs</h2>
+
+<ul>
+<li>binominal coefficient</li>
+<li>number of &#x2018;choose k from n&#x2019; combinations</li>
+<li>n! &#xF7; (k! &#xD7; (n-k)!)</li>
+<li>k = 2</li>
+<li>n! &#xF7; (2! &#xD7; (n-2)!) = n &#xD7; (n-1) &#xF7; 2</li>
+<li>let&#x2019;s assume 2378 authors</li>
+<li>2378 &#xD7; 2377 &#xF7; 2 = 2,826,253 pairs</li>
+<li>(that&#x2019;s <code>2_826_253</code> in Ruby)</li>
+</ul>
+
+  </div>
+</div>
+<div id="" class="slide drb bullets incremental" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="78">
+
+  <div class="content bullets incremental">
+    <h2>let&#x2019;s distribute!</h2>
+
+<ul>
+<li><span class="quote">So Google has the 4.3.2.0/24 IP allocation and they&#x2019;re not using a single address. I&#x2019;d give 4.3.2.1 to NASA for rocket launch livestreams.<br>&#x2014; Jonty Wareing</br></span>
+<li>let&#x2019;s assume that we have the 4.3.2.0/24 subnet</li>
+<li>that&#x2019;s 254 server addresses</li>
+<li>how can we run services on them?</li>
+</li>
+
+  </ul>
+</div></div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="79">
+
+  <div class="content ">
+    <h2>DRb server</h2>
+<pre class="highlight ruby"><span class="k">module</span> <span class="nn">TypoFinder</span>
+  <span class="kp">module_function</span>
+
+  <span class="k">def</span> <span class="nf">most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="80">
+
+  <div class="content ">
+    <h2>DRb server</h2>
+<pre class="highlight ruby"><span class="k">module</span> <span class="nn">TypoFinder</span>
+  <span class="kp">module_function</span>
+
+  <span class="k">def</span> <span class="nf">most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+    <span class="n">pairs</span><span class="nf">.min_by</span> <span class="p">{</span> <span class="o">|</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="o">|</span> <span class="no">Levenshtein</span><span class="nf">.distance</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="81">
+
+  <div class="content ">
+    <h2>DRb server</h2>
+<pre class="highlight ruby"><span class="k">module</span> <span class="nn">TypoFinder</span>
+  <span class="kp">module_function</span>
+
+  <span class="k">def</span> <span class="nf">most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+    <span class="n">pairs</span><span class="nf">.min_by</span> <span class="p">{</span> <span class="o">|</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="o">|</span> <span class="no">Levenshtein</span><span class="nf">.distance</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="nb">require</span> <span class="s1">'drb/drb'</span>
+
+<span class="no">DRb</span><span class="nf">.start_service</span> <span class="s1">'druby://localhost:2009'</span><span class="p">,</span> <span class="no">TypoFinder</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="82">
+
+  <div class="content ">
+    <h2>DRb server</h2>
+<pre class="highlight ruby"><span class="k">module</span> <span class="nn">TypoFinder</span>
+  <span class="kp">module_function</span>
+
+  <span class="k">def</span> <span class="nf">most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+    <span class="n">pairs</span><span class="nf">.min_by</span> <span class="p">{</span> <span class="o">|</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="o">|</span> <span class="no">Levenshtein</span><span class="nf">.distance</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="nb">require</span> <span class="s1">'drb/drb'</span>
+
+<span class="no">DRb</span><span class="nf">.start_service</span> <span class="s1">'druby://localhost:2009'</span><span class="p">,</span> <span class="no">TypoFinder</span>
+<span class="no">DRb</span><span class="nf">.thread.join</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="83">
+
+  <div class="content ">
+    <h2>DRb server</h2>
+<pre class="highlight ruby"><span class="k">module</span> <span class="nn">TypoFinder</span>
+  <span class="kp">module_function</span>
+
+  <span class="k">def</span> <span class="nf">most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+    <span class="n">pairs</span><span class="nf">.min_by</span> <span class="p">{</span> <span class="o">|</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="o">|</span> <span class="no">Levenshtein</span><span class="nf">.distance</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="nb">require</span> <span class="s1">'drb/drb'</span>
+
+<span class="no">DRb</span><span class="nf">.start_service</span> <span class="s1">'druby://localhost:2009'</span><span class="p">,</span> <span class="no">TypoFinder</span>
+<span class="no">DRb</span><span class="nf">.thread.join</span>
+
+<span class="c1"># &#x2026;aaand we run it on each of the servers</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="84">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'drb/drb'</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="n">typo_finder</span> <span class="o">=</span> <span class="no">DRbObject</span><span class="nf">.new_with_uri</span><span class="p">(</span><span class="s2">"druby://</span><span class="si">#{</span><span class="n">ip</span><span class="si">}</span><span class="s2">:2009"</span><span class="p">)</span>
+    <span class="n">typo_finder</span><span class="nf">.most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="85">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'drb/drb'</span>
+<span class="nb">require</span> <span class="s1">'ipaddr'</span>
+
+
+<span class="n">ips</span> <span class="o">=</span> <span class="no">IPAddr</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'4.3.2.1/24'</span><span class="p">)</span><span class="nf">.to_range</span>
+
+
+
+
+
+
+
+
+
+
+
+    <span class="n">typo_finder</span> <span class="o">=</span> <span class="no">DRbObject</span><span class="nf">.new_with_uri</span><span class="p">(</span><span class="s2">"druby://</span><span class="si">#{</span><span class="n">ip</span><span class="si">}</span><span class="s2">:2009"</span><span class="p">)</span>
+    <span class="n">typo_finder</span><span class="nf">.most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="86">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'drb/drb'</span>
+<span class="nb">require</span> <span class="s1">'ipaddr'</span>
+
+
+<span class="n">ips</span> <span class="o">=</span> <span class="no">IPAddr</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'4.3.2.1/24'</span><span class="p">)</span><span class="nf">.to_range</span>
+<span class="n">ips</span><span class="nf">.first</span>                <span class="c1">#=&gt; 4.3.2.0</span>
+<span class="n">ips</span><span class="nf">.last</span>                 <span class="c1">#=&gt; 4.3.2.255</span>
+
+
+
+
+
+
+
+
+
+    <span class="n">typo_finder</span> <span class="o">=</span> <span class="no">DRbObject</span><span class="nf">.new_with_uri</span><span class="p">(</span><span class="s2">"druby://</span><span class="si">#{</span><span class="n">ip</span><span class="si">}</span><span class="s2">:2009"</span><span class="p">)</span>
+    <span class="n">typo_finder</span><span class="nf">.most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="87">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'drb/drb'</span>
+<span class="nb">require</span> <span class="s1">'ipaddr'</span>
+
+
+<span class="n">ips</span> <span class="o">=</span> <span class="no">IPAddr</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'4.3.2.1/24'</span><span class="p">)</span><span class="nf">.to_range</span>
+<span class="n">ips</span><span class="nf">.first</span>                <span class="c1">#=&gt; 4.3.2.0</span>
+<span class="n">ips</span><span class="nf">.last</span>                 <span class="c1">#=&gt; 4.3.2.255</span>
+<span class="n">ips</span> <span class="o">=</span> <span class="n">ips</span><span class="nf">.to_a</span><span class="o">[</span><span class="mi">1</span><span class="nf">...-</span><span class="mi">1</span><span class="o">]</span>   <span class="c1">#=&gt; 4.3.2.1 to 4.3.2.254</span>
+
+
+
+
+
+
+
+
+    <span class="n">typo_finder</span> <span class="o">=</span> <span class="no">DRbObject</span><span class="nf">.new_with_uri</span><span class="p">(</span><span class="s2">"druby://</span><span class="si">#{</span><span class="n">ip</span><span class="si">}</span><span class="s2">:2009"</span><span class="p">)</span>
+    <span class="n">typo_finder</span><span class="nf">.most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="88">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'drb/drb'</span>
+<span class="nb">require</span> <span class="s1">'ipaddr'</span>
+
+
+<span class="n">ips</span> <span class="o">=</span> <span class="no">IPAddr</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'4.3.2.1/24'</span><span class="p">)</span><span class="nf">.to_range</span>
+<span class="n">ips</span><span class="nf">.first</span>                <span class="c1">#=&gt; 4.3.2.0</span>
+<span class="n">ips</span><span class="nf">.last</span>                 <span class="c1">#=&gt; 4.3.2.255</span>
+<span class="n">ips</span> <span class="o">=</span> <span class="n">ips</span><span class="nf">.to_a</span><span class="o">[</span><span class="mi">1</span><span class="nf">...-</span><span class="mi">1</span><span class="o">]</span>   <span class="c1">#=&gt; 4.3.2.1 to 4.3.2.254</span>
+
+<span class="n">batch_size</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.size</span> <span class="o">*</span> <span class="p">(</span><span class="n">authors</span><span class="nf">.size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span> <span class="o">/</span> <span class="n">ips</span><span class="nf">.size</span> <span class="c1"># 11126.98</span>
+
+
+
+
+
+
+    <span class="n">typo_finder</span> <span class="o">=</span> <span class="no">DRbObject</span><span class="nf">.new_with_uri</span><span class="p">(</span><span class="s2">"druby://</span><span class="si">#{</span><span class="n">ip</span><span class="si">}</span><span class="s2">:2009"</span><span class="p">)</span>
+    <span class="n">typo_finder</span><span class="nf">.most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="89">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'drb/drb'</span>
+<span class="nb">require</span> <span class="s1">'ipaddr'</span>
+
+
+<span class="n">ips</span> <span class="o">=</span> <span class="no">IPAddr</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'4.3.2.1/24'</span><span class="p">)</span><span class="nf">.to_range</span>
+<span class="n">ips</span><span class="nf">.first</span>                <span class="c1">#=&gt; 4.3.2.0</span>
+<span class="n">ips</span><span class="nf">.last</span>                 <span class="c1">#=&gt; 4.3.2.255</span>
+<span class="n">ips</span> <span class="o">=</span> <span class="n">ips</span><span class="nf">.to_a</span><span class="o">[</span><span class="mi">1</span><span class="nf">...-</span><span class="mi">1</span><span class="o">]</span>   <span class="c1">#=&gt; 4.3.2.1 to 4.3.2.254</span>
+
+<span class="n">batch_size</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.size</span> <span class="o">*</span> <span class="p">(</span><span class="n">authors</span><span class="nf">.size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span> <span class="o">/</span> <span class="n">ips</span><span class="nf">.size</span> <span class="c1"># 11126.98</span>
+
+<span class="c1"># we need no more than ips.size slices:</span>
+<span class="n">slices</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.combination</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="nf">.each_slice</span><span class="p">(</span><span class="n">batch_size</span><span class="nf">.ceil</span><span class="p">)</span>
+
+
+
+    <span class="n">typo_finder</span> <span class="o">=</span> <span class="no">DRbObject</span><span class="nf">.new_with_uri</span><span class="p">(</span><span class="s2">"druby://</span><span class="si">#{</span><span class="n">ip</span><span class="si">}</span><span class="s2">:2009"</span><span class="p">)</span>
+    <span class="n">typo_finder</span><span class="nf">.most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="90">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'drb/drb'</span>
+<span class="nb">require</span> <span class="s1">'ipaddr'</span>
+
+
+<span class="n">ips</span> <span class="o">=</span> <span class="no">IPAddr</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'4.3.2.1/24'</span><span class="p">)</span><span class="nf">.to_range</span>
+<span class="n">ips</span><span class="nf">.first</span>                <span class="c1">#=&gt; 4.3.2.0</span>
+<span class="n">ips</span><span class="nf">.last</span>                 <span class="c1">#=&gt; 4.3.2.255</span>
+<span class="n">ips</span> <span class="o">=</span> <span class="n">ips</span><span class="nf">.to_a</span><span class="o">[</span><span class="mi">1</span><span class="nf">...-</span><span class="mi">1</span><span class="o">]</span>   <span class="c1">#=&gt; 4.3.2.1 to 4.3.2.254</span>
+
+<span class="n">batch_size</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.size</span> <span class="o">*</span> <span class="p">(</span><span class="n">authors</span><span class="nf">.size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span> <span class="o">/</span> <span class="n">ips</span><span class="nf">.size</span> <span class="c1"># 11126.98</span>
+
+<span class="c1"># we need no more than ips.size slices:</span>
+<span class="n">slices</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.combination</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="nf">.each_slice</span><span class="p">(</span><span class="n">batch_size</span><span class="nf">.ceil</span><span class="p">)</span>
+
+          <span class="n">ips</span><span class="nf">.zip</span><span class="p">(</span><span class="n">slices</span><span class="p">)</span><span class="nf">.map</span> <span class="k">do</span> <span class="o">|</span><span class="n">ip</span><span class="p">,</span> <span class="n">pairs</span><span class="o">|</span>
+
+    <span class="n">typo_finder</span> <span class="o">=</span> <span class="no">DRbObject</span><span class="nf">.new_with_uri</span><span class="p">(</span><span class="s2">"druby://</span><span class="si">#{</span><span class="n">ip</span><span class="si">}</span><span class="s2">:2009"</span><span class="p">)</span>
+    <span class="n">typo_finder</span><span class="nf">.most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="91">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'drb/drb'</span>
+<span class="nb">require</span> <span class="s1">'ipaddr'</span>
+<span class="nb">require</span> <span class="s1">'thread'</span>
+
+<span class="n">ips</span> <span class="o">=</span> <span class="no">IPAddr</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'4.3.2.1/24'</span><span class="p">)</span><span class="nf">.to_range</span>
+<span class="n">ips</span><span class="nf">.first</span>                <span class="c1">#=&gt; 4.3.2.0</span>
+<span class="n">ips</span><span class="nf">.last</span>                 <span class="c1">#=&gt; 4.3.2.255</span>
+<span class="n">ips</span> <span class="o">=</span> <span class="n">ips</span><span class="nf">.to_a</span><span class="o">[</span><span class="mi">1</span><span class="nf">...-</span><span class="mi">1</span><span class="o">]</span>   <span class="c1">#=&gt; 4.3.2.1 to 4.3.2.254</span>
+
+<span class="n">batch_size</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.size</span> <span class="o">*</span> <span class="p">(</span><span class="n">authors</span><span class="nf">.size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span> <span class="o">/</span> <span class="n">ips</span><span class="nf">.size</span> <span class="c1"># 11126.98</span>
+
+<span class="c1"># we need no more than ips.size slices:</span>
+<span class="n">slices</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.combination</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="nf">.each_slice</span><span class="p">(</span><span class="n">batch_size</span><span class="nf">.ceil</span><span class="p">)</span>
+
+<span class="n">threads</span> <span class="o">=</span> <span class="n">ips</span><span class="nf">.zip</span><span class="p">(</span><span class="n">slices</span><span class="p">)</span><span class="nf">.map</span> <span class="k">do</span> <span class="o">|</span><span class="n">ip</span><span class="p">,</span> <span class="n">pairs</span><span class="o">|</span>
+  <span class="no">Thread</span><span class="nf">.new</span> <span class="k">do</span>
+    <span class="n">typo_finder</span> <span class="o">=</span> <span class="no">DRbObject</span><span class="nf">.new_with_uri</span><span class="p">(</span><span class="s2">"druby://</span><span class="si">#{</span><span class="n">ip</span><span class="si">}</span><span class="s2">:2009"</span><span class="p">)</span>
+    <span class="n">typo_finder</span><span class="nf">.most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="92">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'drb/drb'</span>
+<span class="nb">require</span> <span class="s1">'ipaddr'</span>
+<span class="nb">require</span> <span class="s1">'thread'</span>
+
+<span class="n">ips</span> <span class="o">=</span> <span class="no">IPAddr</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'4.3.2.1/24'</span><span class="p">)</span><span class="nf">.to_range</span>
+<span class="n">ips</span><span class="nf">.first</span>                <span class="c1">#=&gt; 4.3.2.0</span>
+<span class="n">ips</span><span class="nf">.last</span>                 <span class="c1">#=&gt; 4.3.2.255</span>
+<span class="n">ips</span> <span class="o">=</span> <span class="n">ips</span><span class="nf">.to_a</span><span class="o">[</span><span class="mi">1</span><span class="nf">...-</span><span class="mi">1</span><span class="o">]</span>   <span class="c1">#=&gt; 4.3.2.1 to 4.3.2.254</span>
+
+<span class="n">batch_size</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.size</span> <span class="o">*</span> <span class="p">(</span><span class="n">authors</span><span class="nf">.size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span> <span class="o">/</span> <span class="n">ips</span><span class="nf">.size</span> <span class="c1"># 11126.98</span>
+
+<span class="c1"># we need no more than ips.size slices:</span>
+<span class="n">slices</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.combination</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="nf">.each_slice</span><span class="p">(</span><span class="n">batch_size</span><span class="nf">.ceil</span><span class="p">)</span>
+
+<span class="n">threads</span> <span class="o">=</span> <span class="n">ips</span><span class="nf">.zip</span><span class="p">(</span><span class="n">slices</span><span class="p">)</span><span class="nf">.map</span> <span class="k">do</span> <span class="o">|</span><span class="n">ip</span><span class="p">,</span> <span class="n">pairs</span><span class="o">|</span>
+  <span class="no">Thread</span><span class="nf">.new</span> <span class="k">do</span>
+    <span class="n">typo_finder</span> <span class="o">=</span> <span class="no">DRbObject</span><span class="nf">.new_with_uri</span><span class="p">(</span><span class="s2">"druby://</span><span class="si">#{</span><span class="n">ip</span><span class="si">}</span><span class="s2">:2009"</span><span class="p">)</span>
+    <span class="n">typo_finder</span><span class="nf">.most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">most_similar_candidates</span> <span class="o">=</span> <span class="n">threads</span><span class="nf">.flat_map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:value</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="93">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'drb/drb'</span>
+<span class="nb">require</span> <span class="s1">'ipaddr'</span>
+<span class="nb">require</span> <span class="s1">'thread'</span>
+
+<span class="n">ips</span> <span class="o">=</span> <span class="no">IPAddr</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'4.3.2.1/24'</span><span class="p">)</span><span class="nf">.to_range</span>
+<span class="n">ips</span><span class="nf">.first</span>                <span class="c1">#=&gt; 4.3.2.0</span>
+<span class="n">ips</span><span class="nf">.last</span>                 <span class="c1">#=&gt; 4.3.2.255</span>
+<span class="n">ips</span> <span class="o">=</span> <span class="n">ips</span><span class="nf">.to_a</span><span class="o">[</span><span class="mi">1</span><span class="nf">...-</span><span class="mi">1</span><span class="o">]</span>   <span class="c1">#=&gt; 4.3.2.1 to 4.3.2.254</span>
+
+<span class="n">batch_size</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.size</span> <span class="o">*</span> <span class="p">(</span><span class="n">authors</span><span class="nf">.size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span> <span class="o">/</span> <span class="n">ips</span><span class="nf">.size</span> <span class="c1"># 11126.98</span>
+
+<span class="c1"># we need no more than ips.size slices:</span>
+<span class="n">slices</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.combination</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="nf">.each_slice</span><span class="p">(</span><span class="n">batch_size</span><span class="nf">.ceil</span><span class="p">)</span>
+
+<span class="n">threads</span> <span class="o">=</span> <span class="n">ips</span><span class="nf">.zip</span><span class="p">(</span><span class="n">slices</span><span class="p">)</span><span class="nf">.map</span> <span class="k">do</span> <span class="o">|</span><span class="n">ip</span><span class="p">,</span> <span class="n">pairs</span><span class="o">|</span>
+  <span class="no">Thread</span><span class="nf">.new</span> <span class="k">do</span>
+    <span class="n">typo_finder</span> <span class="o">=</span> <span class="no">DRbObject</span><span class="nf">.new_with_uri</span><span class="p">(</span><span class="s2">"druby://</span><span class="si">#{</span><span class="n">ip</span><span class="si">}</span><span class="s2">:2009"</span><span class="p">)</span>
+    <span class="n">typo_finder</span><span class="nf">.most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">most_similar_candidates</span> <span class="o">=</span> <span class="n">threads</span><span class="nf">.flat_map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:value</span><span class="p">)</span>
+<span class="no">TypoFinder</span><span class="nf">.most_similar_pair_among</span><span class="p">(</span><span class="n">most_similar_candidates</span><span class="p">)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide drb" data-transition="none" data-sections="Standard Library, Uncommon Uses,drb" data-sequence="94">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'drb/drb'</span>
+<span class="nb">require</span> <span class="s1">'ipaddr'</span>
+<span class="nb">require</span> <span class="s1">'thread'</span>
+
+<span class="n">ips</span> <span class="o">=</span> <span class="no">IPAddr</span><span class="nf">.new</span><span class="p">(</span><span class="s1">'4.3.2.1/24'</span><span class="p">)</span><span class="nf">.to_range</span>
+<span class="n">ips</span><span class="nf">.first</span>                <span class="c1">#=&gt; 4.3.2.0</span>
+<span class="n">ips</span><span class="nf">.last</span>                 <span class="c1">#=&gt; 4.3.2.255</span>
+<span class="n">ips</span> <span class="o">=</span> <span class="n">ips</span><span class="nf">.to_a</span><span class="o">[</span><span class="mi">1</span><span class="nf">...-</span><span class="mi">1</span><span class="o">]</span>   <span class="c1">#=&gt; 4.3.2.1 to 4.3.2.254</span>
+
+<span class="n">batch_size</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.size</span> <span class="o">*</span> <span class="p">(</span><span class="n">authors</span><span class="nf">.size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span> <span class="o">/</span> <span class="n">ips</span><span class="nf">.size</span> <span class="c1"># 11126.98</span>
+
+<span class="c1"># we need no more than ips.size slices:</span>
+<span class="n">slices</span> <span class="o">=</span> <span class="n">authors</span><span class="nf">.combination</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="nf">.each_slice</span><span class="p">(</span><span class="n">batch_size</span><span class="nf">.ceil</span><span class="p">)</span>
+
+<span class="n">threads</span> <span class="o">=</span> <span class="n">ips</span><span class="nf">.zip</span><span class="p">(</span><span class="n">slices</span><span class="p">)</span><span class="nf">.map</span> <span class="k">do</span> <span class="o">|</span><span class="n">ip</span><span class="p">,</span> <span class="n">pairs</span><span class="o">|</span>
+  <span class="no">Thread</span><span class="nf">.new</span> <span class="k">do</span>
+    <span class="n">typo_finder</span> <span class="o">=</span> <span class="no">DRbObject</span><span class="nf">.new_with_uri</span><span class="p">(</span><span class="s2">"druby://</span><span class="si">#{</span><span class="n">ip</span><span class="si">}</span><span class="s2">:2009"</span><span class="p">)</span>
+    <span class="n">typo_finder</span><span class="nf">.most_similar_pair_among</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">most_similar_candidates</span> <span class="o">=</span> <span class="n">threads</span><span class="nf">.flat_map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:value</span><span class="p">)</span>
+<span class="no">TypoFinder</span><span class="nf">.most_similar_pair_among</span><span class="p">(</span><span class="n">most_similar_candidates</span><span class="p">)</span>
+<span class="c1"># in actual db: ['I Am Developer', 'I Am Devloper']</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime center" data-transition="scrollLeft" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="95">
+
+  <div class="content center">
+    <h1>a quiz</h1>
+
+  </div>
+</div>
+<div id="" class="slide prime center" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="96">
+
+  <div class="content center">
+    <h1>
+<span class="spoiler">35768631264621656762913</span>7</h1>
+
+  </div>
+</div>
+<div id="" class="slide prime center" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="97">
+
+  <div class="content center">
+    <h1>
+<span class="spoiler">3576863126462165676291</span>37</h1>
+
+  </div>
+</div>
+<div id="" class="slide prime center" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="98">
+
+  <div class="content center">
+    <h1>
+<span class="spoiler">357686312646216567629</span>137</h1>
+
+  </div>
+</div>
+<div id="" class="slide prime center" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="99">
+
+  <div class="content center">
+    <h1>
+<span class="spoiler">35768631264621656762</span>9137</h1>
+
+  </div>
+</div>
+<div id="" class="slide prime center" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="100">
+
+  <div class="content center">
+    <h1>
+<span class="spoiler">357686312646216567</span>629137</h1>
+
+  </div>
+</div>
+<div id="" class="slide prime center" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="101">
+
+  <div class="content center">
+    <h1>
+<span class="spoiler">357686312646216</span>567629137</h1>
+
+  </div>
+</div>
+<div id="" class="slide prime center" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="102">
+
+  <div class="content center">
+    <h1>
+<span class="spoiler">35768631264</span>6216567629137</h1>
+
+  </div>
+</div>
+<div id="" class="slide prime center" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="103">
+
+  <div class="content center">
+    <h1>
+<span class="spoiler">357686</span>312646216567629137</h1>
+
+  </div>
+</div>
+<div id="" class="slide prime center" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="104">
+
+  <div class="content center">
+    <h1>357686312646216567629137</h1>
+
+  </div>
+</div>
+<div id="" class="slide prime bullets center" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="105">
+
+  <div class="content bullets center">
+    <ul>
+<li><span class="quote">This makes me happy: 357686312646216567629137 is prime<br>and remains so after removing<br>any number of digits from the left.<br>&#x2014; wallingf</br></br>
+</br>
+
+  </span>
+</li></ul></div></div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="106">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">simple_prime?</span>
+
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="107">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">simple_prime?</span>
+    <span class="p">(</span><span class="mi">2</span><span class="nf">..</span>          <span class="nb">self</span>       <span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="108">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">simple_prime?</span>
+    <span class="p">(</span><span class="mi">2</span><span class="nf">..</span><span class="no">Math</span><span class="nf">.sqrt</span><span class="p">(</span><span class="nb">self</span><span class="p">)</span>      <span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="109">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">simple_prime?</span>
+    <span class="p">(</span><span class="mi">2</span><span class="nf">..</span><span class="no">Math</span><span class="nf">.sqrt</span><span class="p">(</span><span class="nb">self</span><span class="p">)</span><span class="nf">.floor</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="110">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">simple_prime?</span>
+    <span class="p">(</span><span class="mi">2</span><span class="nf">..</span><span class="no">Math</span><span class="nf">.sqrt</span><span class="p">(</span><span class="nb">self</span><span class="p">)</span><span class="nf">.floor</span><span class="p">)</span><span class="nf">.all?</span> <span class="p">{</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="p">(</span><span class="nb">self</span> <span class="sx">% i).nonzero? </span><span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="111">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">simple_prime?</span>
+    <span class="p">(</span><span class="mi">2</span><span class="nf">..</span><span class="no">Math</span><span class="nf">.sqrt</span><span class="p">(</span><span class="nb">self</span><span class="p">)</span><span class="nf">.floor</span><span class="p">)</span><span class="nf">.all?</span> <span class="p">{</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="p">(</span><span class="nb">self</span> <span class="sx">% i).nonzero? </span><span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="mi">7</span><span class="nf">.simple_prime?</span>                          <span class="c1">#=&gt; true</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="112">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">simple_prime?</span>
+    <span class="p">(</span><span class="mi">2</span><span class="nf">..</span><span class="no">Math</span><span class="nf">.sqrt</span><span class="p">(</span><span class="nb">self</span><span class="p">)</span><span class="nf">.floor</span><span class="p">)</span><span class="nf">.all?</span> <span class="p">{</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="p">(</span><span class="nb">self</span> <span class="sx">% i).nonzero? </span><span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="mi">7</span><span class="nf">.simple_prime?</span>                          <span class="c1">#=&gt; true</span>
+<span class="mi">37</span><span class="nf">.simple_prime?</span>                         <span class="c1">#=&gt; true</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="113">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">simple_prime?</span>
+    <span class="p">(</span><span class="mi">2</span><span class="nf">..</span><span class="no">Math</span><span class="nf">.sqrt</span><span class="p">(</span><span class="nb">self</span><span class="p">)</span><span class="nf">.floor</span><span class="p">)</span><span class="nf">.all?</span> <span class="p">{</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="p">(</span><span class="nb">self</span> <span class="sx">% i).nonzero? </span><span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="mi">7</span><span class="nf">.simple_prime?</span>                          <span class="c1">#=&gt; true</span>
+<span class="mi">37</span><span class="nf">.simple_prime?</span>                         <span class="c1">#=&gt; true</span>
+<span class="mi">137</span><span class="nf">.simple_prime?</span>                        <span class="c1">#=&gt; true</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="114">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">simple_prime?</span>
+    <span class="p">(</span><span class="mi">2</span><span class="nf">..</span><span class="no">Math</span><span class="nf">.sqrt</span><span class="p">(</span><span class="nb">self</span><span class="p">)</span><span class="nf">.floor</span><span class="p">)</span><span class="nf">.all?</span> <span class="p">{</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="p">(</span><span class="nb">self</span> <span class="sx">% i).nonzero? </span><span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="mi">7</span><span class="nf">.simple_prime?</span>                          <span class="c1">#=&gt; true</span>
+<span class="mi">37</span><span class="nf">.simple_prime?</span>                         <span class="c1">#=&gt; true</span>
+<span class="mi">137</span><span class="nf">.simple_prime?</span>                        <span class="c1">#=&gt; true</span>
+<span class="mi">9137</span><span class="nf">.simple_prime?</span>                       <span class="c1">#=&gt; true</span>
+<span class="mi">29137</span><span class="nf">.simple_prime?</span>                      <span class="c1">#=&gt; true</span>
+<span class="mi">629137</span><span class="nf">.simple_prime?</span>                     <span class="c1">#=&gt; true</span>
+<span class="mi">7629137</span><span class="nf">.simple_prime?</span>                    <span class="c1">#=&gt; true</span>
+<span class="mi">67629137</span><span class="nf">.simple_prime?</span>                   <span class="c1">#=&gt; true</span>
+<span class="mi">567629137</span><span class="nf">.simple_prime?</span>                  <span class="c1">#=&gt; true</span>
+<span class="mi">6567629137</span><span class="nf">.simple_prime?</span>                 <span class="c1">#=&gt; true</span>
+<span class="mi">16567629137</span><span class="nf">.simple_prime?</span>                <span class="c1">#=&gt; true</span>
+<span class="mi">216567629137</span><span class="nf">.simple_prime?</span>               <span class="c1">#=&gt; true</span>
+<span class="mi">6216567629137</span><span class="nf">.simple_prime?</span>              <span class="c1">#=&gt; true</span>
+<span class="mi">46216567629137</span><span class="nf">.simple_prime?</span>             <span class="c1">#=&gt; true</span>
+<span class="mi">646216567629137</span><span class="nf">.simple_prime?</span>            <span class="c1">#=&gt; true</span>
+<span class="mi">2646216567629137</span><span class="nf">.simple_prime?</span>           <span class="c1">#=&gt; true</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="115">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">simple_prime?</span>
+    <span class="p">(</span><span class="mi">2</span><span class="nf">..</span><span class="no">Math</span><span class="nf">.sqrt</span><span class="p">(</span><span class="nb">self</span><span class="p">)</span><span class="nf">.floor</span><span class="p">)</span><span class="nf">.all?</span> <span class="p">{</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="p">(</span><span class="nb">self</span> <span class="sx">% i).nonzero? </span><span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="mi">7</span><span class="nf">.simple_prime?</span>                          <span class="c1">#=&gt; true</span>
+<span class="mi">37</span><span class="nf">.simple_prime?</span>                         <span class="c1">#=&gt; true</span>
+<span class="mi">137</span><span class="nf">.simple_prime?</span>                        <span class="c1">#=&gt; true</span>
+<span class="mi">9137</span><span class="nf">.simple_prime?</span>                       <span class="c1">#=&gt; true</span>
+<span class="mi">29137</span><span class="nf">.simple_prime?</span>                      <span class="c1">#=&gt; true</span>
+<span class="mi">629137</span><span class="nf">.simple_prime?</span>                     <span class="c1">#=&gt; true</span>
+<span class="mi">7629137</span><span class="nf">.simple_prime?</span>                    <span class="c1">#=&gt; true</span>
+<span class="mi">67629137</span><span class="nf">.simple_prime?</span>                   <span class="c1">#=&gt; true</span>
+<span class="mi">567629137</span><span class="nf">.simple_prime?</span>                  <span class="c1">#=&gt; true</span>
+<span class="mi">6567629137</span><span class="nf">.simple_prime?</span>                 <span class="c1">#=&gt; true</span>
+<span class="mi">16567629137</span><span class="nf">.simple_prime?</span>                <span class="c1">#=&gt; true</span>
+<span class="mi">216567629137</span><span class="nf">.simple_prime?</span>               <span class="c1">#=&gt; true</span>
+<span class="mi">6216567629137</span><span class="nf">.simple_prime?</span>              <span class="c1">#=&gt; true</span>
+<span class="mi">46216567629137</span><span class="nf">.simple_prime?</span>             <span class="c1">#=&gt; true</span>
+<span class="mi">646216567629137</span><span class="nf">.simple_prime?</span>            <span class="c1">#=&gt; true</span>
+<span class="mi">2646216567629137</span><span class="nf">.simple_prime?</span>           <span class="c1">#=&gt; true</span>
+
+<span class="mi">357686312646216567629137</span><span class="nf">.simple_prime?</span>   <span class="c1">#=&gt; heat death of the universe</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="116">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">clever_prime?</span>
+
+
+
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="117">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">clever_prime?</span>
+
+    <span class="k">return</span> <span class="kp">false</span> <span class="k">if</span> <span class="nb">self</span><span class="nf">.even?</span>
+
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="118">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">clever_prime?</span>
+    <span class="k">return</span> <span class="kp">true</span>  <span class="k">if</span> <span class="nb">self</span> <span class="o">==</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="kp">false</span> <span class="k">if</span> <span class="nb">self</span><span class="nf">.even?</span>
+
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="119">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">clever_prime?</span>
+    <span class="k">return</span> <span class="kp">true</span>  <span class="k">if</span> <span class="nb">self</span> <span class="o">==</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="kp">false</span> <span class="k">if</span> <span class="nb">self</span><span class="nf">.even?</span>
+    <span class="mi">3</span><span class="nf">.step</span><span class="p">(</span><span class="no">Math</span><span class="nf">.sqrt</span><span class="p">(</span><span class="nb">self</span><span class="p">)</span><span class="nf">.floor</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="120">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">clever_prime?</span>
+    <span class="k">return</span> <span class="kp">true</span>  <span class="k">if</span> <span class="nb">self</span> <span class="o">==</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="kp">false</span> <span class="k">if</span> <span class="nb">self</span><span class="nf">.even?</span>
+    <span class="mi">3</span><span class="nf">.step</span><span class="p">(</span><span class="no">Math</span><span class="nf">.sqrt</span><span class="p">(</span><span class="nb">self</span><span class="p">)</span><span class="nf">.floor</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="nf">.all?</span> <span class="p">{</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="p">(</span><span class="nb">self</span> <span class="sx">% i).nonzero? </span><span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="121">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">clever_prime?</span>
+    <span class="k">return</span> <span class="kp">true</span>  <span class="k">if</span> <span class="nb">self</span> <span class="o">==</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="kp">false</span> <span class="k">if</span> <span class="nb">self</span><span class="nf">.even?</span>
+    <span class="mi">3</span><span class="nf">.step</span><span class="p">(</span><span class="no">Math</span><span class="nf">.sqrt</span><span class="p">(</span><span class="nb">self</span><span class="p">)</span><span class="nf">.floor</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="nf">.all?</span> <span class="p">{</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="p">(</span><span class="nb">self</span> <span class="sx">% i).nonzero? </span><span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="mi">646216567629137</span><span class="nf">.clever_prime?</span>            <span class="c1">#=&gt; true</span>
+<span class="mi">2646216567629137</span><span class="nf">.clever_prime?</span>           <span class="c1">#=&gt; true</span>
+<span class="mi">12646216567629137</span><span class="nf">.clever_prime?</span>          <span class="c1">#=&gt; true</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="122">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">clever_prime?</span>
+    <span class="k">return</span> <span class="kp">true</span>  <span class="k">if</span> <span class="nb">self</span> <span class="o">==</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="kp">false</span> <span class="k">if</span> <span class="nb">self</span><span class="nf">.even?</span>
+    <span class="mi">3</span><span class="nf">.step</span><span class="p">(</span><span class="no">Math</span><span class="nf">.sqrt</span><span class="p">(</span><span class="nb">self</span><span class="p">)</span><span class="nf">.floor</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="nf">.all?</span> <span class="p">{</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="p">(</span><span class="nb">self</span> <span class="sx">% i).nonzero? </span><span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="mi">646216567629137</span><span class="nf">.clever_prime?</span>            <span class="c1">#=&gt; true</span>
+<span class="mi">2646216567629137</span><span class="nf">.clever_prime?</span>           <span class="c1">#=&gt; true</span>
+<span class="mi">12646216567629137</span><span class="nf">.clever_prime?</span>          <span class="c1">#=&gt; true</span>
+
+<span class="mi">357686312646216567629137</span><span class="nf">.clever_prime?</span>   <span class="c1">#=&gt; heat death of the universe</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide prime" data-transition="none" data-sections="Standard Library, Uncommon Uses,prime" data-sequence="123">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="k">class</span> <span class="nc">Integer</span>
+  <span class="k">def</span> <span class="nf">clever_prime?</span>
+    <span class="k">return</span> <span class="kp">true</span>  <span class="k">if</span> <span class="nb">self</span> <span class="o">==</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="kp">false</span> <span class="k">if</span> <span class="nb">self</span><span class="nf">.even?</span>
+    <span class="mi">3</span><span class="nf">.step</span><span class="p">(</span><span class="no">Math</span><span class="nf">.sqrt</span><span class="p">(</span><span class="nb">self</span><span class="p">)</span><span class="nf">.floor</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="nf">.all?</span> <span class="p">{</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="p">(</span><span class="nb">self</span> <span class="sx">% i).nonzero? </span><span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="mi">646216567629137</span><span class="nf">.clever_prime?</span>            <span class="c1">#=&gt; true</span>
+<span class="mi">2646216567629137</span><span class="nf">.clever_prime?</span>           <span class="c1">#=&gt; true</span>
+<span class="mi">12646216567629137</span><span class="nf">.clever_prime?</span>          <span class="c1">#=&gt; true</span>
+
+<span class="mi">357686312646216567629137</span><span class="nf">.clever_prime?</span>   <span class="c1">#=&gt; heat death of the universe</span>
+
+<span class="nb">require</span> <span class="s1">'prime'</span>
+
+<span class="mi">12646216567629137</span><span class="nf">.prime?</span>                 <span class="c1">#=&gt; true, but takes surprisingly long</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide benchmark center" data-transition="scrollLeft" data-sections="Standard Library, Uncommon Uses,benchmark" data-sequence="124">
+
+  <div class="content center">
+    <h1>(always) Benchmark</h1>
+
+  </div>
+</div>
+<div id="" class="slide benchmark" data-transition="none" data-sections="Standard Library, Uncommon Uses,benchmark" data-sequence="125">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'benchmark'</span>
+<span class="nb">require</span> <span class="s1">'prime'</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide benchmark" data-transition="none" data-sections="Standard Library, Uncommon Uses,benchmark" data-sequence="126">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'benchmark'</span>
+<span class="nb">require</span> <span class="s1">'prime'</span>
+
+<span class="nb">puts</span> <span class="no">Benchmark</span><span class="nf">.measure</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.simple_prime?</span> <span class="p">}</span>
+<span class="c1">#  6.370000   0.010000   6.380000 (  6.377305)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide benchmark" data-transition="none" data-sections="Standard Library, Uncommon Uses,benchmark" data-sequence="127">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'benchmark'</span>
+<span class="nb">require</span> <span class="s1">'prime'</span>
+
+<span class="nb">puts</span> <span class="no">Benchmark</span><span class="nf">.measure</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.simple_prime?</span> <span class="p">}</span>
+<span class="c1">#  6.370000   0.010000   6.380000 (  6.377305)</span>
+
+<span class="nb">puts</span> <span class="no">Benchmark</span><span class="nf">.measure</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.clever_prime?</span> <span class="p">}</span>
+<span class="c1">#  3.200000   0.000000   3.200000 (  3.200854)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide benchmark" data-transition="none" data-sections="Standard Library, Uncommon Uses,benchmark" data-sequence="128">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'benchmark'</span>
+<span class="nb">require</span> <span class="s1">'prime'</span>
+
+<span class="nb">puts</span> <span class="no">Benchmark</span><span class="nf">.measure</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.simple_prime?</span> <span class="p">}</span>
+<span class="c1">#  6.370000   0.010000   6.380000 (  6.377305)</span>
+
+<span class="nb">puts</span> <span class="no">Benchmark</span><span class="nf">.measure</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.clever_prime?</span> <span class="p">}</span>
+<span class="c1">#  3.200000   0.000000   3.200000 (  3.200854)</span>
+
+<span class="nb">puts</span> <span class="no">Benchmark</span><span class="nf">.measure</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.prime?</span> <span class="p">}</span>
+<span class="c1"># 10.270000   0.010000  10.280000 ( 10.275215)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide benchmark" data-transition="none" data-sections="Standard Library, Uncommon Uses,benchmark" data-sequence="129">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="nb">require</span> <span class="s1">'benchmark'</span>
+<span class="nb">require</span> <span class="s1">'prime'</span>
+
+<span class="nb">puts</span> <span class="no">Benchmark</span><span class="nf">.measure</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.simple_prime?</span> <span class="p">}</span>
+<span class="c1">#  6.370000   0.010000   6.380000 (  6.377305)</span>
+
+<span class="nb">puts</span> <span class="no">Benchmark</span><span class="nf">.measure</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.clever_prime?</span> <span class="p">}</span>
+<span class="c1">#  3.200000   0.000000   3.200000 (  3.200854)</span>
+
+<span class="nb">puts</span> <span class="no">Benchmark</span><span class="nf">.measure</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.prime?</span> <span class="p">}</span>
+<span class="c1"># 10.270000   0.010000  10.280000 ( 10.275215)</span>
+
+<span class="nb">puts</span> <span class="no">RUBY_VERSION</span>
+<span class="c1"># 2.1.2</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide benchmark" data-transition="none" data-sections="Standard Library, Uncommon Uses,benchmark" data-sequence="130">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="no">Benchmark</span><span class="nf">.bmbm</span> <span class="k">do</span> <span class="o">|</span><span class="n">bench</span><span class="o">|</span>
+
+
+
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide benchmark" data-transition="none" data-sections="Standard Library, Uncommon Uses,benchmark" data-sequence="131">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="no">Benchmark</span><span class="nf">.bmbm</span> <span class="k">do</span> <span class="o">|</span><span class="n">bench</span><span class="o">|</span>
+  <span class="n">bench</span><span class="nf">.report</span><span class="p">(</span><span class="s1">'simple:'</span><span class="p">)</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.simple_prime?</span> <span class="p">}</span>
+  <span class="n">bench</span><span class="nf">.report</span><span class="p">(</span><span class="s1">'clever:'</span><span class="p">)</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.clever_prime?</span> <span class="p">}</span>
+  <span class="n">bench</span><span class="nf">.report</span><span class="p">(</span><span class="s1">'stdlib:'</span><span class="p">)</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.prime?</span>        <span class="p">}</span>
+<span class="k">end</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide benchmark" data-transition="none" data-sections="Standard Library, Uncommon Uses,benchmark" data-sequence="132">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="no">Benchmark</span><span class="nf">.bmbm</span> <span class="k">do</span> <span class="o">|</span><span class="n">bench</span><span class="o">|</span>
+  <span class="n">bench</span><span class="nf">.report</span><span class="p">(</span><span class="s1">'simple:'</span><span class="p">)</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.simple_prime?</span> <span class="p">}</span>
+  <span class="n">bench</span><span class="nf">.report</span><span class="p">(</span><span class="s1">'clever:'</span><span class="p">)</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.clever_prime?</span> <span class="p">}</span>
+  <span class="n">bench</span><span class="nf">.report</span><span class="p">(</span><span class="s1">'stdlib:'</span><span class="p">)</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.prime?</span>        <span class="p">}</span>
+<span class="k">end</span>
+
+<span class="c1"># Rehearsal -------------------------------------------</span>
+<span class="c1"># simple:   6.700000   0.010000   6.710000 (  6.696968)</span>
+<span class="c1"># clever:   3.200000   0.000000   3.200000 (  3.209215)</span>
+<span class="c1"># stdlib:  10.160000   0.010000  10.170000 ( 10.161679)</span>
+<span class="c1"># --------------------------------- total: 20.080000sec</span>
+<span class="c1">#</span>
+<span class="c1">#               user     system      total        real</span>
+<span class="c1"># simple:   6.390000   0.000000   6.390000 (  6.386522)</span>
+<span class="c1"># clever:   3.270000   0.000000   3.270000 (  3.270265)</span>
+<span class="c1"># stdlib:  10.170000   0.010000  10.180000 ( 10.182963)</span>
+</pre>
+  </div>
+</div>
+<div id="" class="slide benchmark" data-transition="none" data-sections="Standard Library, Uncommon Uses,benchmark" data-sequence="133">
+
+  <div class="content ">
+    <pre class="highlight ruby"><span class="no">Benchmark</span><span class="nf">.bmbm</span> <span class="k">do</span> <span class="o">|</span><span class="n">bench</span><span class="o">|</span>
+  <span class="n">bench</span><span class="nf">.report</span><span class="p">(</span><span class="s1">'simple:'</span><span class="p">)</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.simple_prime?</span> <span class="p">}</span>
+  <span class="n">bench</span><span class="nf">.report</span><span class="p">(</span><span class="s1">'clever:'</span><span class="p">)</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.clever_prime?</span> <span class="p">}</span>
+  <span class="n">bench</span><span class="nf">.report</span><span class="p">(</span><span class="s1">'stdlib:'</span><span class="p">)</span> <span class="p">{</span> <span class="mi">2646216567629137</span><span class="nf">.prime?</span>        <span class="p">}</span>
+<span class="k">end</span>
+
+<span class="c1"># Rehearsal -------------------------------------------</span>
+<span class="c1"># simple:   6.700000   0.010000   6.710000 (  6.696968)</span>
+<span class="c1"># clever:   3.200000   0.000000   3.200000 (  3.209215)</span>
+<span class="c1"># stdlib:  10.160000   0.010000  10.170000 ( 10.161679)</span>
+<span class="c1"># --------------------------------- total: 20.080000sec</span>
+<span class="c1">#</span>
+<span class="c1">#               user     system      total        real</span>
+<span class="c1"># simple:   6.390000   0.000000   6.390000 (  6.386522)</span>
+<span class="c1"># clever:   3.270000   0.000000   3.270000 (  3.270265)</span>
+<span class="c1"># stdlib:  10.170000   0.010000  10.180000 ( 10.182963)</span>
+</pre>
+<ul>
+<li>your task: try to figure out why</li>
+</ul>
+
+  </div>
+</div>
+<div id="" class="slide outro smbullets incremental" data-transition="scrollLeft" data-sections="Standard Library, Uncommon Uses,outro" data-sequence="134">
+
+  <div class="content smbullets incremental">
+    <h2>yes we can:</h2>
+
+<ul>
+<li>use a few more bits of core Ruby</li>
+<li>persist with PStore</li>
+<li>serve with WEBrick and GServer</li>
+<li>tab-complete with Abbrev</li>
+<li>distribute with DRb and IPAddr (research Rinda!)</li>
+<li>(slowly) check primality with Prime</li>
+<li>benchmark with, well, Benchmark</li>
+</ul>
+
+  </div>
+</div>
+<div id="" class="slide outro smbullets incremental" data-transition="scrollLeft" data-sections="Standard Library, Uncommon Uses,outro" data-sequence="135">
+
+  <div class="content smbullets incremental">
+    <h2>world domination plans</h2>
+
+<ul>
+<li>do play around with <code>Enumerable</code>
+</li>
+<li>use stdlib (WeakRef!) and contribute to its docs</li>
+<li>check out the <a href="http://rubygems.org/gems/levenshtein"><code>levenshtein</code> gem</a>
+</li>
+<li>
+<a href="http://endofline.wordpress.com/category/stdlib/">End of Line</a> (stdlib posts)</li>
+<li>
+<a href="http://www.slideshare.net/napcs/hoedown2010">Stop Reinventing the Wheel</a> and come to <a href="http://2014.arrrrcamp.be">ArrrrCamp</a>
+</li>
+<li>follow <a href="https://twitter.com/rubystdlib">@rubystdlib</a>
+</li>
+<li><a href="http://omniref.com/blog/blog/2014/07/23/whats-the-most-used-ruby-library/">What&#x2019;s the Most Popular Ruby Library?</a></li>
+<li><code>telnet towel.blinkenlights.nl</code></li>
+</ul>
+
+  </div>
+</div>
+<div id="" class="slide outro center" data-transition="scrollLeft" data-sections="Standard Library, Uncommon Uses,outro" data-sequence="136">
+
+  <div class="content center">
+    <p><img src="/image/outro/chastell.png" width="300" height="300" alt="chastell"/>
+
+<h1>thanks!</h1>
+
+<h2><a href="http://chastell.net">@chastell</a></h2>
+
+<h2><a href="http://talks.chastell.net">talks.chastell.net</a></h2>
+
+  </p>
+</div></div>
