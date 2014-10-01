@@ -1,9 +1,8 @@
-# strong opinions,<br />weakly held
+## strong opinions, weakly held (Paul Saffo)
 
-<p class='quote'>— Paul Saffo<br />Director of Palo Alto’s<br />Institute for the Future</p>
+<p class='fragment quote'>I’d love to see an honest Ruby job ad.<br />‘You will spend half your time running<br />bundle install & the other half facepalming.’<br />— Pаul Bаttley</p>
 
-* make sensible calls<br />whether to use standard libraries
-<!-- .element: class="fragment" -->
+<p class='quote'><span class='fragment'>Triskadekaphobiacs are presumably upset that,<br />although `13.untrust` appears to succeed<br />and reinforce their beliefs, the state doesn’t stick;<br />`13.untrusted?` subsequently returns `false`.</span><br /><span class='fragment'>Similarly, logicians and cynics alike must,<br />respectively, rejoice and despair that<br />`true.untrust.untrusted?` is perpetually `false`.<br />— Run Paint Run Run</span></p>
 
 
 # world domination plans
@@ -39,3 +38,5 @@
 
 
 ![Rails Girls](img/rg.jpg)
+
+## Rails Girls programme hackathon today!

@@ -13,7 +13,7 @@
 ```ruby
 cow_cache = CowCache.new
 puts cow_cache.fetch('Node.jk')    # Benjamin W. Smith
-puts cow_cache.fetch('fck vwls')   # Gary Bernhardt
+puts cow_cache.fetch('TTY HOOLS')  # opi
 puts cow_cache.fetch('Node.jk')
 ```
 
@@ -26,10 +26,10 @@ D, [#23422] DEBUG -- : generating a cow for Node.jk
   \
    \ >()_
       (__)__ _
-D, [#23422] DEBUG -- : generating a cow for fck vwls
- __________
-< fck vwls >
- ----------
+D, [#23422] DEBUG -- : generating a cow for TTY HOOLS
+ ___________
+< TTY HOOLS >
+ -----------
  \
   \
    \ >()_
@@ -164,14 +164,14 @@ end
 ```ruby
 cow_cache = CowCache.new
 puts cow_cache.fetch('Node.jk')
-puts cow_cache.fetch('fck vwls')
+puts cow_cache.fetch('TTY HOOLS')
 puts cow_cache.fetch('Node.jk')
 GC.start
-puts cow_cache.fetch('fck vwls')
+puts cow_cache.fetch('TTY HOOLS')
 ```
 
 ```no-highlight
-D, [#23422] DEBUG -- : generating a cow for Node.jk
+D, [#23424] DEBUG -- : generating a cow for Node.jk
  _________
 < Node.jk >
  ---------
@@ -179,10 +179,10 @@ D, [#23422] DEBUG -- : generating a cow for Node.jk
   \
    \ >()_
       (__)__ _
-D, [#23422] DEBUG -- : generating a cow for fck vwls
- __________
-< fck vwls >
- ----------
+D, [#23424] DEBUG -- : generating a cow for TTY HOOLS
+ ___________
+< TTY HOOLS >
+ -----------
  \
   \
    \ >()_
@@ -236,7 +236,7 @@ end
 
 
 ```no-highlight
-D, [#23422] DEBUG -- : generating a cow for Node.jk
+D, [#23426] DEBUG -- : generating a cow for Node.jk
  _________
 < Node.jk >
  ---------
@@ -244,10 +244,10 @@ D, [#23422] DEBUG -- : generating a cow for Node.jk
   \
    \ >()_
       (__)__ _
-D, [#23422] DEBUG -- : generating a cow for fck vwls
- __________
-< fck vwls >
- ----------
+D, [#23426] DEBUG -- : generating a cow for TTY HOOLS
+ ___________
+< TTY HOOLS >
+ -----------
  \
   \
    \ >()_
@@ -259,10 +259,10 @@ D, [#23422] DEBUG -- : generating a cow for fck vwls
   \
    \ >()_
       (__)__ _
-D, [#23422] DEBUG -- : generating a cow for fck vwls
- __________
-< fck vwls >
- ----------
+D, [#23426] DEBUG -- : generating a cow for TTY HOOLS
+ ___________
+< TTY HOOLS >
+ -----------
  \
   \
    \ >()_

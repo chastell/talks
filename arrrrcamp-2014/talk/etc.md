@@ -4,21 +4,20 @@
 require 'etc'          # (16 yo)
 require 'shellwords'
 
-text = 'Behold the guy who removed the executable bit ' \
-       'from /usr on his laptop on a Monday morning.'
-                                        # Mislav Marohnić
+text = '‘Please choose another password to create your account. ' \
+       'The password you attempted is already used by user JENKINS.’'
+                                                     # Mikko Hypponen
 user = Etc.getlogin
 adm  = Etc.getgrnam('adm')
 cow  = adm.mem.include?(user) ? 'tux' : 'www'
-puts `cowsay -f #{cow} #{text.shellescape}`
+puts `cowsay -f #{cow} -W 60 #{text.shellescape}`
 ```
 
 ```no-highlight
- ________________________________________
-/ Behold the guy who removed the         \
-| executable bit from /usr on his laptop |
-\ on a Monday morning.                   /
- ----------------------------------------
+ _____________________________________________________________
+/ ‘Please choose another password to create your account. The \
+\ password you attempted is already used by user JENKINS.’    /
+ -------------------------------------------------------------
    \
     \
         .--.
