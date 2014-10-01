@@ -1,16 +1,17 @@
-## what if we need all three streams + result?
+## there are more than two streams
 
 ```ruby
-require 'open3'
+require 'open3'   # (15 yo)
 
-text = 'In security startup we are heavy use of RoR as honeypot.'   # DevOps
-out, err, status = Open3.capture3('cowsay', '-f', 'koala', text)    # Borat
+text = 'In security startup we are heavy use of RoR as honeypot.'
+                                                   # DevOps Borat
+
+out, err, status = Open3.capture3('cowsay', '-f', 'koala', text)
 puts out
-puts status.success?
 ```
+<!-- .element: class="fragment" -->
 
 ```no-highlight
-$ ruby honeypot.rb
  _________________________________________
 / In security startup we are heavy use of \
 \ RoR as honeypot.                        /
@@ -22,12 +23,11 @@ $ ruby honeypot.rb
       ( Y )
      ()~*~()   
      (_)-(_)   
-true
 ```
 <!-- .element: class="fragment" -->
 
 
-## what if we need all three streams + result?
+## is it secret? is it safe?
 
 ```ruby
 require 'open3'
@@ -37,9 +37,9 @@ text += '; cat /etc/passwd'
 out, err, status = Open3.capture3('cowsay', '-f', 'koala', text)
 puts out, status.success?
 ```
+<!-- .element: class="fragment" -->
 
 ```no-highlight
-$ ruby honeypot.rb 
  _________________________________________
 / In security startup we are heavy use of \
 \ RoR as honeypot.; cat /etc/passwd       /
@@ -70,9 +70,9 @@ Open3.popen3('cowsay', '-f', 'vader-koala') do |sin, sout, serr, thread|
   puts status.success?
 end
 ```
+<!-- .element: class="fragment" -->
 
 ```no-highlight
-$ ruby secure.rb 
  _______________________________________
 / ‘It can be a little bit difficult to  \
 | secure the connection’ says this site |

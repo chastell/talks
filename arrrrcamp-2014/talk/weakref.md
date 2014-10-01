@@ -1,12 +1,12 @@
-# what if cowsay was expensive?
+# what if cowsay<br />was expensive?
 
 * we could cache it!
 <!-- .element: class="fragment" -->
 
-* but that could get large
+* but the cache could get large…
 <!-- .element: class="fragment" -->
 
-* so let’s (crudely…) auto-expire!
+* oh c’mon, what can be simpler<br />than cache expiration?
 <!-- .element: class="fragment" -->
 
 
@@ -18,33 +18,29 @@ puts cow_cache.fetch('Node.jk')
 ```
 
 ```no-highlight
-generating a cow for Node.jk
+D, [#23422] DEBUG -- : generating a cow for Node.jk
  _________
 < Node.jk >
  ---------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-
-generating a cow for fck vwls
+ \
+  \
+   \ >()_
+      (__)__ _
+D, [#23422] DEBUG -- : generating a cow for fck vwls
  __________
 < fck vwls >
  ----------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
+ \
+  \
+   \ >()_
+      (__)__ _
  _________
 < Node.jk >
  ---------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
+ \
+  \
+   \ >()_
+      (__)__ _
 ```
 <!-- .element: class="fragment" -->
 
@@ -52,22 +48,22 @@ generating a cow for fck vwls
 ## stand back, I KNOW STDLIB
 
 ```ruby
-require 'forwardable'
-require 'logger'
+require 'forwardable'   # (13 yo)
+require 'logger'        # (11 yo)
 require 'shellwords'
 
 class CowCache
   extend Forwardable
 
-  delegate %i([] keys) => :hash_cache
+  delegate %i([]) => :hash_cache
 
   alias_method :fetch, :[]
 
   private
 
   def generate_cow(text)
-    log.debug "generating a cow for #{text}"
-    `cowsay #{Shellwords.escape(text)}`
+    logger.debug "generating a cow for #{text}"
+    `cowsay -f duck #{Shellwords.escape(text)}`
   end
 
   def hash_cache
@@ -76,8 +72,10 @@ class CowCache
     end
   end
 
-  def log
-    @log ||= Logger.new($stdout)
+  def logger
+    @logger ||= Logger.new($stdout).tap do |logger|
+      logger.datetime_format = ''
+    end
   end
 end
 ```
@@ -96,23 +94,21 @@ class CowCache
     end
   end
 
-  def keys
-    hash_cache.keys
-  end
-
   private
 
   def generate_cow(text)
-    log.debug "generating a cow for #{text}"
-    `cowsay #{Shellwords.escape(text)}`
+    logger.debug "generating a cow for #{text}"
+    `cowsay -f duck #{Shellwords.escape(text)}`
   end
 
   def hash_cache
     @hash_cache ||= {}
   end
 
-  def log
-    @log ||= Logger.new($stdout)
+  def logger
+    @logger ||= Logger.new($stdout).tap do |logger|
+      logger.datetime_format = ''
+    end
   end
 end
 ```
@@ -126,7 +122,7 @@ end
 * if only there was a way to expire it easily…
 <!-- .element: class="fragment" -->
 
-* e.g., on garbage collector runs…
+* say, on garbage collector runs…
 <!-- .element: class="fragment" -->
 
 
@@ -135,7 +131,7 @@ end
 ```ruby
 require 'logger'
 require 'shellwords'
-require 'weakref'
+require 'weakref'      # (16 yo)
 
 class CowCache
   def fetch(text)
@@ -145,23 +141,21 @@ class CowCache
     end
   end
 
-  def keys
-    hash_cache.keys
-  end
-
   private
 
   def generate_cow(text)
-    log.debug "generating a cow for #{text}"
-    `cowsay #{Shellwords.escape(text)}`
+    logger.debug "generating a cow for #{text}"
+    `cowsay -f duck #{Shellwords.escape(text)}`
   end
 
   def hash_cache
     @hash_cache ||= {}
   end
 
-  def log
-    @log ||= Logger.new($stdout)
+  def logger
+    @logger ||= Logger.new($stdout).tap do |logger|
+      logger.datetime_format = ''
+    end
   end
 end
 ```
@@ -169,49 +163,43 @@ end
 
 ```ruby
 cow_cache = CowCache.new
-puts cow_cache.fetch('Node.jk')  # Benjamin W. Smith
-puts cow_cache.fetch('fck vwls') # Gary Bernhardt
+puts cow_cache.fetch('Node.jk')
+puts cow_cache.fetch('fck vwls')
 puts cow_cache.fetch('Node.jk')
 GC.start
 puts cow_cache.fetch('fck vwls')
 ```
 
 ```no-highlight
-generating a cow for Node.jk
+D, [#23422] DEBUG -- : generating a cow for Node.jk
  _________
 < Node.jk >
  ---------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-
-generating a cow for fck vwls
+ \
+  \
+   \ >()_
+      (__)__ _
+D, [#23422] DEBUG -- : generating a cow for fck vwls
  __________
 < fck vwls >
  ----------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
+ \
+  \
+   \ >()_
+      (__)__ _
  _________
 < Node.jk >
  ---------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
+ \
+  \
+   \ >()_
+      (__)__ _
 cache.rb:38:in `puts': Invalid Reference - probably recycled (WeakRef::RefError)
 	from cache.rb:38:in `puts'
 	from cache.rb:38:in `<main>'
 ```
 <!-- .element: class="fragment" -->
 
-
-## zombie zombie zombie
 
 ```ruby
 require 'logger'
@@ -220,70 +208,63 @@ require 'weakref'
 
 class CowCache
   def fetch(text)
-    cow = hash_cache[text]
-    return cow if cow && cow.weakref_alive?
-    cow = generate_cow(text)
-    hash_cache[text] = WeakRef.new(cow)
-  end
-
-  def keys
-    hash_cache.keys
+    if hash_cache.key?(text) && hash_cache[text].weakref_alive?
+      hash_cache[text]
+    else
+      hash_cache[text] = WeakRef.new(generate_cow(text))
+    end
   end
 
   private
 
   def generate_cow(text)
-    log.debug "generating a cow for #{text}"
-    `cowsay #{Shellwords.escape(text)}`
+    logger.debug "generating a cow for #{text}"
+    `cowsay -f duck #{Shellwords.escape(text)}`
   end
 
   def hash_cache
     @hash_cache ||= {}
   end
 
-  def log
-    @log ||= Logger.new($stdout)
+  def logger
+    @logger ||= Logger.new($stdout).tap do |logger|
+      logger.datetime_format = ''
+    end
   end
 end
 ```
 
 
 ```no-highlight
-generating a cow for Node.jk
+D, [#23422] DEBUG -- : generating a cow for Node.jk
  _________
 < Node.jk >
  ---------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-
-generating a cow for fck vwls
+ \
+  \
+   \ >()_
+      (__)__ _
+D, [#23422] DEBUG -- : generating a cow for fck vwls
  __________
 < fck vwls >
  ----------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
+ \
+  \
+   \ >()_
+      (__)__ _
  _________
 < Node.jk >
  ---------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-
-generating a cow for fck vwls
+ \
+  \
+   \ >()_
+      (__)__ _
+D, [#23422] DEBUG -- : generating a cow for fck vwls
  __________
 < fck vwls >
  ----------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
+ \
+  \
+   \ >()_
+      (__)__ _
 ```

@@ -1,8 +1,6 @@
-## Ansible
+## Ansible (2 yo)
 
 ```no-highlight
-$ ansible-playbook asterix.yml 
-
 PLAY [asterix] **************************************************************** 
 
 GATHERING FACTS *************************************************************** 
@@ -22,14 +20,13 @@ ok: [asterix]
 
 PLAY RECAP ******************************************************************** 
 asterix                    : ok=5    changed=0    unreachable=0    failed=0   
-
 ```
+<!-- .element: class="fragment" -->
 
 
-## Ansible + cowsay
+## Ansible + cowsay (15 yo)
 
 ```no-highlight
-$ ansible-playbook asterix.yml 
  ________________
 < PLAY [asterix] >
  ----------------
@@ -52,12 +49,12 @@ ok: [asterix]
 
 …
 ```
+<!-- .element: class="fragment" -->
 
 
 ## Ansible + cowsay + `ANSIBLE_COW_SELECTION=random`
 
 ```no-highlight
-$ ansible-playbook asterix.yml 
  ________________
 < PLAY [asterix] >
  ----------------
@@ -86,6 +83,7 @@ ok: [asterix]
 
 …
 ```
+<!-- .element: class="fragment" -->
 
 
 ## cowsay
@@ -101,6 +99,7 @@ $ cowsay 'Internet of things that should not be.'   # cms the chaos wizard
                 ||----w |
                 ||     ||
 ```
+<!-- .element: class="fragment" -->
 
 ```no-highlight
 $ cowsay -f bunny '<div id="class" class="id" />'   # ʇlɐɟɟ ‮tlaff.‮

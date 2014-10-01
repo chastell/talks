@@ -1,7 +1,7 @@
 ## make your users happy
 
 ```ruby
-require 'etc'
+require 'etc'          # (16 yo)
 require 'shellwords'
 
 text = 'Behold the guy who removed the executable bit ' \
@@ -14,7 +14,6 @@ puts `cowsay -f #{cow} #{text.shellescape}`
 ```
 
 ```no-highlight
-$ ruby motd.rb
  ________________________________________
 / Behold the guy who removed the         \
 | executable bit from /usr on his laptop |

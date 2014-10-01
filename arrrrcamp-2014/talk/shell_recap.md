@@ -9,7 +9,10 @@
 * use `open3` for stdin | stdout | stderr
 <!-- .element: class="fragment" -->
 
-* check out `pty` and `shell` for more
+* check out `pty` (15 yo) and `shell` (13 yo)
+<!-- .element: class="fragment" -->
+
+* use `pathname` everywhere
 <!-- .element: class="fragment" -->
 
 * use `io/console` for terminal size

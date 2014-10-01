@@ -6,9 +6,9 @@ text = 'OH: Every time I do `source ~/.bash_profile` I’m reminded ' \
 out  = `cowsay -f hellokitty #{text}`        # backticks will return!
 puts out
 ```
+<!-- .element: class="fragment" -->
 
 ```no-highlight
-$ ruby backticks.rb
 sh: 1: source: not found
 sh: 1: source: not found
  _____________________________________
@@ -31,7 +31,7 @@ sh: 1: source: not found
 ## she sells shellwords
 
 ```ruby
-require 'shellwords'
+require 'shellwords'   # (16 yo)
 
 text = 'OH: Every time I do `source ~/.bash_profile` I’m reminded ' \
        'of that time you accidentally did `source ~/.bash_history`.'
@@ -39,9 +39,9 @@ safe = Shellwords.escape(text)
 out  = `cowsay -f hellokitty -W 45 #{safe}`
 puts out
 ```
+<!-- .element: class="fragment" -->
 
 ```no-highlight
-$ ruby shellwords.rb 
  ______________________________________________
 / OH: Every time I do `source ~/.bash_profile` \
 | I’m reminded of that time you accidentally   |

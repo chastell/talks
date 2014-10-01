@@ -1,4 +1,4 @@
-## I like big cowws
+## not all consoles are created equal
 
 ```ruby
 require 'shellwords'
@@ -9,9 +9,9 @@ text = 'The real meaning of Halloween gets lost in all ' \
 safe = Shellwords.escape(text)                    # Keri
 puts `cowsay -f dragon #{safe}`
 ```
+<!-- .element: class="fragment" -->
 
 ```no-highlight
-$ ruby dragon.rb 
  _________________________________________
 / The real meaning of Halloween gets lost \
 | in all the costumes and marketing. Most |
@@ -38,9 +38,9 @@ $ ruby dragon.rb
 <!-- .element: class="fragment" -->
 
 
-## and I cannot wide
+## some io/consoles are wider than others
 ```ruby
-require 'io/console'
+require 'io/console'   # (4? yo)
 require 'shellwords'
 
 text = 'The real meaning of Halloween gets lost in all ' \
@@ -50,9 +50,9 @@ safe = Shellwords.escape(text)
 size = IO.console.winsize    #=> [24, 80] (height × width)
 puts `cowsay -f dragon -W #{size.last - 4} #{safe}`
 ```
+<!-- .element: class="fragment" -->
 
 ```no-highlight
-$ ruby dragon.rb 
  ____________________________________________________________________________
 / The real meaning of Halloween gets lost in all the costumes and marketing. \
 \ Most people don’t even know Jesus fought a dragon, let alone why.          /
