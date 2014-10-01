@@ -1,7 +1,7 @@
 ## there are more than two streams
 
 ```ruby
-require 'open3'   # (15 yo)
+require 'open3'   # (1999)
 
 text = 'In security startup we are heavy use of RoR as honeypot.'
                                                    # DevOps Borat

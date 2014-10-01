@@ -1,7 +1,7 @@
 ## _do_ pave the cow path
 
 ```ruby
-require 'pathname'   # (11 yo)
+require 'pathname'   # (2003)
 
 path = Pathname.glob('/usr/share/cowsay/cows/*.cow').first
 puts path.read

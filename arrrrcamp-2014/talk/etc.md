@@ -1,7 +1,7 @@
 ## make your users happy
 
 ```ruby
-require 'etc'          # (16 yo)
+require 'etc'          # (1998)
 require 'shellwords'
 
 text = '‘Please choose another password to create your account. ' \

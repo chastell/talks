@@ -31,7 +31,7 @@ sh: 1: source: not found
 ## she sells shellwords
 
 ```ruby
-require 'shellwords'   # (16 yo)
+require 'shellwords'   # (1998)
 
 text = 'OH: Every time I do `source ~/.bash_profile` I’m reminded ' \
        'of that time you accidentally did `source ~/.bash_history`.'

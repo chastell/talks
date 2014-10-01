@@ -40,7 +40,7 @@ puts `cowsay -f dragon #{safe}`
 
 ## some io/consoles are wider than others
 ```ruby
-require 'io/console'   # (4? yo)
+require 'io/console'   # (2010?)
 require 'shellwords'
 
 text = 'The real meaning of Halloween gets lost in all ' \

@@ -48,8 +48,8 @@ D, [#23422] DEBUG -- : generating a cow for TTY HOOLS
 ## stand back, I KNOW STDLIB
 
 ```ruby
-require 'forwardable'   # (13 yo)
-require 'logger'        # (11 yo)
+require 'forwardable'   # (2001)
+require 'logger'        # (2003)
 require 'shellwords'
 
 class CowCache
@@ -131,7 +131,7 @@ end
 ```ruby
 require 'logger'
 require 'shellwords'
-require 'weakref'      # (16 yo)
+require 'weakref'      # (1998)
 
 class CowCache
   def fetch(text)

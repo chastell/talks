@@ -9,7 +9,7 @@
 * use `open3` for stdin | stdout | stderr
 <!-- .element: class="fragment" -->
 
-* check out `pty` (15 yo) and `shell` (13 yo)
+* check out `pty` (1999) and `shell` (2001)
 <!-- .element: class="fragment" -->
 
 * use `pathname` everywhere
