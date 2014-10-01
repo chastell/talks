@@ -15,29 +15,15 @@
 <!-- .element: class="fragment" -->
 
 
-# boy meets girl
+# talk idea
 
-<p class='fragment quote'>Transitiveness works a bit differently in love.<br />
-‘I love A, and A loves B, which means<br />
-I want to make a light snack out of B’s internal organs.’<br />
-— Alistair Young</p>
-
-* ⚭
+* show interesting pieces<br />of Ruby core + stdlib
 <!-- .element: class="fragment" -->
 
-* honeymoon in Florence
+* hopefully on simple,<br />but not simplistic examples
 <!-- .element: class="fragment" -->
 
-* [signore](https://github.com/chastell/signore)
-<!-- .element: class="fragment" -->
-
-```no-highlight
-$ signore prego marriage
-The Church of England defending the sanctity of marriage
-is the punchline to a joke 500 years in the making.
-                                         [Rob Beschizza]
-```
-<!-- .element: class="fragment" -->
+<p class='fragment quote'>You write with ease to show your breeding,<br />But easy writing’s curst hard reading.<br />— Richard Brinsley Sheridan</p>
 
 
 ![chastell](img/chastell.png)
@@ -45,10 +31,3 @@ is the punchline to a joke 500 years in the making.
 ## Piotr Szotkowski<br />([chastell](http://chastell.net))
 ## Warsaw Univeristy of Technology<br />(assistant professor)
 ## [Rebased](http://rebased.pl)<br />(cheap science officer)
-
-
-# I hope the examples<br />are simple enough,<br />but not simplistic
-
-<p class='quote'>You write with ease to show your breeding,<br />
-But easy writing’s curst hard reading.<br />
-— Richard Brinsley Sheridan</p>

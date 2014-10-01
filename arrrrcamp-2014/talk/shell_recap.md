@@ -1,12 +1,12 @@
 # shell recap
 
-* use `system` for non-IO calls
+* non-IO? `Kernel#system` with separate arguments
 <!-- .element: class="fragment" -->
 
-* use `shellwords` for backticks
+*  simple IO? <code>Kernel#&#96;</code> with `shellwords`
 <!-- .element: class="fragment" -->
 
-* use `open3` for stdin | stdout | stderr
+* stdin + stdout + stderr + thread? `open3`
 <!-- .element: class="fragment" -->
 
 * check out `pty` (1999) and `shell` (2001)
@@ -15,5 +15,5 @@
 * use `pathname` everywhere
 <!-- .element: class="fragment" -->
 
-* use `io/console` for terminal size
+* terminal size? `io/console`
 <!-- .element: class="fragment" -->

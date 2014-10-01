@@ -7,7 +7,7 @@
 
 # world domination plans
 
-* `ruby -run -e httpd -- --port 8080 ~`
+* [Arne’s posts at SitePoint](http://www.sitepoint.com/author/abrasseur/)
 <!-- .element: class="fragment" -->
 
 * [End of Line](http://endofline.wordpress.com/category/stdlib/) (stdlib posts)
@@ -22,10 +22,10 @@
 * [A Dozen Ways to Start Subprocesses in Ruby](http://devver.wordpress.com/2009/10/12/ruby-subprocesses-part_3/)
 <!-- .element: class="fragment" -->
 
-* [Ruby Tapas](http://www.rubytapas.com)
+* Avdi Grimm’s [Ruby Tapas](http://www.rubytapas.com)
 <!-- .element: class="fragment" -->
 
-* [The cow says…](http://www.cowsays.com)
+* Avdi Grimm’s [The cow says…](http://www.cowsays.com)
 <!-- .element: class="fragment" -->
 
 
@@ -39,4 +39,4 @@
 
 ![Rails Girls](img/rg.jpg)
 
-## Rails Girls programme hackathon today!
+<p class='quote' style='margin-top: -1em'>[2014.arrrrcamp.be / railsgirls](http://2014.arrrrcamp.be/railsgirls/)</p>

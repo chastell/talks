@@ -3,7 +3,7 @@
 ```ruby
 text = 'OH: Every time I do `source ~/.bash_profile` I’m reminded ' \
        'of that time you accidentally did `source ~/.bash_history`.'
-out  = `cowsay -f hellokitty #{text}`        # backticks will return!
+out  = `cowsay -f hellokitty #{text}`       # Kernel#` returns stdout
 puts out
 ```
 <!-- .element: class="fragment" -->

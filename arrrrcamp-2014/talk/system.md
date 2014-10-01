@@ -1,4 +1,4 @@
-## duck the system
+## can we call cowsay from Ruby?
 
 ```ruby
 system 'cowsay', '-f', 'duck', '[attack surface intensifies]'   # @sorenmacbeth

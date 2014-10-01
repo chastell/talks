@@ -113,3 +113,6 @@ $ cowsay -f bunny '<div id="class" class="id" />'   # ʇlɐɟɟ ‮tlaff.‮
       .( o ).
 ```
 <!-- .element: class="fragment" -->
+
+## what would happen<br />if we got the quoting wrong?
+<!-- .element: class="fragment" -->

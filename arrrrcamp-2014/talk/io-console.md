@@ -1,4 +1,4 @@
-## not all consoles are created equal
+## what if we have a wide console?
 
 ```ruby
 require 'shellwords'
@@ -38,7 +38,8 @@ puts `cowsay -f dragon #{safe}`
 <!-- .element: class="fragment" -->
 
 
-## some io/consoles are wider than others
+## can we get the console width somehow?
+
 ```ruby
 require 'io/console'   # (2010?)
 require 'shellwords'

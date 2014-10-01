@@ -1,3 +1,8 @@
+# is there a way<br />to peek at cow files?
+
+# can we find one<br />for narrow consoles?
+
+
 ## _do_ pave the cow path
 
 ```ruby
