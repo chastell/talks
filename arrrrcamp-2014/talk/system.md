@@ -1,7 +1,7 @@
 ## can we call cowsay from Ruby?
 
 ```ruby
-system 'cowsay', '-f', 'duck', '[attack surface intensifies]'   # @sorenmacbeth
+system 'cowsay -f duck [attack surface intensifies]'   # @sorenmacbeth
 ```
 <!-- .element: class="fragment" -->
 
@@ -13,6 +13,43 @@ system 'cowsay', '-f', 'duck', '[attack surface intensifies]'   # @sorenmacbeth
   \
    \ >()_
       (__)__ _
+```
+<!-- .element: class="fragment" -->
+
+```ruby
+text = '[attack surface intensifies]'
+system "cowsay -f duck #{text}"
+```
+<!-- .element: class="fragment" -->
+
+```no-highlight
+ ______________________________
+< [attack surface intensifies] >
+ ------------------------------
+ \
+  \
+   \ >()_
+      (__)__ _
+```
+<!-- .element: class="fragment" -->
+
+
+## let’s make the text even funnier
+
+```ruby
+text = '[attack surface intensifies]; rm -rf /'
+system "cowsay -f duck #{text}"
+```
+<!-- .element: class="fragment" -->
+
+```no-highlight
+…
+```
+<!-- .element: class="fragment" -->
+
+```ruby
+text = '[attack surface intensifies]; rm -rf /'
+system 'cowsay', '-f', 'duck', text
 ```
 <!-- .element: class="fragment" -->
 
@@ -42,4 +79,7 @@ p result
 [attack surface intensifies]
 true
 ```
+<!-- .element: class="fragment" -->
+
+## can we capture the output?
 <!-- .element: class="fragment" -->
