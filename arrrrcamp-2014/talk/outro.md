@@ -7,16 +7,19 @@
 
 # world domination plans
 
-* [Arne’s posts at SitePoint](http://www.sitepoint.com/author/abrasseur/)
+* how can WeakRef possibly work?
 <!-- .element: class="fragment" -->
 
 * [End of Line](http://endofline.wordpress.com/category/stdlib/) (stdlib posts)
 <!-- .element: class="fragment" -->
 
-* [Stop Reinventing the Wheel](http://www.slideshare.net/napcs/hoedown2010)
+* [Arne’s posts at SitePoint](http://www.sitepoint.com/author/abrasseur/)
 <!-- .element: class="fragment" -->
 
 * follow [@rubystdlib](https://twitter.com/rubystdlib)
+<!-- .element: class="fragment" -->
+
+* [Stop Reinventing the Wheel](http://www.slideshare.net/napcs/hoedown2010)
 <!-- .element: class="fragment" -->
 
 * [A Dozen Ways to Start Subprocesses in Ruby](http://devver.wordpress.com/2009/10/12/ruby-subprocesses-part_3/)
