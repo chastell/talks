@@ -132,7 +132,7 @@ RubyConf PT
 <!-- .element: class="fragment" -->
 
 ```ruby
-class Conf do
+class Conf
   def to_s
     "#{dates.begin} to #{dates.end}: #{name}"
   end
@@ -153,7 +153,7 @@ conf_list.each &method(:puts)
 <!-- .element: class="fragment" -->
 
 ```ruby
-class Conf do
+class Conf
   def finished?
     dates.end < Date.today
   end

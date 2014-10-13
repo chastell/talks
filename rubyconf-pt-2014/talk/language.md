@@ -164,7 +164,7 @@ tables.map { |table| [table, results_for(table)] }.to_h
 <!-- .element: class="fragment" -->
 
 ```ruby
-class APIException = Module.new(RuntimeError)
+APIException = Module.new
 
 class APIWrapper
   def make_an_api_call
