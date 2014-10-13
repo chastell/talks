@@ -117,7 +117,7 @@ end
 <!-- .element: class="fragment" -->
 
 
-# `#each` – all the Enumerables
+## `#each` – all the Enumerables
 
 ```ruby
 conf_list = ConfList.new(confs)
@@ -309,7 +309,7 @@ close price on 2014-12-29
 <!-- .element: class="fragment" -->
 
 
-# my favourite protocol: `#===`
+## my favourite protocol: `#===`
 
 ```ruby
 require 'date'
