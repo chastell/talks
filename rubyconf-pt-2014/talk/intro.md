@@ -35,6 +35,8 @@ ObjectSpace.each_object(Process).count { |process| process.ppid == piotr.pid }
 <!-- .element: class="fragment" -->
 
 
+[![hungry](img/hungry.jpg)](http://thuglifeshirts.com)
+
 
 # Ruby is full of gems
 
