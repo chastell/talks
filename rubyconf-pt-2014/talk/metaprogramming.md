@@ -327,7 +327,7 @@ finalizing 70060097535620
 ```
 <!-- .element: class="fragment" -->
 
-# hey, why did the first one<br />live so long?
+## hey, why did the first one<br />live so long?
 <!-- .element: class="fragment" -->
 
 
@@ -354,7 +354,7 @@ finalizing 70060097535620
 <!-- .element: class="fragment" -->
 
 
-# there’s a madness<br />in this method
+## there’s a madness<br />in this method
 
 * <span class='fragment'>`Module.method_added(method_symbol)`<br />called when an instance method is added to us</span>
 
@@ -363,7 +363,7 @@ finalizing 70060097535620
 * <span class='fragment'>you won’t believe what `Module.method_removed(method_symbol)`, `Module.singleton_method_removed(method_symbol)`, `Module.method_undefined(method_symbol)` and `Module.singleton_method_undefined(method_symbol)` do</span>
 
 
-# there’s a madness<br />in this method
+## there’s a madness<br />in this method
 
 ```ruby
 module Foo
