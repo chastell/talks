@@ -362,7 +362,7 @@ no clue!
 ## (like when your repo responds to `#fetch`<br />and can be doubled by a `Hash`)
 <!-- .element: class="fragment" -->
 
-## there are many protocols in Ruby<br />(like `IO`, or `mashal_dump` + `marshal_load`)
+## there are many protocols in Ruby<br />(like `IO`, or `marshal_dump` + `marshal_load`)
 <!-- .element: class="fragment" -->
 
 ## do read up on `#coerce`
