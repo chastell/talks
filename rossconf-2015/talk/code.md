@@ -27,6 +27,10 @@ end
 <!-- .element: class="fragment" -->
 
 
+[![code comments](img/code_comments.png)](https://twitter.com/nzkoz/status/538892801941848064)
+<!-- .element: class="nzkoz" -->
+
+
 ```Ruby
 class Conference
   def directions(lat, lon)
@@ -90,3 +94,6 @@ end
   [38]:Conference#has_delighted_attendees? refers to attendee more than self (FeatureEnvy)
 ```
 <!-- .element: class="fragment" -->
+
+
+[![Expert Beginner](img/expert.png)](https://twitter.com/ExpertBeginner1/status/587630171634737152)

@@ -22,18 +22,16 @@
 <!-- .element: class="fragment" -->
 
 
-[![trivial](img/trivial.png)](https://github.com/troessner/reek/pull/464)
-
-
 [![Arne](img/arne.png)](https://twitter.com/plexus/status/590125857928282112)
 
 
-## we try to nitpick gently
+## we do the trivial
 
-[![nitpicking](img/nitpicking.png)](https://github.com/troessner/reek/pull/450)
+[![trivial](img/trivial.png)](https://github.com/troessner/reek/pull/464)
 
-[![nitpicking 2](img/nitpicking2.png)](https://github.com/troessner/reek/pull/450)
-<!-- .element: class="fragment" -->
+
+[![ensure](img/ensure.png)](https://github.com/troessner/reek/pull/466#discussion-diff-29098287)
+<!-- .element: class="ensure" -->
 
 
 ## we make mistakes<br />and fix them going forward
@@ -62,6 +60,9 @@
 <!-- .element: class="fragment" -->
 
 
-### RuboCop’s `Metrics/AbcSize` 18 → 16
+### RuboCop’s `Metrics/AbcSize`: 18 → 16
 
 [![RuboCop](img/rubocop.png)](https://github.com/troessner/reek/pull/462)
+
+
+[![refactor](img/refactor.png)](https://twitter.com/supermoof/status/478322429257715712)

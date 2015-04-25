@@ -75,6 +75,14 @@ body {
   width: 25%;
 }
 
+.reveal .ensure img {
+  width: 75%;
+}
+
+.reveal .nzkoz img {
+  width: 45%;
+}
+
 .reveal .reek {
   font-family: 'Courier New', monospace;
 }

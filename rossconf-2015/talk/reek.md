@@ -64,6 +64,9 @@ TooManyStatements:
 <!-- .element: class="fragment" -->
 
 
+[![stacktrace](img/stacktrace.png)](https://twitter.com/therealadam/status/13338687140003841)
+
+
 [![contributors](img/contributors.png)](https://github.com/troessner/reek/graphs/contributors)
 
 
@@ -110,6 +113,11 @@ end
 ```
 
 
+### (One thing I won’t mention<br />is the profusion of parentheses<br />(which annoy some people).<br />(What the world needs (I think)<br />is not (a Lisp (with fewer parentheses))<br />but (an English (with more.))))
+
+### Brian Hayes, [_The Semicolon Wars_](http://www.americanscientist.org/issues/id.3489,y.0,no.,content.true,page.1,css.print/issue.aspx)
+
+
 ### [_How <span class="reek">reek</span> works internally_](https://github.com/troessner/reek/wiki/How-reek-works-internally)
 
 ```no-highlight
@@ -152,3 +160,6 @@ end
       - outputs them with whatever output format we have chose via the cli options
 ```
 <!-- .element: class="ascii-diagram" -->
+
+
+[![YAGNI](img/yagni.png)](https://twitter.com/dbrady/status/393071476481736704)
