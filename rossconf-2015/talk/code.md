@@ -96,4 +96,4 @@ end
 <!-- .element: class="fragment" -->
 
 
-[![Expert Beginner](img/expert.png)](https://twitter.com/ExpertBeginner1/status/587630171634737152)
+[![stacktrace](img/stacktrace.png)](https://twitter.com/therealadam/status/13338687140003841)

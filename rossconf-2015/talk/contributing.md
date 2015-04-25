@@ -60,9 +60,9 @@
 <!-- .element: class="fragment" -->
 
 
+[![refactor](img/refactor.png)](https://twitter.com/supermoof/status/478322429257715712)
+
+
 ### RuboCop’s `Metrics/AbcSize`: 18 → 16
 
 [![RuboCop](img/rubocop.png)](https://github.com/troessner/reek/pull/462)
-
-
-[![refactor](img/refactor.png)](https://twitter.com/supermoof/status/478322429257715712)
