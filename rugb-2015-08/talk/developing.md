@@ -1,11 +1,3 @@
-![team](img/team.jpg)
-
-### 2015 <span class='reek'>reek</span> Maintainers’ Conference
-
-
-[![contributors](img/contributors.png)](https://github.com/troessner/reek/graphs/contributors)
-
-
 ## s-expressions
 
 ```Ruby
