@@ -2,7 +2,7 @@
 
 ### please let us know what doesn’t work
 
-### thanks!
+### ♥ [ROSSConf Berlin: September 26th](http://www.rossconf.io/event/berlin.html) ♥
 
 ![chastell](img/chastell.png)
 <!-- .element: class="avatar" -->
