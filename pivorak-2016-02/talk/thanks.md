@@ -3,7 +3,10 @@
 * try out [<span class="reek">Reek</span>](https://github.com/troessner/reek)
 <!-- .element: class="fragment" -->
 
-* don’t be overwhelmed by the potential smells
+* maybe add it to [Code Climate](https://codeclimate.com/changelog/56ce0092c958840071004824)?
+<!-- .element: class="fragment" -->
+
+* don’t be overwhelmed by the potential smells<br />`reek --todo` might be a good start!
 <!-- .element: class="fragment" -->
 
 * _please_ let us know what doesn’t work
