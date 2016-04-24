@@ -47,14 +47,13 @@
         margin-top:  1em;
       }
 
-      footer {
-        font-family: 'IM Fell English', Georgia, serif;
+      footer, header {
+        font-family: 'IM Fell English SC', Georgia, serif;
         margin:      1em;
         text-align:  center;
       }
 
-      footer a {
-        font-weight:     bold;
+      footer a, header a {
         text-decoration: none;
       }
 
@@ -63,12 +62,39 @@
         font-size:   2em;
         text-align:  center;
       }
+
+      ul {
+        clear: both;
+        float: left;
+        left: 50%;
+        list-style: none;
+        margin: 0 0 1em;
+        position: relative;
+      }
+
+      li {
+        float: left;
+        padding: 0 0.5em;
+        position: relative;
+        right: 50%;
+        width: auto;
+      }
     </style>
 
     <title>talks.chastell.net</title>
   </head>
 
   <body>
+    <header>
+      <p>⚛ + ⌨ = ⚙</p>
+      <h1><a href='/'>chastell.net</a></h1>
+      <nav>
+        <ul>
+          <li><a href='/1/125/' title='½ million pixels'>1 / 125</a></li>
+          <li><a href='//talks.chastell.net' title='look at all the talks I give'>talks</a></li>
+        </ul>
+      </nav>
+    </header>
     <div>
       <h1>look at all the talks I give</h1>
       <dl>
@@ -175,7 +201,7 @@
       </dl>
     </div>
     <footer>
-      <p><a href='https://chastell.net'>chastell.net</a> &nbsp; | &nbsp; designed by chastell in Mazovia</p>
+      <p><a href='https://chastell.net/about/'>designed by chastell in Mazovia</a></p>
     </footer>
   </body>
 </html>
