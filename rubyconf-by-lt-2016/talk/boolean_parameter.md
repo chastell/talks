@@ -13,7 +13,7 @@ end
 
 # boolean parameter
 
-* the caller directly controls calee’s code execution
+* the caller directly controls callee’s code execution
 <!-- .element: class="fragment" -->
 * refactoring: split into dedicated methods (classes?)
 <!-- .element: class="fragment" -->
