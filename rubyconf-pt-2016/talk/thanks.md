@@ -1,3 +1,18 @@
+# things we didn’t cover
+
+* keycap shapes
+<!-- .element: class="fragment" -->
+
+* plastic types (e.g., PBT vs ABS)
+<!-- .element: class="fragment" -->
+
+* USB cables
+<!-- .element: class="fragment" -->
+
+* n-key rollover
+<!-- .element: class="fragment" -->
+
+
 # world domination plans
 
 * [A Modern Space Cadet](http://stevelosh.com/blog/2012/10/a-modern-space-cadet/)
