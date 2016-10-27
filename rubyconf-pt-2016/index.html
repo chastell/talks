@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>They Hear Me Typin’, They Hatin’</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/rubyconf-pt-2016.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section data-markdown='talk/cover.md'        data-separator='^\n\n'></section>
+        <section data-markdown='talk/intro.md'        data-separator='^\n\n'></section>
+        <section data-markdown='talk/hardware.md'     data-separator='^\n\n'></section>
+        <section data-markdown='talk/switches.md'     data-separator='^\n\n'></section>
+        <section data-markdown='talk/cherry_mx.md'    data-separator='^\n\n'></section>
+        <section data-markdown='talk/keycaps.md'      data-separator='^\n\n'></section>
+        <section data-markdown='talk/widths.md'       data-separator='^\n\n'></section>
+        <section data-markdown='talk/mine.md'         data-separator='^\n\n'></section>
+        <section data-markdown='talk/software.md'     data-separator='^\n\n'></section>
+        <section data-markdown='talk/layouts.md'      data-separator='^\n\n'></section>
+        <section data-markdown='talk/space_cadet.md'  data-separator='^\n\n'></section>
+        <section data-markdown='talk/layers.md'       data-separator='^\n\n'></section>
+        <section data-markdown='talk/programmable.md' data-separator='^\n\n'></section>
+        <section data-markdown='talk/caps_lock.md'    data-separator='^\n\n'></section>
+        <section data-markdown='talk/compose.md'      data-separator='^\n\n'></section>
+        <section data-markdown='talk/thanks.md'       data-separator='^\n\n'></section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
