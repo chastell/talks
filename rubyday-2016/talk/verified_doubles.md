@@ -35,7 +35,7 @@ require 'bogus/rspec'                                  # a different require!
 describe Weather do
   describe '#fo﻿r' do
     it 'returns weather at plane’s location' do
-      charter = fake(:plane)                           # this car is a fake!
+      charter = fake(:plane)                           # this plane is a fake!
       weather = Weather.new
       stub(charter).location { 'Warsaw' }              # stubbin’
       expect(weather.fo﻿r(charter)).to be :insideish
