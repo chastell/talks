@@ -1,0 +1,89 @@
+SLAJDY
+mostek
+  mostkowanie: proste, wieloportowe, uczące się/przezroczyste, source
+  route (ze sterowanym źródłem, do token ring), łączony (source
+  routing transparent – pozwala na współistnienie obu, używając source
+  routing z hostami, które to wspierają, i transparent z resztą)
+switch
+  domena kolizyjna vs rozgłoszeniowa
+niedopasowanie sieci
+  co to DQDB
+  które urządzenie łączy np. Ethernet z Token Ringiem?
+BEZPRZEWODOWE SIECI DOSTĘPOWE
+  wszystko
+
+ODPOWIEDZI NA PYTANIA
+
+jaka była długość adresów w IPv0?
+– nie mam pojęcia, pewnie taka sama jak w IPv4
+
+automatyka biurowa = tworzenie, zbieranie, przechowywanie,
+manipulowanie i przekazywanie informacji biurowej niezbędnej
+do dokonywania zadań; przechowywanie danych, transfer elektroniczny,
+zarządzanie informacją elektroniczną; przesyłanie danych, poczty
+i głosu; dyktowanie, pisanie, segregowanie, kopiowanie, faksowanie,
+teleksowanie, zarządzanie mikrofilmami i zapisami, telefony i centralki
+
+SDH to która warstwa?
+1 (fizyczna); cztery warstwy SDH w 1 warstwie OSI
+
+SDH zawiera dane, w tym całe pakiety IP, Ethernetowe itp. it is
+inaccurate to think of SDH as communications protocol; generic,
+all-purpose transport container for moving both voice and data
+
+MPLS to która warstwa? 2½ (między łącza i sieci); can be
+used to carry IP packets as well as native Ethernet frames
+
+
+PROTOKOŁY: WIFI
+
+  71: zrozumieć warstwę fizyczną
+  Szczypiorski/103-4 WiFi PHY
+  Szczypiorski/109 WiFi MAC
+  BAN, PAN, LAN, WLAN, MAN, VAN: Szczypiorski/91
+  http://en.wikipedia.org/wiki/IEEE_802.11
+
+
+MEDIA TRANSMISYJNE
+
+  http://en.wikipedia.org/wiki/10BASE2
+  http://en.wikipedia.org/wiki/Ethernet_over_twisted_pair
+  http://en.wikipedia.org/wiki/Ethernet_over_twisted_pair#Variants
+
+
+KOLIZJE W MEDIUM
+
+  http://en.wikipedia.org/wiki/Distributed_coordination_function
+  http://en.wikipedia.org/wiki/DCF_Interframe_Space
+  ramki MAC, RTS, CTS, ACK: Szczypiorski/126-7
+  kolizja późna: co to znaczy, że po 64 oktetach
+
+
+ŁĄCZENIE SIECI
+
+  http://en.wikipedia.org/wiki/Spanning_Tree_Protocol
+  http://en.wikipedia.org/wiki/Source_route_bridging
+  http://en.wikipedia.org/wiki/Border_Gateway_Protocol
+  czym jest brama
+
+
+BEZPIECZEŃSTWO W SIECIACH
+
+102: zrozumieć szczegóły nagłówka
+103: EAP
+  Wireshark
+  Szczypiorski/137 WiFi EAP
+
+
+WSPÓŁCZESNE PROBLEMY SIECI
+
+http://en.wikipedia.org/wiki/TCP_congestion_avoidance_algorithm
+
+
+NARZĘDZIA
+
+slurm
+mtr
+iftop
+ipcalc
+telnet towel.blinkenlights.nl

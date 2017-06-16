@@ -1,0 +1,1832 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/citcom-lan.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+        <section data-markdown><script type='text/template'>
+# Sieci lokalne
+
+## CITCOM PW
+
+### dr inż. Piotr Szotkowski
+        </script></section>
+        <section data-markdown><script type='text/template'>
+# definicja i&nbsp;rys historyczny
+</script></section>
+<section data-markdown><script type='text/template'>
+## sieć lokalna
+
+> Sieć lokalna (local area network, LAN) to sieć komputerowa
+> łącząca komputery na niewielkim obszarze – takim jak dom,
+> szkoła, laboratorium czy biuro – za pomocą mediów sieciowych.
+>
+> — Gary A. Donahue, _Network Warrior_
+</script></section>
+<section data-markdown><script type='text/template'>
+## początki
+
+* 1970: Octopus (Lawrence Berkeley National Laboratory)
+* 1971: ALOHAnet (Uniwersytet Hawajski)
+* 1974: Cambridge Ring (Uniwersytet Cambridge)
+* 1976: Ethernet (Palo Alto Research Center)
+* 1977: ARCNET (Chase Manhattan Bank, Nowy Jork)
+* 1980: model OSI
+</script></section>
+<section data-markdown><script type='text/template'>
+### zmiany mocy obliczeniowej<br />i&nbsp;położenia danych
+
+centralizacja mocy obliczeniowej<br />centralizacja danych
+
+↓
+
+rozproszenie mocy obliczeniowej<br />rozproszenie danych
+
+↓
+
+rozproszenie mocy obliczeniowej<br />centralizacja danych
+
+↓
+
+systemy mobilne vs komputery stacjonarne<br />centralizacja danych/usług vs self-hosting
+</script></section>
+<section data-markdown><script type='text/template'>
+## zmiany ruchu
+
+mała szybkość<br />ruch w impulsach<br />wspólne medium
+
+↓
+
+duża szybkość<br />ruch ciągły o różnym natężeniu<br />medium indywidualne
+        </script></section>
+        <section data-markdown><script type='text/template'>
+# jak to działa (w&nbsp;teorii)
+</script></section>
+<section data-markdown><script type='text/template'>
+## World Wide Web
+
+http://citcom.tele.pw.edu.pl<br />w polu adresu przeglądarki
+
+↓
+
+<img src='img/citcom.png' style='width: 70%' />
+</script></section>
+<section data-markdown><script type='text/template'>
+## DNS
+
+citcom.tele.pw.edu.pl
+
+↓
+
+194.29.169.129
+
+* 1983: RFC 882 + RFC 883
+* 1987: RFC 1034 + RFC 1035
+</script></section>
+<section data-markdown><script type='text/template'>
+## HTTP
+
+HTML (tekst!) + inne zasoby<br />(style, skrypty, obrazy, multimedia)
+
+↓
+
+przeglądarka renderuje wygląd strony<br />według
+własnej interpretacji danych tekstowych
+
+* 1991: HTTP 0.9
+* 1999: HTTP 1.1
+* 2014: HTTP 2.0
+</script></section>
+<section data-markdown><script type='text/template'>
+## TCP
+
+połączenie z portem 80<br />(albo 443) adresu 194.29.169.129
+
+utrzymanie połączenia (lub wielu)<br />i zapewnienie jego jakości
+
+* 1974: RFC 675
+* 1981: RFC 793 (v4)
+* 1999: RFC 2581 (Congestion Control)
+* 2011: RFC 6298 (Retransmission Timer)
+</script></section>
+<section data-markdown><script type='text/template'>
+## IP
+
+dostarczanie pakietów<br />między localhostem i 194.29.169.129
+
+* 1977: IPv0
+* 1981: IPv4
+* 1998: IPv6
+</script></section>
+<section data-markdown><script type='text/template'>
+## Ethernet
+
+dostarczanie pakietów<br />między kartą
+sieciową<br />i następnym urządzeniem
+
+* 1973: prace w PARC
+* 1983: IEEE 802.3
+</script></section>
+<section data-markdown><script type='text/template'>
+## warstwa fizyczna
+
+przesyłanie bitów w medium
+
+* 1949: kod Manchester
+* 1977: telegram światłowodowy
+* 1988: WaveLAN
+* 1997: IEEE 802.11
+        </script></section>
+        <section data-markdown><script type='text/template'>
+# jak to działa (w&nbsp;praktyce)
+</script></section>
+<section data-markdown><script type='text/template'>
+```
+$ dig citcom.tele.pw.edu.pl
+
+; <<>> DiG 9.9.2-P1 <<>> citcom.tele.pw.edu.pl
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 11753
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;citcom.tele.pw.edu.pl.		IN	A
+
+;; ANSWER SECTION:
+citcom.tele.pw.edu.pl.	82963	IN	CNAME	cygnus.tele.pw.edu.pl.
+cygnus.tele.pw.edu.pl.	77238	IN	A	194.29.169.129
+
+;; Query time: 1 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Mon Nov 18 21:06:02 2013
+;; MSG SIZE  rcvd: 90
+```
+</script></section>
+<section data-markdown><script type='text/template'>
+```
+$ curl -v citcom.tele.pw.edu.pl
+* About to connect() to citcom.tele.pw.edu.pl port 80 (#0)
+*   Trying 194.29.169.129...
+* Connected to citcom.tele.pw.edu.pl (194.29.169.129) port 80 (#0)
+> GET / HTTP/1.1
+> User-Agent: curl/7.29.0
+> Host: citcom.tele.pw.edu.pl
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Date: Mon, 18 Nov 2013 20:04:48 GMT
+< Server: Apache
+< X-Powered-By: PHP/5.3.1
+< Set-Cookie: PHPSESSID=dbummd4m4dm9gdfqr7sn646h85; path=/
+< Expires: Thu, 19 Nov 1981 08:52:00 GMT
+< Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+< Pragma: no-cache
+< Transfer-Encoding: chunked
+< Content-Type: text/html
+< 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" …>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+…
+<title>Studia Podyplomowe Telekomunikacji, Informatyki i Zarządzania</title>
+
+<link href="css/kursyit.css" rel="stylesheet" type="text/css" />
+</head>
+…
+</body>
+</html>
+* Connection #0 to host citcom.tele.pw.edu.pl left intact
+```
+</script></section>
+<section data-markdown><script type='text/template'>
+## UDP i TCP
+
+* `socket()`
+* `bind()`
+* `listen()`
+* `accept()`
+* `read()` + `write()`
+* `close()`
+
+* datagramy vs połączenia
+</script></section>
+<section data-markdown><script type='text/template'>
+<table>
+  <caption>pakiet UDP</caption>
+  <tr>
+    <th style='border: none'></th>
+    <th colspan='8' style='width: 20%'>0</th>
+    <th colspan='8' style='width: 20%'>1</th>
+    <th colspan='8' style='width: 20%'>2</th>
+    <th colspan='8' style='width: 20%'>3</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <td colspan='16'>port źródłowy</td>
+    <td colspan='16'>port docelowy</td>
+  </tr>
+  <tr>
+    <th>4</th>
+    <td colspan='16'>długość</td>
+    <td colspan='16'>suma kontrolna</td>
+  </tr>
+  <tr>
+    <th>8</th>
+    <td colspan='8'><code>G</code></td>
+    <td colspan='8'><code>E</code></td>
+    <td colspan='8'><code>T</code></td>
+    <td colspan='8'><code> </code></td>
+  </tr>
+  <tr>
+    <th>12</th>
+    <td colspan='8'><code>/</code></td>
+    <td colspan='8'><code> </code></td>
+    <td colspan='8'><code>H</code></td>
+    <td colspan='8'><code>T</code></td>
+  </tr>
+  <tr>
+    <th>16</th>
+    <td colspan='8'><code>T</code></td>
+    <td colspan='8'><code>P</code></td>
+    <td colspan='8'><code>/</code></td>
+    <td colspan='8'><code>1</code></td>
+  </tr>
+  <tr>
+    <th>20</th>
+    <td colspan='8'><code>.</code></td>
+    <td colspan='8'><code>1</code></td>
+    <td colspan='8'><code>␍</code></td>
+    <td colspan='8'><code>␊</code></td>
+  </tr>
+</table>
+
+* (w praktyce HTTP prawie zawsze używa TCP)
+
+* długość pakietu: do 65&nbsp;535 oktetów
+
+* w IPv4 to do 65&nbsp;507 oktetów danych<br />(28 oktetów nagłówków)
+</script></section>
+<section data-markdown><script type='text/template'>
+<table>
+  <caption>pakiet TCP</caption>
+  <tr>
+    <th style='border: none'></th>
+    <th colspan='8' width='22%'>0</th>
+    <th colspan='8' width='22%'>1</th>
+    <th colspan='8' width='22%'>2</th>
+    <th colspan='8' width='22%'>3</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <td colspan='16'>port źródłowy</td>
+    <td colspan='16'>port docelowy</td>
+  </tr>
+  <tr>
+    <th>4</th>
+    <td colspan='32'>numer sekwencji</td>
+  </tr>
+  <tr>
+    <th>8</th>
+    <td colspan='32'>numer potwierdzenia (jeśli ACK)</td>
+  </tr>
+  <tr>
+    <th>12</th>
+    <td colspan='4'>offset</td>
+    <td colspan='3'>000</td>
+    <td>NS</td>
+    <td colspan='8'>flagi</td>
+    <td colspan='16'>wielkość okna</td>
+  </tr>
+  <tr>
+    <th>16</th>
+    <td colspan='16'>suma kontrolna</td>
+    <td colspan='16'>wskaźnik pilności (jeśli URG)</td>
+  </tr>
+  <tr>
+    <th>20+</th>
+    <td colspan='32'>opcje (jeśli offset danych > 5) + padding zerami</td>
+  </tr>
+  <tr>
+    <th>20+</th>
+    <td colspan='8'><code>G</code></td>
+    <td colspan='8'><code>E</code></td>
+    <td colspan='8'><code>T</code></td>
+    <td colspan='8'><code> </code></td>
+  </tr>
+  <tr>
+    <th>24+</th>
+    <td colspan='8'><code>/</code></td>
+    <td colspan='8'><code> </code></td>
+    <td colspan='8'><code>H</code></td>
+    <td colspan='8'><code>T</code></td>
+  </tr>
+  <tr>
+    <th>28+</th>
+    <td colspan='8'><code>T</code></td>
+    <td colspan='8'><code>P</code></td>
+    <td colspan='8'><code>/</code></td>
+    <td colspan='8'><code>1</code></td>
+  </tr>
+  <tr>
+    <th>32+</th>
+    <td colspan='8'><code>.</code></td>
+    <td colspan='8'><code>1</code></td>
+    <td colspan='8'><code>␍</code></td>
+    <td colspan='8'><code>␊</code></td>
+  </tr>
+</table>
+
+* offset: 5-15 słów nagł. → do 40 oktetów opcji<br />
+flagi: CWR, ECE, URG, ACK, PSH, RST, SYN, FIN<br />
+długość danych: do 1460 oktetów
+</script></section>
+<section data-markdown><script type='text/template'>
+<table>
+  <caption>pakiet IPv4</caption>
+  <tr>
+    <th style='border: none'></th>
+    <th colspan='8' style='width: 20%'>0</th>
+    <th colspan='8' style='width: 20%'>1</th>
+    <th colspan='8' style='width: 20%'>2</th>
+    <th colspan='8' style='width: 20%'>3</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <td colspan='4'>wersja</td>
+    <td colspan='4'>IHL</td>
+    <td colspan='6'>DSCP</td>
+    <td colspan='2'>ECN</td>
+    <td colspan='16'>długość całkowita</td>
+  </tr>
+  <tr>
+    <th>4</th>
+    <td colspan='16'>identyfikacja</td>
+    <td colspan='3'>flagi</td>
+    <td colspan='13'>offset fragmentu</td>
+  </tr>
+  <tr>
+    <th>8</th>
+    <td colspan='8'>TTL</td>
+    <td colspan='8'>protokół</td>
+    <td colspan='16'>suma kontrolna</td>
+  </tr>
+  <tr>
+    <th>12</th>
+    <td colspan='32'>adres źródłowy</td>
+  </tr>
+  <tr>
+    <th>16</th>
+    <td colspan='32'>adres docelowy</td>
+  </tr>
+    <tr>
+    <th>20+</th>
+    <td colspan='32'>opcje (jeśli IHL > 5)</td>
+  </tr>
+  <tr>
+    <th>20+</th>
+    <td colspan='32'>dane (np. pakiet TCP)</td>
+  </tr>
+</table>
+</script></section>
+<section data-markdown><script type='text/template'>
+<table>
+  <caption>pakiet IPv6 (o stałym nagłówku)</caption>
+  <tr>
+    <th style='border: none'></th>
+    <th colspan='8' style='width: 20%'>0</th>
+    <th colspan='8' style='width: 20%'>1</th>
+    <th colspan='8' style='width: 20%'>2</th>
+    <th colspan='8' style='width: 20%'>3</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <td colspan='4'>wersja</td>
+    <td colspan='8'>klasa ruchu</td>
+    <td colspan='20'>etykieta ruchu</td>
+  </tr>
+  <tr>
+    <th>4</th>
+    <td colspan='16'>długość danych</td>
+    <td colspan='8'>następny nagłówek</td>
+    <td colspan='8'>limit skoków</td>
+  </tr>
+  <tr>
+    <th>8</th>
+    <td colspan='32' rowspan='4'>adres źródłowy</td>
+  </tr>
+  <tr><th>12</th></tr>
+  <tr><th>16</th></tr>
+  <tr><th>20</th></tr>
+  <tr>
+    <th>24</th>
+    <td colspan='32' rowspan='4'>adres docelowy</td>
+  </tr>
+  <tr><th>28</th></tr>
+  <tr><th>32</th></tr>
+  <tr><th>36</th></tr>
+  <tr>
+    <th>38+</th>
+    <td colspan='32'>dane (np. pakiet TCP)</td>
+  </tr>
+</table>
+</script></section>
+<section data-markdown><script type='text/template'>
+<table>
+  <caption>ramka Ethernet</caption>
+  <tr>
+    <th style='border: none'></th>
+    <th style='width: 20%'>0</th>
+    <th style='width: 20%'>1</th>
+    <th style='width: 20%'>2</th>
+    <th style='width: 20%'>3</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <td>`10101010`</td>
+    <td>`10101010`</td>
+    <td>`10101010`</td>
+    <td>`10101010`</td>
+  </tr>
+  <tr>
+    <th>4</th>
+    <td>`10101010`</td>
+    <td>`10101010`</td>
+    <td>`10101010`</td>
+    <td>`10101011`</td>
+  </tr>
+  <tr>
+    <th>8</th>
+    <td colspan='4'>adres docelowy…</td>
+  </tr>
+  <tr>
+    <th>12</th>
+    <td colspan='2'>…adres docelowy</td>
+    <td colspan='2'>adres źródłowy…</td>
+  </tr>
+  <tr>
+    <th>16</th>
+    <td colspan='4'>…adres źródłowy</td>
+  </tr>
+  <tr>
+    <th>20</th>
+    <td colspan='2'>typ lub długość</td>
+    <td colspan='2'>dane…</td>
+  </tr>
+  <tr>
+    <th>24+</th>
+    <td colspan='4'>…dane: 46-1500 oktetów (np. pakiet IP)</td>
+  </tr>
+  <tr>
+    <th>68+</th>
+    <td colspan='4'>suma kontrolna</td>
+  </tr>
+  <tr>
+    <th>72+</th>
+    <td colspan='4'>przerwa międzyramkowa…</td>
+  </tr>
+  <tr>
+    <th>76+</th>
+    <td colspan='4'>…przerwa międzyramkowa…</td>
+  </tr>
+  <tr>
+    <th>80+</th>
+    <td colspan='4'>…przerwa międzyramkowa</td>
+  </tr>
+</table>
+</script></section>
+<section data-markdown><script type='text/template'>
+## warstwa fizyczna
+
+* bity przesyłane w medium
+
+* np. zakodowane kodem Manchester
+
+![Manchester](img/manchester.svg)
+        </script></section>
+        <section data-markdown><script type='text/template'>
+# model OSI
+</script></section>
+<section data-markdown><script type='text/template'>
+## warstwy OSI
+
+<table>
+  <tr>
+    <th style='border: none'></th>
+    <th>jednostka</th>
+    <th>warstwa</th>
+    <th>zadanie</th>
+    <th>przykład</th>
+  </tr>
+  <tr>
+    <th rowspan="4">warstwy hosta</th>
+    <td rowspan="3">dane</td>
+    <td>aplikacji</td>
+    <td>komunikacja</td>
+    <td>HTTP</td>
+  </tr>
+  <tr>
+    <td>prezentacji</td>
+    <td>format danych / szyfrowanie</td>
+    <td>SSL</td>
+  </tr>
+  <tr>
+    <td>sesji</td>
+    <td>utrzymanie sesji</td>
+    <td>gniazda</td>
+  </tr>
+  <tr>
+    <td>segment</td>
+    <td>transportowa</td>
+    <td>utrzymanie spójności</td>
+    <td>TCP, UDP</td>
+  </tr>
+  <tr>
+    <th rowspan="3">warstwy mediów</th>
+    <td>pakiet / datagram</td>
+    <td>sieciowa</td>
+    <td>droga i komutacja</td>
+    <td>IP</td>
+  </tr>
+  <tr>
+    <td>bit / ramka</td>
+    <td>łącza danych</td>
+    <td>spójność dwupunktowa</td>
+    <td>Ethernet</td>
+  </tr>
+  <tr>
+    <td>bit</td>
+    <td>fizyczna</td>
+    <td>transmisja bitów</td>
+    <td></td>
+  </tr>
+</table>
+</script></section>
+<section data-markdown><script type='text/template'>
+## fundamentalne założenia
+
+komunikacja pomiędzy warstwami<br />tego samego poziomu
+
+↓
+
+enkapsulacja
+</script></section>
+<section data-markdown><script type='text/template'>
+[James Bond Meets the 7 Layer OSI Model](http://www.lewistech.com/rlewis/Resources/jamesX.aspx)
+
+<dl>
+  <dt>Application</dt>
+  <dd>wiadomość od Numer Jeden</dd>
+  <dt>Presentation</dt>
+  <dd>tłumaczenie, kompresja i szyfrowanie</dd>
+  <dt>Session</dt>
+  <dd>sprawdzenie kompletności</dd>
+  <dt>Transport</dt>
+  <dd>podział na pakiety, połączenie z innymi</dd>
+  <dt>Network</dt>
+  <dd>znalezienie najszybszej drogi</dd>
+  <dt>Data link</dt>
+  <dd>wiadomość w specjalnej kopercie</dd>
+  <dt>Physical</dt>
+  <dd>ruszenie w drogę</dd>
+</dl>
+
+All People Seem To Need Data Processing
+        </script></section>
+        <section data-markdown><script type='text/template'>
+# model TCP/IP
+</script></section>
+<section data-markdown><script type='text/template'>
+## warstwy TCP/IP
+
+<table>
+  <tr>
+    <th>OSI</th>
+    <th>TCP/IP</th>
+    <th>przykład</th>
+  </tr>
+  <tr>
+    <td>aplikacji</td>
+    <td rowspan='3'>aplikacji</td>
+    <td rowspan='3'>HTTP</td>
+  </tr>
+  <tr>
+    <td>prezentacji</td>
+  </tr>
+  <tr>
+    <td>sesji</td>
+  </tr>
+  <tr>
+    <td>transportowa</td>
+    <td>transportowa</td>
+    <td>TCP, UDP</td>
+  </tr>
+  <tr>
+    <td>sieciowa</td>
+    <td>Internetu</td>
+    <td>IP</td>
+  </tr>
+  <tr>
+    <td>łącza danych</td>
+    <td rowspan='2'>dostępu do sieci</td>
+    <td rowspan='2'>Ethernet</td>
+  </tr>
+  <tr>
+    <td>fizyczna</td>
+  </tr>
+</table>
+</script></section>
+<section data-markdown><script type='text/template'>
+![LAN](img/lan.svg)
+
+[Internet protocol suite](http://en.wikipedia.org/wiki/Internet_protocol_suite)
+</script></section>
+<section data-markdown><script type='text/template'>
+![UDP](img/udp.svg)
+
+[Internet protocol suite](http://en.wikipedia.org/wiki/Internet_protocol_suite)
+        </script></section>
+        <section data-markdown><script type='text/template'>
+# architektura aplikacji
+</script></section>
+<section data-markdown><script type='text/template'>
+## klient-serwer
+
+klasyczny model
+
+scentralizowany serwer
+
+rozproszone klienty
+
+pojedynczy punkt awarii
+
+klasyczne WWW
+</script></section>
+<section data-markdown><script type='text/template'>
+## peer-to-peer
+
+model rozproszony
+
+każdy klient jest serwerem
+
+topologia sieci zmienia się na bieżąco
+
+komunikatory
+
+wymiana plików
+
+P2PTV
+
+peer-to-peer CDN
+
+Distributed Hash Tables
+</script></section>
+<section data-markdown><script type='text/template'>
+## modele hybrydowe
+
+scentralizowany serwer wspierający odszukiwanie peerów
+
+rozproszone systemy śledzenia wersji (Git)
+        </script></section>
+        <section data-markdown><script type='text/template'>
+# sesja TCP
+</script></section>
+<section data-markdown><script type='text/template'>
+![syn_ack](img/syn_ack.jpg)
+
+[20 Awesome Geek T-Shirts](http://geektrio.net/?p=1791)
+</script></section>
+<section data-markdown><script type='text/template'>
+<img src='img/tcp_session.png' style='width: 65%' />
+
+[High Performance Browser Networking](https://docs.google.com/presentation/d/1f2J_HrzMNvVHhsB3f7DKJFPl2N0Q_QR2ZEECWQu6oV8/present#slide=id.gc03305a_0230)
+</script></section>
+<section data-markdown><script type='text/template'>
+## kończenie sesji
+
+<img src='img/tcp_fin.svg' style='width: 75%' />
+
+[Transmission Control Protocol](http://en.wikipedia.org/wiki/Transmission_Control_Protocol)
+</script></section>
+<section data-markdown><script type='text/template'>
+![TCP state](img/tcp_state.svg)
+
+[Transmission Control Protocol](http://en.wikipedia.org/wiki/Transmission_Control_Protocol)
+        </script></section>
+        <section data-markdown><script type='text/template'>
+# model LAN
+</script></section>
+<section data-markdown><script type='text/template'>
+## model LAN
+
+<table>
+  <tr>
+    <th colspan='2'>OSI</th>
+    <th colspan='5'>LAN</th>
+  </tr>
+  <tr>
+    <td rowspan='2'>(~sieci) łącza&nbsp;danych</td>
+    <td>LLC</td>
+    <td rowspan='3'>Ethernet&nbsp;II</td>
+    <td colspan='4'>IEEE 802.2</td>
+  </tr>
+  <tr>
+    <td>MAC</td>
+    <td rowspan='2'>IEEE&nbsp;802.3</td>
+    <td rowspan='2'><nobr>100BASE-T</nobr></td>
+    <td rowspan='2'>IEEE&nbsp;802.5</td>
+    <td rowspan='2'>FDDI</td>
+  </tr>
+  <tr>
+    <td>fizyczna</td>
+    <td>PHY</td>
+</table>
+        </script></section>
+        <section data-markdown><script type='text/template'>
+# topologie sieci
+</script></section>
+<section data-markdown><script type='text/template'>
+## topologia fizyczna
+
+* jak zbudowana jest warstwa fizyczna LAN
+
+* okablowanie – ale też medium bezprzewodowe
+
+* &nbsp;
+
+## topologia logiczna
+
+* jak zbudowane są podwarstwy MAC i LLC
+</script></section>
+<section data-markdown><script type='text/template'>
+## punkt-punkt
+
+<img src='img/point_point.svg' style='width: 30%' />
+
+* połączenie po porcie szeregowym
+
+* skrętka skrosowana
+</script></section>
+<section data-markdown><script type='text/template'>
+## szyna
+
+<img src='img/bus.svg' style='width: 30%' />
+
+* Ethernet na koncentryku,<br />WLAN (fizyczna i&nbsp;logiczna)
+
+* wspólne medium
+
+* awaria stacji nie szkodzi sieci
+</script></section>
+<section data-markdown><script type='text/template'>
+## pierścień
+
+<img src='img/ring.svg' style='width: 30%' />
+
+* Token Ring (logiczna)
+
+* możliwość różnych łącz w jednym pierścieniu
+
+* awaria dowolnego elementu paraliżuje sieć
+
+* trudna lokalizacja uszkodzeń
+</script></section>
+<section data-markdown><script type='text/template'>
+## gwiazda
+
+<img src='img/star.svg' style='width: 30%' />
+
+* Ethernet spięty hubem (fizyczna i logiczna)<br
+/>lub switchem (logiczna), Token Ring (fizyczna)
+
+* element centralny odpowiada za cały ruch
+
+* awaria elementu centralnego paraliżuje sieć
+</script></section>
+<section data-markdown><script type='text/template'>
+## drzewo
+
+<img src='img/tree.svg' style='width: 30%' />
+
+* rozproszona gwiazda
+
+* kolejne poziomy bez ograniczeń
+
+* łatwa lokalizacja uszkodzeń
+</script></section>
+<section data-markdown><script type='text/template'>
+## siatka / krata
+
+<img src='img/mesh.svg' style='display: inline; width: 25%' />
+<img src='img/full_mesh.svg' style='display: inline; width: 25%' />
+
+* punkt-punkt; krata: każdy z każdym
+
+* skomplikowany routing
+
+* awarie nie uniemożliwiają routingu
+
+* tania dla sieci bezprzewodowych
+        </script></section>
+        <section data-markdown><script type='text/template'>
+# protokoły
+</script></section>
+<section data-markdown><script type='text/template'>
+## ALOHAnet (1971)
+
+* Hawaje: siedem komputerów na czterech wyspach
+
+* topologia szyny: wspólne medium, łączone przez satelitę
+
+* nadawanie w dowolnym momencie (pure)<br />lub
+  w&nbsp;takt zegara (slotted) + potwierdzenie odbioru
+</script></section>
+<section data-markdown><script type='text/template'>
+<table>
+  <caption>ramka ALOHAnet</caption>
+  <tr>
+    <th style='border: none'></th>
+    <th style='width: 20%'>0</th>
+    <th style='width: 20%'>1</th>
+    <th style='width: 20%'>2</th>
+    <th style='width: 20%'>3</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <td colspan='4'>nagłówek</td>
+  </tr>
+  <tr>
+    <th>4</th>
+    <td colspan='2'>suma kontrolna</td>
+    <td colspan='2'>dane…</td>
+  </tr>
+  <tr>
+    <th>8</th>
+    <td colspan='4'>…dane…</td>
+  </tr>
+  <tr>
+    <th>…</th>
+    <td colspan='4'>…dane…</td>
+  </tr>
+  <tr>
+    <th>84</th>
+    <td colspan='2'>…dane</td>
+    <td colspan='2'>suma kontrolna</td>
+  </tr>
+</table>
+
+* do 80 oktetów danych
+</script></section>
+<section data-markdown><script type='text/template'>
+![Pure ALOHA](img/aloha_pure.svg)
+
+[ALOHAnet](http://en.wikipedia.org/wiki/ALOHAnet)
+</script></section>
+<section data-markdown><script type='text/template'>
+![Slotted ALOHA](img/aloha_slotted.svg)
+
+[ALOHAnet](http://en.wikipedia.org/wiki/ALOHAnet)
+</script></section>
+<section data-markdown><script type='text/template'>
+![ALOHA comparison](img/aloha_comparison.svg)
+
+[ALOHAnet](http://en.wikipedia.org/wiki/ALOHAnet)
+</script></section>
+<section data-markdown><script type='text/template'>
+## Ethernet (1973)
+
+* 1973: początek prac w PARC
+* 1976: Metcalfe, Boggs: _Ethernet: Distributed<br />
+  Packet Switching for Local Computer Networks_
+* 1980: DIX (DEC, Intel, Xerox)
+* 1982: DIX Ethernet II
+* 1983: IEEE 802.3 (CSMA/CD)
+* 1985: Fat Ethernet (10 Mbit/s)
+* 1995: 802.3u Fast Ethernet (100 Mbit/s)
+* 1998: 802.3z Gigabit Ethernet (1000 Mbit/s)
+</script></section>
+<section data-markdown><script type='text/template'>
+<table>
+  <caption>ramka Ethernet</caption>
+  <tr>
+    <th style='border: none'></th>
+    <th style='width: 20%'>0</th>
+    <th style='width: 20%'>1</th>
+    <th style='width: 20%'>2</th>
+    <th style='width: 20%'>3</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <td>`10101010`</td>
+    <td>`10101010`</td>
+    <td>`10101010`</td>
+    <td>`10101010`</td>
+  </tr>
+  <tr>
+    <th>4</th>
+    <td>`10101010`</td>
+    <td>`10101010`</td>
+    <td>`10101010`</td>
+    <td>`10101011`</td>
+  </tr>
+  <tr>
+    <th>8</th>
+    <td colspan='4'>adres docelowy…</td>
+  </tr>
+  <tr>
+    <th>12</th>
+    <td colspan='2'>…adres docelowy</td>
+    <td colspan='2'>adres źródłowy…</td>
+  </tr>
+  <tr>
+    <th>16</th>
+    <td colspan='4'>…adres źródłowy</td>
+  </tr>
+  <tr>
+    <th>20</th>
+    <td colspan='2'>typ lub długość</td>
+    <td colspan='2'>dane…</td>
+  </tr>
+  <tr>
+    <th>24+</th>
+    <td colspan='4'>…dane: 46-1500 oktetów (np. pakiet IP)</td>
+  </tr>
+  <tr>
+    <th>68+</th>
+    <td colspan='4'>suma kontrolna</td>
+  </tr>
+  <tr>
+    <th>72+</th>
+    <td colspan='4'>przerwa międzyramkowa…</td>
+  </tr>
+  <tr>
+    <th>76+</th>
+    <td colspan='4'>…przerwa międzyramkowa…</td>
+  </tr>
+  <tr>
+    <th>80+</th>
+    <td colspan='4'>…przerwa międzyramkowa</td>
+  </tr>
+</table>
+
+* 84-1538 oktetów (64–1518 oktetów treści)
+</script></section>
+<section data-markdown><script type='text/template'>
+<table>
+  <caption>ramka Ethernet z tagiem 802.1Q</caption>
+  <tr>
+    <th style='border: none'></th>
+    <th width='20%'>0</th>
+    <th width='20%'>1</th>
+    <th width='20%'>2</th>
+    <th width='20%'>3</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <td>`10101010`</td>
+    <td>`10101010`</td>
+    <td>`10101010`</td>
+    <td>`10101010`</td>
+  </tr>
+  <tr>
+    <th>4</th>
+    <td>`10101010`</td>
+    <td>`10101010`</td>
+    <td>`10101010`</td>
+    <td>`10101011`</td>
+  </tr>
+  <tr>
+    <th>8</th>
+    <td colspan='4'>adres docelowy…</td>
+  </tr>
+  <tr>
+    <th>12</th>
+    <td colspan='2'>…adres docelowy</td>
+    <td colspan='2'>adres źródłowy…</td>
+  </tr>
+  <tr>
+    <th>16</th>
+    <td colspan='4'>…adres źródłowy</td>
+  </tr>
+  <tr>
+    <th>20</th>
+    <td colspan='4'>tag 802.1Q</td>
+  </tr>
+  <tr>
+    <th>24</th>
+    <td colspan='2'>typ lub długość</td>
+    <td colspan='2'>dane…</td>
+  </tr>
+  <tr>
+    <th>28+</th>
+    <td colspan='4'>…dane: 42-1500 oktetów (np. pakiet IP)</td>
+  </tr>
+  <tr>
+    <th>68+</th>
+    <td colspan='4'>suma kontrolna</td>
+  </tr>
+  <tr>
+    <th>72+</th>
+    <td colspan='4'>przerwa międzyramkowa…</td>
+  </tr>
+  <tr>
+    <th>76+</th>
+    <td colspan='4'>…przerwa międzyramkowa…</td>
+  </tr>
+  <tr>
+    <th>80+</th>
+    <td colspan='4'>…przerwa międzyramkowa</td>
+  </tr>
+</table>
+
+* 84-1542 oktety (64-1522 oktety treści)
+</script></section>
+<section data-markdown><script type='text/template'>
+| wartość (hex) | znaczenie    |
+|--------------:|:------------:|
+| ≤ 05DC        | długość      |
+| 0800          | IPv4         |
+| 0805          | X.25         |
+| 0806          | ARP          |
+| 0842          | Wake-on-LAN  |
+| 6003          | DECnet       |
+| 8035          | RARP         |
+| 809B          | AppleTalk    |
+| 80F3          | AARP         |
+| 8100          | 802.1Q tag   |
+| 8137          | IPX          |
+| 8138          | IPX          |
+| 86DD          | IPv6         |
+| 8808          | flow control |
+| 8870          | jumbo frame  |
+</script></section>
+<section data-markdown><script type='text/template'>
+## adres MAC
+
+* sześć oktetów
+
+* trzy oktety Organisationally Unique Identifier
+
+* trzy oktety Network Interface Controller
+
+* `12-34-56-78-9A-BC`
+
+* IEEE 802.3 + 802.4 najpierw LSB:<br />`01001000 00101100 01101010`<br />`00011110 01011001 00111101`
+
+* IEEE 802.5 + 802.6 najpierw MSB:<br />`00010010 00110100 01010110`<br />`01111000 10011010 10111100`
+</script></section>
+<section data-markdown><script type='text/template'>
+## ARCNET (1976)
+
+* mikrokomputery → systemy wbudowane
+
+* RFC 1051 → RFC 1201: IP/ARP po ARCNET
+
+* ramki: krótka, długa, wyjątku
+</script></section>
+<section data-markdown><script type='text/template'>
+## Token Ring (1985)
+
+* IEEE 802.5
+
+* topologia pierścienia (logiczna)
+
+* token – trzyoktetowa ramka krążąca między hostami:<br />
+  flaga początku + pole sterujące + flaga końca
+
+* nadawanie: zamiana tokena na na ramkę danych
+
+* odbieranie: zamiana ramki danych na token
+</script></section>
+<section data-markdown><script type='text/template'>
+<table>
+  <caption>ramka danych Token Ring</caption>
+  <tr>
+    <th style='border: none'></th>
+    <th style='width: 20%'>0</th>
+    <th style='width: 20%'>1</th>
+    <th style='width: 20%'>2</th>
+    <th style='width: 20%'>3</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <td>flaga początku</td>
+    <td>pole sterujące</td>
+    <td>flaga końca</td>
+    <td>adres docelowy…</td>
+  </tr>
+  <tr>
+    <th>4</th>
+    <td colspan='4'>…adres docelowy…</td>
+  </tr>
+  <tr>
+    <th>8</th>
+    <td>…adres docelowy</td>
+    <td colspan='3'>adres źródłowy…</td>
+  </tr>
+  <tr>
+    <th>12</th>
+    <td colspan='3'>…adres źródłowy</td>
+    <td>dane…</td>
+  </tr>
+  <tr>
+    <th>…</th>
+    <td colspan='4'>…dane (do 18 200 oktetów)</td>
+  </tr>
+  <tr>
+    <th>…</th>
+    <td colspan='4'>suma kontrolna</td>
+  </tr>
+  <tr>
+    <th>…</th>
+    <td>flaga końca</td>
+    <td>status ramki</td>
+    <td colspan='2'></td>
+  </tr>
+</table>
+</script></section>
+<section data-markdown><script type='text/template'>
+## Token Bus
+
+* IEEE 802.4
+
+* Token Ring po wirtualnym pierścienu<br />na kablu koncentrycznym
+
+* topologia szyny
+
+* broadband (w Ethernecie baseband)
+
+* token przekazywany z malejącymi adresami MAC
+</script></section>
+<section data-markdown><script type='text/template'>
+## FDDI (1986)
+
+* Fiber Distributed Data Interface
+
+* na miedzi: CDDI / TP-DDI
+
+* topologia podwójnego pierścienia (logiczna)
+
+* protokół pochodzący od Token Bus
+</script></section>
+<section data-markdown><script type='text/template'>
+<table>
+  <caption>ramka FDDI</caption>
+  <tr>
+    <th style='border: none'></th>
+    <th style='width: 20%'>0</th>
+    <th style='width: 20%'>1</th>
+    <th style='width: 20%'>2</th>
+    <th style='width: 20%'>3</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <td colspan='2'>preambuła</td>
+    <td>flaga początku</td>
+    <td>pole sterujące</td>
+  </tr>
+  <tr>
+    <th>4</th>
+    <td colspan='4'>adres docelowy…</td>
+  </tr>
+  <tr>
+    <th>8</th>
+    <td colspan='2'>…adres docelowy</td>
+    <td colspan='2'>adres źródłowy…</td>
+  </tr>
+  <tr>
+    <th>12</th>
+    <td colspan='4'>…adres źródłowy</td>
+  </tr>
+  <tr>
+    <th>16</th>
+    <td colspan='4'>dane (do 4478 oktetów)…</td>
+  </tr>
+  <tr>
+    <th>…</th>
+    <td colspan='4'>suma kontrolna</td>
+  </tr>
+  <tr>
+    <th>…</th>
+    <td>flaga końca</td>
+    <td>status ramki</td>
+    <td colspan='2'></td>
+  </tr>
+</table>
+</script></section>
+<section data-markdown><script type='text/template'>
+## IEEE 802.11 (1997)
+
+* WiFi
+
+* wspólne medium, topologia szyny
+
+* tryb infrastrukturalny<br />(z punktami dostępowymi)
+
+* tryb ad-hoc<br />(bez punktu dostępowego)
+
+* warstwy MAC i PHY
+</script></section>
+<section data-markdown><script type='text/template'>
+| rok  | standard | pasmo        | prędkość       |
+|------|----------|--------------|----------------|
+| 1997 | 802.11   | 2,4 GHz      | do 2 Mbit/s    |
+| 1999 | 802.11a  | 5 GHz        | do 54 Mbit/s   |
+| 1999 | 802.11b  | 2,4 GHz      | do 11 Mbit/s   |
+| 2003 | 802.11g  | 2,4 GHz      | do 54 Mbit/s   |
+| 2009 | 802.11n  | 2,4/5 GHz    | do 72,2 Mbit/s (20&nbsp;MHz),<br />do 150&nbsp;Mbit/s (40 MHz) |
+| 2012 | 802.11ac | 5 GHz        | do 87,6 MBit/s (20&nbsp;MHz),<br />do 866,7&nbsp;Mbit/s (160 MHz) |
+| 2014 | 802.11ad | 2,4/5/60 GHz | do 6912 MBit/s |
+</script></section>
+<section data-markdown><script type='text/template'>
+<dl>
+  <dt>Frequency Hopping Spread Spectrum (802.11)</dt>
+  <dd>pseudolosowe (znane nadawcy i odbiorcy)<br />skakanie po częstotliwościach</dd>
+
+  <dt>Direct Sequence Spread Spectrum<br />(802.11, 802.11b, 802.11g)</dt>
+  <dd>modulacja fazy szybkozmiennym pseudoszumem<br />(znanym nadawcy i odbiorcy)</dd>
+
+  <dt>Orthogonal Frequency Division Multiplexing<br />(802.11a, 802.11g, 802.11n, 802.11ac)</dt>
+  <dd>transmisja wielu strumieni na<br />ortogonalnych częstotliwościach</dd>
+</dl>
+</script></section>
+<section data-markdown><script type='text/template'>
+![channels](img/channels.svg)
+
+[IEEE 802.11](http://en.wikipedia.org/wiki/IEEE_802.11)
+
+* wybrane kanały w paśmie 2,4 GHz
+
+* dostępność kanałów w zależności od regulacji krajowych
+</script></section>
+<section data-markdown><script type='text/template'>
+<table>
+  <caption>ramka MAC IEEE 802.11</caption>
+  <tr>
+    <th style='border: none'></th>
+    <th style='width: 20%'>0</th>
+    <th style='width: 20%'>1</th>
+    <th style='width: 20%'>2</th>
+    <th style='width: 20%'>3</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <td colspan='2'>pola kontrolne</td>
+    <td colspan='2'>czas trwania/ID</td>
+  </tr>
+  <tr>
+    <th>4</th>
+    <td colspan='4'>adres 1…</td>
+  </tr>
+  <tr>
+    <th>8</th>
+    <td colspan='2'>…adres 1</td>
+    <td colspan='2'>adres 2…</td>
+  </tr>
+  <tr>
+    <th>12</th>
+    <td colspan='4'>…adres 2</td>
+  </tr>
+  <tr>
+    <th>16</th>
+    <td colspan='4'>adres 3…</td>
+  </tr>
+  <tr>
+    <th>20</th>
+    <td colspan='2'>…adres 3</td>
+    <td colspan='2'>kontrola sekwencji</td>
+  </tr>
+  <tr>
+    <th>24</th>
+    <td colspan='4'>adres 4…</td>
+  </tr>
+  <tr>
+    <th>28</th>
+    <td colspan='2'>…adres 4</td>
+    <td colspan='2'>dane…</td>
+  </tr>
+    <th>…</th>
+    <td colspan='4'>…dane (do 2312 oktetów, w tym 8 WEP)</td>
+  </tr>
+  <tr>
+    <th>…</th>
+    <td colspan='4'>suma kontrolna</td>
+  </tr>
+</table>
+        </script></section>
+        <section data-markdown><script type='text/template'>
+# media transmisyjne
+</script></section>
+<section data-markdown><script type='text/template'>
+## kabel miedziany współosiowy
+
+<img src='img/10base2.png' style='width: 40%' />
+
+[10BASE2](http://en.wikipedia.org/wiki/10BASE2)
+
+* koncentryk: 10BASE5 (thicknet, 10 MBit/s,
+500 m), 10BASE5&nbsp;(thinnet, 10 MBit/s, 200 m)
+
+* ochrona od zakłóceń: cylindryczny ekran uziemiony
+</script></section>
+<section data-markdown><script type='text/template'>
+## kabel miedziany symetryczny
+
+<img src='img/10baseT.png' style='width: 40%' />
+
+[Ethernet over twisted pair](http://en.wikipedia.org/wiki/Ethernet_over_twisted_pair)
+
+* skrętka: 1 Mbit/s-10 Gbit/s, 100 m
+
+* 1BASE5 (StarLAN, 802.3e), 10BASE-T (802.3i), 100BASE-TX
+  (Fast Ethernet, 802.3u), 1000BASE-T (Gigabit Ethernet,
+  802.3ab), 10GBASE-T (10 GigE, 802.3an)
+
+* ochrona od zakłóceń: skręcenie + ew. ekranowanie
+</script></section>
+<section data-markdown><script type='text/template'>
+## światłowód
+
+<img src='img/fibre.jpg' style='width: 40%' />
+
+[Optical fiber](http://en.wikipedia.org/wiki/Optical_fiber)
+
+* 40-100 Gbit/s
+
+* wielomodowe lub jednomodowe
+
+* rdzeń/otulina/pokrycie: odporność na zakłócenia / podsłuch
+
+* 2011: odcięcie Armenii od Internetu szpadlem
+</script></section>
+<section data-markdown><script type='text/template'>
+![cable](img/cable.gif)
+
+[A Fascinating GIF Showing How<br />Cable Is Laid on the Ocean Floor](http://www.pbh2.com/science-nature/technology/how-cable-laid-ocean-gif/)
+        </script></section>
+        <section data-markdown><script type='text/template'>
+# kolizje w&nbsp;medium
+</script></section>
+<section data-markdown><script type='text/template'>
+## kolizje pakietów
+
+* problem niezależny od medium
+
+* minimalizowanie kolizji
+
+* unikanie kolizji
+
+* niedopuszczanie do kolizji
+</script></section>
+<section data-markdown><script type='text/template'>
+## ALOHAnet
+
+* Pure ALOHA: nadawanie<br />w dowolnym momencie
+
+* brak potwierdzenia → ponowna<br />próba po losowym opóźnieniu
+
+* Slotted ALOHA: nadawanie tylko<br />w takt (rzadszy niż długość ramki)
+
+* wykorzystanie sieci: 18% → 37%
+</script></section>
+<section data-markdown><script type='text/template'>
+## CSMA
+
+* Carrier Sense Multiple Access: nasłuch<br />
+przed nadaniem czy medium jest wolne
+
+* CSMA nonpersistent: jeśli medium<br />jest zajęte, poczekaj losowy czas
+
+* CSMA 1-persistent: jeśli medium jest zajęte, poczekaj<br />
+aż będzie wolne; wtedy natychmiast zacznij nadawać
+
+* CSMA p-persistent: jeśli medium jest wolne,<br />
+zacznij nadawać z&nbsp;prawdopodobieństwem p
+</script></section>
+<section data-markdown><script type='text/template'>
+## opóźnienia
+
+* losowe: ALOHAnet
+
+* rosnące wykładniczo: Ethernet
+
+* rosnące wykładniczo z ograniczeniem:<br />rośnie do czasu, potem rezygnacja
+</script></section>
+<section data-markdown><script type='text/template'>
+## CSMA/CD
+
+* CSMA with Collision Detection: nasłuch też w&nbsp;trakcie
+nadawania (w mediach, w których jest to możliwe)
+
+* CSMA: kolizja wywnioskowana<br />CSMA/CD: kolizja wykrywana
+
+* jeśli zauważono kolizję → wymuszenie kolizji
+
+* długość ramki > okno kolizji (żeby móc wykryć)
+</script></section>
+<section data-markdown><script type='text/template'>
+## CSMA/CA
+
+* CSMA with Collision Avoidance: dla mediów<br />
+nie mogących nasłuchiwać w czasie wysyłania
+
+* Distributed Coordination Function
+
+* jeśli kanał zajęty: oczekiwanie losowego czasu
+
+* jeśli kanał wolny: transmisja i oczekiwanie<br />
+na ACK (brak ACK: retrnasmisja)
+
+* DCF z Request to Send / Clear to Send<br />i czasem transmisji
+</script></section>
+<section data-markdown><script type='text/template'>
+## synchronizacja
+
+* half-duplex: preambuła, czas ramki<br />ograniczony przez okno kolizji
+
+* Ethernet 1 Gbit/s w half-duplex:<br />krótkie ramki rozszerzane o&nbsp;okno kolizji
+
+* Ethernet 10 Gbit/s: tylko<br />full-duplex (brak kolizji)
+</script></section>
+<section data-markdown><script type='text/template'>
+## błędy transmisyjne
+
+* zbyt mała/duża długość ramki
+
+* zła długość ramki
+
+* nieprawidłowa suma kontrolna
+
+* zła preambuła lub sygnał wymuszenia kolizji
+
+* kolizja lokalna/odległa/późna
+</script></section>
+<section data-markdown><script type='text/template'>
+## typy kolizji
+
+* lokalna: odbiór podczas nadawania
+
+* odległa: błędna ramka, wywnioskowanie kolizji
+
+* późna: kolizja po 64 oktetach: brak<br />
+retransmisji, zadanie dla wastw wyższych
+        </script></section>
+        <section data-markdown><script type='text/template'>
+# łączenie sieci
+</script></section>
+<section data-markdown><script type='text/template'>
+## podział według warstw
+
+<table>
+  <caption>elementy sieciowe</caption>
+  <tr>
+    <th>warstwa OSI</th>
+    <th colspan='2' style='border: none'></th>
+  </tr>
+  <tr>
+    <td>aplikacji</td>
+    <td rowspan='4'>brama</td>
+    <td>switch L7</td>
+  </tr>
+  <tr>
+    <td>prezentacji</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>sesji</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>transportowa</td>
+    <td>switch L4</td>
+  </tr>
+  <tr>
+    <td>sieciowa</td>
+    <td>router</td>
+    <td>switch L3</td>
+  </tr>
+  <tr>
+    <td>łącza danych</td>
+    <td>mostek</td>
+    <td>switch L2</td>
+  </tr>
+  <tr>
+    <td>fizyczna</td>
+    <td>hub</td>
+    <td>switch L1</td>
+  </tr>
+</table>
+</script></section>
+<section data-markdown><script type='text/template'>
+## hub
+
+* warstwa fizyczna
+
+* segmenty tego samego<br />typu, wspólne medium
+
+* pasywny lub aktywny
+</script></section>
+<section data-markdown><script type='text/template'>
+## mostek
+
+* warstwa MAC
+
+* przezroczysty
+
+* między sieciami<br />różnych typów
+</script></section>
+<section data-markdown><script type='text/template'>
+## router
+
+* ma własny adres MAC
+
+* kieruje pakiety do odpowiednich<br />hostów lub innych routerów
+
+* segmentuje, scala,<br />buforuje pakiety
+
+* obsługuje błędy
+</script></section>
+<section data-markdown><script type='text/template'>
+## switch
+
+* rozdział domen kolizyjnych<br />od rozgłoszeniowych
+
+* L1: działa jak hub
+
+* L2: działa jak mostek
+
+* L3: działa jak router
+
+* L4: NAT i równoważenie TCP
+
+* L7: proxy WWW, CDN
+</script></section>
+<section data-markdown><script type='text/template'>
+## kierowanie pakietów
+
+* mostkowanie przezroczyste: równorzędne<br />
+porty, selekcja tylko jeśli znany port adresata
+
+* przełączanie ekspresowe: osobny port szkieletowy,<br />na
+który kierowane są ramki o&nbsp;nieznanym porcie adresata
+</script></section>
+<section data-markdown><script type='text/template'>
+## tryby pracy
+
+* cut-through: przepuszcza pakiety w miarę napływania
+
+* fragment-free: eliminacja ramek<br />jeśli błąd w&nbsp;pierwszych 64 oktetach
+
+* store-and-forward: eliminacja błędnych ramek,<br />
+buforowanie kosztem aplikacji czułych na opóźnienia
+</script></section>
+<section data-markdown><script type='text/template'>
+## niedopasowanie sieci
+
+* różne długości ramek
+
+* różne szybkości transmisji
+
+* różne poziomy priorytetów pakietów
+        </script></section>
+        <section data-markdown><script type='text/template'>
+# bezpieczeństwo w&nbsp;sieciach
+</script></section>
+<section data-markdown><script type='text/template'>
+## Ethernet
+
+* możliwość nasłuchiwania<br />ruchu w segmencie sieci
+
+* tryb promiscuous: odbiór przez kartę sieciową<br />
+wszystkich pakietów (nie zawsze dostępny)
+
+* budowanie statystyk ruchu
+
+* możliwość wybudzania maszyn<br />za pomocą Wake-on-LAN
+</script></section>
+<section data-markdown><script type='text/template'>
+## szyfrowanie ruchu w&nbsp;warstwach
+
+* certyfikaty X.509
+
+* Secure Socket Layer
+
+* Transport Layer Security
+
+* Secure Shell
+
+* IPsec
+</script></section>
+<section data-markdown><script type='text/template'>
+## Wired Equivalent Privacy
+
+* Open System Authentication: brak klucza
+
+* Shared Key Authentication: tajny klucz
+
+* klucz RC4, 64 bity (40 faktycznych bitów)
+
+* (wiadomość + CRC) XOR RC4(IV, klucz)
+
+* wysyłane IV i szyfrogram
+</script></section>
+<section data-markdown><script type='text/template'>
+<table>
+  <caption>ramka WEP</caption>
+  <tr>
+    <th style='border: none'></th>
+    <th style='width: 20%'>0</th>
+    <th style='width: 20%'>1</th>
+    <th style='width: 20%'>2</th>
+    <th style='width: 20%'>3</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <td colspan='4' rowspan='2'>nagłówek</td>
+  </tr>
+  <tr>
+    <th>4</th>
+  </tr>
+  <tr>
+    <th>8</th>
+    <td colspan='3'>IV</td>
+    <td>numer klucza</td>
+  </tr>
+  <tr>
+    <th>12</th>
+    <td colspan='4'>SNAP…</td>
+  </tr>
+  <tr>
+    <th>16</th>
+    <td colspan='2'>…SNAP</td>
+    <td colspan='2'>ID protokołu</td>
+  </tr>
+  <tr>
+    <th>20+</th>
+    <td colspan='4'>dane…</td>
+  </tr>
+  <tr>
+    <th>…</th>
+    <td colspan='4'>suma kontrolna</td>
+  </tr>
+</table>
+</script></section>
+<section data-markdown><script type='text/template'>
+## <span style='font-family: Ubuntu, serif'>IEEE 802.11i</span>
+
+* WPA: Wi-Fi Protected Access
+
+* WPA2 (IEEE 802.11i-2004)
+
+* WPA-Personal / WPA-Enterprise
+
+* TKIP (Temporal Key Integrity Protocol):<br />dodaktowy
+komponent obok WEP;<br />tymczasowy – dla istniejących urządzeń
+
+* CCMP (Counter Mode Cipher Block Chaining Message Authentication
+Code Protocol): bazujący na AES; długoterminowy – dla nowych urządzeń
+
+* Extensible Authentication Protocol
+        </script></section>
+        <section data-markdown><script type='text/template'>
+# współczesne problemy sieci
+</script></section>
+<section data-markdown><script type='text/template'>
+## brak adresów IPv4
+
+<img src='img/ipv4.svg' style='width: 60%' />
+
+[IPv4 address exhaustion](http://en.wikipedia.org/wiki/IPv4_address_exhaustion)
+
+NAT? IPv6?
+</script></section>
+<section data-markdown><script type='text/template'>
+## szybkość i opóźnienia
+
+* szybkość przestaje być problemem,<br />wąskim gardłem zaczyna być opóźnienie
+
+* szybkość światła w światłowodzie:<br />56 ms RTT Londyn – Nowy Jork
+
+* problem „ostatniej mili”
+
+* FTTH: 18 ms, DSL: 43 ms,<br />4G: 150 ms, 3G: 400 ms
+</script></section>
+<section data-markdown><script type='text/template'>
+## sesje TCP a opóźnienia
+
+* do zestawienia TCP potrzeba<br />SYN + SYN-ACK + ACK
+
+* do przesłania danych wielopakietowych<br />musi urosnąć okno przeciążenia
+
+* szersze okno startowe<br />utrzymywanie połączeń TCP
+</script></section>
+<section data-markdown><script type='text/template'>
+### opóźnienia coraz istotniejsze
+
+![latency](img/latency.png)
+
+[High Performance Browser Networking](https://docs.google.com/presentation/d/1f2J_HrzMNvVHhsB3f7DKJFPl2N0Q_QR2ZEECWQu6oV8/present#slide=id.gc03305a_0132)
+</script></section>
+<section data-markdown><script type='text/template'>
+## prywatność
+
+* ciasteczka
+
+* odcisk przeglądarki: [Panopticlick](https://panopticlick.eff.org)
+
+* śledzenie za pomocą HTTP ETag
+
+> OH: Let’s replace Alice & Bob with<br />Angela & Barack for our security examples.
+
+— Benjamin Erb
+        </script></section>
+        <section data-markdown><script type='text/template'>
+## dziękuję za uwagę!
+        </script></section>
+        <!-- <section data-markdown='talk/cover.md'        data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/basics.md'       data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/www-theory.md'   data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/www-practice.md' data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/osi.md'          data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/tcp-ip.md'       data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/applications.md' data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/tcp.md'          data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/lan.md'          data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/topology.md'     data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/protocols.md'    data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/media.md'        data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/collisions.md'   data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/networks.md'     data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/security.md'     data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/problems.md'     data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+        <!-- <section data-markdown='talk/thanks.md'       data-separator='^\n\n\n' data-vertical='^\n\n'></section> -->
+      </div>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

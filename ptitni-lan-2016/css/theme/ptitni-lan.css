@@ -1,0 +1,160 @@
+/* @import url(http://fonts.googleapis.com/css?family=IM+Fell+English); */
+/* @import url(http://fonts.googleapis.com/css?family=IM+Fell+English+SC); */
+/* @import url(http://fonts.googleapis.com/css?family=Ubuntu); */
+/* @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono); */
+
+body {
+  background-color: white;
+  font-family: 'IM Fell English SC', serif;
+  text-shadow: #ccc 1px 1px 5px;
+}
+
+.reveal {
+  font-size: 1.3em;
+}
+
+.reveal a {
+  color: inherit;
+  text-decoration: none;
+  /* font-family: 'IM Fell English', serif; */
+  text-shadow: #aaa 2px 2px 2px;
+}
+
+.reveal blockquote {
+  box-shadow: none;
+  font-family: Ubuntu, sans-serif;
+  text-align: left;
+}
+
+.reveal dd {
+  padding-left: 2em;
+}
+
+.reveal dl {
+  font-family: Ubuntu, sans-serif;
+  margin: 1em;
+  text-align: left;
+}
+
+.reveal dt {
+  font-weight: bold;
+}
+
+.reveal h1 {
+  font-size: 3.8em;
+  margin: 0.5em 0;
+}
+
+.reveal h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.reveal h3 {
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+.reveal li {
+  margin: 1em;
+  margin-left: 0;
+}
+
+.reveal img {
+  display: block;
+  margin: 1em auto;
+  width: 80%;
+}
+
+.reveal p {
+  font-family: Ubuntu, sans-serif;
+}
+
+.reveal pre {
+  box-shadow: none;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 0.6em;
+  line-height: 1.1;
+}
+
+.reveal section {
+  margin-top: -20px;
+}
+
+.reveal table {
+  border-collapse: collapse;
+  font-family: Ubuntu, sans-serif;
+  font-size: 0.8em;
+  margin: 1em auto;
+}
+
+.reveal table caption {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.reveal table td,
+.reveal table th {
+  padding: 0.1em;
+}
+
+.reveal table td {
+  border: 1px solid #ccc;
+}
+
+.reveal table th {
+  border: 1px solid #000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.reveal ul {
+  font-family: Ubuntu, sans-serif;
+  list-style: none;
+}
+
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: #333;
+}
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: #333;
+}
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #333;
+}
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: #333;
+}
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #999;
+}
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #999;
+}
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #999;
+}
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #999;
+}
+
+.slidenumber {
+  bottom: 19px;
+  font-size: 1.8em;
+  height: 36px;
+  position: absolute;
+  right: 48px;
+  text-align: center;
+  width: 36px;
+}

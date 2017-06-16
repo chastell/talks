@@ -1,0 +1,232 @@
+# definicja i rys historyczny
+## sieć lokalna
++0:06
+## początki
++0:13
+### zmiany mocy obliczeniowej i położenia danych
++0:16
+## zmiany ruchu
++0:20
+
+# jak to działa (w teorii)
+## World Wide Web
++0:23
+## DNS
++0:26
+## HTTP
++0:33
+## TCP
++0:40
+## IP
++0:43
+## Ethernet
++0:46
+## warstwa fizyczna
++0:53
+
+# jak to działa (w praktyce)
+$ dig www.tele.pw.edu.pl
++0:56
+$ curl -v www.tele.pw.edu.pl
++1:00
++UDP i TCP
++1:10
+pakiet UDP
++1:12
+pakiet TCP
++1:18
+pakiet IPv4
++1:20
+pakiet IPv6 (o stałym nagłówku)
++1:22
+ramka Ethernet
++1:25
+## warstwa fizyczna
++1:27
+
+
+
+# model OSI
+## warstwy OSI
++0:00
+## fundamentalne założenia
++0:03
+[James Bond Meets the 7 Layer OSI Model](http://www.lewistech.com/rlewis/Resources/jamesX.aspx)
++0:06
+
+# model TCP/IP
+## warstwy TCP/IP
++0:09
+![LAN](img/lan.svg)
++0:12
+![UDP](img/udp.svg)
++0:15
+
+# architektura aplikacji
+## klient-serwer
++0:17
+## peer-to-peer
++0:20
+## modele hybrydowe
++0:23
+
+# sesja TCP
+## [High Performance Browser Networking]
++0:27
+## kończenie sesji
++0:28
+## [Transmission Control Protocol]
++0:30
+
+# model LAN
+## model LAN
++0:30
+
+# topologie sieci
+## topologia logiczna
++0:35
+## punkt-punkt
++0:37
+## szyna
++0:39
+## pierścień
++0:41
+## gwiazda
++0:43
+## drzewo
++0:45
+## siatka / krata
++0:47
+
+# protokoły
+## ALOHAnet (1971)
++0:54
+## ramka ALOHAnet
++0:58
+## ![Pure ALOHA]
++1:02
+## ![Slotted ALOHA](img/aloha_slotted.svg)
++1:06
+## ![ALOHA comparison](img/aloha_comparison.svg)
++1:10
+## Ethernet (1973)
++1:14
+##  ramka Ethernet
++1:18
+##  ramka Ethernet z tagiem 802.1Q
++1:22
+## EtherType
++1:26
+## adres MAC
++1:30
+
+
+
+## Token Ring (1985)
++0:00
+## Ramka danych Token Ring
++0:04
+## Token Bus
++0:08
+## ramka FDDI
++0:09
+## IEEE 802.11 (1997)
++0:12
+## pasma
++0:16
+## Frequency Hopping Spread Spectrum (802.11)
++0:20
+## ![channels](img/channels.svg)
++0:24
+## ramka MAC IEEE 802.11
++0:28
+
+# media transmisyjne
++0:33
+## kabel miedziany współosiowy
++0:37
+## kabel miedziany symetryczny
++0:45
+## światłowód
++0:49
+
+# kolizje w medium
++0:49
+## kolizje pakietów
++0:55
+## ALOHAnet
++0:58
+## CSMA
++1:04
+## opóźnienia
++1:08
+## CSMA/CD
++1:12
+## CSMA/CA
++1:16
+## synchronizacja
++1:18
+## błędy transmisyjne
++1:22
+## typy kolizji
++1:25
+
+
+
+# łączenie sieci
+9:15
+## podział według warstw
+9:19
+## hub
+9:22
+## mostek
+9:25
+## router
+9:28
+## switch
+9:32
+## kierowanie pakietów
+9:36
+## tryby pracy
+9:40
+## niedopasowanie sieci
+9:44
+
+# bezprzewodowe sieci dostępowe
+9:45
+## Personal Area Network
+9:47
+## Local Area Network
+9:49
+## Metropolitan / Wide Area Network
+9:51
+## sieci komórkowe
+9:53
+## sieci globalne i kosmiczne
+9:55
+
+# bezpieczeństwo w sieciach
+9:58
+## Ethernet
+10:03
+## szyfrowanie ruchu w warstwach
+10:07
+## Wired Equivalent Privacy
+10:15
+## ramka WEP
+10:17
+## IEEE 802.11i
+10:20
+
+# współczesne problemy sieci
+10:21
+## brak adresów IPv4
+10:24
+## szybkość i opóźnienia
+10:30
+## sesje TCP a opóźnienia
+10:34
+### opóźnienia coraz istotniejsze
+10:37
+## prywatność
+10:41

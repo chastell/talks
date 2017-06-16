@@ -1,0 +1,61 @@
+# definicja i&nbsp;rys historyczny
+## sieć lokalna
+11:06
+## początki
+11:13
+### zmiany mocy obliczeniowej<br />i&nbsp;położenia danych
+11:16
+## zmiany ruchu
+11:20
+
+# jak to działa (w&nbsp;teorii)
+## World Wide Web
+11:23
+## DNS
+11:26
+## HTTP
+11:33
+## TCP
+11:40
+## IP
+11:43
+## Ethernet
+11:46
+## warstwa fizyczna
+11:53
+
+# jak to działa (w&nbsp;praktyce)
+$ dig www.tele.pw.edu.pl
+11:56
+$ curl -v www.tele.pw.edu.pl
+12:00
+## UDP i TCP
+12:10
+<caption>pakiet UDP</caption>
+12:12
+<caption>pakiet TCP</caption>
+12:18
+<caption>pakiet IPv4</caption>
+12:20
+<caption>pakiet IPv6 (o stałym nagłówku)</caption>
+12:22
+<caption>ramka Ethernet</caption>
+12:25
+## warstwa fizyczna
+12:27
+
+# model OSI
+## warstwy OSI
+12:45
+## fundamentalne założenia
+12:48
+[James Bond Meets the 7 Layer OSI Model](http://www.lewistech.com/rlewis/Resources/jamesX.aspx)
+12:51
+
+# model TCP/IP
+## warstwy TCP/IP
+12:54
+![LAN](img/lan.svg)
+12:57
+![UDP](img/udp.svg)
+13:00
