@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English+SC&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext);
+
+body {
+  font-family: 'IM Fell English', serif;
+  background: black center repeat url(../../img/plans.png);
+  background-size: auto 100%;
+  text-shadow: #ccc 1px 1px 5px;
+}
+
+.reveal em {
+  font-style: italic;
+}
+
+.reveal h1 {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 3.5em;
+  margin:    0 0.5em 0.5em;
+}
+
+.reveal h2 {
+  font-size: 2em;
+  line-height: 1.2;
+  margin:    0.5em;
+}
+
+.reveal h3 {
+  font-size: 1.5em;
+  margin:    0.5em;
+}
+
+.reveal li {
+  margin: 0.5em 0;
+}
+
+.reveal ol, .reveal ul {
+  font-size:   2em;
+  line-height: 1.2;
+  margin:      1em 2em;
+  text-align:  left;
+}
+
+.reveal ol {
+  margin-left: 33%;
+  text-align:  left;
+}
+
+.reveal ul {
+  list-style: none;
+}
+
+.reveal table {
+  border-collapse: collapse;
+  border-spacing:  0;
+  font-size:       2em;
+  margin:          1em auto;
+}
+
+.reveal table.partial {
+  float:     left;
+  font-size: 1.5em;
+  margin:    0 2.1em;
+}
+
+.reveal table th {
+  font-weight: bold;
+}
+
+.reveal table td, .reveal table th {
+  padding:    0.1em 0.2em;
+  text-align: left;
+}
+
+.reveal table th {
+  border-bottom: 1px solid;
+}
+
+.reveal strong {
+  font-weight: bold;
+}
+
+.reveal .controls {
+  display: none !important;
+}
+
+.reveal .screenshot {
+  width: 90%;
+}
