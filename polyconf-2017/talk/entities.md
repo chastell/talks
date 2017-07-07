@@ -213,34 +213,4 @@ end
 ```
 
 
-## …and how does it `String#gsub`?
-
-```crystal
-class String
-```
-
-```crystal
-  def gsub(hash : Hash(Char, _))
-    gsub do |char|
-      hash[char]? || char
-    end
-  end
-```
-
-```crystal
-  def gsub(&block : Char -> _)
-    String.build(bytesize) do |buffer|
-      each_char do |my_char|
-        buffer << yield my_char
-      end
-    end
-  end
-```
-<!-- .element: class="fragment" -->
-
-```crystal
-end
-```
-
-
 [![einstein](img/einstein.png)](https://twitter.com/mustlovedongs/status/867854830106234880)
