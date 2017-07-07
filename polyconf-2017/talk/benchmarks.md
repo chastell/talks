@@ -66,15 +66,15 @@ Comparison:
 ```
 
 
+[![opinions](img/opinions.png)](https://twitter.com/QuoteTwitts/status/881304526145429505)
+
+
 # 1. always benchmark
 # 2. adjust algorithm
 <!-- .element: class="fragment" -->
 # 3. implementations?
 <!-- .element: class="fragment" -->
 ### <span class="fragment">(but if you did</span><br /><span class="fragment">and it’s _still_ too slow</span><br /><span class="fragment">it might be worthwhile<br />to look into other languages…)</span>
-
-
-[![microseconds](img/microseconds.png)](https://twitter.com/rob_pike/status/878412416127606784)
 
 
 [![1mmreqs](img/1mmreqs.png)](https://twitter.com/elorest/status/873785627170308096)
