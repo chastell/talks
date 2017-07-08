@@ -5,7 +5,7 @@
 
 [![Frankenstein](img/frankenstein.jpg)](https://de.wikipedia.org/wiki/Schloss_Frankenstein)
 
-[Jerzy Strzlecki<span class="fragment">, Schloss Frankenstein</span>](https://de.wikipedia.org/wiki/Schloss_Frankenstein)
+[Jerzy Strzelecki<span class="fragment">, Schloss Frankenstein</span>](https://de.wikipedia.org/wiki/Schloss_Frankenstein)
 
 
 ![Frankenstein](img/frankenstein.png)

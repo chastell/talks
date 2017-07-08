@@ -106,19 +106,28 @@ ruby! {
 
 ```nohighlight
 Ruby 2.4:
-           rust_push:   172442.3 i/s
-                 cgi:   135027.6 i/s - 1.28x  slower
-                gsub:    13083.3 i/s - 13.18x  slower
-            rust_map:     8884.4 i/s - 19.41x  slower
-           each_char:     4417.7 i/s - 39.03x  slower
+           rust_push:   172999.1 i/s
+                 cgi:   134036.8 i/s - 1.29x  slower
+                gsub:    13141.5 i/s - 13.16x  slower
+            rust_map:     9163.8 i/s - 18.88x  slower
+           each_char:     4440.7 i/s - 38.96x  slower
 ```
 
 ```nohighlight
 
 JRuby 9.1:
-                 cgi:   115620.6 i/s
-                gsub:    16650.9 i/s - 6.94x  slower
-           each_char:     5561.7 i/s - 20.79x  slower
+                 cgi:   100595.6 i/s
+                gsub:    17201.3 i/s - 5.85x  slower
+           each_char:     5641.1 i/s - 17.83x  slower
+```
+<!-- .element: class="fragment" -->
+
+```nohighlight
+
+JRuby 9.1 + 30 s warm-up + invoke dynamic:
+                 cgi:   119663.4 i/s
+                gsub:    16684.4 i/s - 7.17x  slower
+           each_char:     6559.0 i/s - 18.24x  slower
 ```
 <!-- .element: class="fragment" -->
 
@@ -161,19 +170,19 @@ end
 
 ```nohighlight
 Crystal 0.23:
-  io   67.4k ( 14.84µs) (± 1.32%)       fastest
-gsub  61.11k ( 16.36µs) (± 2.65%)  1.10× slower
-html   56.4k ( 17.73µs) (± 2.33%)  1.20× slower
+  io  67.56k (  14.8µs) (± 1.38%)       fastest
+gsub  60.62k (  16.5µs) (± 2.13%)  1.11× slower
+html  57.82k ( 17.29µs) (± 1.58%)  1.17× slower
 ```
 
 ```nohighlight
 
 Ruby 2.4:
-           rust_push:   172442.3 i/s
-                 cgi:   135027.6 i/s - 1.28x  slower
-                gsub:    13083.3 i/s - 13.18x  slower
-            rust_map:     8884.4 i/s - 19.41x  slower
-           each_char:     4417.7 i/s - 39.03x  slower
+           rust_push:   172999.1 i/s
+                 cgi:   134036.8 i/s - 1.29x  slower
+                gsub:    13141.5 i/s - 13.16x  slower
+            rust_map:     9163.8 i/s - 18.88x  slower
+           each_char:     4440.7 i/s - 38.96x  slower
 ```
 <!-- .element: class="fragment" -->
 
