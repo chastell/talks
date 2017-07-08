@@ -188,24 +188,35 @@ end
 
 ```nohighlight
 Ruby 2.4:
-             builtin:    29436.7 i/s
-          bit_elim_c:    16867.7 i/s - 1.75x  slower
-              cached:     5111.6 i/s - 5.76x  slower
-                rust:     3391.8 i/s - 8.68x  slower
-          prog_shift:     2926.2 i/s - 10.06x  slower
-                to_s:     1159.7 i/s - 25.38x  slower
-            bit_elim:      742.4 i/s - 39.65x  slower
-          cont_shift:      313.7 i/s - 93.85x  slower
+             builtin:    29685.6 i/s
+          bit_elim_c:    17043.8 i/s - 1.74x  slower
+              cached:     5087.7 i/s - 5.83x  slower
+                rust:     3487.7 i/s - 8.51x  slower
+          prog_shift:     2951.5 i/s - 10.06x  slower
+                to_s:     1140.3 i/s - 26.03x  slower
+            bit_elim:      732.6 i/s - 40.52x  slower
+          cont_shift:      310.2 i/s - 95.68x  slower
 ```
 
 ```nohighlight
 
 JRuby 9.1:
-              cached:     5442.7 i/s
-          prog_shift:     4429.8 i/s - 1.23x  slower
-            bit_elim:     1320.6 i/s - 4.12x  slower
-                to_s:      843.4 i/s - 6.45x  slower
-          cont_shift:      658.3 i/s - 8.27x  slower
+              cached:     5288.3 i/s
+          prog_shift:     4090.0 i/s - 1.29x  slower
+            bit_elim:     1310.2 i/s - 4.04x  slower
+                to_s:      856.5 i/s - 6.17x  slower
+          cont_shift:      695.5 i/s - 7.60x  slower
+```
+<!-- .element: class="fragment" -->
+
+```nohighlight
+
+JRuby 9.1 + 30 s warm-up + invoke dynamic:
+          prog_shift:     6965.5 i/s
+              cached:     6953.2 i/s - same-ish: difference falls within error
+          cont_shift:     1703.5 i/s - 4.09x  slower
+            bit_elim:     1665.5 i/s - 4.18x  slower
+                to_s:      870.8 i/s - 8.00x  slower
 ```
 <!-- .element: class="fragment" -->
 
@@ -239,26 +250,26 @@ end
 
 ```nohighlight
 Ruby 2.4 (+ Rust, C, SSE4.2…):
-             builtin:    29436.7 i/s
-          bit_elim_c:    16867.7 i/s - 1.75x  slower
-              cached:     5111.6 i/s - 5.76x  slower
-                rust:     3391.8 i/s - 8.68x  slower
-          prog_shift:     2926.2 i/s - 10.06x  slower
-                to_s:     1159.7 i/s - 25.38x  slower
-            bit_elim:      742.4 i/s - 39.65x  slower
-          cont_shift:      313.7 i/s - 93.85x  slower
+             builtin:    29685.6 i/s
+          bit_elim_c:    17043.8 i/s - 1.74x  slower
+              cached:     5087.7 i/s - 5.83x  slower
+                rust:     3487.7 i/s - 8.51x  slower
+          prog_shift:     2951.5 i/s - 10.06x  slower
+                to_s:     1140.3 i/s - 26.03x  slower
+            bit_elim:      732.6 i/s - 40.52x  slower
+          cont_shift:      310.2 i/s - 95.68x  slower
 ```
 <!-- .element: class="fragment" -->
 
 ```nohighlight
 
 Crystal 0.23 (pure):
-  popcount 188.27k (  5.31µs) (± 1.52%)        fastest
-prog_shift  150.6k (  6.64µs) (± 1.39%)   1.25× slower
-    cached  117.4k (  8.52µs) (± 0.59%)   1.60× slower
-  bit_elim  30.72k ( 32.55µs) (± 2.43%)   6.13× slower
-cont_shift  23.97k ( 41.71µs) (± 1.53%)   7.85× slower
-      to_s   1.27k ( 785.6µs) (± 1.26%) 147.91× slower
+  popcount 256.59k (   3.9µs) (± 0.47%)       fastest
+prog_shift 203.25k (  4.92µs) (± 0.31%)  1.26× slower
+    cached 160.32k (  6.24µs) (± 0.63%)  1.60× slower
+  bit_elim  31.98k ( 31.27µs) (± 0.29%)  8.02× slower
+cont_shift  23.97k ( 41.72µs) (± 1.44%) 10.71× slower
+      to_s   8.13k (122.99µs) (± 0.79%) 31.56× slower
 ```
 <!-- .element: class="fragment" -->
 

@@ -48,21 +48,22 @@ end
 
 ```nohighlight
 Warming up --------------------------------------
-      exception miss   441.174k i/100ms
-       exception hit   114.559k i/100ms
-              SELECT   522.000  i/100ms
+      exception miss   445.159k i/100ms
+       exception hit   115.221k i/100ms
+              SELECT   497.000  i/100ms
               INSERT    21.000  i/100ms
 Calculating -------------------------------------
-      exception miss     14.669M (± 2.7%) i/s -     73.676M in   5.027647s
-       exception hit      1.435M (± 1.6%) i/s -      7.217M in   5.031332s
-              SELECT      4.855k (± 3.8%) i/s -     24.534k in   5.060903s
-              INSERT    224.948  (± 9.8%) i/s -      1.134k in   5.084542s
+      exception miss     14.679M (± 4.2%) i/s -     73.451M in   5.015200s
+       exception hit      1.453M (± 1.0%) i/s -      7.374M in   5.075380s
+              SELECT      4.953k (± 1.2%) i/s -     24.850k in   5.018110s
+              INSERT    216.939  (± 7.4%) i/s -      1.092k in   5.062918s
 
 Comparison:
-      exception miss: 14668954.7 i/s
-       exception hit:  1434854.2 i/s - 10.22x  slower
-              SELECT:     4855.2 i/s - 3021.30x  slower
-              INSERT:      224.9 i/s - 65210.36x  slower
+      exception miss: 14678898.8 i/s
+       exception hit:  1453078.2 i/s - 10.10x  slower
+              SELECT:     4952.8 i/s - 2963.77x  slower
+              INSERT:      216.9 i/s - 67663.85x  slower
+
 ```
 
 

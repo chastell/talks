@@ -38,6 +38,8 @@ methods = String.instance_methods.grep(/^escape_/).sort
 raise 'oops' unless methods.map { |meth| string.public_send(meth) }.uniq.size == 1
 
 Benchmark.ips do |bench|
+  bench.warmup = 30
+  bench.time   = 30
   methods.each do |meth|
     bench.report(meth[7..-1]) { string.public_send(meth) }
   end
