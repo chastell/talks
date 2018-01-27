@@ -12,50 +12,13 @@
 
 # type conversion
 
-## explicit: `to_x`<br />`to_i`, `to_s`, `to_a`…<br />most liberal:<br />`' 12 Monkeys '.to_i #=> 12`
+## explicit: `to_x`<br />`to_i`, `to_s`, `to_a`, `to_h`…<br />`' 12 Monkeys '.to_i #=> 12`
 <!-- .element: class="fragment" -->
 
-## implicit: `to_xxx`<br />`to_int`, `to_str`, `to_ary`…<br />for ~equivalent objects, used internally
-<!-- .element: class="fragment" -->
-
-## `Kernel.Method`<br />`Integer`, `String`, `Array`…<br />to validate / enforce input
+## implicit: `to_xxx`<br />`to_int`, `to_str`, `to_ary`, `to_hash`…<br />for ~equivalent objects, used internally
 <!-- .element: class="fragment" -->
 
 ## read Avdi Grimm’s [_Confident Ruby_](http://www.confidentruby.com)
-<!-- .element: class="fragment" -->
-
-
-# fun with bins: `#[]`
-
-```ruby
-35.to_s(2)         #=> '100011'
-'100011'.to_i(2)   #=> 35
-35[1]              #=> 1
-35[2]              #=> 0
-```
-<!-- .element: class="fragment" -->
-
-## can we encode a set of integers in an int?
-<!-- .element: class="fragment" -->
-
-```ruby
-module B
-  module_function
-
-  def [](*bits)
-    bits.reduce(0) { |int, bit| int | 1 << bit }
-  end
-end
-
-B[1,2]     #=> 6  (110 in binary)
-B[0,1,5]   #=> 35 (100011 in binary)
-
-B[1,2][2]     #=> 1 (2 is a member of B[1,2])
-B[0,1,5][2]   #=> 0 (2 is not a member of B[0,1,5])
-```
-<!-- .element: class="fragment" -->
-
-## set of sets of ints: `Set` of `Integers`
 <!-- .element: class="fragment" -->
 
 
@@ -83,104 +46,28 @@ B[0,1,5][2]   #=> 0 (2 is not a member of B[0,1,5])
 <!-- .element: class="fragment" -->
 
 
-
-# don’t shy from using `Range`
+# `#<=>` all the comparables
 
 ```ruby
-require 'date'
-
 Conf = Struct.new(:name, :dates)
 
 confs = [
-  Conf.new('Ruby on Ice',  Date.new(2018, 1, 26)..Date.new(2018, 1, 28)),
-  Conf.new('Isle of Ruby', Date.new(2018, 4, 13)..Date.new(2018, 4, 15)),
-  Conf.new('Balkan Ruby',  Date.new(2018, 5, 25)..Date.new(2018, 5, 26)),
+  Conf.new('RubyConf PT', Date.new(2014, 10, 13)..Date.new(2014, 10, 14)),
+  Conf.new('JRubyConf',   Date.new(2014,  8,  1)..Date.new(2014,  8,  1)),
+  Conf.new('eurucamp',    Date.new(2014,  8,  1)..Date.new(2014,  8,  3)),
 ]
 ```
 
 ```ruby
-class ConfList
-  include Enumerable
-
-  def initialize(confs)
-    @confs = confs
-  end
-
-  def each_conf
-    return to_enum(__method__) unless block_given?   # THIS IS SUPER FUN
-    @confs.each { |conf| yield conf }
-  end
-
-  alias_method :each, :each_conf
-end
+confs.sort.each &method(:puts)
 ```
 <!-- .element: class="fragment" -->
 
 
-# `#each` – all the Enumerables
+# `#<=>` all the comparables
 
 ```ruby
-conf_list = ConfList.new(confs)
-conf_list.each_conf { |conf| puts conf.name }
-```
-
-```shell
-Ruby on Ice
-Isle of Ruby
-Balkan Ruby
-```
-<!-- .element: class="fragment" -->
-
-```ruby
-class Conf
-  def to_s
-    "#{dates.begin} to #{dates.end}: #{name}"
-  end
-end
-```
-<!-- .element: class="fragment" -->
-
-```ruby
-conf_list.each &method(:puts)
-```
-<!-- .element: class="fragment" -->
-
-```shell
-2018-01-26 to 2018-01-28: Ruby on Ice
-2018-04-13 to 2018-04-15: Isle of Ruby
-2018-05-25 to 2018-05-26: Balkan Ruby
-```
-<!-- .element: class="fragment" -->
-
-
-# `#each` – all the Enumerables
-
-```ruby
-class Conf
-  def started?
-    dates.begin <= Date.today
-  end
-end
-```
-
-```ruby
-on_now, not_yet = conf_list.partition(&:started?)
-puts "on now:  #{on_now.map(&:name).join(', ')}"
-puts "not yet: #{not_yet.map(&:name).join(', ')}"
-```
-<!-- .element: class="fragment" -->
-
-```shell
-on now:  Ruby on Ice
-not yet: Isle of Ruby, Balkan Ruby
-```
-<!-- .element: class="fragment" -->
-
-
-# `#<=>` – all the Comparables
-
-```ruby
-class Conf
+class Conf < Struct.new(:name, :dates)
   def <=>(other)
     case
     when dates.begin < other.dates.begin then -1
@@ -190,13 +77,11 @@ class Conf
     else 0
     end
   end
-end
 
-confs = [
-  Conf.new('RubyConf PT', Date.new(2014, 10, 13)..Date.new(2014, 10, 14)),
-  Conf.new('JRubyConf',   Date.new(2014,  8,  1)..Date.new(2014,  8,  1)),
-  Conf.new('eurucamp',    Date.new(2014,  8,  1)..Date.new(2014,  8,  3)),
-]
+  def to_s
+    "#{dates.begin} to #{dates.end}: #{name}"
+  end
+end
 
 confs.sort.each &method(:puts)
 ```
@@ -340,9 +225,9 @@ close price on 2018-11-13
 <!-- .element: class="fragment" -->
 
 ```ruby
-(1..3).map &User&:find
-# User Load (36.2ms)  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
-# User Load (0.8ms)  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+(1..3).map &User&:find   # via @gabetax
+# User Load (6.2ms) SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1 [["id", 1]]
+# User Load (0.8ms) SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1 [["id", 2]]
 # User Load (0.4ms) SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1 [["id", 3]]
 ```
 <!-- .element: class="fragment" -->
