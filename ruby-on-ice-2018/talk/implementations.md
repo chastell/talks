@@ -38,21 +38,3 @@
 
 * watch Aaron Patterson’s talks
 <!-- .element: class="fragment" -->
-
-
-# WeakRef
-
-* ephemeral objects<br />that might not be there later
-<!-- .element: class="fragment" -->
-
-* CRuby 2.0+: based on `ObjectSpace::WeakMap` in C
-<!-- .element: class="fragment" -->
-
-* CRuby 1.3-1.9: ~pure Ruby (how is it even possible?)
-<!-- .element: class="fragment" -->
-
-* [Mustermann!](https://github.com/rkh/mustermann)
-<!-- .element: class="fragment" -->
-
-[![memory](img/memory.png)](https://twitter.com/Argorak/status/826393995412635648)
-<!-- .element: class="fragment" -->
