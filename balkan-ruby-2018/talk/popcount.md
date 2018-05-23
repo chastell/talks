@@ -246,8 +246,10 @@ end
 ```
 
 
+* ⚠ Ruby times include Ruby-side call overhead ⚠
+
 ```nohighlight
-Ruby 2.5 (+ Rust, C, SSE4.2… + RUBY-SIDE CALL OVERHEAD):
+Ruby 2.5 (+ Rust, C, SSE4.2…):
              builtin:    29915.7 i/s
           bit_elim_c:    17011.6 i/s - 1.76x  slower
               cached:     4874.4 i/s - 6.14x  slower
@@ -260,19 +262,7 @@ Ruby 2.5 (+ Rust, C, SSE4.2… + RUBY-SIDE CALL OVERHEAD):
 
 ```nohighlight
 
-Crystal 0.23 (pure, 2017):
-  popcount 256.59k (   3.9µs) (± 0.47%)       fastest
-prog_shift 203.25k (  4.92µs) (± 0.31%)  1.26× slower
-    cached 160.32k (  6.24µs) (± 0.63%)  1.60× slower
-  bit_elim  31.98k ( 31.27µs) (± 0.29%)  8.02× slower
-cont_shift  23.97k ( 41.72µs) (± 1.44%) 10.71× slower
-      to_s   8.13k (122.99µs) (± 0.79%) 31.56× slower
-```
-<!-- .element: class="fragment" -->
-
-```nohighlight
-
-Crystal 0.24 (pure, 2018):
+Crystal 0.24:
   popcount 184.26k (  5.43µs) (± 0.61%)       fastest
 prog_shift 148.72k (  6.72µs) (± 1.54%)  1.24× slower
     cached 120.57k (  8.29µs) (± 1.08%)  1.53× slower

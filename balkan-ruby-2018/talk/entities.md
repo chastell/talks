@@ -1,18 +1,3 @@
-# boundary crossing
-
-* not passing anything
-<!-- .element: class="fragment" -->
-* booleans
-<!-- .element: class="fragment" -->
-* <span class="fragment">numbers (> 2⁶²? `BigDecimal`s?)</span>
-* strings (longer than 23 bytes?)
-<!-- .element: class="fragment" -->
-* <span class="fragment">arrays (…of what? containing `self`?)</span>
-* <span class="fragment">hashes (…of what → what? with `self` key?)</span>
-* structs | objects
-<!-- .element: class="fragment" -->
-
-
 # escape entities
 
 * make text ‘HTML safe’
@@ -186,49 +171,16 @@ html  42.36k ( 23.61µs) (± 1.34%)       fastest
 
 ```nohighlight
 
-Ruby 2.4:
-           rust_push:   172999.1 i/s
-                 cgi:   134036.8 i/s - 1.29x  slower
-                gsub:    13141.5 i/s - 13.16x  slower
-            rust_map:     9163.8 i/s - 18.88x  slower
-           each_char:     4440.7 i/s - 38.96x  slower
+Ruby 2.5:
+           rust_push:   286450.1 i/s
+                 cgi:   128455.5 i/s - 2.23x  slower
+                gsub:    13743.6 i/s - 20.84x  slower
+            rust_map:     7878.5 i/s - 36.36x  slower
+           each_char:     4540.9 i/s - 63.08x  slower
 ```
 <!-- .element: class="fragment" -->
 
 * <span class="fragment">for sub-µs times: [Optimising string processing in Rust](https://lise-henry.github.io/articles/optimising_strings.html)</span>
-
-
-## how does Crystal `HTML.escape`?
-
-```crystal
-module HTML
-```
-
-```crystal
-  SUBSTITUTIONS = {
-    # …many more than in ENTITIES…
-  }
-```
-
-```crystal
-  def self.escape(string : String) : String
-    string.gsub(SUBSTITUTIONS)
-  end
-```
-<!-- .element: class="fragment" -->
-
-```crystal
-  def self.escape(string : String, io : IO)
-    string.each_char do |char|
-      io << SUBSTITUTIONS.fetch(char, char)
-    end
-  end
-```
-<!-- .element: class="fragment" -->
-
-```crystal
-end
-```
 
 
 [![einstein](img/einstein.png)](https://twitter.com/mustlovedongs/status/867854830106234880)
