@@ -1,0 +1,14 @@
+require 'helix_runtime/build_task'
+
+task :build do
+  HelixRuntime::BuildTask.new('popcount_rust')
+end
+
+task ha: :build do
+  require_relative './lib/popcount_rust/native'
+  puts Popcount.count(42)
+  puts HTML.map_escape('<script foo="bar" />')
+  puts HTML.push_escape('<script foo="bar" />')
+end
+
+task default: :ha
