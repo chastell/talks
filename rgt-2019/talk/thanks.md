@@ -24,3 +24,4 @@
 # dzięki!
 
 * Piotr Szotkowski
+* <code>[tiny.cc/julek](https://tiny.cc/julek)</code>
