@@ -65,6 +65,32 @@
 <!-- .element: class="fragment" style="width: 30%" -->
 
 
+```ruby
+NonEIVovel = /a|ä|à|ą|æ|ë|é|ę|o|ö|ó|ô|u|ü|y/
+
+SyllableVowel = Regexp.union [
+  /ae(?=q|re)/, /ae$/,
+  /(?<=et)a(?=i)/, /(?<=t)ai(?=n)/,
+  /(?<!^[nz])au(?!cz|ł|k)/, /(?<=k)au(?=cz|k)/,
+  /(?<!el|ni)eau/,
+  /e(?=usz)/, /^e(?=unu)/, /(?<=f|z)e(?=um)/, /(?<=n)e(?=utr)/,
+  /(?<=ni)e(?=u)/, /e(?=ucz)/, /(?<=s)e(?=ul)/, /eu/,
+  /ey/, /e/,
+  /(?<=^m)ię$/,
+  /(?<=^m)i(?=(#{NonEIVovel}|e|i)$)/,
+  /ii$/, /ille/,
+  /i(?!e(?!nt)|#{NonEIVovel})/,
+  /foi$/,
+  /(?<=n)ou(?=v)/, /(?<=v)ou(?=s)/,
+  /oyce$/, /oy/,
+  /(?<=q)uo/,
+  /uille/,
+  /qui(?!lle)/,
+  NonEIVovel,
+]
+```
+
+
 # rymy
 
 * ostatnia sylaba<br />taka sama
@@ -73,6 +99,22 @@
 <!-- .element: class="fragment" -->
 * ostatnie słowo<br />różne (i nie tylko)
 <!-- .element: class="fragment" -->
+
+
+```ruby
+def rhyme_pattern
+  all = words.join
+  all[all.rindex(SyllableVowel, all.rindex(SyllableVowel) - 1)..-1]
+end
+
+def rhymes_with?(other)
+  return false if rhyme_pattern != other.rhyme_pattern
+  return false if words.last == other.words.last
+  return false if words.last.end_with?(other.words.last)
+  return false if other.words.last.end_with?(words.last)
+  true
+end
+```
 
 
 <p class="quote">
