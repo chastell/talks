@@ -24,7 +24,7 @@ GEM
       blankslate (~> 2.0)
     pdfkit (0.8.2)
     rack (1.6.11)
-    rack-protection (1.5.3)
+    rack-protection (1.5.5)
       rack
     redcarpet (3.3.4)
     rmagick (2.16.0)
