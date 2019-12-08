@@ -24,8 +24,8 @@ GEM
     parslet (1.4.0)
       blankslate (~> 2.0)
     pdfkit (0.5.4)
-    rack (1.5.2)
-    rack-protection (1.5.0)
+    rack (1.6.11)
+    rack-protection (1.5.5)
       rack
     redcarpet (3.0.0)
     rmagick (2.13.2)
