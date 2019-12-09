@@ -4,7 +4,7 @@ GEM
     blankslate (2.1.2.4)
     bluecloth (2.2.0)
     gli (2.0.0)
-    json (1.7.5)
+    json (2.2.0)
     mini_portile2 (2.4.0)
     mustermann (1.0.3)
     nokogiri (1.10.5)
