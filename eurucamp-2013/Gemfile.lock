@@ -23,7 +23,7 @@ GEM
     parslet (1.4.0)
       blankslate (~> 2.0)
     pdfkit (0.8.2)
-    rack (1.6.11)
+    rack (1.6.12)
     rack-protection (1.5.5)
       rack
     redcarpet (3.3.4)
