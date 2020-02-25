@@ -9,7 +9,7 @@ GEM
     json (1.8.1)
     levenshtein (0.2.2)
     mini_portile2 (2.4.0)
-    nokogiri (1.10.5)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     parade (0.10.2)
       blankslate (= 2.1.2.4)
