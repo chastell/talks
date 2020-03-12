@@ -7,7 +7,7 @@ GEM
     json (2.2.0)
     mini_portile2 (2.4.0)
     mustermann (1.0.3)
-    nokogiri (1.10.5)
+    nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     parslet (1.4.0)
       blankslate (~> 2.0)
