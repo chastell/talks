@@ -8,7 +8,7 @@ GEM
     gli (1.6.0)
     json (1.8.0)
     mini_portile2 (2.4.0)
-    nokogiri (1.10.7)
+    nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     parade (0.10.2)
       blankslate (= 2.1.2.4)
