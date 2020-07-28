@@ -6,7 +6,7 @@ GEM
     css_parser (1.4.5)
       addressable
     gli (1.6.0)
-    json (2.0.2)
+    json (2.3.1)
     mini_portile2 (2.4.0)
     nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
