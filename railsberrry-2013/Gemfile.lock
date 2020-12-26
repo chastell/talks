@@ -11,7 +11,7 @@ GEM
       mini_portile2 (~> 2.4.0)
     parslet (1.4.0)
       blankslate (~> 2.0)
-    rack (2.0.8)
+    rack (2.2.3)
     rack-protection (2.0.7)
       rack
     showoff (0.7.0)
