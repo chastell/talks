@@ -10,7 +10,7 @@ GEM
     eventmachine (1.0.3)
     gli (2.9.0)
     htmlentities (4.3.1)
-    json (1.8.1)
+    json (2.5.1)
     mini_portile2 (2.4.0)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
