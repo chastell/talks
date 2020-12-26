@@ -4,7 +4,7 @@ GEM
     blankslate (2.1.2.4)
     bluecloth (2.2.0)
     gli (1.6.0)
-    json (1.7.4)
+    json (2.5.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     nokogiri (1.5.5)
