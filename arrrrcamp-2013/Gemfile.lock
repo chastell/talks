@@ -8,9 +8,10 @@ GEM
     gli (1.6.0)
     json (2.3.1)
     levenshtein (0.2.2)
-    mini_portile2 (2.4.0)
-    nokogiri (1.10.8)
-      mini_portile2 (~> 2.4.0)
+    mini_portile2 (2.5.0)
+    nokogiri (1.11.1)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
     parade (0.10.2)
       blankslate (= 2.1.2.4)
       css_parser
@@ -24,6 +25,7 @@ GEM
     parslet (1.4.0)
       blankslate (~> 2.0)
     pdfkit (0.5.4)
+    racc (1.5.2)
     rack (1.6.12)
     rack-protection (1.5.5)
       rack
