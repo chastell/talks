@@ -1,7 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.3.5)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
     blankslate (2.1.2.4)
     daemons (1.1.9)
     em-websocket (0.3.8)
@@ -17,6 +18,7 @@ GEM
       racc (~> 1.4)
     parslet (1.5.0)
       blankslate (~> 2.0)
+    public_suffix (4.0.6)
     racc (1.5.2)
     rack (1.6.12)
     rack-protection (1.5.5)
