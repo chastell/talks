@@ -8,9 +8,9 @@ GEM
       addressable
     gli (1.6.0)
     json (2.3.1)
-    mini_portile2 (2.5.1)
-    nokogiri (1.11.4)
-      mini_portile2 (~> 2.5.0)
+    mini_portile2 (2.6.1)
+    nokogiri (1.12.5)
+      mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     parade (0.10.2)
       blankslate (= 2.1.2.4)
