@@ -8,9 +8,9 @@ GEM
       addressable
     gli (1.6.0)
     json (2.3.1)
-    mini_portile2 (2.5.1)
-    nokogiri (1.11.4)
-      mini_portile2 (~> 2.5.0)
+    mini_portile2 (2.8.0)
+    nokogiri (1.13.3)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     parade (0.10.2)
       blankslate (= 2.1.2.4)
@@ -26,7 +26,7 @@ GEM
       blankslate (~> 2.0)
     pdfkit (0.8.2)
     public_suffix (4.0.6)
-    racc (1.5.2)
+    racc (1.6.0)
     rack (1.6.12)
     rack-protection (1.5.5)
       rack
