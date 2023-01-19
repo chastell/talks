@@ -14,7 +14,7 @@ GEM
     parslet (1.2.3)
       blankslate (~> 2.0)
     racc (1.6.0)
-    rack (2.2.3.1)
+    rack (2.2.6.2)
     rack-protection (2.2.0)
       rack
     ruby2_keywords (0.0.5)
