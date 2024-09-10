@@ -1,0 +1,127 @@
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.reveal .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+  -webkit-text-size-adjust: none;
+}
+
+.reveal .hljs-comment,
+.reveal .hljs-template_comment,
+.reveal .diff .hljs-header,
+.reveal .hljs-javadoc {
+  color: #998;
+  font-style: italic;
+}
+
+.reveal .hljs-keyword,
+.reveal .css .rule .hljs-keyword,
+.reveal .hljs-winutils,
+.reveal .javascript .hljs-title,
+.reveal .nginx .hljs-title,
+.reveal .hljs-subst,
+.reveal .hljs-request,
+.reveal .hljs-status {
+  color: #333;
+  font-weight: bold;
+}
+
+.reveal .hljs-number,
+.reveal .hljs-hexcolor,
+.reveal .ruby .hljs-constant {
+  color: #008080;
+}
+
+.reveal .hljs-string,
+.reveal .hljs-tag .hljs-value,
+.reveal .hljs-phpdoc,
+.reveal .hljs-dartdoc,
+.reveal .tex .hljs-formula {
+  color: #d14;
+}
+
+.reveal .hljs-title,
+.reveal .hljs-id,
+.reveal .scss .hljs-preprocessor {
+  color: #900;
+  font-weight: bold;
+}
+
+.reveal .javascript .hljs-title,
+.reveal .hljs-list .hljs-keyword,
+.reveal .hljs-subst {
+  font-weight: normal;
+}
+
+.reveal .hljs-class .hljs-title,
+.reveal .hljs-type,
+.reveal .vhdl .hljs-literal,
+.reveal .tex .hljs-command {
+  color: #458;
+  font-weight: bold;
+}
+
+.reveal .hljs-tag,
+.reveal .hljs-tag .hljs-title,
+.reveal .hljs-rules .hljs-property,
+.reveal .django .hljs-tag .hljs-keyword {
+  color: #000080;
+  font-weight: normal;
+}
+
+.reveal .hljs-attribute,
+.reveal .hljs-variable,
+.reveal .lisp .hljs-body {
+  color: #008080;
+}
+
+.reveal .hljs-regexp {
+  color: #009926;
+}
+
+.reveal .hljs-symbol,
+.reveal .ruby .hljs-symbol .hljs-string,
+.reveal .lisp .hljs-keyword,
+.reveal .clojure .hljs-keyword,
+.reveal .scheme .hljs-keyword,
+.reveal .tex .hljs-special,
+.reveal .hljs-prompt {
+  color: #990073;
+}
+
+.reveal .hljs-built_in {
+  color: #0086b3;
+}
+
+.reveal .hljs-preprocessor,
+.reveal .hljs-pragma,
+.reveal .hljs-pi,
+.reveal .hljs-doctype,
+.reveal .hljs-shebang,
+.reveal .hljs-cdata {
+  color: #999;
+  font-weight: bold;
+}
+
+.reveal .hljs-deletion {
+  background: #fdd;
+}
+
+.reveal .hljs-addition {
+  background: #dfd;
+}
+
+.reveal .diff .hljs-change {
+  background: #0086b3;
+}
+
+.reveal .hljs-chunk {
+  color: #aaa;
+}

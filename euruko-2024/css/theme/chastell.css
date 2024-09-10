@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'IM FELL English SC';
+  src: local('IM FELL English SC'),
+       url('../../IM FELL English SC.woff') format('woff');
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: local(Ubuntu), url(../../Ubuntu.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: local('Ubuntu Mono'),
+       url('../../Ubuntu Mono.woff') format('woff');
+}
+
+body {
+  font-family: 'IM FELL English SC', serif;
+  text-shadow: #ccc 1px 1px 5px;
+}
+
+.reveal a {
+  color:           inherit;
+  text-decoration: none;
+  text-shadow:     #999 2px 2px 2px;
+}
+
+.reveal code {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.reveal em {
+  font-style: italic;
+}
+
+.reveal h1 {
+  font-size: 4.5em;
+  margin:    0.5em;
+}
+
+.reveal h1 code, .reveal h2 code, .reveal h3 code, .reveal li code {
+  font-size: 0.9em;
+}
+
+.reveal h2 {
+  font-size: 4em;
+  margin:    0.5em;
+}
+
+.reveal h3 {
+  font-size: 3em;
+  margin:    0.5em;
+}
+
+.reveal li {
+  margin: 0.5em 0;
+}
+
+.reveal img {
+  width: 90%;
+}
+
+.reveal pre {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size:   1.3em;
+  line-height: 1.0;
+  margin:      auto;
+  text-align:  left;
+  width:       67%;
+}
+
+.reveal pre code {
+  max-height: none;
+}
+
+.reveal ul {
+  font-size:   2.5em;
+  line-height: 1.2;
+  list-style:  none;
+  margin:      0;
+}
+
+.reveal .quote {
+  font-family: Ubuntu, sans-serif;
+  font-size:   2rem;
+  line-height: 1.5;
+  margin-top:  1rem;
+  text-align:  left;
+}
+
+.reveal .slides {
+  width: 70% !important;
+}
