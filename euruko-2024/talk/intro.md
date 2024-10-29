@@ -30,7 +30,7 @@
 
 # 2019
 
-* S̸̯̀p̸̈́͜ŕ̸̼̳o̸̼̹͠u̸̢̙͒̕t̸̥͐́C̴͕̽̄ơ̶̳ȓ̸͓͝ȩ̸̢͌ Ember.js 3.7<br />drops support for Node 4
+* ~SproutCore~ Ember.js 3.7<br />drops support for Node 4
 <!-- .element class="fragment" -->
 * React 16.8 adds hooks
 <!-- .element class="fragment" -->
