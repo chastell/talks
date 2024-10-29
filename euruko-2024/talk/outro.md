@@ -1,4 +1,4 @@
-![](img/simplify.jpg) <!-- .element style="width: 80%" -->
+![](img/simplify.jpg) <!-- .element style="width: 70%" -->
 
 * ~Henry~ ~David~ Thoreau
 
@@ -27,7 +27,7 @@
 
 # thanks!
 
-![](img/chastell.jpg) <!-- .element style="width: 30%" -->
+![](img/chastell.jpg) <!-- .element style="width: 20%" -->
 
 *  Piotr Szotkowski
 

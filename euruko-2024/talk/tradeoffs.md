@@ -4,7 +4,7 @@
 <!-- .element class="fragment" -->
 
 
-![](img/craigslist.png) <!-- .element style="width: 80%" -->
+![](img/craigslist.png) <!-- .element style="width: 60%" -->
 
 
-![](img/pinboard.png) <!-- .element style="width: 40%" -->
+![](img/pinboard.png) <!-- .element style="width: 30%" -->
