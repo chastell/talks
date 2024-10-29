@@ -20,7 +20,7 @@
 [![](img/fxn.png)](https://x.com/fxn/status/1122494735908790272)
 
 
-![](img/tomash_2009.jpg) <!-- .element style="width: 70%" -->
+![](img/tomash_2009.jpg) <!-- .element style="width: 50%" -->
 
 # happy birthday, Tomash!
 
