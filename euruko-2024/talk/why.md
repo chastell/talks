@@ -3,7 +3,7 @@
 
 ## ZIRP’s dead, baby
 
-![](img/zirp.jpg) <!-- .element style="width: 80%" -->
+![](img/zirp.jpg) <!-- .element style="width: 60%" -->
 
 * _[The end of 0% interest rates:<br />what the new normal means for software engineers](https://newsletter.pragmaticengineer.com/p/zirp-software-engineers)_
 

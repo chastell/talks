@@ -61,7 +61,7 @@
 <!-- .element class="fragment" -->
 
 
-![](img/wtf.gif) <!-- .element style="width: 80%" -->
+![](img/wtf.gif) <!-- .element style="width: 60%" -->
 
 
 # but also today!
@@ -74,4 +74,4 @@
 <!-- .element class="fragment" -->
 
 
-![](img/rgw_2018.jpg)
+![](img/rgw_2018.jpg) <!-- .element style="width: 60%" -->
