@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'IM FELL English SC';
+  src: local('IM FELL English SC'),
+       url('../../../IM FELL English SC.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'JetBrainsMono Nerd Font Mono';
+  src: local('JetBrainsMono Nerd Font Mono'),
+       url('../../../JetBrainsMonoNerdFontMono.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Ubuntu'), url('../../../Ubuntu.woff') format('woff');
+}
+
+body {
+  font-family: 'IM FELL English SC', serif;
+  text-shadow: #ccc 1px 1px 5px;
+}
+
+.reveal a {
+  color:           inherit;
+  text-decoration: none;
+  text-shadow:     #999 2px 2px 2px;
+}
+
+.reveal code {
+  font-family: 'JetBrainsMono Nerd Font Mono', monospace;
+}
+
+.reveal em {
+  font-style: italic;
+}
+
+.reveal h1 {
+  font-size: 4.5em;
+  margin:    0.5em;
+}
+
+.reveal h1 code, .reveal h2 code, .reveal h3 code, .reveal li code {
+  font-size: 0.9em;
+}
+
+.reveal h2 {
+  font-size: 4em;
+  margin:    0.5em;
+}
+
+.reveal h3 {
+  font-size: 3em;
+  margin:    0.5em;
+}
+
+.reveal li {
+  margin: 0.5em 0;
+}
+
+.reveal img {
+  width: 90%;
+}
+
+.reveal pre {
+  font-family: 'JetBrainsMono Nerd Font Mono', monospace;
+  font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures;
+  line-height: 1.5;
+  margin:      auto;
+  text-align:  left;
+  width:       60%;
+}
+
+.reveal pre code {
+  max-height: none;
+}
+
+.reveal ul {
+  font-size:   2.5em;
+  line-height: 1.2;
+  list-style:  none;
+  margin:      0;
+}
+
+.reveal .quote {
+  font-family: 'Ubuntu', sans-serif;
+  font-size:   2rem;
+  line-height: 1.5;
+  margin:  1rem auto;
+  text-align:  left;
+  width:       75%;
+}
+
+.reveal .slides {
+  width: 70% !important;
+}
