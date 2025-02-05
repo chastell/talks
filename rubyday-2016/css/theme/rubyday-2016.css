@@ -1,6 +1,14 @@
-@import url(//fonts.googleapis.com/css?family=IM+Fell+English);
-@import url(//fonts.googleapis.com/css?family=IM+Fell+English+SC);
-@import url(//fonts.googleapis.com/css?family=Ubuntu);
+@font-face {
+  font-family: 'IM FELL English SC';
+  src: local('IM FELL English SC'),
+       url('../../../IM FELL English SC.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Ubuntu'), url('../../../Ubuntu.woff') format('woff');
+}
+
 @import url(//fonts.googleapis.com/css?family=Ubuntu+Mono);
 
 body {
